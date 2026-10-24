@@ -1,0 +1,92 @@
+[
+  {
+    "path": "App/app_main.c",
+    "before": "3c27bea1ae1e05616c1594a2efc0c4af8c55567ba2869e66d78e1f4cba1ec774",
+    "after": "47e209c8b9492dc30a5277383363dbf3ef26b2b4658074867b8339f91a74cf28"
+  },
+  {
+    "path": "App/bsp/bsp_key.c",
+    "before": "7161c5450c8b916a2a2f5fb900ebb16b00a6cbb536a2542ad6d5ad3c2fa14b10",
+    "after": "a8161984e01cc9645940cdacd151af3931bafd5b7239a016772cf1f2333a042e"
+  },
+  {
+    "path": "App/bsp/bsp_key.h",
+    "before": "2e4825ed76557d8e162a055c0e5e78232f7b828b3490b2f8fcd0d28efca7d82e",
+    "after": "66c55cef571bc3616cd26ef0c0c649bf6c78959ecbf67f92fc411b87e0389c53"
+  },
+  {
+    "path": "App/platform/boards/lxb743zi_p1/board_config.h",
+    "before": "1c9d8e7429fe6995ebfff74ec3ffa640b7a6feea475bfb54165649f207f4c53e",
+    "after": "2b8cd2a1ae56c4880a8a9302c122b4fbb1a802ec0d332eab0e36347f5cfe2ed3"
+  },
+  {
+    "path": "App/modules/integration/integration_console.c",
+    "before": "f11f7dab77c42eb5c45188c5543c779352f77356d3b4edb51569fa92f1b62948",
+    "after": "5187e05d1e04546ca397d35c312451c9f143f1d71121c881f54efadee679d5cc"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "before": "f2f64098a0c0e008eb67e091c1913e101ff13de59ad371235c2f069a5c2ced5f",
+    "after": "fd74eea51fb37c95814f66ba4266397fe7ddb064963f7fd11a460b3c5eb5afa0"
+  },
+  {
+    "path": "App/modules/servo_p3/servo_p3.c",
+    "before": "3a32ac6b0637607ac4f9495f0c5c8eb820db665c45c5c1b17188661cf676844b",
+    "after": "3942c59160d0668ebde4650799c5eef0c32310cf7cdec710fee71943d7de4875"
+  },
+  {
+    "path": "App/modules/servo_p3/servo_p3.h",
+    "before": "d23a1cd9a8e0a8e12a064b43d57498022b8ed0f2be79bb204cb4fdc593d80443",
+    "after": "fcd6fbdc5b1c52b07ba89733e8b9f304735df1bfb7daf2a0431471f5563e94c7"
+  },
+  {
+    "path": "App/drivers/Servo/feetech_sts_bus.c",
+    "before": "e94d6c3aa7d625abc690427b6135afb07518da1643b7779aab7c6d82188eb24d",
+    "after": "e56db0bd6928236740e579ba3b5ce10d7851c02ab903e23efbe3769aa6112c24"
+  },
+  {
+    "path": "App/drivers/Servo/feetech_sts_bus.h",
+    "before": "87804b91e0a27754825b60bb933289c7bea65a16d2074e7d8d2abbc7eddb69e6",
+    "after": "804d9327d640e321fca7075178a504589a979e47117ae5fb6301cd4e41f41b5a"
+  },
+  {
+    "path": "App/drivers/Servo/feetech_sts_command.c",
+    "before": "95302d1eb982e4da340d226d6388eadc5ce91fe547dd87489d85f0af0432fb99",
+    "after": "dff29e430f99c52c2a6c0ac56860017b86ed4184281722043844174d6381b673"
+  },
+  {
+    "path": "App/modules/ui/ui_core.c",
+    "before": "886d238fbe69720c2fbf7523f763e94569dfb35349a1f1a17e373fe8d818fd69",
+    "after": "9f762b4beafdc24eb280c8204913b5b58c0f08a7acc35856afa69082a8c5755b"
+  },
+  {
+    "path": "App/modules/ui/ui_input.h",
+    "before": "678329c1d6a589e0dc45aba3e61f14fee9ed82eba52c010a68ece5408245b2e2",
+    "after": "2d709bcf187273c0e89e372dd0b872eb4844241b18a8f24dc39e38701d14da75"
+  },
+  {
+    "path": "App/modules/ui/ui_service.c",
+    "before": "35202d2501543c329fef4c129bdca79c037734ae5b81ad702af3641a2303c4e5",
+    "after": "93537a19b629fbaedc9a581edb5a03bf0cb2549bbf93635769df9a9ce15081d2"
+  },
+  {
+    "path": "App/modules/ui/ui_input.c",
+    "before": "c1352152495d8dbc106602f478b2b7e6a57995de97cecb997cfdc0d443fef3ff",
+    "after": "bd57820226bebe46b6090ed97f9ae515b726472feb504e80f1b7bd436958ed52"
+  },
+  {
+    "path": "App/modules/ui/ui_service.h",
+    "before": "0f80460265415f02ef5bd3b530d893bab221918f75dfb96803ddbd3860eafb5a",
+    "after": "c3c77e24f41a90dae78caf486fb4b0c3f50a9ec631e303fd230bc3fd2057be9c"
+  },
+  {
+    "path": "App/bsp/input_control.h",
+    "before": "49177192d3f8150751fd4e15a5a467b2f704fb1dbc761c3c65f16bf4146ca342",
+    "after": "d3534cf77ab3cbc7566b177046c38098e54ce264cb6cfcd8d6b0f1b88fe51223"
+  },
+  {
+    "path": "App/modules/integration/console_help.h",
+    "before": "938e8d6a9f8a748702593c1c90e04e590d42d26cd14a13db3d05270e87d74370",
+    "after": "c504b4627d70b5d4fc288d5b6eeb91bf24f84bad1224f854487dbdf507c968bd"
+  }
+]

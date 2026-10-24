@@ -1,0 +1,21 @@
+{
+  "mode": "P3a probe/autobaud -> P3b command/control after ONLINE; no boot motion",
+  "build_succeeded": true,
+  "readwrite_data_bytes": 5756,
+  "warnings": 1,
+  "host_baud": 115200,
+  "config": "H743_VisionGripper",
+  "servo_baud": 1000000,
+  "hex": "project/EWARM/H743_VisionGripper/Exe/H743_VisionGripper.hex",
+  "motion_enabled": true,
+  "date": "2026-10-20",
+  "code_bytes": 47365,
+  "errors": 0,
+  "warning_detail": "feetech_sts_control.c(1768): Pe177 FeetechStsControl_HoldFeedbackPosition declared but never referenced",
+  "readonly_data_bytes": 5900,
+  "hardware_tests": "not executed",
+  "phase": "P3 舵机只读 + 命令/控制接入",
+  "host_protocol": "VOFA text telemetry then command frames",
+  "servo_id": 0,
+  "baud_autodetect": true
+}

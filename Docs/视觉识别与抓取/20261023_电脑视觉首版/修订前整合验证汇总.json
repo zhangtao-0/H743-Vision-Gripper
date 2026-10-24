@@ -1,0 +1,133 @@
+{
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "project/EWARM/H743_VisionGripper/Exe/H743_VisionGripper.hex",
+      "hex_sha256": "b51521b82a7d02dc74b8c60e325763ac2d795722d479417e97c92b13de9cd214",
+      "map_sha256": "a0742420cd271a70f34bdbb4a26dc63c0a0aff77094ea5ede09b23d05df601c1",
+      "log": "Docs/整合交付/H743_VisionGripper.log",
+      "memory_summary": [
+        "117'977 bytes of readonly  code memory",
+        "27'689 bytes of readonly  data memory",
+        "146'639 bytes of readwrite data memory"
+      ]
+    },
+    {
+      "configuration": "H743_VisionGripper_OV2640",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "project/EWARM/H743_VisionGripper_OV2640/Exe/H743_VisionGripper.hex",
+      "hex_sha256": "eda5848faedf038bb38e4d46fe2ca0837c7622593828b9539d28803c52986f34",
+      "map_sha256": "244a07adedf07dfeaf24e9e8b11b1840a129d628980ca9539e7a6b319c6cefa3",
+      "log": "Docs/整合交付/H743_VisionGripper_OV2640.log",
+      "memory_summary": [
+        "117'309 bytes of readonly  code memory",
+        "22'890 bytes of readonly  data memory",
+        "146'639 bytes of readwrite data memory"
+      ]
+    },
+    {
+      "configuration": "H743_VisionGripper_NoCamera",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "project/EWARM/H743_VisionGripper_NoCamera/Exe/H743_VisionGripper.hex",
+      "hex_sha256": "ffc9a9962830bd9a7c78cb3dbe44186e7500630c2490148eb45947437880d895",
+      "map_sha256": "b293d2defc760a508d34142db380daba88b07691f44cd7a31976e7b9011b653c",
+      "log": "Docs/整合交付/H743_VisionGripper_NoCamera.log",
+      "memory_summary": [
+        "111'233 bytes of readonly  code memory",
+        "26'674 bytes of readonly  data memory",
+        "29'519 bytes of readwrite data memory"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "evidence": "Docs/适配规划/05_调查证据/P2主机测试.json",
+      "stdout": "PASS UART: role/baud validation, duplicate resources, invalid role, timeout/busy propagation, wire budget\nPASS LED: active-low/high defaults, 100ms duty boundary, uint32 tick rollover, invalid role\nPASS KEY: bounce rejected, stable press accepted at debounce boundary, event consumed once\nPASS HOST: bounded overflow, byte order/ring wrap, busy retry, timeout drop, receive recovery\nPASS MAPPING: actual BSP+UI, tap/hold/chord, physical OR remote, source isolation, modes, expiry/wrap, PRIMASK\n",
+      "scope": "host HAL stub; not hardware validation"
+    },
+    {
+      "evidence": "Docs/适配规划/05_调查证据/P3主机测试.json",
+      "stdout": "PASS PROTO: frame build/checksum, angle/position, limit\nPASS P3: ping/id/model/baud/limits/feedback, offline retry, safe baud rearm, explicit ID probe, no writes\n",
+      "scope": "host HAL stub; not hardware validation"
+    },
+    {
+      "evidence": "Docs/整合交付/整合主机测试.json",
+      "stdout": "PASS FLASH: alternating slots, erase failure, partial program/power loss, CRC corruption fallback, clear record, invalid range\nPASS mapped console: strict keys/masks, source release, detents, numeric overflow/trailing-token rejection, shared param bounds/read-only, executable help index/list\nPASS quiet/help: explicit paced category output, idle silence, all streams disabled, independent camera/LCD controls\nPASS CONSOLE: binary isolation, dual-channel lines, full mailbox, overflow, timeout recovery, moving-state maintenance gate, PWM range\nPASS catalog: all printable text examples recognized by actual parser with mocked hardware\nPASS PWM: no startup output, independent channels, angle clamping, invalid ID, virtual key edges/open-close toggles\nPASS startup log gate: all shared init output suppressed, explicit replies restored\n",
+      "scope": "host-only HAL and flash fault model; no target-board test"
+    },
+    {
+      "evidence": "Docs/故障排查/20261021_花屏与舵机离线/摄像头主机测试.json",
+      "stdout": "PASS transform: all 16 rotate/mirror/flip combinations over full frame; immutable raw capture; snapshot holds frame; resume restarts capture; edge path executes\nPASS CAMERA: reject erroneous and incomplete DMA frames, accept full frame, strip display, stop capture\nPASS VIEWPORT: capture without LCD writes, bounded 240x144 preview at y32, cancel partial preview on navigation, invalid-window guard\n",
+      "scope": "host-only actual board_camera.c with DMA/DCMI fault model"
+    },
+    {
+      "evidence": "Docs/电机控制/主机测试.json",
+      "stdout": "PASS PID plant: target=200 RPM, 70 RPM equivalent load disturbance, final=199.99 RPM\nPASS overspeed: sustained implausible encoder speed disables output; clear never restarts\nPASS control: ramp, signed feedback, reverse coast/deadtime, timeout/sign faults, anti-windup, zero-stop\nPASS EC11: one detent, contact bounce cancellation, invalid transition rejection\nPASS service: missing-driver inhibit, IRQ timing fault, button debounce/long vs short, runtime-setting guards, preserve PRIMASK\nPASS virtual motor: shared detent limits, physical-only reject, simulated button uses debounce/direction gesture\nPASS persistence gates: maintenance inhibits starts, atomic settings restore, finite/range checks, RAM defaults stay disabled\n",
+      "scope": "host-only actual motor PID/service; simulated first-order motor plant, no real H-bridge or motor test"
+    },
+    {
+      "evidence": "Docs/屏幕交互/主机状态机测试.json",
+      "stdout": "SCENE|home\nROW|0|1|0|                         H743\nROW|1|0|0|\nROW|2|2|1|\nROW|3|3|0|\nROW|4|4|0|\nROW|5|5|0|\nROW|6|9|0|\nROW|7|10|0|\nROW|8|0|0|\nROW|9|0|0|\nROW|10|0|0|Select a function\nROW|11|0|0|\nROW|12|0|0|OK\nROW|13|0|0|K3 tap:+ hold:- K4 tap:OK\nROW|14|0|0|K4 hold:Back K3+4:Monitor\nSCENE|edit\nROW|0|6|0|                         H743\nROW|1|0|0|\nROW|2|0|0|TORQUE\nROW|3|0|0|\nROW|4|0|1|Draft: 105\nROW|5|0|0|\nROW|6|0|0|Range:0..400\nROW|7|0|0|\nROW|8|0|0|Step:5  Orig:100\nROW|9|0|0|\nROW|10|0|0|K4:Apply  hold:Discard\nROW|11|0|0|\nROW|12|0|0|OK\nROW|13|0|0|K3 tap:+ hold:- K4 tap:OK\nROW|14|0|0|K4 hold:Back K3+4:Monitor\nSCENE|monitor\nROW|0|5|0|                         H743\nROW|1|0|0|SYSTEM [1/4]\nROW|2|0|0|TAB0 VALUE0\nROW|3|0|0|TAB0 VALUE1\nROW|4|0|0|TAB0 VALUE2\nROW|5|0|0|TAB0 VALUE3\nROW|6|0|0|TAB0 VALUE4\nROW|7|0|0|TAB0 VALUE5\nROW|8|0|0|TAB0 VALUE6\nROW|9|0|0|TAB0 VALUE7\nROW|10|0|0|TAB0 VALUE8\nROW|11|0|0|\nROW|12|0|0|HOT: OK\nROW|13|0|0|K3 tap:+ hold:- K4 tap:OK\nROW|14|0|0|K4 hold:Back K3+4:Return\nSCENE|confirm\nROW|0|7|0|                         H743\nROW|1|0|0|\nROW|2|0|0|STS stop request\nROW|3|0|0|\nROW|4|0|1|CANCEL\nROW|5|0|0|\nROW|6|0|0|EXECUTE\nROW|7|0|0|\nROW|8|0|0|\nROW|9|0|0|Check load / power first\nROW|10|0|0|\nROW|11|0|0|\nROW|12|0|0|OK\nROW|13|0|0|K3 tap:+ hold:- K4 tap:OK\nROW|14|0|0|K4 hold:Back K3+4:Monitor\nSCENE|defaults\nROW|0|4|0|                         H743\nROW|1|0|0|\nROW|2|0|1|View factory values\nROW|3|0|0|Restore STS RAM\nROW|4|0|0|Restore motor RAM\nROW|5|0|0|SAVE boot profile\nROW|6|0|0|LOAD boot profile\nROW|7|0|0|CLEAR boot profile\nROW|8|0|0|\nROW|9|0|0|\nROW|10|0|0|Item 1/6\nROW|11|0|0|\nROW|12|0|0|OK\nROW|13|0|0|K3 tap:+ hold:- K4 tap:OK\nROW|14|0|0|K4 hold:Back K3+4:Monitor\nSCENE|help\nROW|0|9|0|                         H743\nROW|1|0|0|\nROW|2|0|1|SYSTEM / QUIET\nROW|3|0|0|CLAW / STS\nROW|4|0|0|MG310 MOTOR\nROW|5|0|0|CAMERA / IMAGE\nROW|6|0|0|PWM OUTPUT\nROW|7|0|0|STORAGE / RTC\nROW|8|0|0|\nROW|9|0|0|\nROW|10|0|0|Item 1/9\nROW|11|0|0|\nROW|12|0|0|OK\nROW|13|0|0|K3 tap:+ hold:- K4 tap:OK\nROW|14|0|0|K4 hold:Back K3+4:Monitor\nSCENE|image_menu\nROW|0|10|0|                         H743\nROW|1|0|0|\nROW|2|0|1|View live image\nROW|3|0|0|Take still (RAM)\nROW|4|0|0|Image rotate +90\nROW|5|0|0|Image mirror L/R\nROW|6|0|0|Image flip U/D\nROW|7|0|0|Edge view toggle\nROW|8|0|0|\nROW|9|0|0|\nROW|10|0|0|Item 1/7\nROW|11|0|0|\nROW|12|0|0|OK\nROW|13|0|0|K3 tap:+ hold:- K4 tap:OK\nROW|14|0|0|K4 hold:Back K3+4:Monitor\nPASS UI v2: categorized actions/help, explicit image ownership, shortcut restores image page, filtered command mapping\nPASS navigation: exact shortcut restore, normal ancestry, scrolling, stale edit, cancel/confirm, read-only view\nPASS keys: release-only, chord suppression/latch, long vs short, uint32 wrap\nPASS records: CRC corruption, partial Flashwords, tombstone, sequence wrap, schema version\n",
+      "scope": "actual C navigation/input/profile, no MCU or Flash test"
+    },
+    {
+      "evidence": "Docs/屏幕交互/主机开机配置测试.json",
+      "stdout": "PASS settings: no boot writes, save/reboot, exact float CPR, pending STS apply, mechanical endpoints excluded\nPASS settings: motion gates, interrupted-save recovery, atomic clear tombstone, no motor auto-enable path\n",
+      "scope": "actual C settings service with simulated storage/actuator APIs; no physical Flash test"
+    },
+    {
+      "evidence": "Docs/屏幕交互/主机配置Flash模型测试.json",
+      "stdout": "PASS H7 store model: actual sectors4/5 code, all five partial-write positions, CRC fallback, tombstone, bank-swap guard; limits6/7 untouched\n",
+      "scope": "actual H7 profile store with Windows virtual memory/HAL fault model; no hardware erase/program"
+    }
+  ],
+  "imported_files": 41,
+  "vendor_originals_unchanged": true,
+  "registered_files": 116,
+  "changed_files": 109,
+  "hal_version": "1.11.6",
+  "cube_package_declared": "STM32Cube FW_H7 V1.13.0",
+  "camera_map_evidence": [
+    "define block CAMERA with alignment = 32 { section .camera_dma };",
+    ".camera_dma      uninit   0x2400'0000  0x1'c200  board_camera.o [5]"
+  ],
+  "hardware_validation": {
+    "current_build": "not flashed or hardware validated",
+    "prior_build_evidence": {
+      "flashed": true,
+      "verified": true,
+      "hex_sha256": "88ccf2751b48a4f66e1ee3ce3cfbba535eecac53b2eddf685c8f62f8e8476d61",
+      "target": "STM32H743ZIT6 Rev V, Device ID 0x450, 2MB",
+      "camera": {
+        "sensor": "FD5640/OV5640",
+        "format": "0x6F01",
+        "pclk": "0x2204",
+        "final_status": {
+          "frames": 329,
+          "errors": 0,
+          "timeouts": 0,
+          "loop_max_ms": 7
+        },
+        "user_confirmed_live_image_changes": true
+      },
+      "servo": {
+        "online": false,
+        "raw_rx_bytes": 0,
+        "tested_ids_at_1Mbps": [
+          0,
+          1
+        ],
+        "power_user_report": "communication-side 5V; independent 7.4V planned",
+        "remaining": "verify independent power supply, TTL-BUS selection and adapter MCU-side path"
+      },
+      "scope": "camera capture/preview verified on board and by user; no servo motion, external SD/FatFs or autonomous grasp acceptance",
+      "log": "Docs/故障排查/20261021_花屏与舵机离线/flash_final_readback.log"
+    }
+  },
+  "flashed": false,
+  "autonomous_visual_grasping": "not implemented; integrated camera acquisition and preview only"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "command": "@motor disable",
+    "reply": "motor disable=1; setpoint retained\r\n"
+  },
+  {
+    "command": "@quiet",
+    "reply": ""
+  },
+  {
+    "command": "@debug status",
+    "reply": "DEBUG sts=0 motor=0 plot=0; runtime grants only\r\n"
+  },
+  {
+    "command": "@motor status",
+    "reply": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n"
+  }
+]

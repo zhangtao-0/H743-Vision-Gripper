@@ -1,0 +1,16 @@
+[
+  {
+    "example": "lesson_gpio",
+    "exit_code": 0,
+    "compiler": "C:\\IAR Systems\\Embedded Workbench 9.2\\arm\\bin\\iccarm.exe",
+    "log": "示例编译_lesson_gpio.log",
+    "scope": "compile-only, no linking or flashing"
+  },
+  {
+    "example": "lesson_uart2",
+    "exit_code": 0,
+    "compiler": "C:\\IAR Systems\\Embedded Workbench 9.2\\arm\\bin\\iccarm.exe",
+    "log": "示例编译_lesson_uart2.log",
+    "scope": "compile-only, no linking or flashing"
+  }
+]

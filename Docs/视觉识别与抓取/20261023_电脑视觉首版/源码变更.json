@@ -1,0 +1,66 @@
+{
+  "changed": [
+    {
+      "path": "EWARM/H743_VisionGripper.ewp",
+      "before": "52fa439b01e40b45535c2b8211fba6766758824ebe58fe6bd33442fa3e8c5998",
+      "after": "271b3016087d84ae9f0bbb11edba1f3a9b0243cbb47947c53c59b05c15f2e5f3"
+    },
+    {
+      "path": "App/platform/board_camera.c",
+      "before": "0976bd7471ce3e9edc565deafa533e973b0975f4400a43f6a4410837ed178f20",
+      "after": "9f4bb60994f16ab932a881ab00050dd643b99ec825018282460a23f8db238ba8"
+    },
+    {
+      "path": "App/platform/board_camera.h",
+      "before": "a5e877a063cedc8e4a5efbad1fce8e03dd87ab4d912f074fd36ed06ac8f93795",
+      "after": "f7478378a728a77dceec9822ec589d6300943aeb12c511ac1d22ec8082c5ef26"
+    },
+    {
+      "path": "App/platform/usb_console.c",
+      "before": "948f9c26219d26c9f255375b0156636d2f1eab2b6bdcc1dd2fb14639bfee3485",
+      "after": "d1a7a779a2ee5f730b684bce423af85b1cbad049aad5386d4d08c084752973eb"
+    },
+    {
+      "path": "App/platform/usb_console.h",
+      "before": "4dcb2e7635d1f25a24059bf9199aaef8e9164a53e0e9deb63490cd81f60416c5",
+      "after": "faae55f9dff2b224a8e7393e2872d18c772556fa2ce0316b829bd467c4400284"
+    },
+    {
+      "path": "App/modules/integration/console_help.h",
+      "before": "a8360821c30292cbb005d3eb39f353bbbcf82e1b8d414ec61aa055c7428daf7b",
+      "after": "938e8d6a9f8a748702593c1c90e04e590d42d26cd14a13db3d05270e87d74370"
+    },
+    {
+      "path": "App/modules/integration/integration_console.c",
+      "before": "1430d765b5766a45eb358d2805c11b37d8feaa644450a511dcc0c7037dcfa3ed",
+      "after": "f11f7dab77c42eb5c45188c5543c779352f77356d3b4edb51569fa92f1b62948"
+    },
+    {
+      "path": "App/modules/integration/integration_service.c",
+      "before": "86d142a85207fcaec39e78f42b116537f3c4cae40470e48d69279855470d8885",
+      "after": "64ef66d268dbef56413b75514afd5a879178a74dd4d14798a7c77b3dc0d3df46"
+    },
+    {
+      "path": "App/modules/ui/ui_port.c",
+      "before": "93023f656e41205bdbd965a2278f5c9b2b9091a6b96b2ab20edd5b3282c7bc79",
+      "after": "dbe7bd3dd34d56683d707002f06fe73c1b5738e9f697e601d7acd8df3c2a94bb"
+    }
+  ],
+  "added": [
+    {
+      "path": "App/platform/video_wire.h",
+      "sha256": "a315654f5e357d49f37f5da50f99632b8e595492efb090748d5523480d2779d5"
+    },
+    {
+      "path": "App/platform/vision_link.c",
+      "sha256": "e23b16c7c5914f3bada59ddacb7f0f76c47858ee97b52d5381aa9154a19bfcd7"
+    },
+    {
+      "path": "App/platform/vision_link.h",
+      "sha256": "e4b91080f589863257dcfb1f1a9d8d9fe37e725b6a8f3d3ea502630f6bcc6fac"
+    }
+  ],
+  "deleted": [],
+  "backup": "Backups/pre_pc_vision_20261023.zip",
+  "scope": "Reviewed 9 existing production files and 3 new platform files; no other project edits"
+}

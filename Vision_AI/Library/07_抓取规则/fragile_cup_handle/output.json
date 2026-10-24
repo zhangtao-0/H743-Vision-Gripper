@@ -1,0 +1,103 @@
+{
+  "schema": "h743.grasp_candidate.v1",
+  "accepted_tags": [
+    {
+      "id": "semantic:cup",
+      "source": "human_verified",
+      "confidence": 1.0
+    },
+    {
+      "id": "shape:cylinder",
+      "source": "human_verified",
+      "confidence": 1.0
+    },
+    {
+      "id": "part:handle_present",
+      "source": "human_verified",
+      "confidence": 1.0
+    },
+    {
+      "id": "state:fragile",
+      "source": "human_verified",
+      "confidence": 1.0
+    },
+    {
+      "id": "state:contains_liquid",
+      "source": "human_verified",
+      "confidence": 1.0
+    }
+  ],
+  "unknown_tags": [],
+  "excluded_tags": [],
+  "conflicts": [],
+  "hazards": [],
+  "constraints": [
+    "keep_upright",
+    "low_force",
+    "no_inversion"
+  ],
+  "ranked_candidates": [
+    {
+      "strategy": "side_wrap",
+      "score": 55.0
+    }
+  ],
+  "forbidden_strategies": [
+    "handle_support"
+  ],
+  "selected_strategy": "side_wrap",
+  "missing_requirements": [
+    "camera_calibrated",
+    "feedback_verified",
+    "force_limit_measured",
+    "gripper_geometry_verified",
+    "handle_clearance_measured",
+    "operator_hardware_authorization",
+    "workspace_verified"
+  ],
+  "decision_trace": [
+    {
+      "kind": "additive",
+      "tags": [
+        "semantic:cup"
+      ],
+      "strategy": "side_wrap",
+      "score": 30.0
+    },
+    {
+      "kind": "additive",
+      "tags": [
+        "shape:cylinder"
+      ],
+      "strategy": "side_wrap",
+      "score": 25.0
+    },
+    {
+      "kind": "combination",
+      "rule": "liquid_upright",
+      "priority": 500
+    },
+    {
+      "kind": "combination",
+      "rule": "fragile_force",
+      "priority": 500
+    },
+    {
+      "kind": "combination",
+      "rule": "fragile_handle_veto",
+      "priority": 400
+    },
+    {
+      "kind": "combination",
+      "rule": "cup_with_verified_handle",
+      "priority": 200
+    }
+  ],
+  "reject_reasons": [
+    "missing_verified_execution_context"
+  ],
+  "planning_conditions_met": false,
+  "grasp_valid": false,
+  "mode": "DRY_RUN",
+  "hardware_commands_sent": false
+}

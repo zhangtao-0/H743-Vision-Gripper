@@ -1,0 +1,28 @@
+{
+  "release": "20261023-sixkey-servo-v2",
+  "flashed": true,
+  "independent_readback_verified": true,
+  "continuous_feedback_samples": 30,
+  "position_range": [
+    425,
+    425
+  ],
+  "voltage_mv_range": [
+    10200,
+    10300
+  ],
+  "servo_online": true,
+  "servo_error": 0,
+  "video_frames": 7,
+  "video_crc_errors": 0,
+  "host_port": "COM12",
+  "usb_port": "COM11",
+  "quiet_observation_seconds": 3,
+  "unsolicited_host_bytes": 0,
+  "unsolicited_usb_bytes": 0,
+  "motion_commands_sent": false,
+  "physical_keys_verified": false,
+  "screen_visually_verified": false,
+  "voltage_error_hardware_reproduction": false,
+  "passed": true
+}

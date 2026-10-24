@@ -1,0 +1,45 @@
+{
+  "schema": "h743.autopilot.v1",
+  "mode": "local_offline_training_no_hardware",
+  "authorization": "User 2026-10-24 explicitly requested local downloads and autonomous training; this supersedes the earlier per-download approval gate for this bounded run.",
+  "budgets": {
+    "max_images_per_ingest": 48,
+    "max_download_bytes": 536870912,
+    "max_model_bytes": 33554432,
+    "cpu_threads": 4,
+    "epochs": 2,
+    "imgsz": 160,
+    "batch": 2,
+    "max_minutes_per_job": 20
+  },
+  "promotion": {
+    "auto_deploy_to_hardware": false,
+    "minimum_real_h743_test_images": 30,
+    "required_domain_test": true,
+    "minimum_mask_map50": 0.5,
+    "minimum_mask_map50_95": 0.25,
+    "maximum_regression": 0.02
+  },
+  "loop": [
+    "catalog and provenance",
+    "validate immutable originals",
+    "group and freeze train/val/test",
+    "bounded training",
+    "validation only for candidate choice",
+    "test once for report",
+    "register challenger; never silently promote"
+  ],
+  "blocked_actions": [
+    "paid_services",
+    "data_upload",
+    "gpu_driver_or_global_package_changes",
+    "hardware_commands",
+    "test_label_rewrite"
+  ],
+  "repeat_same_data": false,
+  "dataset_manifest": "Library/04_数据集版本/taco_containers_v1/manifest.json",
+  "hyperparameter_search": {
+    "enabled": false,
+    "reason": "Small data/CPU budget; fixed recipe first. No unbounded AutoML loops."
+  }
+}

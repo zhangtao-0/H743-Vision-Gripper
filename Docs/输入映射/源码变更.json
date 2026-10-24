@@ -1,0 +1,62 @@
+[
+  {
+    "path": "project/App/bsp/bsp_key.c",
+    "action": "modified",
+    "before": "9f4136c8033df3e32da52455dd80aed1a45234044b24d10e57758c5b305f2a99",
+    "after": "7161c5450c8b916a2a2f5fb900ebb16b00a6cbb536a2542ad6d5ad3c2fa14b10"
+  },
+  {
+    "path": "project/App/bsp/bsp_key.h",
+    "action": "modified",
+    "before": "d61c5c9191c71809cc7e581e0a02c2e160ec80c8b55da6cfc449a0a32b675708",
+    "after": "2e4825ed76557d8e162a055c0e5e78232f7b828b3490b2f8fcd0d28efca7d82e"
+  },
+  {
+    "path": "project/App/bsp/input_control.h",
+    "action": "added",
+    "before": null,
+    "after": "49177192d3f8150751fd4e15a5a467b2f704fb1dbc761c3c65f16bf4146ca342"
+  },
+  {
+    "path": "project/App/modules/integration/console_help.h",
+    "action": "added",
+    "before": null,
+    "after": "a8360821c30292cbb005d3eb39f353bbbcf82e1b8d414ec61aa055c7428daf7b"
+  },
+  {
+    "path": "project/App/modules/integration/integration_console.c",
+    "action": "modified",
+    "before": "903da14fc1832272a8c9a4602787922560ccbcc716b897cd9c993bf21512af80",
+    "after": "1430d765b5766a45eb358d2805c11b37d8feaa644450a511dcc0c7037dcfa3ed"
+  },
+  {
+    "path": "project/App/modules/motor/motor_service.c",
+    "action": "modified",
+    "before": "8e60337842e8003689dba90722dfd44306d9ee4bbdc59448c553c93005d123e2",
+    "after": "f2f64098a0c0e008eb67e091c1913e101ff13de59ad371235c2f069a5c2ced5f"
+  },
+  {
+    "path": "project/App/modules/motor/motor_service.h",
+    "action": "modified",
+    "before": "761e356e1f21e6cba0ba0140cc5960979b700153f84f9077e46a10e425fae158",
+    "after": "f2b8aa9d98f4287832f6b9c9ca40ae2049fd92208826c1549bb87aadbe656764"
+  },
+  {
+    "path": "project/App/modules/ui/ui_port.c",
+    "action": "modified",
+    "before": "557789f3a5ff59151dfb83c0dec2f3f9960574301efc6fc4ea36a1010cdf992d",
+    "after": "93023f656e41205bdbd965a2278f5c9b2b9091a6b96b2ab20edd5b3282c7bc79"
+  },
+  {
+    "path": "project/App/modules/ui/ui_port.h",
+    "action": "modified",
+    "before": "97844d4cea236d7c5cd1fce51296bd92bdcb3d68142cbeb7fc4e321a5552dca2",
+    "after": "a99764f6f5689257c806a74538632203660a5d53af1b6f8fc1cf77643af74ea1"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_command.c",
+    "action": "modified",
+    "before": "4631a37395ac5f42024bc2e01b474a093977891396cc4c6b8bfcc0955b85e2e3",
+    "after": "95302d1eb982e4da340d226d6388eadc5ce91fe547dd87489d85f0af0432fb99"
+  }
+]

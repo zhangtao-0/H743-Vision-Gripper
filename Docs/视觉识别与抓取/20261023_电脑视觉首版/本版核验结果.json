@@ -1,0 +1,87 @@
+{
+  "version": "20261023-pc-vision-v1",
+  "observed_at": "2026-10-23T11:16:41",
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/构建_default.log",
+      "hex": "Docs/视觉识别与抓取/20261023_电脑视觉首版/固件/H743_FD5640.hex",
+      "hex_sha256": "a236d2153debb115a65a1a8023322791ff214675a559e77a2d8143882a5522d2"
+    },
+    {
+      "configuration": "H743_VisionGripper_OV2640",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/构建_OV2640.log",
+      "hex": "Docs/视觉识别与抓取/20261023_电脑视觉首版/固件/H743_OV2640.hex",
+      "hex_sha256": "c5d39f92c38de5090d0c15ba71e6ff2d1ad69d249edad36639503e6d761202c1"
+    },
+    {
+      "configuration": "H743_VisionGripper_NoCamera",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/构建_NoCamera.log",
+      "hex": "Docs/视觉识别与抓取/20261023_电脑视觉首版/固件/H743_NoCamera.hex",
+      "hex_sha256": "7c449724c6689407302729479b92079623ac9ef1ada96293337407142bec1f24"
+    }
+  ],
+  "tests": [
+    {
+      "name": "电脑逻辑测试",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/电脑逻辑测试.log"
+    },
+    {
+      "name": "GUI模拟测试",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/GUI模拟测试.log"
+    },
+    {
+      "name": "固件传输测试",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/固件传输测试.log"
+    },
+    {
+      "name": "摄像头回归",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/摄像头回归.log"
+    },
+    {
+      "name": "控制台回归",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/控制台回归.log"
+    },
+    {
+      "name": "屏幕设置回归",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/屏幕设置回归.log"
+    }
+  ],
+  "checks": {
+    "wire_and_grasp_unit_cases": 11,
+    "mock_gui": true,
+    "actual_C_usb_and_vision": true,
+    "cross_language_C_to_Python": true,
+    "camera_lease_regression": true,
+    "console_regression": true,
+    "ui_settings_regression": true,
+    "help_groups": 9,
+    "vofa_presets": 85,
+    "text_command_variants": 66,
+    "learning_docs": 140
+  },
+  "hardware": {
+    "flashed": false,
+    "serial_commands_sent": false,
+    "usb_fps_measured": false,
+    "trained_parcel_weights": false,
+    "real_model_inference": false,
+    "physical_grasp": false,
+    "mode": "pixel advice only; no motion"
+  },
+  "backup": "Backups/pre_pc_vision_20261023.zip",
+  "source_changes": "Docs/视觉识别与抓取/20261023_电脑视觉首版/源码变更.json",
+  "software_checks_passed": true
+}

@@ -1,0 +1,18 @@
+{
+  "initial_target_build": {
+    "errors": 0,
+    "warnings": 1,
+    "diagnostic": "usb_console.c(22) Warning[Pa082]: undefined behavior: the order of volatile accesses is undefined in this statement",
+    "fix": "read volatile echo head and tail into separate local snapshots before expression",
+    "original_full_log_retained": false
+  },
+  "initial_host_test": {
+    "diagnostic": "VideoPut32 defined but not used under -Werror in test translation unit",
+    "fix": "portable CRC/header helpers use static inline"
+  },
+  "source_review_fix": [
+    "USB advice rejection messages routed only to USB; no periodic UART1 print",
+    "video re-enable requires new completed frame before accepting advice",
+    "camera retry stops image stream before reinitialization"
+  ]
+}

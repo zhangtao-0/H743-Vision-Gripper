@@ -1,0 +1,140 @@
+[
+  {
+    "path": "project/App/app_main.c",
+    "action": "modified",
+    "before": "2fa373f2c2a69a2caeec0dd86c958127afba395a4511cbec8812bc793fdc5986",
+    "after": "3c27bea1ae1e05616c1594a2efc0c4af8c55567ba2869e66d78e1f4cba1ec774"
+  },
+  {
+    "path": "project/App/config/feature_config.h",
+    "action": "modified",
+    "before": "8c4642137451977aacee1fd1755e0ba185dc3f96f8d0a2648648934c6e68ee8b",
+    "after": "6c62c1f659dc1b228879c2b26d54cf632f9768c8e7fce9d0bee00b8cbcbf370d"
+  },
+  {
+    "path": "project/App/platform/board_camera.c",
+    "action": "modified",
+    "before": "592c7303e4f18354bbba7dc02d3228570d46494ecb4ab64c120a2e53d0b86e6b",
+    "after": "0976bd7471ce3e9edc565deafa533e973b0975f4400a43f6a4410837ed178f20"
+  },
+  {
+    "path": "project/App/platform/board_camera.h",
+    "action": "modified",
+    "before": "f6c195c9e054339f3a684b4c0662ff853e639ebde5fd7f3bd0c93af103036cab",
+    "after": "a5e877a063cedc8e4a5efbad1fce8e03dd87ab4d912f074fd36ed06ac8f93795"
+  },
+  {
+    "path": "project/App/modules/integration/integration_console.c",
+    "action": "modified",
+    "before": "5331ecf2e45833d3692d2db206b842e79f047eda7b3bd3728b4c8e1c28cccee0",
+    "after": "903da14fc1832272a8c9a4602787922560ccbcc716b897cd9c993bf21512af80"
+  },
+  {
+    "path": "project/App/modules/integration/integration_console.h",
+    "action": "modified",
+    "before": "105a2c02fc1463b1b31aaa692aedf72e1c0f5f66283e11f9d2f451bd220768c8",
+    "after": "f796ade7dfa6babbfe2791c9672676cd26b571750faf37ed97d767ea024ef56b"
+  },
+  {
+    "path": "project/App/modules/integration/integration_service.c",
+    "action": "modified",
+    "before": "19ca3b820b1cb8e04ce037c9163cc41598902c4ecfd2f94db69036d8621d5690",
+    "after": "86d142a85207fcaec39e78f42b116537f3c4cae40470e48d69279855470d8885"
+  },
+  {
+    "path": "project/App/modules/integration/vendor_log.c",
+    "action": "modified",
+    "before": "cb9d34baed7baf716eef640cddb844c2abc0b9ad1c90cc6156faa6164c723f3d",
+    "after": "a0139da21b313a27d8c2ba0224fe839509378e7500f35b2ea9fb5869bfc4c64c"
+  },
+  {
+    "path": "project/App/modules/integration/vendor_log.h",
+    "action": "modified",
+    "before": "ac248c12e70b598dd0039b32d9e2827ad9e8ffb67be3832abfa144cff1bb398c",
+    "after": "dc20d4af13e5a534615c7e4f47b7d57dd499d360b20263f4f06300da23380033"
+  },
+  {
+    "path": "project/App/modules/motor/motor_control.c",
+    "action": "modified",
+    "before": "56d897b496db46102a3d765d79cffb66dbd40bd523b57df4e5045edf322a6f2e",
+    "after": "dd2c8dea484afdd28635f6c9721287e55f8ee34845685d10014c2ec950ee91a6"
+  },
+  {
+    "path": "project/App/modules/motor/motor_control.h",
+    "action": "modified",
+    "before": "9446aad9c98793174f46f111e601bf9f5b747fb062ed5b701705471935a4bdc0",
+    "after": "b66d1904078dc6d48ede657f628864331fc716a2e3a2aa7448593d551e160000"
+  },
+  {
+    "path": "project/App/modules/servo_p3/servo_p3.c",
+    "action": "modified",
+    "before": "ee0a5e0ed3456b0d0d99aa4da58d385af434b964bb3ec458a532d20e43da2024",
+    "after": "3a32ac6b0637607ac4f9495f0c5c8eb820db665c45c5c1b17188661cf676844b"
+  },
+  {
+    "path": "project/App/modules/servo_p3/servo_p3.h",
+    "action": "modified",
+    "before": "18e1e014b1bc66534b4d7be9db16eeda36c9ef1709a656483645826c7f8341dc",
+    "after": "d23a1cd9a8e0a8e12a064b43d57498022b8ed0f2be79bb204cb4fdc593d80443"
+  },
+  {
+    "path": "project/App/modules/ui/ui_core.c",
+    "action": "modified",
+    "before": "6e1a491178b37b1463bcef87f7372c7db5ce9f0f30e021d517a995e5114959a2",
+    "after": "886d238fbe69720c2fbf7523f763e94569dfb35349a1f1a17e373fe8d818fd69"
+  },
+  {
+    "path": "project/App/modules/ui/ui_core.h",
+    "action": "modified",
+    "before": "c6b270f6f3cd9667f783b3d23c7d1d91c976d3c2f1f3f9bd53755ef88655a2bf",
+    "after": "71ac92bba96c59d014a216070ca8dec3492c514f5481d29081797f60c537c83e"
+  },
+  {
+    "path": "project/App/modules/ui/ui_font.h",
+    "action": "modified",
+    "before": "80da701341b96007496a165b805bb519334c2d4d797d067e28f8c34c0cac878e",
+    "after": "8d2cbbda0886a2813838d812bd4e797e0737dbd8d5969dddc15db73288bd6995"
+  },
+  {
+    "path": "project/App/modules/ui/ui_port.c",
+    "action": "modified",
+    "before": "815267f4ae0741dc2b0e5153c32d80735034dd9e7cc6ebd118f916b03328f490",
+    "after": "557789f3a5ff59151dfb83c0dec2f3f9960574301efc6fc4ea36a1010cdf992d"
+  },
+  {
+    "path": "project/App/modules/ui/ui_port.h",
+    "action": "modified",
+    "before": "71f1916b3a1c8dc51d8c91403197bc4531349873f841413758dc17019c73cfc2",
+    "after": "97844d4cea236d7c5cd1fce51296bd92bdcb3d68142cbeb7fc4e321a5552dca2"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile.c",
+    "action": "modified",
+    "before": "2a52991735b6c46f485032256f455e96f311dcd2ea77241d8eb7ab3f574fb2d8",
+    "after": "2700df5128b6e4373a55818b0f23bbc690eec2f2cabf81f6e83565c73b60c005"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile.h",
+    "action": "modified",
+    "before": "9c5bd4f1400230ff3f49cc6b924c009f66c8929145fbbddc666b02924b7d0503",
+    "after": "302a0bac82d84f08b2956a27c27f50e18020e1857aaf1a3adba92e9f530a2d05"
+  },
+  {
+    "path": "project/App/modules/ui/ui_service.c",
+    "action": "modified",
+    "before": "8ceb12f4a552bd943a4824b1be1781cc475bd11d0b1ae263fcc0c1f22d4f14a3",
+    "after": "35202d2501543c329fef4c129bdca79c037734ae5b81ad702af3641a2303c4e5"
+  },
+  {
+    "path": "project/App/modules/ui/ui_service.h",
+    "action": "modified",
+    "before": "608af062a0a4b9e32a2e420d48f23cf3652511ddf58aea8d18f5d1a52a4ebef7",
+    "after": "0f80460265415f02ef5bd3b530d893bab221918f75dfb96803ddbd3860eafb5a"
+  },
+  {
+    "path": "project/App/modules/ui/ui_settings.c",
+    "action": "modified",
+    "before": "624ba539457857c7dcafaba4f81e2369535a984bee93b810f4de40ca2e4f9db8",
+    "after": "37d01340df3dd43fadee726d18bb59d487dd43f845bcf499831133595b7951d2"
+  }
+]

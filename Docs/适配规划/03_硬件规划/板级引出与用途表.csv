@@ -1,0 +1,109 @@
+﻿Pin,Connector,HeaderPin,Role,Status,PhysicalTest,Evidence
+PA11,U9,5,Type-C原生USB / D-,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA12,U9,6,Type-C原生USB / D+,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC1,U9,7,实体按键 / KEY6,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC0,U9,8,实体按键 / KEY5,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA1,U9,9,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA0,U9,10,实体按键 / KEY1,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA2,U9,11,STS3215-C001 / MCU TX,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC2_C,U9,15,特殊模拟焊盘 / 模拟引出,特殊脚待核对,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC3_C,U9,16,特殊模拟焊盘 / 模拟引出,特殊脚待核对,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA4,U9,17,FD5640摄像头 / HSYNC,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA5,U9,18,摄像头接口预留 / 模块脚位待核对,明确预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA6,U9,19,FD5640摄像头 / PCLK,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA3,U9,20,STS3215-C001 / MCU RX,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC4,U9,21,摄像头接口预留 / 模块脚位待核对,明确预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA7,U9,22,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB0,U9,23,实体按键 / KEY2,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC5,U9,24,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB2,U9,25,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB1,U9,26,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF12,U9,27,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF11,U9,28,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF14,U9,29,FD5640摄像头 / SCL,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF13,U9,30,FD5640摄像头 / PWDN,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG0,U9,31,LED反馈 / 状态,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF15,U9,32,FD5640摄像头 / SDA,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE7,U9,33,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG1,U9,34,LED反馈 / 故障,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE8,U9,35,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE9,U9,36,待核查输入 / 旧霍尔A（停用）,明确预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE10,U9,37,MG310 L298N A通道 / IN1,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE11,U9,38,MG310霍尔编码器 / B,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE12,U9,39,MG310 L298N A通道 / IN2,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE13,U9,40,H桥STBY条件预留 / STBY（L298N不接）,条件预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE14,U9,41,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB11,U9,42,JDY-31蓝牙 / MCU RX,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE15,U9,43,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB10,U9,44,JDY-31蓝牙 / MCU TX,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB14,U9,45,MG310 L298N A通道 / ENA / PWM,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB13,U9,46,实体按键 / KEY4,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB12,U9,47,实体按键 / KEY3,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB15,U9,48,H桥备用双PWM接口 / 双PWM IN2,条件预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD8,U9,49,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD9,U9,50,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD10,U9,51,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD11,U9,52,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF10,U9,53,板载W25Q64 / QSPI_CLK,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF6,U9,54,板载W25Q64 / QSPI_IO3,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF8,U9,55,板载W25Q64 / QSPI_IO0,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF7,U9,56,板载W25Q64 / QSPI_IO2,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF9,U9,57,板载W25Q64 / QSPI_IO1,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG6,U9,58,板载W25Q64 / QSPI_NCS,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD12,U9,59,本地PWM舵机 / PWM1,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD13,U9,60,本地PWM舵机 / PWM2,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA10,U10,5,VOFA/USB-TTL / MCU RX,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA9,U10,6,VOFA/USB-TTL / MCU TX,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC13,U10,7,SM0488050V0.1旋钮模块 / C/SW/KEY7（按压已确认，极性待实测）,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF0,U10,8,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF1,U10,9,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF2,U10,10,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF4,U10,11,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF3,U10,12,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PF5,U10,14,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE5,U10,15,FD5640摄像头 / D6,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE6,U10,16,FD5640摄像头 / D7,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE3,U10,17,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE4,U10,18,FD5640摄像头 / D4,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB8,U10,19,多控制器扩展候选 / 候选UART4_RX,接口候选预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE2,U10,20,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE0,U10,21,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB9,U10,22,多控制器扩展候选 / 候选UART4_TX,接口候选预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB7,U10,23,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PE1,U10,24,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB5,U10,25,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB6,U10,26,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB3,U10,27,调试扩展 / JTAG/SWO复用核对,明确预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PB4,U10,28,调试扩展 / JTAG/SWO复用核对,明确预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG14,U10,29,1.54寸SPI屏 / MOSI,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG15,U10,30,1.54寸SPI屏 / DC,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG12,U10,31,1.54寸SPI屏 / BL,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG13,U10,32,1.54寸SPI屏 / SCK,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG10,U10,33,FD5640摄像头 / D2,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG11,U10,34,FD5640摄像头 / D3,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD7,U10,35,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG9,U10,36,FD5640摄像头 / VSYNC,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD5,U10,37,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD6,U10,38,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD3,U10,39,FD5640摄像头 / D5,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD4,U10,40,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC10,U10,41,TF/SD卡 / SDMMC1_D2,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD2,U10,42,TF/SD卡 / SDMMC1_CMD,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD1,U10,43,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA15,U10,44,调试扩展 / JTAG/SWO复用核对,明确预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC12,U10,45,TF/SD卡 / SDMMC1_CK,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD0,U10,46,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PA8,U10,47,MG310霍尔编码器 / 霍尔A / TIM1_CH1,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC11,U10,48,TF/SD卡 / SDMMC1_D3,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC8,U10,49,TF/SD卡 / SDMMC1_D0,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC9,U10,50,TF/SD卡 / SDMMC1_D1,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC6,U10,51,FD5640摄像头 / D0,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PC7,U10,52,FD5640摄像头 / D1,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG7,U10,53,LED反馈 / 心跳,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG8,U10,54,1.54寸SPI屏 / NSS/CS,板载专用,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG4,U10,55,后续扩展 / 限位/反馈预留,明确预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG5,U10,56,后续扩展 / 限位/反馈预留,明确预留,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG2,U10,57,SM0488050V0.1旋钮模块 / A,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PG3,U10,58,SM0488050V0.1旋钮模块 / B,已分配,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD14,U10,59,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source
+PD15,U10,60,待分配 / 普通GPIO候选,空闲候选,本轮未实测,Docs/引脚与接线/引脚资源.json; schematic p1 + source

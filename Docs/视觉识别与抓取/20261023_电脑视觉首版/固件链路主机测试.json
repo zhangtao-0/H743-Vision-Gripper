@@ -1,0 +1,19 @@
+{
+  "scope": "actual C USB/vision with endpoint/camera models; no physical IO",
+  "checks": [
+    {
+      "test": "vision",
+      "exit_code": 0,
+      "stdout": "PASS C vision: lease/CRC/frame completion, bounds, stale/session/disconnect rejection, stalled USB timeout; advisory-only\n",
+      "stderr": ""
+    },
+    {
+      "test": "usb",
+      "exit_code": 0,
+      "stdout": "PASS C USB: packet ownership until endpoint completion, exact payload/text separation, pending-text priority, disconnect cancellation\n",
+      "stderr": ""
+    }
+  ],
+  "cross_language": true,
+  "passed": true
+}

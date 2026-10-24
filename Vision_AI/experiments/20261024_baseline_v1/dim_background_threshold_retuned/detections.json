@@ -1,0 +1,169 @@
+{
+  "schema": "h743.vision.baseline.v1",
+  "coordinate_system": "Pixel",
+  "origin": "top_left",
+  "x_axis": "right",
+  "y_axis": "down",
+  "source_kind": "synthetic",
+  "image_sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d",
+  "input": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\20261024_baseline_v1\\inputs\\dim_background_threshold_retuned.png",
+  "image_size": [
+    640,
+    480
+  ],
+  "config": {
+    "mode": "gray_dark",
+    "threshold": 100,
+    "min_area": 800,
+    "hsv_low": [
+      0,
+      0,
+      0
+    ],
+    "hsv_high": [
+      179,
+      255,
+      180
+    ]
+  },
+  "objects": [
+    {
+      "shape_hint": "cylinder_top_view",
+      "center_px": [
+        148.0,
+        138.0
+      ],
+      "center_inside": true,
+      "interior_point_px": [
+        148,
+        138
+      ],
+      "box_center_px": [
+        148.0,
+        138.0
+      ],
+      "box_size_px": [
+        102.0,
+        102.0
+      ],
+      "box_corners_px": [
+        [
+          199.0,
+          189.0
+        ],
+        [
+          97.0,
+          189.0
+        ],
+        [
+          97.0,
+          87.0
+        ],
+        [
+          199.0,
+          87.0
+        ]
+      ],
+      "long_axis_angle_deg": -90.0,
+      "orientation_ambiguous": true,
+      "area_px2": 8346.0,
+      "circularity": 0.9069969476488046,
+      "solidity": 0.9928622412562456,
+      "grasp_valid": false,
+      "invalid_reason": "uncalibrated_no_gripper_geometry"
+    },
+    {
+      "shape_hint": "block_top_view",
+      "center_px": [
+        378.0,
+        142.0
+      ],
+      "center_inside": true,
+      "interior_point_px": [
+        362,
+        142
+      ],
+      "box_center_px": [
+        378.0,
+        142.0
+      ],
+      "box_size_px": [
+        84.0,
+        116.0
+      ],
+      "box_corners_px": [
+        [
+          436.0,
+          184.0
+        ],
+        [
+          320.0,
+          184.0
+        ],
+        [
+          320.0,
+          100.0
+        ],
+        [
+          436.0,
+          100.0
+        ]
+      ],
+      "long_axis_angle_deg": 0.0,
+      "orientation_ambiguous": false,
+      "area_px2": 9744.0,
+      "circularity": 0.7652919704144736,
+      "solidity": 1.0,
+      "grasp_valid": false,
+      "invalid_reason": "uncalibrated_no_gripper_geometry"
+    },
+    {
+      "shape_hint": "l_bracket_top_view",
+      "center_px": [
+        335.0015039360827,
+        376.0802020914111
+      ],
+      "center_inside": false,
+      "interior_point_px": [
+        316,
+        399
+      ],
+      "box_center_px": [
+        352.4999694824219,
+        359.9999694824219
+      ],
+      "box_size_px": [
+        119.99998474121094,
+        114.99998474121094
+      ],
+      "box_corners_px": [
+        [
+          409.9999694824219,
+          419.9999694824219
+        ],
+        [
+          294.9999694824219,
+          419.9999694824219
+        ],
+        [
+          294.9999694824219,
+          299.9999694824219
+        ],
+        [
+          409.9999694824219,
+          299.9999694824219
+        ]
+      ],
+      "long_axis_angle_deg": -90.0,
+      "orientation_ambiguous": true,
+      "area_px2": 7092.5,
+      "circularity": 0.40447970664963523,
+      "solidity": 0.6789680260386751,
+      "grasp_valid": false,
+      "invalid_reason": "uncalibrated_no_gripper_geometry"
+    }
+  ],
+  "rejected": [],
+  "grasp_valid": false,
+  "motion_commands_sent": false
+}

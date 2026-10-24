@@ -1,0 +1,26 @@
+﻿id,ui_name,legacy_name,compiled_default,range,text_write,get,set_template,legacy_F2_id,notes
+0,OPEN_deg,OPEN_ANGLE,0,0~270,no; read-only,@param get 0,,0,张开角度，单位度；有效机械极限会覆盖。
+1,CLOSE_deg,CLOSE_ANGLE,270,0~270,no; read-only,@param get 1,,1,闭合夹取角度，单位度；有效机械极限会覆盖。
+2,GRIP_PROFILE,PROFILE,1,0~3,stopped/online only,@param get 2,@param set 2 VALUE,2,夹取档位：0软、1中、2硬、3易碎。
+3,DEFAULT_SPEED,DEFAULT_SPEED,800,0~4095,stopped/online only,@param get 3,@param set 3 VALUE,3,普通动作速度。
+4,OPEN_SPEED,OPEN_SPEED,1000,0~4095,stopped/online only,@param get 4,@param set 4 VALUE,4,A0 张开速度。
+5,CLOSE_SPEED,CLOSE_SPEED,1000,0~4095,stopped/online only,@param get 5,@param set 5 VALUE,5,A0 夹取速度。
+6,SWEEP_SPEED,SWEEP_SPEED,1000,0~4095,stopped/online only,@param get 6,@param set 6 VALUE,6,B0 连续往复扫描速度。
+7,SWEEP_STEP,SWEEP_STEP,5,1~90,stopped/online only,@param get 7,@param set 7 VALUE,7,保留参数接口；当前 B0 已改为端点连续往复扫描，不再按该角度步进。
+8,STEP_ms,SWEEP_STEP_MS,40,20~1000,stopped/online only,@param get 8,@param set 8 VALUE,8,保留参数接口；当前 B0 连续往复扫描不再依赖该步进周期。
+9,TORQUE,FULL_TORQUE,1000,0~1000,stopped/online only,@param get 9,@param set 9 VALUE,9,运动阶段最大转矩限制。
+10,HOLD_TORQUE,HOLD_TORQUE,180,0~1000,stopped/online only,@param get 10,@param set 10 VALUE,10,自适应启用时使用；当前强制位置模式保持转矩固定为 FULL_TORQUE=1000。
+11,FEEDBACK_ms,FEEDBACK_MS,5,5~1000,stopped/online only,@param get 11,@param set 11 VALUE,11,夹取反馈读取周期。
+12,IDLE_FB_ms,IDLE_FEEDBACK_MS,10,20~5000,stopped/online only,@param get 12,@param set 12 VALUE,12,空闲反馈周期；写入时最小限为 20。
+13,MIN_MOVE,MIN_VALID_MOVE,5,0~45,stopped/online only,@param get 13,@param set 13 VALUE,13,旧参数兼容，当前自适应判断不使用。
+14,SETTLE_ms,GRIP_SETTLE_MS,300,0~3000,stopped/online only,@param get 14,@param set 14 VALUE,14,夹取后稳定确认时间。
+15,LOW_VOLT_mV,LOW_VOLTAGE_MV,0,0~30000,stopped/online only,@param get 15,@param set 15 VALUE,15,低电压保护阈值，单位 mV；0 表示关闭。
+16,SLIP_deg,SLIP_ANGLE,5,1~45,stopped/online only,@param get 16,@param set 16 VALUE,16,保持状态防滑角度偏移阈值。
+17,COMPENSATE,SLIP_COMPENSATE,3,1~30,stopped/online only,@param get 17,@param set 17 VALUE,17,检测滑动后自动补夹角度。
+18,RELEASE_ALLOW,RELEASE_PERMISSION,1,0~1,stopped/online only,@param get 18,@param set 18 VALUE,18,释放允许开关；无人机任务可用它禁止误释放。
+19,CLAW_PRINT,PRINT_ENABLE,0,0~1,stopped/online only,@param get 19,@param set 19 VALUE,19,自动状态打印开关。
+20,PRINT_ms,PRINT_PERIOD_MS,100,100~10000,stopped/online only,@param get 20,@param set 20 VALUE,20,claw 周期打印间隔。
+21,MOTOR_RPM,UI-local only,400,0..runtime max RPM,target only; does not enable,@param get 21,@param set 21 VALUE,,Does not extend FeetechStsParamId_t or reuse wheel-car AA C2 IDs
+22,KP_milli,UI-local only,1800,0..100000 milli,motor ready; PID stopped only,@param get 22,@param set 22 VALUE,,Does not extend FeetechStsParamId_t or reuse wheel-car AA C2 IDs
+23,KI_milli,UI-local only,5000,0..100000 milli,motor ready; PID stopped only,@param get 23,@param set 23 VALUE,,Does not extend FeetechStsParamId_t or reuse wheel-car AA C2 IDs
+24,KD_milli,UI-local only,0,0..100000 milli,motor ready; PID stopped only,@param get 24,@param set 24 VALUE,,Does not extend FeetechStsParamId_t or reuse wheel-car AA C2 IDs

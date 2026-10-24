@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/zhangtao-0/H743-Vision-Gripper",
+  "visibility": "private",
+  "branch": "main",
+  "scope": "H743 directory only",
+  "audited_source_blobs": 1649,
+  "byte_exact_to_reviewed_baseline": true,
+  "intentionally_ignored_baseline_entries": [
+    "project/EWARM/Backup (1) of H743_VisionGripper.ewp",
+    "project/EWARM/Backup of H743_VisionGripper.ewp"
+  ],
+  "generated_build_outputs_staged": 0,
+  "sensitive_pattern_hits": 0,
+  "firmware_flashed": false,
+  "note": "Commit/push identity is recorded in Git history; this file is included in the initial upload."
+}

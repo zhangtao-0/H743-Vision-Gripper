@@ -1,0 +1,37 @@
+[
+  {
+    "command": [
+      "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\.venv\\Scripts\\python.exe",
+      "src/synthetic_demo.py"
+    ],
+    "cwd": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\20261024_isolated_baseline_v1\\original_run",
+    "exit_code": 0,
+    "stdout": "Wrote C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\20261024_isolated_baseline_v1\\original_run\\outputs\\synthetic_scene.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\.venv\\Scripts\\python.exe",
+      "src/shape_baseline.py"
+    ],
+    "cwd": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\20261024_isolated_baseline_v1\\original_run",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"type\": \"cylinder_top_view\",\n    \"center_px\": [\n      148.0,\n      138.0\n    ],\n    \"box_center_px\": [\n      148.0,\n      138.0\n    ],\n    \"box_size_px\": [\n      102.0,\n      102.0\n    ],\n    \"box_angle_deg\": -90.0,\n    \"area_px2\": 8346.0,\n    \"circularity\": 0.907,\n    \"solidity\": 0.993\n  },\n  {\n    \"type\": \"block_top_view\",\n    \"center_px\": [\n      378.0,\n      142.0\n    ],\n    \"box_center_px\": [\n      378.0,\n      142.0\n    ],\n    \"box_size_px\": [\n      84.0,\n      116.0\n    ],\n    \"box_angle_deg\": -90.0,\n    \"area_px2\": 9744.0,\n    \"circularity\": 0.765,\n    \"solidity\": 1.0\n  },\n  {\n    \"type\": \"l_bracket_top_view\",\n    \"center_px\": [\n      335.0,\n      376.08\n    ],\n    \"box_center_px\": [\n      352.5,\n      360.0\n    ],\n    \"box_size_px\": [\n      120.0,\n      115.0\n    ],\n    \"box_angle_deg\": -90.0,\n    \"area_px2\": 7092.5,\n    \"circularity\": 0.404,\n    \"solidity\": 0.679\n  }\n]\nWARNING: image pixel coordinates cannot be used as robot motion coordinates\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\.venv\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\20261024_isolated_baseline_v1\\original_run",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_centers_are_image_pixels (test_baseline.TestSyntheticVision.test_centers_are_image_pixels) ... ok\ntest_three_shapes (test_baseline.TestSyntheticVision.test_three_shapes) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.008s\n\nOK\n"
+  }
+]

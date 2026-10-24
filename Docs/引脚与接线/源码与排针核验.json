@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-24",
+  "scope": "schematic mapping + source assignments + generated docs; no hardware operations",
+  "macro_pin_checks": 60,
+  "active_gpio_ownerships_checked": 58,
+  "exclusive_timers_checked": 4,
+  "macro_bindings": [
+    {
+      "macro": "BOARD_KEY1_PIN",
+      "pin": "PA0"
+    },
+    {
+      "macro": "BOARD_KEY2_PIN",
+      "pin": "PB0"
+    },
+    {
+      "macro": "BOARD_KEY3_PIN",
+      "pin": "PB12"
+    },
+    {
+      "macro": "BOARD_KEY4_PIN",
+      "pin": "PB13"
+    },
+    {
+      "macro": "BOARD_KEY5_PIN",
+      "pin": "PC0"
+    },
+    {
+      "macro": "BOARD_KEY6_PIN",
+      "pin": "PC1"
+    },
+    {
+      "macro": "BOARD_LED_HEARTBEAT_PIN",
+      "pin": "PG7"
+    },
+    {
+      "macro": "BOARD_LED_STATUS_PIN",
+      "pin": "PG0"
+    },
+    {
+      "macro": "BOARD_LED_FAULT_PIN",
+      "pin": "PG1"
+    },
+    {
+      "macro": "BOARD_LCD_SPI_PINS",
+      "pin": "PG8"
+    },
+    {
+      "macro": "BOARD_LCD_SPI_PINS",
+      "pin": "PG13"
+    },
+    {
+      "macro": "BOARD_LCD_SPI_PINS",
+      "pin": "PG14"
+    },
+    {
+      "macro": "BOARD_LCD_BL_PIN",
+      "pin": "PG12"
+    },
+    {
+      "macro": "BOARD_LCD_DC_PIN",
+      "pin": "PG15"
+    },
+    {
+      "macro": "BOARD_CAM_E_PINS",
+      "pin": "PE4"
+    },
+    {
+      "macro": "BOARD_CAM_E_PINS",
+      "pin": "PE5"
+    },
+    {
+      "macro": "BOARD_CAM_E_PINS",
+      "pin": "PE6"
+    },
+    {
+      "macro": "BOARD_CAM_D_PINS",
+      "pin": "PD3"
+    },
+    {
+      "macro": "BOARD_CAM_G_PINS",
+      "pin": "PG9"
+    },
+    {
+      "macro": "BOARD_CAM_G_PINS",
+      "pin": "PG10"
+    },
+    {
+      "macro": "BOARD_CAM_G_PINS",
+      "pin": "PG11"
+    },
+    {
+      "macro": "BOARD_CAM_C_PINS",
+      "pin": "PC6"
+    },
+    {
+      "macro": "BOARD_CAM_C_PINS",
+      "pin": "PC7"
+    },
+    {
+      "macro": "BOARD_CAM_A_PINS",
+      "pin": "PA4"
+    },
+    {
+      "macro": "BOARD_CAM_A_PINS",
+      "pin": "PA6"
+    },
+    {
+      "macro": "BOARD_CAM_PWDN_PIN",
+      "pin": "PF13"
+    },
+    {
+      "macro": "BOARD_CAM_SCL_PIN",
+      "pin": "PF14"
+    },
+    {
+      "macro": "BOARD_CAM_SDA_PIN",
+      "pin": "PF15"
+    },
+    {
+      "macro": "BOARD_SD_DATA_PINS",
+      "pin": "PC8"
+    },
+    {
+      "macro": "BOARD_SD_DATA_PINS",
+      "pin": "PC9"
+    },
+    {
+      "macro": "BOARD_SD_DATA_PINS",
+      "pin": "PC10"
+    },
+    {
+      "macro": "BOARD_SD_DATA_PINS",
+      "pin": "PC11"
+    },
+    {
+      "macro": "BOARD_SD_DATA_PINS",
+      "pin": "PC12"
+    },
+    {
+      "macro": "BOARD_SD_CMD_PIN",
+      "pin": "PD2"
+    },
+    {
+      "macro": "BOARD_QSPI_CLK_PIN",
+      "pin": "PF10"
+    },
+    {
+      "macro": "BOARD_QSPI_CS_PIN",
+      "pin": "PG6"
+    },
+    {
+      "macro": "BOARD_QSPI_IO0_PIN",
+      "pin": "PF8"
+    },
+    {
+      "macro": "BOARD_QSPI_IO1_PIN",
+      "pin": "PF9"
+    },
+    {
+      "macro": "BOARD_QSPI_IO2_PIN",
+      "pin": "PF7"
+    },
+    {
+      "macro": "BOARD_QSPI_IO3_PIN",
+      "pin": "PF6"
+    },
+    {
+      "macro": "BOARD_PWM_PIN",
+      "pin": "PD12"
+    },
+    {
+      "macro": "BOARD_PWM2_PIN",
+      "pin": "PD13"
+    },
+    {
+      "macro": "BOARD_MOTOR_HALL_A_PIN",
+      "pin": "PA8"
+    },
+    {
+      "macro": "BOARD_MOTOR_HALL_B_PIN",
+      "pin": "PE11"
+    },
+    {
+      "macro": "BOARD_MOTOR_PWM_PIN",
+      "pin": "PB14"
+    },
+    {
+      "macro": "BOARD_MOTOR_PWM2_PIN",
+      "pin": "PB15"
+    },
+    {
+      "macro": "BOARD_MOTOR_IN1",
+      "pin": "PE10"
+    },
+    {
+      "macro": "BOARD_MOTOR_IN2",
+      "pin": "PE12"
+    },
+    {
+      "macro": "BOARD_MOTOR_STBY",
+      "pin": "PE13"
+    },
+    {
+      "macro": "BOARD_MOTOR_KNOB_A",
+      "pin": "PG2"
+    },
+    {
+      "macro": "BOARD_MOTOR_KNOB_B",
+      "pin": "PG3"
+    },
+    {
+      "macro": "BOARD_MOTOR_KEY_PIN",
+      "pin": "PC13"
+    },
+    {
+      "macro": "BOARD_UART_SERVO_TX_PIN",
+      "pin": "PA2"
+    },
+    {
+      "macro": "BOARD_UART_SERVO_RX_PIN",
+      "pin": "PA3"
+    },
+    {
+      "macro": "BOARD_UART_HOST_TX_PIN",
+      "pin": "PA9"
+    },
+    {
+      "macro": "BOARD_UART_HOST_RX_PIN",
+      "pin": "PA10"
+    },
+    {
+      "macro": "BOARD_UART_BLUETOOTH_TX_PIN",
+      "pin": "PB10"
+    },
+    {
+      "macro": "BOARD_UART_BLUETOOTH_RX_PIN",
+      "pin": "PB11"
+    },
+    {
+      "macro": "BOARD_USB_GPIO_PINS",
+      "pin": "PA11"
+    },
+    {
+      "macro": "BOARD_USB_GPIO_PINS",
+      "pin": "PA12"
+    }
+  ],
+  "previous_header_gpio_facts_checked": 108,
+  "header_positions": 120,
+  "h1_positions": 8,
+  "free_candidates": 36,
+  "schematic_sha256": "93014c71abede691d96fdaf241df1468e2500b443e5d3c483cb79e24bced32b5",
+  "source_files_checked": 25,
+  "source_modified": false,
+  "physical_test": false,
+  "passed": true
+}

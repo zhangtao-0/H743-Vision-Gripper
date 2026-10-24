@@ -1,0 +1,47 @@
+{
+  "motion_commands_sent": false,
+  "ports": [
+    {
+      "device": "COM8",
+      "vid": null,
+      "pid": null
+    },
+    {
+      "device": "COM3",
+      "vid": null,
+      "pid": null
+    },
+    {
+      "device": "COM5",
+      "vid": null,
+      "pid": null
+    },
+    {
+      "device": "COM9",
+      "vid": 6790,
+      "pid": 29987
+    },
+    {
+      "device": "COM11",
+      "vid": 1155,
+      "pid": 22336
+    },
+    {
+      "device": "COM7",
+      "vid": null,
+      "pid": null
+    },
+    {
+      "device": "COM4",
+      "vid": null,
+      "pid": null
+    },
+    {
+      "device": "COM6",
+      "vid": null,
+      "pid": null
+    }
+  ],
+  "commands": [],
+  "error": "Cannot configure port, something went wrong. Original message: PermissionError(13, '连到系统上的设备没有发挥作用。', None, 31)"
+}

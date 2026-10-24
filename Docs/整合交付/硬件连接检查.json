@@ -1,0 +1,32 @@
+{
+  "tool": "STM32CubeProgrammer 2.23.0",
+  "command": "STM32_Programmer_CLI.exe -l st-link",
+  "stlink_detected": false,
+  "serial_ports": [
+    {
+      "port": "COM7",
+      "description": "蓝牙链接上的标准串行"
+    },
+    {
+      "port": "COM4",
+      "description": "蓝牙链接上的标准串行"
+    },
+    {
+      "port": "COM6",
+      "description": "蓝牙链接上的标准串行"
+    },
+    {
+      "port": "COM8",
+      "description": "蓝牙链接上的标准串行"
+    },
+    {
+      "port": "COM5",
+      "description": "蓝牙链接上的标准串行"
+    },
+    {
+      "port": "COM3",
+      "description": "蓝牙链接上的标准串行"
+    }
+  ],
+  "operations": "read-only enumeration; no target connect/reset, flash, serial open or motion"
+}

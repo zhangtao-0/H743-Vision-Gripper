@@ -1,0 +1,6 @@
+{
+  "scope": "actual C telemetry and UART queue, mocked UART/motor state; not physical motor data",
+  "exit_code": 0,
+  "stdout": "FRAME|0000c8c300c078c300007ac3000082c3000019c40000a0bf0000803f000000000000807f\nPASS plot: disabled startup, exact 8-channel signed JustFloat, 50Hz, wrap, inactive reference zero, backpressure, exclusive HOST and restored text\n",
+  "python_cross_decode": true
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\tk457\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-m",
+    "venv",
+    "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\.venv"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "dependencies_installed": false
+}

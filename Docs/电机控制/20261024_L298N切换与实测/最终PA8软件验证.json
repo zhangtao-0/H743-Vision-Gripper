@@ -1,0 +1,27 @@
+[
+  {
+    "test": "run_motor_tests.py",
+    "exit_code": 0,
+    "output": "PASS PID plant: target=200 RPM, 70 RPM equivalent load disturbance, final=199.99 RPM\nPASS sparse feedback: isolated pulses and alternating jitter cannot bypass300ms effort/progress guard\nPASS overspeed: sustained implausible encoder speed disables output; clear never restarts\nPASS control: ramp, signed feedback, reverse coast/deadtime, timeout/sign faults, anti-windup, zero-stop\nPASS EC11: one detent, contact bounce cancellation, invalid transition rejection\nPASS service: missing-driver inhibit, IRQ timing fault, button debounce/long vs short, runtime-setting guards, preserve PRIMASK\nPASS virtual motor: shared detent limits, physical-only reject, simulated button uses debounce/direction gesture\nPASS persistence gates: maintenance inhibits starts, atomic settings restore, finite/range checks, RAM defaults stay disabled\n "
+  },
+  {
+    "test": "run_motor_plot_tests.py",
+    "exit_code": 0,
+    "output": "FRAME|0000c8c300c078c300007ac3000082c3000019c40000a0bf0000803f000000000000807f\nPASS plot: disabled startup, exact 8-channel signed JustFloat, 50Hz, wrap, inactive reference zero, backpressure, exclusive HOST and restored text\n\n"
+  },
+  {
+    "test": "run_ui_tests.py",
+    "exit_code": 0,
+    "output": "PASS UI v2: categorized actions/help, explicit image ownership, shortcut restores image page, filtered command mapping\nPASS navigation: exact shortcut restore, normal ancestry, scrolling, stale edit, cancel/confirm, read-only view\nPASS keys: release-only, chord suppression/latch, four dedicated keys; holds retain their assigned role, uint32 wrap\nPASS records: CRC corruption, partial Flashwords, tombstone, sequence wrap, schema version\nPASS settings: no boot writes, save/reboot, exact float CPR, pending STS apply, mechanical endpoints excluded\nPASS settings: motion gates, interrupted-save recovery, atomic clear tombstone, no motor auto-enable path\n PASS H7 store model: actual sectors4/5 code, all five partial-write positions, CRC fallback, tombstone, bank-swap guard; limits6/7 untouched\n "
+  },
+  {
+    "test": "run_integration_host_tests.py",
+    "exit_code": 0,
+    "output": "PASS FLASH: alternating slots, erase failure, partial program/power loss, CRC corruption fallback, clear record, invalid range\nPASS mapped console: strict keys/masks, source release, detents, numeric overflow/trailing-token rejection, shared param bounds/read-only, executable help index/list\nPASS quiet/help: explicit paced category output, idle silence, all streams disabled, independent camera/LCD controls\nPASS CONSOLE: binary isolation, dual-channel lines, full mailbox, overflow, timeout recovery, moving-state maintenance gate, PWM range\nPASS catalog: all printable text examples recognized by actual parser with mocked hardware\nPASS PWM: no startup output, independent channels, angle clamping, invalid ID, virtual key edges/open-close toggles\nPASS startup log gate: all shared init output suppressed, explicit replies restored\n"
+  },
+  {
+    "test": "check_motor_profiles.py",
+    "exit_code": 0,
+    "output": "Motor H-bridge profile 0 exit 0\nMotor H-bridge profile 1 exit 0\nMotor H-bridge profile 2 exit 0\nMotor H-bridge profile 3 exit 0\n"
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-22",
+  "scope": "planning-only",
+  "user_confirmed": {
+    "wireless_chip": "ESP32-C3",
+    "esp8266_expansion_connectors": 8
+  },
+  "unknown": [
+    "ESP8266 exact board",
+    "expansion board IC/wiring/power",
+    "PWM servo models",
+    "runtime config.json"
+  ],
+  "external_source": {
+    "path": "C:\\baiduwangpan\\新建文件夹\\ESP8266.ino",
+    "sha256": "c1c587094a31b7dd3b43ff5ef6dd266cfdd091fc2a5025422861f00fc1b62bc2",
+    "lines": 1593,
+    "modified": false,
+    "compiled": false
+  },
+  "h743_local_evidence": [
+    {
+      "path": "project/Core/Src/main.c",
+      "sha256": "5ac5d12d24213d30fe331d11874838dab14d534959ec519bb2f8cf84992c1e36"
+    },
+    {
+      "path": "project/App/platform/board_resources.h",
+      "sha256": "37d3d82622620d8c7fa7f22032f9fc428cde1cd943a18c1c964d79e3ac05fcae"
+    },
+    {
+      "path": "project/App/platform/board_resources.c",
+      "sha256": "d7bde8f4398ef1f82fabd966d418401828a66f210f69839b21a8ba7851f8406a"
+    },
+    {
+      "path": "project/App/platform/uart_router.c",
+      "sha256": "4063a0e8eca5438f41fdddb297646ba67179f87eb0b4c411ce26ff8cb3294d60"
+    },
+    {
+      "path": "project/App/platform/boards/lxb743zi_p1/board_config.h",
+      "sha256": "1c9d8e7429fe6995ebfff74ec3ffa640b7a6feea475bfb54165649f207f4c53e"
+    },
+    {
+      "path": "Docs/适配规划/03_硬件规划/板级引出与用途表.csv",
+      "sha256": "3b79f98cedc6897e3db9f1fba4a4929809a3ed5c5173a36be8568c2692270630"
+    },
+    {
+      "path": "Docs/整合交付/02_设备引脚与功能矩阵.md",
+      "sha256": "61f2179b544f46bcf55ed40d5e175b89a149ce89e92e4fa8026848401d71503f"
+    }
+  ],
+  "datasheet": {
+    "path": "01_嵌入式技术资料库/01_芯片与内核资料/01_数据手册/STM32H743/DS_stm32h743zi.pdf",
+    "sha256": "f6e620179006c8c4d497b477ba065edc89c6dd9ac24d9debb3362910651f42ee",
+    "revision": "DS12110 Rev11",
+    "pages": [
+      86,
+      87,
+      90
+    ],
+    "visually_reviewed_page": 90
+  },
+  "web_sources": [
+    {
+      "url": "https://arduino-esp8266.readthedocs.io/en/latest/reference.html",
+      "checked": "2026-10-22",
+      "snapshot": "06_证据/网页摘存/esp8266-current-reference.md",
+      "sha256": "263b320e722cd367644483b8a5713da385b199461f24d5039572ad09693a48ea",
+      "status": "text-extraction; remote diagrams not archived"
+    },
+    {
+      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/about.html",
+      "checked": "2026-10-22",
+      "snapshot": "06_证据/网页摘存/esp32c3-idf-about.md",
+      "sha256": "fc9d683726bccb214e13c3dfb8beae9af6362b11e9aebacdd14f87521f757779",
+      "status": "text-extraction; remote diagrams not archived"
+    },
+    {
+      "url": "https://github.com/espressif/esp-sr",
+      "checked": "2026-10-22",
+      "snapshot": "06_证据/网页摘存/esp-sr-readme.md",
+      "sha256": "acab4ec4d07062064b9a19a21651d1dae68e901142d221ce722d102b92f553d9",
+      "status": "text-extraction; remote diagrams not archived"
+    },
+    {
+      "url": "https://docs.espressif.com/projects/esp-sr/en/latest/esp32s3/speech_command_recognition/README.html",
+      "checked": "2026-10-22",
+      "snapshot": "06_证据/网页摘存/esp32s3-multinet.md",
+      "sha256": "26302394a4fa757de3dd68275438eafe1320c32bf4589a5db8cf99043a06729c",
+      "status": "text-extraction; remote diagrams not archived"
+    }
+  ],
+  "new_uart_implemented": false,
+  "firmware_modified": false,
+  "flashed": false,
+  "hardware_test": false,
+  "h743_evidence_hash_timing": "before adding planning navigation to the pin matrix; production source files remain unchanged"
+}

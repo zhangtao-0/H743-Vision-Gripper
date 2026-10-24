@@ -1,0 +1,530 @@
+[
+  {
+    "path": "Core/Src/main.c",
+    "symbol": "main",
+    "line": 74,
+    "source_sha256": "5ac5d12d24213d30fe331d11874838dab14d534959ec519bb2f8cf84992c1e36"
+  },
+  {
+    "path": "Core/Src/main.c",
+    "symbol": "SystemClock_Config",
+    "line": 126,
+    "source_sha256": "5ac5d12d24213d30fe331d11874838dab14d534959ec519bb2f8cf84992c1e36"
+  },
+  {
+    "path": "Core/Src/main.c",
+    "symbol": "MX_USART2_UART_Init",
+    "line": 234,
+    "source_sha256": "5ac5d12d24213d30fe331d11874838dab14d534959ec519bb2f8cf84992c1e36"
+  },
+  {
+    "path": "Core/Src/system_stm32h7xx.c",
+    "symbol": "SystemInit",
+    "line": 178,
+    "source_sha256": "95a8fc5a6d765a78a8b6f0dd1fedc48994096df544e611e951c6c2e4426570e6"
+  },
+  {
+    "path": "Core/Src/stm32h7xx_hal_msp.c",
+    "symbol": "HAL_UART_MspInit",
+    "line": 84,
+    "source_sha256": "7c19ddc806cb23846a1833b608e692a3ba38fcaed6075ef5c79001793e712b6c"
+  },
+  {
+    "path": "Core/Src/stm32h7xx_it.c",
+    "symbol": "USART2_IRQHandler",
+    "line": 222,
+    "source_sha256": "f09ef8f9f457e1ffb34054ff43aa4afb2deaf8b80fd8eb92a5f6536146258c11"
+  },
+  {
+    "path": "Core/Src/stm32h7xx_it.c",
+    "symbol": "DMA2_Stream7_IRQHandler",
+    "line": 209,
+    "source_sha256": "f09ef8f9f457e1ffb34054ff43aa4afb2deaf8b80fd8eb92a5f6536146258c11"
+  },
+  {
+    "path": "Core/Src/stm32h7xx_it.c",
+    "symbol": "DCMI_IRQHandler",
+    "line": 208,
+    "source_sha256": "f09ef8f9f457e1ffb34054ff43aa4afb2deaf8b80fd8eb92a5f6536146258c11"
+  },
+  {
+    "path": "Core/Src/stm32h7xx_it.c",
+    "symbol": "TIM6_DAC_IRQHandler",
+    "line": 205,
+    "source_sha256": "f09ef8f9f457e1ffb34054ff43aa4afb2deaf8b80fd8eb92a5f6536146258c11"
+  },
+  {
+    "path": "App/app_main.c",
+    "symbol": "App_Init",
+    "line": 30,
+    "source_sha256": "4a30e1b9ca11fa896e6bb5589e3488e89616c924b31be332cc2209575e0ea87e"
+  },
+  {
+    "path": "App/app_main.c",
+    "symbol": "App_Task",
+    "line": 77,
+    "source_sha256": "4a30e1b9ca11fa896e6bb5589e3488e89616c924b31be332cc2209575e0ea87e"
+  },
+  {
+    "path": "App/app_main.c",
+    "symbol": "App_StartMotionStack",
+    "line": 67,
+    "source_sha256": "4a30e1b9ca11fa896e6bb5589e3488e89616c924b31be332cc2209575e0ea87e"
+  },
+  {
+    "path": "App/platform/board_resources.c",
+    "symbol": "BoardResource_GetUart",
+    "line": 24,
+    "source_sha256": "d7bde8f4398ef1f82fabd966d418401828a66f210f69839b21a8ba7851f8406a"
+  },
+  {
+    "path": "App/platform/board_uart.c",
+    "symbol": "BoardUart_SetBaud",
+    "line": 66,
+    "source_sha256": "b6e8cc86f9281d96ee3445cac92010fcaea72e9ab7d53a8855045a07de0b21c4"
+  },
+  {
+    "path": "App/platform/board_uart.c",
+    "symbol": "BoardUart_StartRxIT",
+    "line": 85,
+    "source_sha256": "b6e8cc86f9281d96ee3445cac92010fcaea72e9ab7d53a8855045a07de0b21c4"
+  },
+  {
+    "path": "App/platform/uart_router.c",
+    "symbol": "HAL_UART_RxCpltCallback",
+    "line": 19,
+    "source_sha256": "4063a0e8eca5438f41fdddb297646ba67179f87eb0b4c411ce26ff8cb3294d60"
+  },
+  {
+    "path": "App/platform/board_led.c",
+    "symbol": "BoardLed_Init",
+    "line": 24,
+    "source_sha256": "8b372b11339d1cf4cae082e7c3b9661ded9d0066aeb64a44bf11691579e6dd99"
+  },
+  {
+    "path": "App/platform/board_led.c",
+    "symbol": "BoardLed_Task",
+    "line": 50,
+    "source_sha256": "8b372b11339d1cf4cae082e7c3b9661ded9d0066aeb64a44bf11691579e6dd99"
+  },
+  {
+    "path": "App/bsp/bsp_key.c",
+    "symbol": "Key_Init",
+    "line": 121,
+    "source_sha256": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a"
+  },
+  {
+    "path": "App/bsp/bsp_key.c",
+    "symbol": "Key_Task",
+    "line": 157,
+    "source_sha256": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a"
+  },
+  {
+    "path": "App/drivers/Servo/feetech_sts_bus.c",
+    "symbol": "FeetechStsBus_HandleRxComplete",
+    "line": 117,
+    "source_sha256": "e56db0bd6928236740e579ba3b5ce10d7851c02ab903e23efbe3769aa6112c24"
+  },
+  {
+    "path": "App/drivers/Servo/feetech_sts_bus.c",
+    "symbol": "FeetechSts_ParseStatusPacket",
+    "line": 1041,
+    "source_sha256": "e56db0bd6928236740e579ba3b5ce10d7851c02ab903e23efbe3769aa6112c24"
+  },
+  {
+    "path": "App/modules/servo_p3/servo_p3.c",
+    "symbol": "ServoP3_Task",
+    "line": 291,
+    "source_sha256": "3942c59160d0668ebde4650799c5eef0c32310cf7cdec710fee71943d7de4875"
+  },
+  {
+    "path": "App/drivers/Servo/feetech_sts_control.c",
+    "symbol": "FeetechStsControl_Init",
+    "line": 100,
+    "source_sha256": "c1f1abcd79ab0f1ba5afa67559c921fb9a8c407c4509b738b252675895af049c"
+  },
+  {
+    "path": "App/drivers/Servo/feetech_sts_command.c",
+    "symbol": "FeetechStsCommand_Task",
+    "line": 210,
+    "source_sha256": "e0b81e15397f4b549b08bc8cfa32c1e1993c71bef031412dd58869b9efecb114"
+  },
+  {
+    "path": "App/drivers/Servo/pwm_servo_control.c",
+    "symbol": "PwmServoControl_Task",
+    "line": 68,
+    "source_sha256": "d62afb1dcbf065f9f81e1e25b457dc2a1385639470fe7e8ecf7c087a1335dd24"
+  },
+  {
+    "path": "App/modules/integration/integration_service.c",
+    "symbol": "Integration_Init",
+    "line": 29,
+    "source_sha256": "cad9f6c410f3740e44f1e15a7b96f8415b31e81aae1a47f905c95c375787287d"
+  },
+  {
+    "path": "App/modules/integration/integration_service.c",
+    "symbol": "Integration_Task",
+    "line": 104,
+    "source_sha256": "cad9f6c410f3740e44f1e15a7b96f8415b31e81aae1a47f905c95c375787287d"
+  },
+  {
+    "path": "App/modules/integration/integration_console.c",
+    "symbol": "Execute",
+    "line": 116,
+    "source_sha256": "825ca41e2d7d8ca6769e332b7fad771a5856223b9aa04cafe1516ece5d63be1f"
+  },
+  {
+    "path": "App/modules/integration/integration_console.c",
+    "symbol": "IntegrationConsole_PushByte",
+    "line": 37,
+    "source_sha256": "825ca41e2d7d8ca6769e332b7fad771a5856223b9aa04cafe1516ece5d63be1f"
+  },
+  {
+    "path": "App/protocol/vofa_protocol.c",
+    "symbol": "VOFA_Protocol_SendRaw",
+    "line": 276,
+    "source_sha256": "5312ad639cbbbb091a925319bdf315b86150e8e09d0342512199f0c43579d288"
+  },
+  {
+    "path": "App/platform/board_peripherals.c",
+    "symbol": "BoardMemory_Configure",
+    "line": 11,
+    "source_sha256": "ad32e4589285de21ff2cfb4e7b4341065dfa844389f793fbb701848dbed0147d"
+  },
+  {
+    "path": "App/platform/board_peripherals.c",
+    "symbol": "BoardPeripherals_ClockInit",
+    "line": 26,
+    "source_sha256": "ad32e4589285de21ff2cfb4e7b4341065dfa844389f793fbb701848dbed0147d"
+  },
+  {
+    "path": "App/platform/board_peripherals.c",
+    "symbol": "BoardRtc_Init",
+    "line": 50,
+    "source_sha256": "ad32e4589285de21ff2cfb4e7b4341065dfa844389f793fbb701848dbed0147d"
+  },
+  {
+    "path": "App/platform/board_peripherals.c",
+    "symbol": "BoardPwm_SetChannelUs",
+    "line": 103,
+    "source_sha256": "ad32e4589285de21ff2cfb4e7b4341065dfa844389f793fbb701848dbed0147d"
+  },
+  {
+    "path": "App/platform/board_camera.c",
+    "symbol": "BoardCamera_Task",
+    "line": 126,
+    "source_sha256": "9f4bb60994f16ab932a881ab00050dd643b99ec825018282460a23f8db238ba8"
+  },
+  {
+    "path": "App/vendor/camera/dcmi_ov5640.c",
+    "symbol": "DCMI_OV5640_Init",
+    "line": 193,
+    "source_sha256": "c7165c2bd793f60881f2a8ef2e37b6bacb6b9d92c17eeac4f835864bf030eabc"
+  },
+  {
+    "path": "App/vendor/camera/dcmi_ov5640.c",
+    "symbol": "HAL_DCMI_FrameEventCallback",
+    "line": 765,
+    "source_sha256": "c7165c2bd793f60881f2a8ef2e37b6bacb6b9d92c17eeac4f835864bf030eabc"
+  },
+  {
+    "path": "App/vendor/camera/sccb.c",
+    "symbol": "SCCB_ReadReg_16Bit",
+    "line": 354,
+    "source_sha256": "54d000bf65bedcf96a00d61c58b4c9ded0aa53b1a6715c23f3c88941388052be"
+  },
+  {
+    "path": "App/vendor/lcd/lcd_spi_154.c",
+    "symbol": "SPI_LCD_Init",
+    "line": 224,
+    "source_sha256": "1b228c36deb2321a85a8da52965ff757bbcb7385518c76f4a188d64b961f356a"
+  },
+  {
+    "path": "App/vendor/lcd/lcd_spi_154.c",
+    "symbol": "LCD_CopyBuffer",
+    "line": 1273,
+    "source_sha256": "1b228c36deb2321a85a8da52965ff757bbcb7385518c76f4a188d64b961f356a"
+  },
+  {
+    "path": "App/platform/board_storage.c",
+    "symbol": "BoardStorage_FileTest",
+    "line": 74,
+    "source_sha256": "a2f9cb9419fbfa039a76bc5d5b56a813cc13414a3871fb44c616db6d4192d066"
+  },
+  {
+    "path": "App/platform/board_storage.c",
+    "symbol": "disk_read",
+    "line": 127,
+    "source_sha256": "a2f9cb9419fbfa039a76bc5d5b56a813cc13414a3871fb44c616db6d4192d066"
+  },
+  {
+    "path": "App/vendor/qspi/qspi_w25q64.c",
+    "symbol": "QSPI_W25Qxx_Init",
+    "line": 157,
+    "source_sha256": "cd158779bd2ab0bd6c21241b91c154d44138226ff4c1212fe6975d7aab58f9da"
+  },
+  {
+    "path": "App/platform/claw_limit_storage_h7.c",
+    "symbol": "ClawLimitStorage_SaveConfig",
+    "line": 52,
+    "source_sha256": "96595967ee1b9df1160d4f5b60ca53b2dd38379fbd33c98e82579fff766663a1"
+  },
+  {
+    "path": "App/platform/usb_console.c",
+    "symbol": "UsbConsole_Task",
+    "line": 56,
+    "source_sha256": "d1a7a779a2ee5f730b684bce423af85b1cbad049aad5386d4d08c084752973eb"
+  },
+  {
+    "path": "USB_DEVICE/App/usbd_cdc_if.c",
+    "symbol": "CDC_Receive_FS",
+    "line": 268,
+    "source_sha256": "0e66741efe2fcd2a01bb8beeeff85d7a9f1f4a0731376a7f0c1939dc37479d1a"
+  },
+  {
+    "path": "App/modules/motor/motor_control.c",
+    "symbol": "MotorControl_Step",
+    "line": 35,
+    "source_sha256": "5c04d8d9b140a6f03b813bac52837066780a19931506c81f1701fb3ef3e83add"
+  },
+  {
+    "path": "App/modules/motor/motor_control.c",
+    "symbol": "MotorKnob_Sample",
+    "line": 24,
+    "source_sha256": "5c04d8d9b140a6f03b813bac52837066780a19931506c81f1701fb3ef3e83add"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "symbol": "MotorService_Tick1ms",
+    "line": 73,
+    "source_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "symbol": "MotorService_Snapshot",
+    "line": 52,
+    "source_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca"
+  },
+  {
+    "path": "App/platform/board_motor.c",
+    "symbol": "BoardMotor_Init",
+    "line": 40,
+    "source_sha256": "68457e5dc51e0426b3fb579a62faa8650bfb915d4f192f06cc4a3c00770304c6"
+  },
+  {
+    "path": "App/platform/board_motor.c",
+    "symbol": "BoardMotor_Write",
+    "line": 14,
+    "source_sha256": "68457e5dc51e0426b3fb579a62faa8650bfb915d4f192f06cc4a3c00770304c6"
+  },
+  {
+    "path": "App/modules/ui/ui_core.c",
+    "symbol": "UiCore_Init",
+    "line": 20,
+    "source_sha256": "1aad957dc608ab13546c4ecae05cb4f7e0864e65e6152fe0d41f27a7f91ed972"
+  },
+  {
+    "path": "App/modules/ui/ui_core.c",
+    "symbol": "UiCore_Event",
+    "line": 33,
+    "source_sha256": "1aad957dc608ab13546c4ecae05cb4f7e0864e65e6152fe0d41f27a7f91ed972"
+  },
+  {
+    "path": "App/modules/ui/ui_core.c",
+    "symbol": "UiCore_View",
+    "line": 100,
+    "source_sha256": "1aad957dc608ab13546c4ecae05cb4f7e0864e65e6152fe0d41f27a7f91ed972"
+  },
+  {
+    "path": "App/modules/ui/ui_input.c",
+    "symbol": "UiInput_Init",
+    "line": 3,
+    "source_sha256": "bd57820226bebe46b6090ed97f9ae515b726472feb504e80f1b7bd436958ed52"
+  },
+  {
+    "path": "App/modules/ui/ui_input.c",
+    "symbol": "UiInput_Sample",
+    "line": 4,
+    "source_sha256": "bd57820226bebe46b6090ed97f9ae515b726472feb504e80f1b7bd436958ed52"
+  },
+  {
+    "path": "App/modules/ui/ui_port.c",
+    "symbol": "UiPort_Operations",
+    "line": 177,
+    "source_sha256": "6500c7536d7f86209f7ee58ffc0efeb9c40669c5b19194d7d80b6e7d161bd5af"
+  },
+  {
+    "path": "App/modules/ui/ui_service.c",
+    "symbol": "UiService_Init",
+    "line": 30,
+    "source_sha256": "93537a19b629fbaedc9a581edb5a03bf0cb2549bbf93635769df9a9ce15081d2"
+  },
+  {
+    "path": "App/modules/ui/ui_service.c",
+    "symbol": "UiService_Input",
+    "line": 35,
+    "source_sha256": "93537a19b629fbaedc9a581edb5a03bf0cb2549bbf93635769df9a9ce15081d2"
+  },
+  {
+    "path": "App/modules/ui/ui_service.c",
+    "symbol": "UiService_Task",
+    "line": 44,
+    "source_sha256": "93537a19b629fbaedc9a581edb5a03bf0cb2549bbf93635769df9a9ce15081d2"
+  },
+  {
+    "path": "App/modules/ui/ui_service.c",
+    "symbol": "UiService_LcdTest",
+    "line": 43,
+    "source_sha256": "93537a19b629fbaedc9a581edb5a03bf0cb2549bbf93635769df9a9ce15081d2"
+  },
+  {
+    "path": "App/modules/ui/ui_profile.c",
+    "symbol": "UiProfile_Crc",
+    "line": 4,
+    "source_sha256": "2700df5128b6e4373a55818b0f23bbc690eec2f2cabf81f6e83565c73b60c005"
+  },
+  {
+    "path": "App/modules/ui/ui_profile.c",
+    "symbol": "UiProfile_Valid",
+    "line": 9,
+    "source_sha256": "2700df5128b6e4373a55818b0f23bbc690eec2f2cabf81f6e83565c73b60c005"
+  },
+  {
+    "path": "App/modules/ui/ui_profile.c",
+    "symbol": "UiProfile_Latest",
+    "line": 18,
+    "source_sha256": "2700df5128b6e4373a55818b0f23bbc690eec2f2cabf81f6e83565c73b60c005"
+  },
+  {
+    "path": "App/modules/ui/ui_profile_store.c",
+    "symbol": "UiProfileStore_Load",
+    "line": 13,
+    "source_sha256": "a8856423f6ff23f47a7088ebfeede42f9e99b98124c8ffe1706cf7b630a54922"
+  },
+  {
+    "path": "App/modules/ui/ui_profile_store.c",
+    "symbol": "UiProfileStore_Save",
+    "line": 17,
+    "source_sha256": "a8856423f6ff23f47a7088ebfeede42f9e99b98124c8ffe1706cf7b630a54922"
+  },
+  {
+    "path": "App/modules/ui/ui_settings.c",
+    "symbol": "UiSettings_Init",
+    "line": 26,
+    "source_sha256": "37d01340df3dd43fadee726d18bb59d487dd43f845bcf499831133595b7951d2"
+  },
+  {
+    "path": "App/modules/ui/ui_settings.c",
+    "symbol": "UiSettings_ApplySts",
+    "line": 30,
+    "source_sha256": "37d01340df3dd43fadee726d18bb59d487dd43f845bcf499831133595b7951d2"
+  },
+  {
+    "path": "App/modules/ui/ui_settings.c",
+    "symbol": "UiSettings_Save",
+    "line": 39,
+    "source_sha256": "37d01340df3dd43fadee726d18bb59d487dd43f845bcf499831133595b7951d2"
+  },
+  {
+    "path": "App/modules/ui/ui_settings.c",
+    "symbol": "UiSettings_Load",
+    "line": 55,
+    "source_sha256": "37d01340df3dd43fadee726d18bb59d487dd43f845bcf499831133595b7951d2"
+  },
+  {
+    "path": "App/modules/ui/ui_settings.c",
+    "symbol": "UiSettings_Clear",
+    "line": 62,
+    "source_sha256": "37d01340df3dd43fadee726d18bb59d487dd43f845bcf499831133595b7951d2"
+  },
+  {
+    "path": "App/app_main.c",
+    "symbol": "App_MotionReady",
+    "line": 200,
+    "source_sha256": "4a30e1b9ca11fa896e6bb5589e3488e89616c924b31be332cc2209575e0ea87e"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "symbol": "MotorService_ResetParameters",
+    "line": 108,
+    "source_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "symbol": "MotorService_BeginMaintenance",
+    "line": 121,
+    "source_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "symbol": "MotorService_EndMaintenance",
+    "line": 122,
+    "source_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "symbol": "MotorService_ApplyParameters",
+    "line": 123,
+    "source_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca"
+  },
+  {
+    "path": "App/platform/board_camera.c",
+    "symbol": "BoardCamera_SetPreview",
+    "line": 62,
+    "source_sha256": "9f4bb60994f16ab932a881ab00050dd643b99ec825018282460a23f8db238ba8"
+  },
+  {
+    "path": "App/bsp/bsp_key.c",
+    "symbol": "Input_Resolve",
+    "line": 34,
+    "source_sha256": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a"
+  },
+  {
+    "path": "App/bsp/bsp_key.c",
+    "symbol": "Input_Pulse",
+    "line": 40,
+    "source_sha256": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a"
+  },
+  {
+    "path": "App/bsp/bsp_key.c",
+    "symbol": "Input_SetMode",
+    "line": 57,
+    "source_sha256": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "symbol": "MotorService_SimulateKnob",
+    "line": 68,
+    "source_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca"
+  },
+  {
+    "path": "App/modules/ui/ui_port.c",
+    "symbol": "UiPort_RunCommand",
+    "line": 75,
+    "source_sha256": "6500c7536d7f86209f7ee58ffc0efeb9c40669c5b19194d7d80b6e7d161bd5af"
+  },
+  {
+    "path": "App/modules/motor/motor_plot.c",
+    "symbol": "MotorPlot_Init",
+    "line": 11,
+    "source_sha256": "d08d76b9bc97f7067a090a258ffc82655b7f47467cbbc8ad99dc028d263ed12b"
+  },
+  {
+    "path": "App/modules/motor/motor_plot.c",
+    "symbol": "MotorPlot_Enable",
+    "line": 12,
+    "source_sha256": "d08d76b9bc97f7067a090a258ffc82655b7f47467cbbc8ad99dc028d263ed12b"
+  },
+  {
+    "path": "App/modules/motor/motor_plot.c",
+    "symbol": "MotorPlot_Task",
+    "line": 16,
+    "source_sha256": "d08d76b9bc97f7067a090a258ffc82655b7f47467cbbc8ad99dc028d263ed12b"
+  },
+  {
+    "path": "App/modules/motor/motor_plot.c",
+    "symbol": "MotorPlot_Report",
+    "line": 32,
+    "source_sha256": "d08d76b9bc97f7067a090a258ffc82655b7f47467cbbc8ad99dc028d263ed12b"
+  }
+]

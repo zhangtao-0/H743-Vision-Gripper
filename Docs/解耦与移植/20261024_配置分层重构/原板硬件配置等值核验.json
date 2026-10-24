@@ -1,0 +1,7 @@
+{
+  "old_macros_checked": 110,
+  "new_effective_macros": 230,
+  "changed_existing_macro_values": {},
+  "passed": true,
+  "scope": "source configuration comparison; excludes physical runtime verification"
+}

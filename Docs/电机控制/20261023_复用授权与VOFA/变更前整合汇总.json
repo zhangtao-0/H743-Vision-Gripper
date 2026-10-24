@@ -1,0 +1,105 @@
+{
+  "version": "20261023-motor-vofa-v1",
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Docs/电机控制/20261023_VOFA调速与波形/H743_VisionGripper.log",
+      "hex": "Docs/电机控制/20261023_VOFA调速与波形/固件/H743_FD5640_TB6612.hex",
+      "hex_sha256": "d3f2dbedf82904b57de789b133541b6f18b4952a44ea085811421cda8be45a48"
+    },
+    {
+      "configuration": "H743_VisionGripper_OV2640",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Docs/电机控制/20261023_VOFA调速与波形/H743_VisionGripper_OV2640.log",
+      "hex": "Docs/电机控制/20261023_VOFA调速与波形/固件/H743_OV2640_TB6612.hex",
+      "hex_sha256": "eb4cb707e88aa76eecd865ce5228a97b373bd2f954afbfe6126459b783032734"
+    },
+    {
+      "configuration": "H743_VisionGripper_NoCamera",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Docs/电机控制/20261023_VOFA调速与波形/H743_VisionGripper_NoCamera.log",
+      "hex": "Docs/电机控制/20261023_VOFA调速与波形/固件/H743_NoCamera_TB6612.hex",
+      "hex_sha256": "276e6907cfc824112e7ee1a87f8253f8ea0bd26802899843ab6a032ad0616be7"
+    }
+  ],
+  "tests": [
+    {
+      "name": "run_motor_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_motor_plot_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_ui_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_p2_host_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_p3_host_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_integration_host_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_vision_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "check_motor_profiles.py",
+      "exit_code": 0
+    }
+  ],
+  "flashed": true,
+  "previous_release_evidence": "Docs/电机控制/20261023_VOFA调速与波形/上一版整合验证汇总.json",
+  "hardware_validation": {
+    "current_release": "FD5640 TB6612 version flashed, programmer verify passed; low-speed run failed with no feedback; independent VM supply pending",
+    "board_last_verified_release": "20261023-motor-vofa-v1 (flash and interface only, motor PID not passed)",
+    "motor_pid_physical": false,
+    "motor_plot_vofa_gui": false,
+    "knob_module": "SM0488050V0.1, 5V, VCC/GND/B/C/A; C function and signal level pending",
+    "first_motor_test": {
+      "target_rpm": 50,
+      "samples": 103,
+      "measured_rpm": 0,
+      "fault": 1,
+      "user_observed_motion": false
+    },
+    "knob_simulation_verified": true,
+    "justfloat_hardware_stream_verified": true,
+    "physical_keys_verified": false,
+    "output_left_disabled": true,
+    "final_selected_target_rpm": 400,
+    "diagnostic_reset": "After read-only debugger session, serial recovered by reset; RAM fault cleared by reset, failed test evidence retained",
+    "evidence": "Docs/电机控制/20261023_VOFA调速与波形/现场供电与方向接口澄清.md",
+    "outside_program_sectors_unchanged": true
+  },
+  "motor": {
+    "driver_profile": 2,
+    "driver": "TB6612 A channel",
+    "factory_target_rpm": 400,
+    "startup_enabled": false,
+    "button_short": "toggle enable, preserve target on normal disable",
+    "button_hold_ms": 1000,
+    "button_hold": "reverse once, no enable toggle on release",
+    "plot_protocol": "JustFloat, 8 channels, nominal 50Hz, HOST only, opt-in"
+  },
+  "current_evidence": "Docs/电机控制/20261023_VOFA调速与波形",
+  "training": {
+    "torch": "2.14.1+cpu",
+    "cuda": false,
+    "official_cuda_install": "two hash mismatch failures; no bypass"
+  },
+  "autonomous_visual_grasping": "No custom weights trained; pixel-only advice, no automatic motion",
+  "readback_verified": true
+}

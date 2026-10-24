@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "KEY1/up",
+    "gpio": "PA0",
+    "short": "菜单上一项/减值；图像页镜像",
+    "long": "长按后松开仍为上一项，不切换成其他功能",
+    "tap": "@key 1 tap",
+    "hold": "@key 1 hold",
+    "mask": 1,
+    "guard": "仅菜单，不驱动舵机"
+  },
+  {
+    "id": 2,
+    "name": "KEY2/down",
+    "gpio": "PB0",
+    "short": "菜单下一项/加值；图像页+90度",
+    "long": "长按后松开仍为下一项",
+    "tap": "@key 2 tap",
+    "hold": "@key 2 hold",
+    "mask": 2,
+    "guard": "仅菜单，不驱动舵机"
+  },
+  {
+    "id": 3,
+    "name": "KEY3/confirm",
+    "gpio": "PB12",
+    "short": "进入/确认/提交；图像页拍照/恢复实时",
+    "long": "长按后松开仍为确认",
+    "tap": "@key 3 tap",
+    "hold": "@key 3 hold",
+    "mask": 4,
+    "guard": "与KEY4组合时抑制单键确认"
+  },
+  {
+    "id": 4,
+    "name": "KEY4/cancel",
+    "gpio": "PB13",
+    "short": "返回/取消草稿",
+    "long": "长按后松开仍为取消",
+    "tap": "@key 4 tap",
+    "hold": "@key 4 hold",
+    "mask": 8,
+    "guard": "与KEY3组合快捷调试授权页/返回"
+  },
+  {
+    "id": 5,
+    "name": "KEY5/A0",
+    "gpio": "PC0",
+    "short": "STS授权：原A0手势；电机授权：单击启停；同时授权两者均响应",
+    "long": "约3秒进入行程选择",
+    "tap": "@key 5 tap",
+    "hold": "@key 5 press 3500",
+    "mask": 16,
+    "guard": "对应@debug sts/motor授权，默认均OFF；舵机仍有在线/限位门控"
+  },
+  {
+    "id": 6,
+    "name": "KEY6/B0",
+    "gpio": "PC1",
+    "short": "STS授权：原B0扫描/双击换向；电机授权：单击减5RPM、双击加5RPM",
+    "long": "标定中长按扫描",
+    "tap": "@key 6 tap",
+    "hold": "@key 6 hold",
+    "mask": 32,
+    "guard": "两个独立授权可同时开启；单击待多击窗口结束执行"
+  },
+  {
+    "id": 7,
+    "name": "KEY7/SM0488050按压",
+    "gpio": "PC13",
+    "short": "点按启停；正常停用保留转速",
+    "long": "长按1000ms换向一次，松开不再启停",
+    "tap": "@key 7 tap",
+    "hold": "@key 7 press 1200",
+    "mask": 64,
+    "guard": "需电机按键授权；C确认为低有效按压输出后接PC13"
+  },
+  {
+    "id": "3+4",
+    "name": "menu shortcut",
+    "gpio": "PB12+PB13",
+    "short": "调试授权页面与原页面快捷往返",
+    "long": "同一组合只触发一次",
+    "tap": "@keys 12 100",
+    "hold": "@keys 12 900",
+    "mask": 12,
+    "guard": "抑制确认与取消单键"
+  },
+  {
+    "id": "5+6",
+    "name": "calibration",
+    "gpio": "PC0+PC1",
+    "short": "先停止旧运动",
+    "long": "约3秒进入/保存机械极限标定",
+    "tap": "",
+    "hold": "@keys 48 3500",
+    "mask": 48,
+    "guard": "舵机标定业务门控"
+  },
+  {
+    "id": "knob",
+    "name": "EC11 A/B",
+    "gpio": "PG2+PG3",
+    "short": "每格±5RPM",
+    "long": "不适用",
+    "tap": "@knob 1",
+    "hold": "@knob -1",
+    "mask": "",
+    "guard": "只改目标，不伪造霍尔反馈"
+  }
+]

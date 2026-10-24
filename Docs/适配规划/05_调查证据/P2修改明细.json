@@ -1,0 +1,100 @@
+[
+  {
+    "path": "project/H743_VisionGripper.ioc",
+    "action": "modified",
+    "before": "fd99a0ead01d75f2a1bc11f4e507e6cc575a63cd1db984b21fca0b5d11a3245a",
+    "after": "e08fa5842604061bf8899327b54c7b727bfd34cb5e1580cc298e2e7355022c84"
+  },
+  {
+    "path": "project/App/app_main.c",
+    "action": "modified",
+    "before": "2c45bf5ba6d656b52f20fd9a058ebe5ce7b92b0fedefa4c894db404d2bbd94d0",
+    "after": "b42178e6a67a946769177a83ee1d40afdc8495dce2cc499a2c0a930ba1ea0c72"
+  },
+  {
+    "path": "project/EWARM/H743_VisionGripper.ewp",
+    "action": "modified",
+    "before": "a58c9cbaee8e38793ae172c11f58c1199d342e88c1383b5eacfb9aa1178a8cb3",
+    "after": "081e8ee862a0de813478298dbfe4af6da04e38de2333b34b90297614dd9e377c"
+  },
+  {
+    "path": "project/Core/Src/main.c",
+    "action": "modified",
+    "before": "a3f2e3e74f1a1030c90c7320db1103758e3cf4da72c11d30cb8b3a0b69534510",
+    "after": "3b7b7ce289cac3d13c512b34d3c7e4064515c2a7a08a45eac703cf5f1a9fbe86"
+  },
+  {
+    "path": "project/App/bsp/bsp_key.c",
+    "action": "modified",
+    "before": "0382309b68ef87eadb01f91203d826d507516f65a79bc6d30ee5cd1c4240f930",
+    "after": "9f4136c8033df3e32da52455dd80aed1a45234044b24d10e57758c5b305f2a99"
+  },
+  {
+    "path": "project/App/bsp/bsp_key.h",
+    "action": "modified",
+    "before": "4c003283d30631524d47d3c094b7c8f5b81bbca941939b68797d319c8de39495",
+    "after": "d61c5c9191c71809cc7e581e0a02c2e160ec80c8b55da6cfc449a0a32b675708"
+  },
+  {
+    "path": "project/App/config/feature_config.h",
+    "action": "modified",
+    "before": "0d0e89846c2cc543a4426201de494ae292c2d6388e933c6fa4899bd23774b555",
+    "after": "a415498e8d073ae1641e5277b6de485983db4ee750a672c94a6e37185128e408"
+  },
+  {
+    "path": "project/App/platform/board_uart.c",
+    "action": "modified",
+    "before": "973acb88c91a71219fe46ea43ffa9fab646e6278f06be93d2b25fd18e22c2be1",
+    "after": "4655fa57f7543dc4571e445e172c69f0c9e3e7964d34e132b32e387501aaa8d6"
+  },
+  {
+    "path": "project/App/platform/board_uart.h",
+    "action": "modified",
+    "before": "c5bcda98c81d85d17b462e34e731b96541975a8af76f085edd3bdc10ea7ba78c",
+    "after": "acdc8cf5e5988e146ce3f16389ee3a4da4f4057d1e292e7e1a1182608323e805"
+  },
+  {
+    "path": "project/App/platform/platform_hal.h",
+    "action": "modified",
+    "before": "c9bf04ec6673cef9aa37b48241a509804958ee2565d4339c7e1800f915f38148",
+    "after": "d6c7775dadc8f71aadd90428d19419a0f4c3ac06399173736fc0ac1b68fac968"
+  },
+  {
+    "path": "project/App/platform/uart_router.c",
+    "action": "modified",
+    "before": "0b310b61b6f9da7decd4f13618468cbca94860bf6a750ce86ce0e6652a316fd4",
+    "after": "4063a0e8eca5438f41fdddb297646ba67179f87eb0b4c411ce26ff8cb3294d60"
+  },
+  {
+    "path": "project/App/platform/boards/lxb743zi_p1/board_config.h",
+    "action": "modified",
+    "before": "9c68c91638faa79634e885c47da0f0ee9dc188fb146495d6147f6abbc4349ce8",
+    "after": "332f9b2913197d71a6d5907f81e5646c4187d77ec3af51cd2f2114e6b865e670"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_port.c",
+    "action": "modified",
+    "before": "dfceb9addd680511097dc89d869693870f84fac86f606c50c0ed0d833ac38bb5",
+    "after": "ea964baebfc78e4cc450bf6ad26c8f5d84081164bc528077b5dc717a2f41593b"
+  },
+  {
+    "path": "project/App/platform/board_led.c",
+    "action": "added",
+    "after": "8b372b11339d1cf4cae082e7c3b9661ded9d0066aeb64a44bf11691579e6dd99"
+  },
+  {
+    "path": "project/App/platform/board_led.h",
+    "action": "added",
+    "after": "87c6b0506611bcff1c04aaaea18c84c9b06794a6c587634cf2ca2a5f18b8ebe7"
+  },
+  {
+    "path": "project/App/platform/host_diagnostics.c",
+    "action": "added",
+    "after": "34278df49b4ebbd042b140b320c076c5dc317ef905df2db4771bf091bd24c278"
+  },
+  {
+    "path": "project/App/platform/host_diagnostics.h",
+    "action": "added",
+    "after": "49644aad008f65e89a7df3d5378b8e9c72fb80b2d9559fc633285fd630ee9d2f"
+  }
+]

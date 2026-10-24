@@ -1,0 +1,13 @@
+{
+  "version": "20261023-debug-grants-v1",
+  "help_categories": 9,
+  "text_examples": 100,
+  "hex_examples": 6,
+  "presets": 106,
+  "key_rows": 10,
+  "parameter_rows": 25,
+  "generated_header_consistent": true,
+  "serial_ports_opened": false,
+  "hardware_test": false,
+  "passed": true
+}

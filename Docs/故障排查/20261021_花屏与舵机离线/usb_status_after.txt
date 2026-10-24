@@ -1,0 +1,5 @@
+?>?????P3 st=PING online=0 id=0 model=0x0000 baud=0 rate=115200 bstep=5 pos=0 ang10=0 mV=0 T=0 cur=0 load=0 move=0 err=0 rx=0 to=17 pe=0 te=1
+STS target=0 rate=115200 rawRx=0 valid=0 parser=0 tx=17 hal=0
+P3 st=PING online=0 id=0 model=0x0000 baud=0 rate=76800 bstep=6 pos=0 ang10=0 mV=0 T=0 cur=0 load=0 move=0 err=0 rx=0 to=19 pe=0 te=1
+P3 st=PING online=0 id=0 model=0x0000 baud=0 rate=76800 bstep=6 pos=0 ang10=0 mV=0 T=0 cur=0 load=0 move=0 err=0 rx=0 to=20 pe=0 te=1
+

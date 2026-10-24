@@ -1,0 +1,62 @@
+{
+  "coordinate_system": "image_pixels_only",
+  "objects": [
+    {
+      "type": "cylinder_top_view",
+      "center_px": [
+        148.0,
+        138.0
+      ],
+      "box_center_px": [
+        148.0,
+        138.0
+      ],
+      "box_size_px": [
+        102.0,
+        102.0
+      ],
+      "box_angle_deg": -90.0,
+      "area_px2": 8346.0,
+      "circularity": 0.907,
+      "solidity": 0.993
+    },
+    {
+      "type": "block_top_view",
+      "center_px": [
+        378.0,
+        142.0
+      ],
+      "box_center_px": [
+        378.0,
+        142.0
+      ],
+      "box_size_px": [
+        84.0,
+        116.0
+      ],
+      "box_angle_deg": -90.0,
+      "area_px2": 9744.0,
+      "circularity": 0.765,
+      "solidity": 1.0
+    },
+    {
+      "type": "l_bracket_top_view",
+      "center_px": [
+        335.0,
+        376.08
+      ],
+      "box_center_px": [
+        352.5,
+        360.0
+      ],
+      "box_size_px": [
+        120.0,
+        115.0
+      ],
+      "box_angle_deg": -90.0,
+      "area_px2": 7092.5,
+      "circularity": 0.404,
+      "solidity": 0.679
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/pedropro/TACO/master/README.md",
+    "path": "Library\\01_来源原件\\TACO\\README.md",
+    "bytes": 4210,
+    "sha256": "67f00bd7e5c031100fa4b697591a302436032367500d3a2651df567e87c90e0f",
+    "observed_at": "2026-10-24T14:30:39.905861+08:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pedropro/TACO/master/LICENSE",
+    "path": "Library\\01_来源原件\\TACO\\LICENSE",
+    "bytes": 1074,
+    "sha256": "2280878a21e4c4a9ff18e232c78182ac1300b3fd3641a1db1b503d1e2b7d4443",
+    "observed_at": "2026-10-24T14:30:40.944041+08:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pedropro/TACO/master/data/annotations.json",
+    "path": "Library\\01_来源原件\\TACO\\annotations.json",
+    "bytes": 2988946,
+    "sha256": "812c2e3f0d336b437f276597715de2abb08bb8a641599c45f593d233ec66457b",
+    "observed_at": "2026-10-24T14:30:42.676084+08:00"
+  }
+]

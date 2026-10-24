@@ -1,0 +1,19 @@
+{
+  "settings_version": "0.0.8",
+  "datasets_dir": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\datasets",
+  "weights_dir": "weights",
+  "runs_dir": "runs",
+  "uuid": "bf832a4ec1a58a582bb64ec78f6a677d53850b68077eca6046b13914ec4aa388",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "mlflow": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

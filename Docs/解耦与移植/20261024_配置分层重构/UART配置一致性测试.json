@@ -1,0 +1,21 @@
+{
+  "scope": "actual H743 UART adapter + fake HAL; default/remap/invalid profile; no device IO",
+  "passed": true,
+  "cases": [
+    {
+      "mode": "default",
+      "exit_code": 0,
+      "stdout": "PASS configured role drives baud/GPIO/RCC/NVIC/IRQ consistently, no physical handles in business\n"
+    },
+    {
+      "mode": "swap",
+      "exit_code": 0,
+      "stdout": "PASS configured role drives baud/GPIO/RCC/NVIC/IRQ consistently, no physical handles in business\n"
+    },
+    {
+      "mode": "duplicate",
+      "exit_code": 0,
+      "stdout": "PASS duplicate UART/IRQ rejected before hardware effects\n"
+    }
+  ]
+}

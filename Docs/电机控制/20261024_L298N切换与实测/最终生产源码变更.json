@@ -1,0 +1,27 @@
+[
+  {
+    "path": "App/config/motor_config.h",
+    "before": "7296c29b795642ea27eb7b49852a23f5c34e5904301d58aedbff60f6ca1d72a7",
+    "after": "7296c29b795642ea27eb7b49852a23f5c34e5904301d58aedbff60f6ca1d72a7"
+  },
+  {
+    "path": "App/modules/motor/motor_control.c",
+    "before": "dd2c8dea484afdd28635f6c9721287e55f8ee34845685d10014c2ec950ee91a6",
+    "after": "5c04d8d9b140a6f03b813bac52837066780a19931506c81f1701fb3ef3e83add"
+  },
+  {
+    "path": "App/modules/motor/motor_control.h",
+    "before": "b66d1904078dc6d48ede657f628864331fc716a2e3a2aa7448593d551e160000",
+    "after": "03fc5e0d42373fe9f9ec96e9808f7fc2c5bbbcee4212cdfadafef263ad0e990c"
+  },
+  {
+    "path": "App/platform/board_motor.c",
+    "before": "e04f563e3da3d9172291897890a8df394764f2abe9f88d100cf0b3316f84cb5f",
+    "after": "68457e5dc51e0426b3fb579a62faa8650bfb915d4f192f06cc4a3c00770304c6"
+  },
+  {
+    "path": "App/platform/boards/lxb743zi_p1/board_devices.h",
+    "before": "3e52039415075ddf8759a96df8cd4e51fac574dab04fb487caec0fa257fdd987",
+    "after": "e157a67019612235c492a0530a2be2dbb33027e5f3e2f0f51ec68a1192420b74"
+  }
+]

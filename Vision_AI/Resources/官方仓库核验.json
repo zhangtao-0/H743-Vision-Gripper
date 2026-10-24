@@ -1,0 +1,161 @@
+[
+  {
+    "repository": "https://github.com/opencv/opencv",
+    "observed_at": "2026-10-24",
+    "metadata": {
+      "full_name": "opencv/opencv",
+      "default_branch": "5.x",
+      "archived": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "html_url": "https://github.com/opencv/opencv"
+    },
+    "latest_commit": {
+      "sha": "4058787c826610fdb1d6d2e18517d93e3ad9b184",
+      "html_url": "https://github.com/opencv/opencv/commit/4058787c826610fdb1d6d2e18517d93e3ad9b184"
+    },
+    "latest_release": {
+      "tag_name": "5.0.0",
+      "published_at": "2026-06-06T10:52:34Z",
+      "html_url": "https://github.com/opencv/opencv/releases/tag/5.0.0"
+    },
+    "license": {
+      "html_url": "https://github.com/opencv/opencv/blob/5.x/LICENSE",
+      "download_url": "https://raw.githubusercontent.com/opencv/opencv/5.x/LICENSE",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "spdx_id": "Apache-2.0"
+    }
+  },
+  {
+    "repository": "https://github.com/cvat-ai/cvat",
+    "observed_at": "2026-10-24",
+    "metadata": {
+      "full_name": "cvat-ai/cvat",
+      "default_branch": "develop",
+      "archived": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "html_url": "https://github.com/cvat-ai/cvat"
+    },
+    "latest_commit": {
+      "sha": "a415be662cdc8e7a271418ea1f9c20bfd9675625",
+      "html_url": "https://github.com/cvat-ai/cvat/commit/a415be662cdc8e7a271418ea1f9c20bfd9675625"
+    },
+    "latest_release": {
+      "tag_name": "v2.80.0",
+      "published_at": "2026-10-21T16:34:24Z",
+      "html_url": "https://github.com/cvat-ai/cvat/releases/tag/v2.80.0"
+    },
+    "license": {
+      "html_url": "https://github.com/cvat-ai/cvat/blob/develop/LICENSE",
+      "download_url": "https://raw.githubusercontent.com/cvat-ai/cvat/develop/LICENSE",
+      "sha": "9af4363dbc9c706c640f2a15612e5c2dc70f734f",
+      "spdx_id": "MIT"
+    }
+  },
+  {
+    "repository": "https://github.com/ultralytics/ultralytics",
+    "observed_at": "2026-10-24",
+    "metadata": {
+      "full_name": "ultralytics/ultralytics",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "html_url": "https://github.com/ultralytics/ultralytics"
+    },
+    "latest_commit": {
+      "sha": "657795779ccbbbc19a77935b6b74e729b2294ada",
+      "html_url": "https://github.com/ultralytics/ultralytics/commit/657795779ccbbbc19a77935b6b74e729b2294ada"
+    },
+    "latest_release": {
+      "tag_name": "v8.4.184",
+      "published_at": "2026-10-22T17:41:34Z",
+      "html_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.184"
+    },
+    "license": {
+      "html_url": "https://github.com/ultralytics/ultralytics/blob/main/LICENSE",
+      "download_url": "https://raw.githubusercontent.com/ultralytics/ultralytics/main/LICENSE",
+      "sha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "spdx_id": "AGPL-3.0"
+    }
+  },
+  {
+    "repository": "https://github.com/pytorch/pytorch",
+    "observed_at": "2026-10-24",
+    "metadata": {
+      "full_name": "pytorch/pytorch",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "html_url": "https://github.com/pytorch/pytorch"
+    },
+    "latest_commit": {
+      "sha": "4f3ee7aa37084ba2469f05430db08ce449f3e206",
+      "html_url": "https://github.com/pytorch/pytorch/commit/4f3ee7aa37084ba2469f05430db08ce449f3e206"
+    },
+    "latest_release": {
+      "tag_name": "v2.14.1",
+      "published_at": "2026-09-30T19:14:48Z",
+      "html_url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.1"
+    },
+    "license": {
+      "html_url": "https://github.com/pytorch/pytorch/blob/main/LICENSE",
+      "download_url": "https://raw.githubusercontent.com/pytorch/pytorch/main/LICENSE",
+      "sha": "c23172f7aff0254e4f0f163fb2e6e355cbaec5f4",
+      "spdx_id": "NOASSERTION"
+    }
+  },
+  {
+    "repository": "https://github.com/graspnet/graspnet-baseline",
+    "observed_at": "2026-10-24",
+    "metadata": {
+      "full_name": "graspnet/graspnet-baseline",
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "html_url": "https://github.com/graspnet/graspnet-baseline"
+    },
+    "latest_commit": {
+      "sha": "280c215129f759ed8649cb4e89fc5dfee55f4f80",
+      "html_url": "https://github.com/graspnet/graspnet-baseline/commit/280c215129f759ed8649cb4e89fc5dfee55f4f80"
+    },
+    "latest_release": {
+      "error": "HTTP Error 404: Not Found",
+      "url": "https://api.github.com/repos/graspnet/graspnet-baseline/releases/latest"
+    },
+    "license": {
+      "html_url": "https://github.com/graspnet/graspnet-baseline/blob/main/LICENSE",
+      "download_url": "https://raw.githubusercontent.com/graspnet/graspnet-baseline/main/LICENSE",
+      "sha": "e61845b29775895e1be90ef83ad35957690764fd",
+      "spdx_id": "NOASSERTION"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+﻿id,name,gpio,short,long,tap,hold,mask,guard
+1,KEY1/up,PA0,菜单上一项/减值；图像页镜像,长按后松开仍为上一项，不切换成其他功能,@key 1 tap,@key 1 hold,1,仅菜单，不驱动舵机
+2,KEY2/down,PB0,菜单下一项/加值；图像页+90度,长按后松开仍为下一项,@key 2 tap,@key 2 hold,2,仅菜单，不驱动舵机
+3,KEY3/confirm,PB12,进入/确认/提交；图像页拍照/恢复实时,长按后松开仍为确认,@key 3 tap,@key 3 hold,4,与KEY4组合时抑制单键确认
+4,KEY4/cancel,PB13,返回/取消草稿,长按后松开仍为取消,@key 4 tap,@key 4 hold,8,与KEY3组合快捷调试授权页/返回
+5,KEY5/A0,PC0,STS授权：原A0手势；电机授权：单击启停；同时授权两者均响应,约3秒进入行程选择,@key 5 tap,@key 5 press 3500,16,对应@debug sts/motor授权，默认均OFF；舵机仍有在线/限位门控
+6,KEY6/B0,PC1,STS授权：原B0扫描/双击换向；电机授权：单击减5RPM、双击加5RPM,标定中长按扫描,@key 6 tap,@key 6 hold,32,两个独立授权可同时开启；单击待多击窗口结束执行
+7,KEY7/SM0488050按压,PC13,点按启停；正常停用保留转速,长按1000ms换向一次，松开不再启停,@key 7 tap,@key 7 press 1200,64,需电机按键授权；C确认为低有效按压输出后接PC13
+3+4,menu shortcut,PB12+PB13,调试授权页面与原页面快捷往返,同一组合只触发一次,@keys 12 100,@keys 12 900,12,抑制确认与取消单键
+5+6,calibration,PC0+PC1,先停止旧运动,约3秒进入/保存机械极限标定,,@keys 48 3500,48,舵机标定业务门控
+knob,EC11 A/B,PG2+PG3,每格±5RPM,不适用,@knob 1,@knob -1,,只改目标，不伪造霍尔反馈

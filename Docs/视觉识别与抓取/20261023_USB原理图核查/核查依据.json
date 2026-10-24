@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-23",
+  "schematic_page": 1,
+  "datasheet_page": 52,
+  "sources": [
+    {
+      "path": "01_嵌入式技术资料库/01_芯片与内核资料/09_硬件信息/芯路城_鹿小班_STM32H743ZIT6/01_原理图/LXB743ZI-P1原理图.pdf",
+      "sha256": "93014c71abede691d96fdaf241df1468e2500b443e5d3c483cb79e24bced32b5"
+    },
+    {
+      "path": "01_嵌入式技术资料库/01_芯片与内核资料/01_数据手册/STM32H743/DS_stm32h743zi.pdf",
+      "sha256": "f6e620179006c8c4d497b477ba065edc89c6dd9ac24d9debb3362910651f42ee"
+    },
+    {
+      "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/project/USB_DEVICE/Target/usbd_conf.c",
+      "sha256": "80046e68568332fac22af88284b090096c81e4f21bd4165b36efb1bf6ac3a515"
+    },
+    {
+      "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/project/USB_DEVICE/App/usbd_cdc_if.c",
+      "sha256": "0e66741efe2fcd2a01bb8beeeff85d7a9f1f4a0731376a7f0c1939dc37479d1a"
+    },
+    {
+      "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/project/USB_DEVICE/App/usb_device.c",
+      "sha256": "5a8dba687dae4caad95a05e750eca4e785f2ecb6282aac1b8a95d62435c40d55"
+    },
+    {
+      "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Host/vision_gripper/viewer.py",
+      "sha256": "b1fd06d238b4a4d06762303450cafc26e99553f25f69fef12fd4e531998fc862"
+    }
+  ],
+  "usb_port": "U11 Type-C",
+  "data_pins": {
+    "D-": "PA11/U1 pin103",
+    "D+": "PA12/U1 pin104"
+  },
+  "native_usb_cdc": true,
+  "hardware_uart_bridge": false,
+  "set_line_coding_used": false,
+  "get_line_coding": "115200 8N1 fixed",
+  "bus": "USB Full Speed 12 Mbit/s",
+  "hardware_retested": false,
+  "production_source_modified": false
+}

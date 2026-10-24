@@ -1,0 +1,4 @@
+# Reference versions actually used by this run; install only after approval.
+numpy==2.5.4
+opencv-python==4.14.0.94
+Pillow==12.3.0

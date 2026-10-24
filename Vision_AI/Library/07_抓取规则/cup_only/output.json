@@ -1,0 +1,47 @@
+{
+  "schema": "h743.grasp_candidate.v1",
+  "accepted_tags": [
+    {
+      "id": "semantic:cup",
+      "source": "model",
+      "confidence": 0.9
+    }
+  ],
+  "unknown_tags": [],
+  "excluded_tags": [],
+  "conflicts": [],
+  "hazards": [],
+  "constraints": [],
+  "ranked_candidates": [
+    {
+      "strategy": "side_wrap",
+      "score": 27.0
+    }
+  ],
+  "forbidden_strategies": [],
+  "selected_strategy": "side_wrap",
+  "missing_requirements": [
+    "camera_calibrated",
+    "feedback_verified",
+    "gripper_geometry_verified",
+    "operator_hardware_authorization",
+    "workspace_verified"
+  ],
+  "decision_trace": [
+    {
+      "kind": "additive",
+      "tags": [
+        "semantic:cup"
+      ],
+      "strategy": "side_wrap",
+      "score": 27.0
+    }
+  ],
+  "reject_reasons": [
+    "missing_verified_execution_context"
+  ],
+  "planning_conditions_met": false,
+  "grasp_valid": false,
+  "mode": "DRY_RUN",
+  "hardware_commands_sent": false
+}

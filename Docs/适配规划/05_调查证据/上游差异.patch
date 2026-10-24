@@ -1,0 +1,2180 @@
+--- upstream/Project/code/bsp_key.c
++++ project/App/bsp/bsp_key.c
+@@ -42,6 +42,12 @@
+      {0U, 0U, 0U, 0U, 0UL, 0UL, 0UL, 0U}, 0U},
+     {Key_Task2, {KEY_Task2_PORT, KEY_Task2_PIN, KEY_Task2_MODE, KEY_Task2_PULL, KEY_Task2_SPEED,
+      KEY_Task2_ACTIVE_STATE, 1U, KEY_TRIGGER_LONG_PRESS},
++     {0U, 0U, 0U, 0U, 0UL, 0UL, 0UL, 0U}, 0U},
++    {Key_Task3, {KEY_Task3_PORT, KEY_Task3_PIN, KEY_Task3_MODE, KEY_Task3_PULL, KEY_Task3_SPEED,
++     KEY_Task3_ACTIVE_STATE, 1U, KEY_TRIGGER_NONE},
++     {0U, 0U, 0U, 0U, 0UL, 0UL, 0UL, 0U}, 0U},
++    {Key_Task4, {KEY_Task4_PORT, KEY_Task4_PIN, KEY_Task4_MODE, KEY_Task4_PULL, KEY_Task4_SPEED,
++     KEY_Task4_ACTIVE_STATE, 1U, KEY_TRIGGER_NONE},
+      {0U, 0U, 0U, 0U, 0UL, 0UL, 0UL, 0U}, 0U}
+ };
+ 
+--- upstream/Project/code/bsp_key.h
++++ project/App/bsp/bsp_key.h
+@@ -57,11 +57,27 @@
+ #define KEY_Task2_SPEED                  GPIO_SPEED_FREQ_LOW
+ #define KEY_Task2_ACTIVE_STATE           GPIO_PIN_RESET
+ 
++#define KEY_Task3_PORT                   GPIOB
++#define KEY_Task3_PIN                    GPIO_PIN_12
++#define KEY_Task3_MODE                   GPIO_MODE_INPUT
++#define KEY_Task3_PULL                   GPIO_PULLUP
++#define KEY_Task3_SPEED                  GPIO_SPEED_FREQ_LOW
++#define KEY_Task3_ACTIVE_STATE           GPIO_PIN_RESET
++
++#define KEY_Task4_PORT                   GPIOB
++#define KEY_Task4_PIN                    GPIO_PIN_13
++#define KEY_Task4_MODE                   GPIO_MODE_INPUT
++#define KEY_Task4_PULL                   GPIO_PULLUP
++#define KEY_Task4_SPEED                  GPIO_SPEED_FREQ_LOW
++#define KEY_Task4_ACTIVE_STATE           GPIO_PIN_RESET
++
+ typedef enum {
+     Key_None  = 0U,
+     Key_Task1 = 1U,
+     Key_Task2 = 2U,
+-    Key_Count = 2U,
++    Key_Task3 = 3U,
++    Key_Task4 = 4U,
++    Key_Count = 4U,
+     Key_TableSize
+ } KeyCode_t;
+ 
+--- upstream/Project/code/tim.c
++++ project/App/bsp/tim.c
+@@ -48,7 +48,7 @@
+ #endif
+ }
+ 
+-// 初始化 PA6/PB1 的 TIM3 双路镜像 PWM。
++// 初始化 PA6/PB1 的 TIM3 双路独立 PWM。
+ void MX_TIM3_Init(void)
+ {
+   TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+@@ -95,35 +95,56 @@
+ #endif
+ }
+ 
+-// 启动 PA6/PB1 两路镜像 PWM。
+-HAL_StatusTypeDef TIM3_SERVO_PWM_Start(void)
+-{
+-  HAL_StatusTypeDef status;
+-
+-  status = HAL_OK;
+-#if TIM3_CH1_PWM_PIN_ENABLE
+-  status = HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+-#endif
+-#if TIM3_CH4_PWM_PIN_ENABLE
+-  if (status == HAL_OK) {
+-    status = HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
+-  }
+-#endif
+-  return status;
+-}
+-
+-// 同步设置 PA6/PB1 两路 PWM 高电平宽度。
+-void TIM3_SERVO_PWM_SetPulseUs(uint16_t pulse_us)
++// 启动指定 PWM 舵机通道。
++HAL_StatusTypeDef TIM3_SERVO_PWM_StartChannel(Tim3ServoPwmChannel_t channel)
++{
++  switch (channel) {
++    case TIM3_SERVO_PWM_CHANNEL_1:
++#if TIM3_CH1_PWM_PIN_ENABLE
++      return HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
++#else
++      return HAL_ERROR;
++#endif
++
++    case TIM3_SERVO_PWM_CHANNEL_2:
++#if TIM3_CH4_PWM_PIN_ENABLE
++      return HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
++#else
++      return HAL_ERROR;
++#endif
++
++    default:
++      return HAL_ERROR;
++  }
++}
++
++// 设置指定 PWM 舵机通道的高电平宽度。
++HAL_StatusTypeDef TIM3_SERVO_PWM_SetPulseUs(Tim3ServoPwmChannel_t channel, uint16_t pulse_us)
+ {
+   if (pulse_us >= TIM3_SERVO_PWM_PERIOD_US) {
+     pulse_us = TIM3_SERVO_PWM_PERIOD_US - 1U;
+   }
+-#if TIM3_CH1_PWM_PIN_ENABLE
+-  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, pulse_us);
+-#endif
+-#if TIM3_CH4_PWM_PIN_ENABLE
+-  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, pulse_us);
+-#endif
++
++  switch (channel) {
++    case TIM3_SERVO_PWM_CHANNEL_1:
++#if TIM3_CH1_PWM_PIN_ENABLE
++      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, pulse_us);
++      return HAL_OK;
++#else
++      return HAL_ERROR;
++#endif
++
++    case TIM3_SERVO_PWM_CHANNEL_2:
++#if TIM3_CH4_PWM_PIN_ENABLE
++      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, pulse_us);
++      return HAL_OK;
++#else
++      return HAL_ERROR;
++#endif
++
++    default:
++      return HAL_ERROR;
++  }
+ }
+ 
+ // 初始化 TIM2/TIM3 外设时钟。
+--- upstream/Project/code/tim.h
++++ project/App/bsp/tim.h
+@@ -34,10 +34,16 @@
+ #define TIM3_CH4_PWM_PIN_ENABLE 1U      /* PB1：备用 PWM 舵机 2，TIM3_CH4。 */
+ #define TIM3_SERVO_PWM_PERIOD_US 20000U /* PWM 舵机周期：20ms。 */
+ 
++typedef enum {
++    TIM3_SERVO_PWM_CHANNEL_1 = 0,  /* PA6 / TIM3_CH1。 */
++    TIM3_SERVO_PWM_CHANNEL_2,      /* PB1 / TIM3_CH4。 */
++    TIM3_SERVO_PWM_CHANNEL_COUNT
++} Tim3ServoPwmChannel_t;
++
+ void MX_TIM2_Init(void);
+ void MX_TIM3_Init(void);
+-HAL_StatusTypeDef TIM3_SERVO_PWM_Start(void);
+-void TIM3_SERVO_PWM_SetPulseUs(uint16_t pulse_us);
++HAL_StatusTypeDef TIM3_SERVO_PWM_StartChannel(Tim3ServoPwmChannel_t channel);
++HAL_StatusTypeDef TIM3_SERVO_PWM_SetPulseUs(Tim3ServoPwmChannel_t channel, uint16_t pulse_us);
+ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+ 
+ #ifdef __cplusplus
+--- upstream/Project/code/feature_config.c
++++ project/App/config/feature_config.c
+@@ -13,11 +13,6 @@
+     CLAW_DEFAULT_AUTO_PRINT_ENABLE,
+     CLAW_DEFAULT_AUTO_PRINT_PERIOD_MS,
+     CLAW_DEFAULT_MOTION_RANGE,
+-    CLAW_DEFAULT_SERVO_BACKEND,
+-    CLAW_DEFAULT_PWM_MIN_PULSE_US,
+-    CLAW_DEFAULT_PWM_MAX_PULSE_US,
+-    CLAW_DEFAULT_PWM_MIN_ANGLE_DEG,
+-    CLAW_DEFAULT_PWM_MAX_ANGLE_DEG,
+     CLAW_DEFAULT_RANGE_SELECT_HOLD_MS,
+     CLAW_DEFAULT_LIMIT_COMBO_HOLD_MS,
+     CLAW_DEFAULT_CALIBRATION_SWEEP_SPEED,
+--- upstream/Project/code/feature_config.h
++++ project/App/config/feature_config.h
+@@ -39,17 +39,12 @@
+ #define CLAW_DEFAULT_AUTO_PRINT_ENABLE             0U   // 上电默认关闭 claw 周期打印。
+ #define CLAW_DEFAULT_AUTO_PRINT_PERIOD_MS         100U  // claw 周期打印间隔。
+ #define CLAW_DEFAULT_MOTION_RANGE                  1U   // 0=机械极限；1=0~270度。
+-#define CLAW_DEFAULT_SERVO_BACKEND                 2U   // 0=STS；1=PWM；2=STS+PWM。
+ 
+ #define CLAW_DEFAULT_BLUETOOTH_SLIDER_HEAD       0xA5U  // 滑块包头。
+ #define CLAW_DEFAULT_BLUETOOTH_SLIDER_TAIL       0x5AU  // 滑块包尾。
+ #define CLAW_DEFAULT_BLUETOOTH_SLIDER_FORMAT        0U  // 0=ASCII；1=U8；2=U16LE；3=U32LE。
+ #define CLAW_DEFAULT_BLUETOOTH_ANGLE_CHANNEL        0U  // 通道 0 -> 角度滑块。
+ 
+-#define CLAW_DEFAULT_PWM_MIN_PULSE_US             500U
+-#define CLAW_DEFAULT_PWM_MAX_PULSE_US            2500U
+-#define CLAW_DEFAULT_PWM_MIN_ANGLE_DEG             0.0f
+-#define CLAW_DEFAULT_PWM_MAX_ANGLE_DEG           180.0f
+ 
+ #define CLAW_DEFAULT_RANGE_SELECT_HOLD_MS        3000U  // A 单独长按进入行程选择。
+ #define CLAW_DEFAULT_LIMIT_COMBO_HOLD_MS         3000U  // A+B 长按进入/保存标定。
+@@ -77,11 +72,6 @@
+     uint8_t auto_print_enable;                    // claw 周期打印默认开关。
+     uint16_t auto_print_period_ms;                // claw 周期打印默认间隔。
+     uint8_t motion_range;                         // A0/B0/滑块共同动作范围。
+-    uint8_t servo_backend;                        // 默认舵机后端。
+-    uint16_t pwm_min_pulse_us;                    // PWM 最小脉宽。
+-    uint16_t pwm_max_pulse_us;                    // PWM 最大脉宽。
+-    float pwm_min_angle_deg;                      // PWM 最小角度。
+-    float pwm_max_angle_deg;                      // PWM 最大角度。
+     uint16_t range_select_hold_ms;                // A 单独长按阈值。
+     uint16_t limit_combo_hold_ms;                 // A+B 组合长按阈值。
+     uint16_t calibration_sweep_speed;              // 机械极限标定扫描速度。
+--- upstream/Project/code/feetech_sts_register.c
++++ project/App/config/feetech_sts_register.c
+@@ -1,227 +1,227 @@
+-/*********************************************************************************************************************
+- * @file    feetech_sts_register.c
+- * @brief   飞特 STS 官方寄存器唯一描述表。
+- *********************************************************************************************************************/
+-
+-#include "feetech_sts_register.h"
+-#include "feature_config.h"
+-#include <stddef.h>
+-
+-#define STS_REG(addr, bytes, area, rw, type, unit_type, min_v, max_v, enabled, risk, text) \
+-    { (addr), (bytes), (area), (rw), (type), (unit_type), (min_v), (max_v), (enabled), (risk), (text) }
+-
+-// 地址、权限、范围和单位只在此表维护。
+-static const FeetechStsRegisterDesc_t s_registers[] = {
+-    STS_REG( 0U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "固件主版本号"),
+-    STS_REG( 1U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "固件次版本号"),
+-    STS_REG( 3U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "舵机主版本号"),
+-    STS_REG( 4U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "舵机次版本号"),
+-    STS_REG( 5U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     253, 0U, 1U, "ID"),
+-    STS_REG( 6U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,       7, 0U, 1U, "波特率"),
+-    STS_REG( 7U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_2US,                 0,     254, 1U, 0U, "返回延时"),
+-    STS_REG( 8U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,       1, 1U, 0U, "应答状态级别"),
+-    STS_REG( 9U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP,                0,    4094, 1U, 0U, "最小角度限制"),
+-    STS_REG(11U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP,                1,    4095, 1U, 0U, "最大角度限制"),
+-    STS_REG(13U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_CELSIUS,             0,     100, 1U, 0U, "最高温度上限"),
+-    STS_REG(14U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_VOLT_01V,            0,     CLAW_FEATURE_STS_MAX_VOLTAGE_RAW, CLAW_FEATURE_STS_MAX_VOLTAGE_WRITE_ENABLE, 1U, "最高输入电压"),
+-    STS_REG(15U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_VOLT_01V,            0,     254, 0U, 1U, "最低输入电压"),
+-    STS_REG(16U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_PERCENT_001,         0,    1000, 1U, 0U, "最大扭矩"),
+-    STS_REG(18U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_BITFIELD, FEETECH_STS_REG_UNIT_RAW,                 0,     254, 0U, 1U, "相位特殊字节"),
+-    STS_REG(19U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_BITFIELD, FEETECH_STS_REG_UNIT_RAW,                 0,     254, 0U, 1U, "卸载条件"),
+-    STS_REG(20U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_BITFIELD, FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "LED报警条件"),
+-    STS_REG(21U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "位置环P比例系数"),
+-    STS_REG(22U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "位置环D微分系数"),
+-    STS_REG(23U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "位置环I积分系数"),
+-    STS_REG(24U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_PERCENT_001,         0,     254, 1U, 0U, "最小启动力"),
+-    STS_REG(25U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "积分限制值"),
+-    STS_REG(26U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_STEP,                0,      32, 1U, 0U, "顺时针不灵敏区"),
+-    STS_REG(27U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_STEP,                0,      32, 1U, 0U, "逆时针不灵敏区"),
+-    STS_REG(28U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_CURRENT_65MA,        0,     511, 1U, 0U, "保护电流"),
+-    STS_REG(30U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 1,       3, 0U, 1U, "角度分辨率"),
+-    STS_REG(31U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_S16,      FEETECH_STS_REG_UNIT_STEP,            -2047,    2047, 0U, 1U, "位置校正"),
+-    STS_REG(33U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,       3, 1U, 0U, "运行模式"),
+-    STS_REG(34U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_PERCENT_01,          0,     100, 1U, 0U, "保护扭矩"),
+-    STS_REG(35U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_10MS,                0,     254, 1U, 0U, "保护时间"),
+-    STS_REG(36U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_PERCENT_01,          0,     100, 1U, 0U, "过载扭矩"),
+-    STS_REG(37U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "速度闭环P比例系数"),
+-    STS_REG(38U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_10MS,                0,     254, 1U, 0U, "过流保护时间"),
+-    STS_REG(39U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "速度闭环I积分系数"),
+-    STS_REG(40U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     128, 1U, 0U, "扭矩开关"),
+-    STS_REG(41U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_ACC_100_STEP_PER_S2, 0,     254, 1U, 0U, "加速度"),
+-    STS_REG(42U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP,                0,    4095, 1U, 0U, "目标位置"),
+-    STS_REG(44U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_MS,                  0,    1000, 1U, 0U, "运行时间"),
+-    STS_REG(46U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP_PER_S,          0,    4095, 1U, 0U, "运行速度"),
+-    STS_REG(48U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_PERCENT_001,         0,    1000, 1U, 0U, "转矩限制"),
+-    STS_REG(55U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,       1, 1U, 0U, "锁标志"),
+-    STS_REG(56U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP,                0,    4095, 0U, 0U, "当前位置"),
+-    STS_REG(58U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_S16,      FEETECH_STS_REG_UNIT_STEP_PER_S,     -32768,   32767, 0U, 0U, "当前速度"),
+-    STS_REG(60U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_S16,      FEETECH_STS_REG_UNIT_PERCENT_001,    -32768,   32767, 0U, 0U, "当前负载"),
+-    STS_REG(62U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_VOLT_01V,            0,     255, 0U, 0U, "当前电压"),
+-    STS_REG(63U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_CELSIUS,             0,     255, 0U, 0U, "当前温度"),
+-    STS_REG(64U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "异步写标志"),
+-    STS_REG(65U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_BITFIELD, FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "舵机状态"),
+-    STS_REG(66U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "移动标志"),
+-    STS_REG(69U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_S16,      FEETECH_STS_REG_UNIT_CURRENT_65MA,   -32768,   32767, 0U, 0U, "当前电流")
+-};
+-
+-#define FEETECH_STS_REGISTER_COUNT ((uint8_t)(sizeof(s_registers) / sizeof(s_registers[0])))
+-
+-// 按起始地址查找描述。
+-const FeetechStsRegisterDesc_t *FeetechStsRegister_FindByStart(uint8_t address)
+-{
+-    uint8_t i;
+-
+-    for (i = 0U; i < FEETECH_STS_REGISTER_COUNT; i++) {
+-        if (s_registers[i].address == address) {
+-            return &s_registers[i];
+-        }
+-    }
+-    return 0;
+-}
+-
+-// 查找覆盖当前字节的描述。
+-const FeetechStsRegisterDesc_t *FeetechStsRegister_FindContaining(uint8_t address)
+-{
+-    uint8_t i;
+-    uint16_t end;
+-
+-    for (i = 0U; i < FEETECH_STS_REGISTER_COUNT; i++) {
+-        end = (uint16_t)s_registers[i].address + (uint16_t)s_registers[i].width;
+-        if (((uint16_t)address >= (uint16_t)s_registers[i].address) &&
+-            ((uint16_t)address < end)) {
+-            return &s_registers[i];
+-        }
+-    }
+-    return 0;
+-}
+-
+-// 按小端格式解码寄存器值。
+-uint8_t FeetechStsRegister_DecodeValue(const FeetechStsRegisterDesc_t *desc,
+-                                       const uint8_t *data,
+-                                       uint8_t data_len,
+-                                       int32_t *value)
+-{
+-    uint16_t raw;
+-
+-    if ((desc == 0) || (data == 0) || (value == 0) ||
+-        (desc->width == 0U) || (data_len < desc->width)) {
+-        return 0U;
+-    }
+-
+-    if (desc->width == 1U) {
+-        *value = data[0];
+-        return 1U;
+-    }
+-    if (desc->width != 2U) {
+-        return 0U;
+-    }
+-
+-    raw = (uint16_t)data[0] | ((uint16_t)data[1] << 8);
+-    if (desc->value_type == FEETECH_STS_REG_VALUE_S16) {
+-        *value = (int16_t)raw;
+-    } else {
+-        *value = raw;
+-    }
+-    return 1U;
+-}
+-
+-// 校验连续写入：地址边界 -> 权限 -> 开关 -> 数值范围。
+-FeetechStsRegisterCheckResult_t FeetechStsRegister_CheckWriteRange(
+-    uint8_t start_address,
+-    const uint8_t *data,
+-    uint8_t data_len,
+-    const FeetechStsRegisterDesc_t **failed_desc,
+-    int32_t *failed_value)
+-{
+-    const FeetechStsRegisterDesc_t *desc;
+-    uint16_t offset;
+-    uint16_t address;
+-    int32_t value;
+-
+-    if (failed_desc != 0) {
+-        *failed_desc = 0;
+-    }
+-    if (failed_value != 0) {
+-        *failed_value = 0;
+-    }
+-    if ((data == 0) || (data_len == 0U) ||
+-        (((uint16_t)start_address + (uint16_t)data_len) > 256U)) {
+-        return FEETECH_STS_REG_CHECK_INVALID;
+-    }
+-
+-    offset = 0U;
+-    while (offset < data_len) {
+-        address = (uint16_t)start_address + offset;
+-        desc = FeetechStsRegister_FindByStart((uint8_t)address);
+-        if (desc == 0) {
+-            desc = FeetechStsRegister_FindContaining((uint8_t)address);
+-            if (desc != 0) {
+-                if (failed_desc != 0) {
+-                    *failed_desc = desc;
+-                }
+-                return FEETECH_STS_REG_CHECK_PARTIAL;
+-            }
+-#if (CLAW_FEATURE_STS_UNKNOWN_WRITE_ENABLE != 0U)
+-            offset++;
+-            continue;
+-#else
+-            return FEETECH_STS_REG_CHECK_UNKNOWN;
+-#endif
+-        }
+-
+-        if (failed_desc != 0) {
+-            *failed_desc = desc;
+-        }
+-        if ((offset + desc->width) > data_len) {
+-            return FEETECH_STS_REG_CHECK_PARTIAL;
+-        }
+-        if (desc->access != FEETECH_STS_REG_ACCESS_RW) {
+-            return FEETECH_STS_REG_CHECK_READ_ONLY;
+-        }
+-        if (desc->write_enable == 0U) {
+-            if (desc->dangerous != 0U) {
+-#if (CLAW_FEATURE_STS_DANGEROUS_WRITE_ENABLE == 0U)
+-                return FEETECH_STS_REG_CHECK_DANGEROUS;
+-#endif
+-            } else {
+-                return FEETECH_STS_REG_CHECK_DISABLED;
+-            }
+-        }
+-        if (FeetechStsRegister_DecodeValue(desc, &data[offset], (uint8_t)(data_len - offset), &value) == 0U) {
+-            return FEETECH_STS_REG_CHECK_INVALID;
+-        }
+-        if (failed_value != 0) {
+-            *failed_value = value;
+-        }
+-        if ((value < desc->min_value) || (value > desc->max_value)) {
+-            return FEETECH_STS_REG_CHECK_RANGE;
+-        }
+-        if ((desc->address == 40U) && (value != 0) && (value != 1) && (value != 128)) {
+-            return FEETECH_STS_REG_CHECK_RANGE;
+-        }
+-        offset += desc->width;
+-    }
+-
+-    if (failed_desc != 0) {
+-        *failed_desc = 0;
+-    }
+-    return FEETECH_STS_REG_CHECK_OK;
+-}
+-
+-// 判断范围内每个字节是否都有寄存器描述。
+-uint8_t FeetechStsRegister_IsKnownRange(uint8_t start_address, uint8_t data_len)
+-{
+-    uint16_t i;
+-    uint16_t address;
+-
+-    if ((data_len == 0U) || (((uint16_t)start_address + (uint16_t)data_len) > 256U)) {
+-        return 0U;
+-    }
+-    for (i = 0U; i < data_len; i++) {
+-        address = (uint16_t)start_address + i;
+-        if (FeetechStsRegister_FindContaining((uint8_t)address) == 0) {
+-            return 0U;
+-        }
+-    }
+-    return 1U;
++/*********************************************************************************************************************
++ * @file    feetech_sts_register.c
++ * @brief   飞特 STS 官方寄存器唯一描述表。
++ *********************************************************************************************************************/
++
++#include "feetech_sts_register.h"
++#include "feature_config.h"
++#include <stddef.h>
++
++#define STS_REG(addr, bytes, area, rw, type, unit_type, min_v, max_v, enabled, risk, text) \
++    { (addr), (bytes), (area), (rw), (type), (unit_type), (min_v), (max_v), (enabled), (risk), (text) }
++
++// 地址、权限、范围和单位只在此表维护。
++static const FeetechStsRegisterDesc_t s_registers[] = {
++    STS_REG( 0U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "固件主版本号"),
++    STS_REG( 1U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "固件次版本号"),
++    STS_REG( 3U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "舵机主版本号"),
++    STS_REG( 4U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "舵机次版本号"),
++    STS_REG( 5U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     253, 0U, 1U, "ID"),
++    STS_REG( 6U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,       7, 0U, 1U, "波特率"),
++    STS_REG( 7U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_2US,                 0,     254, 1U, 0U, "返回延时"),
++    STS_REG( 8U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,       1, 1U, 0U, "应答状态级别"),
++    STS_REG( 9U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP,                0,    4094, 1U, 0U, "最小角度限制"),
++    STS_REG(11U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP,                1,    4095, 1U, 0U, "最大角度限制"),
++    STS_REG(13U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_CELSIUS,             0,     100, 1U, 0U, "最高温度上限"),
++    STS_REG(14U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_VOLT_01V,            0,     CLAW_FEATURE_STS_MAX_VOLTAGE_RAW, CLAW_FEATURE_STS_MAX_VOLTAGE_WRITE_ENABLE, 1U, "最高输入电压"),
++    STS_REG(15U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_VOLT_01V,            0,     254, 0U, 1U, "最低输入电压"),
++    STS_REG(16U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_PERCENT_001,         0,    1000, 1U, 0U, "最大扭矩"),
++    STS_REG(18U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_BITFIELD, FEETECH_STS_REG_UNIT_RAW,                 0,     254, 0U, 1U, "相位特殊字节"),
++    STS_REG(19U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_BITFIELD, FEETECH_STS_REG_UNIT_RAW,                 0,     254, 0U, 1U, "卸载条件"),
++    STS_REG(20U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_BITFIELD, FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "LED报警条件"),
++    STS_REG(21U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "位置环P比例系数"),
++    STS_REG(22U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "位置环D微分系数"),
++    STS_REG(23U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "位置环I积分系数"),
++    STS_REG(24U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_PERCENT_001,         0,     254, 1U, 0U, "最小启动力"),
++    STS_REG(25U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "积分限制值"),
++    STS_REG(26U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_STEP,                0,      32, 1U, 0U, "顺时针不灵敏区"),
++    STS_REG(27U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_STEP,                0,      32, 1U, 0U, "逆时针不灵敏区"),
++    STS_REG(28U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_CURRENT_65MA,        0,     511, 1U, 0U, "保护电流"),
++    STS_REG(30U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 1,       3, 0U, 1U, "角度分辨率"),
++    STS_REG(31U, 2U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_S16,      FEETECH_STS_REG_UNIT_STEP,            -2047,    2047, 0U, 1U, "位置校正"),
++    STS_REG(33U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,       3, 1U, 0U, "运行模式"),
++    STS_REG(34U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_PERCENT_01,          0,     100, 1U, 0U, "保护扭矩"),
++    STS_REG(35U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_10MS,                0,     254, 1U, 0U, "保护时间"),
++    STS_REG(36U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_PERCENT_01,          0,     100, 1U, 0U, "过载扭矩"),
++    STS_REG(37U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "速度闭环P比例系数"),
++    STS_REG(38U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_10MS,                0,     254, 1U, 0U, "过流保护时间"),
++    STS_REG(39U, 1U, FEETECH_STS_REG_STORAGE_EPROM, FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     254, 1U, 0U, "速度闭环I积分系数"),
++    STS_REG(40U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     128, 1U, 0U, "扭矩开关"),
++    STS_REG(41U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_ACC_100_STEP_PER_S2, 0,     254, 1U, 0U, "加速度"),
++    STS_REG(42U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP,                0,    4095, 1U, 0U, "目标位置"),
++    STS_REG(44U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_MS,                  0,    1000, 1U, 0U, "运行时间"),
++    STS_REG(46U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP_PER_S,          0,    4095, 1U, 0U, "运行速度"),
++    STS_REG(48U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_PERCENT_001,         0,    1000, 1U, 0U, "转矩限制"),
++    STS_REG(55U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RW, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,       1, 1U, 0U, "锁标志"),
++    STS_REG(56U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U16,      FEETECH_STS_REG_UNIT_STEP,                0,    4095, 0U, 0U, "当前位置"),
++    STS_REG(58U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_S16,      FEETECH_STS_REG_UNIT_STEP_PER_S,     -32768,   32767, 0U, 0U, "当前速度"),
++    STS_REG(60U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_S16,      FEETECH_STS_REG_UNIT_PERCENT_001,    -32768,   32767, 0U, 0U, "当前负载"),
++    STS_REG(62U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_VOLT_01V,            0,     255, 0U, 0U, "当前电压"),
++    STS_REG(63U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_CELSIUS,             0,     255, 0U, 0U, "当前温度"),
++    STS_REG(64U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "异步写标志"),
++    STS_REG(65U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_BITFIELD, FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "舵机状态"),
++    STS_REG(66U, 1U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_U8,       FEETECH_STS_REG_UNIT_RAW,                 0,     255, 0U, 0U, "移动标志"),
++    STS_REG(69U, 2U, FEETECH_STS_REG_STORAGE_SRAM,  FEETECH_STS_REG_ACCESS_RO, FEETECH_STS_REG_VALUE_S16,      FEETECH_STS_REG_UNIT_CURRENT_65MA,   -32768,   32767, 0U, 0U, "当前电流")
++};
++
++#define FEETECH_STS_REGISTER_COUNT ((uint8_t)(sizeof(s_registers) / sizeof(s_registers[0])))
++
++// 按起始地址查找描述。
++const FeetechStsRegisterDesc_t *FeetechStsRegister_FindByStart(uint8_t address)
++{
++    uint8_t i;
++
++    for (i = 0U; i < FEETECH_STS_REGISTER_COUNT; i++) {
++        if (s_registers[i].address == address) {
++            return &s_registers[i];
++        }
++    }
++    return 0;
++}
++
++// 查找覆盖当前字节的描述。
++const FeetechStsRegisterDesc_t *FeetechStsRegister_FindContaining(uint8_t address)
++{
++    uint8_t i;
++    uint16_t end;
++
++    for (i = 0U; i < FEETECH_STS_REGISTER_COUNT; i++) {
++        end = (uint16_t)s_registers[i].address + (uint16_t)s_registers[i].width;
++        if (((uint16_t)address >= (uint16_t)s_registers[i].address) &&
++            ((uint16_t)address < end)) {
++            return &s_registers[i];
++        }
++    }
++    return 0;
++}
++
++// 按小端格式解码寄存器值。
++uint8_t FeetechStsRegister_DecodeValue(const FeetechStsRegisterDesc_t *desc,
++                                       const uint8_t *data,
++                                       uint8_t data_len,
++                                       int32_t *value)
++{
++    uint16_t raw;
++
++    if ((desc == 0) || (data == 0) || (value == 0) ||
++        (desc->width == 0U) || (data_len < desc->width)) {
++        return 0U;
++    }
++
++    if (desc->width == 1U) {
++        *value = data[0];
++        return 1U;
++    }
++    if (desc->width != 2U) {
++        return 0U;
++    }
++
++    raw = (uint16_t)data[0] | ((uint16_t)data[1] << 8);
++    if (desc->value_type == FEETECH_STS_REG_VALUE_S16) {
++        *value = (int16_t)raw;
++    } else {
++        *value = raw;
++    }
++    return 1U;
++}
++
++// 校验连续写入：地址边界 -> 权限 -> 开关 -> 数值范围。
++FeetechStsRegisterCheckResult_t FeetechStsRegister_CheckWriteRange(
++    uint8_t start_address,
++    const uint8_t *data,
++    uint8_t data_len,
++    const FeetechStsRegisterDesc_t **failed_desc,
++    int32_t *failed_value)
++{
++    const FeetechStsRegisterDesc_t *desc;
++    uint16_t offset;
++    uint16_t address;
++    int32_t value;
++
++    if (failed_desc != 0) {
++        *failed_desc = 0;
++    }
++    if (failed_value != 0) {
++        *failed_value = 0;
++    }
++    if ((data == 0) || (data_len == 0U) ||
++        (((uint16_t)start_address + (uint16_t)data_len) > 256U)) {
++        return FEETECH_STS_REG_CHECK_INVALID;
++    }
++
++    offset = 0U;
++    while (offset < data_len) {
++        address = (uint16_t)start_address + offset;
++        desc = FeetechStsRegister_FindByStart((uint8_t)address);
++        if (desc == 0) {
++            desc = FeetechStsRegister_FindContaining((uint8_t)address);
++            if (desc != 0) {
++                if (failed_desc != 0) {
++                    *failed_desc = desc;
++                }
++                return FEETECH_STS_REG_CHECK_PARTIAL;
++            }
++#if (CLAW_FEATURE_STS_UNKNOWN_WRITE_ENABLE != 0U)
++            offset++;
++            continue;
++#else
++            return FEETECH_STS_REG_CHECK_UNKNOWN;
++#endif
++        }
++
++        if (failed_desc != 0) {
++            *failed_desc = desc;
++        }
++        if ((offset + desc->width) > data_len) {
++            return FEETECH_STS_REG_CHECK_PARTIAL;
++        }
++        if (desc->access != FEETECH_STS_REG_ACCESS_RW) {
++            return FEETECH_STS_REG_CHECK_READ_ONLY;
++        }
++        if (desc->write_enable == 0U) {
++            if (desc->dangerous != 0U) {
++#if (CLAW_FEATURE_STS_DANGEROUS_WRITE_ENABLE == 0U)
++                return FEETECH_STS_REG_CHECK_DANGEROUS;
++#endif
++            } else {
++                return FEETECH_STS_REG_CHECK_DISABLED;
++            }
++        }
++        if (FeetechStsRegister_DecodeValue(desc, &data[offset], (uint8_t)(data_len - offset), &value) == 0U) {
++            return FEETECH_STS_REG_CHECK_INVALID;
++        }
++        if (failed_value != 0) {
++            *failed_value = value;
++        }
++        if ((value < desc->min_value) || (value > desc->max_value)) {
++            return FEETECH_STS_REG_CHECK_RANGE;
++        }
++        if ((desc->address == 40U) && (value != 0) && (value != 1) && (value != 128)) {
++            return FEETECH_STS_REG_CHECK_RANGE;
++        }
++        offset += desc->width;
++    }
++
++    if (failed_desc != 0) {
++        *failed_desc = 0;
++    }
++    return FEETECH_STS_REG_CHECK_OK;
++}
++
++// 判断范围内每个字节是否都有寄存器描述。
++uint8_t FeetechStsRegister_IsKnownRange(uint8_t start_address, uint8_t data_len)
++{
++    uint16_t i;
++    uint16_t address;
++
++    if ((data_len == 0U) || (((uint16_t)start_address + (uint16_t)data_len) > 256U)) {
++        return 0U;
++    }
++    for (i = 0U; i < data_len; i++) {
++        address = (uint16_t)start_address + i;
++        if (FeetechStsRegister_FindContaining((uint8_t)address) == 0) {
++            return 0U;
++        }
++    }
++    return 1U;
+ }--- upstream/Project/code/feetech_sts_register.h
++++ project/App/config/feetech_sts_register.h
+@@ -1,102 +1,102 @@
+-/*********************************************************************************************************************
+- * @file    feetech_sts_register.h
+- * @brief   飞特 STS 官方寄存器描述表接口。
+- *********************************************************************************************************************/
+-
+-#ifndef __FEETECH_STS_REGISTER_H__
+-#define __FEETECH_STS_REGISTER_H__
+-
+-#ifdef __cplusplus
+-extern "C" {
+-#endif
+-
+-#include <stdint.h>
+-
+-typedef enum {
+-    FEETECH_STS_REG_STORAGE_EPROM = 0,
+-    FEETECH_STS_REG_STORAGE_SRAM,
+-    FEETECH_STS_REG_STORAGE_DEFAULT
+-} FeetechStsRegisterStorage_t;
+-
+-typedef enum {
+-    FEETECH_STS_REG_ACCESS_RO = 0,
+-    FEETECH_STS_REG_ACCESS_RW
+-} FeetechStsRegisterAccess_t;
+-
+-typedef enum {
+-    FEETECH_STS_REG_VALUE_U8 = 0,
+-    FEETECH_STS_REG_VALUE_U16,
+-    FEETECH_STS_REG_VALUE_S16,
+-    FEETECH_STS_REG_VALUE_BITFIELD,
+-    FEETECH_STS_REG_VALUE_RAW
+-} FeetechStsRegisterValueType_t;
+-
+-typedef enum {
+-    FEETECH_STS_REG_UNIT_RAW = 0,
+-    FEETECH_STS_REG_UNIT_STEP,
+-    FEETECH_STS_REG_UNIT_STEP_PER_S,
+-    FEETECH_STS_REG_UNIT_VOLT_01V,
+-    FEETECH_STS_REG_UNIT_CURRENT_65MA,
+-    FEETECH_STS_REG_UNIT_CELSIUS,
+-    FEETECH_STS_REG_UNIT_PERCENT_001,
+-    FEETECH_STS_REG_UNIT_PERCENT_01,
+-    FEETECH_STS_REG_UNIT_MS,
+-    FEETECH_STS_REG_UNIT_10MS,
+-    FEETECH_STS_REG_UNIT_2US,
+-    FEETECH_STS_REG_UNIT_ACC_100_STEP_PER_S2
+-} FeetechStsRegisterUnit_t;
+-
+-typedef enum {
+-    FEETECH_STS_REG_CHECK_OK = 0,
+-    FEETECH_STS_REG_CHECK_INVALID,
+-    FEETECH_STS_REG_CHECK_UNKNOWN,
+-    FEETECH_STS_REG_CHECK_PARTIAL,
+-    FEETECH_STS_REG_CHECK_READ_ONLY,
+-    FEETECH_STS_REG_CHECK_DISABLED,
+-    FEETECH_STS_REG_CHECK_DANGEROUS,
+-    FEETECH_STS_REG_CHECK_RANGE
+-} FeetechStsRegisterCheckResult_t;
+-
+-typedef struct {
+-    uint8_t address;
+-    uint8_t width;
+-    FeetechStsRegisterStorage_t storage;
+-    FeetechStsRegisterAccess_t access;
+-    FeetechStsRegisterValueType_t value_type;
+-    FeetechStsRegisterUnit_t unit;
+-    int32_t min_value;
+-    int32_t max_value;
+-    uint8_t write_enable;
+-    uint8_t dangerous;
+-    const char *name;
+-} FeetechStsRegisterDesc_t;
+-
+-// 按寄存器起始地址查找。
+-const FeetechStsRegisterDesc_t *FeetechStsRegister_FindByStart(uint8_t address);
+-
+-// 查找覆盖指定字节的寄存器。
+-const FeetechStsRegisterDesc_t *FeetechStsRegister_FindContaining(uint8_t address);
+-
+-// 校验连续写入范围、权限和数值。
+-FeetechStsRegisterCheckResult_t FeetechStsRegister_CheckWriteRange(
+-    uint8_t start_address,
+-    const uint8_t *data,
+-    uint8_t data_len,
+-    const FeetechStsRegisterDesc_t **failed_desc,
+-    int32_t *failed_value);
+-
+-// 按描述表解码小端值。
+-uint8_t FeetechStsRegister_DecodeValue(
+-    const FeetechStsRegisterDesc_t *desc,
+-    const uint8_t *data,
+-    uint8_t data_len,
+-    int32_t *value);
+-
+-// 判断整个地址范围是否均有描述。
+-uint8_t FeetechStsRegister_IsKnownRange(uint8_t start_address, uint8_t data_len);
+-
+-#ifdef __cplusplus
+-}
+-#endif
+-
++/*********************************************************************************************************************
++ * @file    feetech_sts_register.h
++ * @brief   飞特 STS 官方寄存器描述表接口。
++ *********************************************************************************************************************/
++
++#ifndef __FEETECH_STS_REGISTER_H__
++#define __FEETECH_STS_REGISTER_H__
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++#include <stdint.h>
++
++typedef enum {
++    FEETECH_STS_REG_STORAGE_EPROM = 0,
++    FEETECH_STS_REG_STORAGE_SRAM,
++    FEETECH_STS_REG_STORAGE_DEFAULT
++} FeetechStsRegisterStorage_t;
++
++typedef enum {
++    FEETECH_STS_REG_ACCESS_RO = 0,
++    FEETECH_STS_REG_ACCESS_RW
++} FeetechStsRegisterAccess_t;
++
++typedef enum {
++    FEETECH_STS_REG_VALUE_U8 = 0,
++    FEETECH_STS_REG_VALUE_U16,
++    FEETECH_STS_REG_VALUE_S16,
++    FEETECH_STS_REG_VALUE_BITFIELD,
++    FEETECH_STS_REG_VALUE_RAW
++} FeetechStsRegisterValueType_t;
++
++typedef enum {
++    FEETECH_STS_REG_UNIT_RAW = 0,
++    FEETECH_STS_REG_UNIT_STEP,
++    FEETECH_STS_REG_UNIT_STEP_PER_S,
++    FEETECH_STS_REG_UNIT_VOLT_01V,
++    FEETECH_STS_REG_UNIT_CURRENT_65MA,
++    FEETECH_STS_REG_UNIT_CELSIUS,
++    FEETECH_STS_REG_UNIT_PERCENT_001,
++    FEETECH_STS_REG_UNIT_PERCENT_01,
++    FEETECH_STS_REG_UNIT_MS,
++    FEETECH_STS_REG_UNIT_10MS,
++    FEETECH_STS_REG_UNIT_2US,
++    FEETECH_STS_REG_UNIT_ACC_100_STEP_PER_S2
++} FeetechStsRegisterUnit_t;
++
++typedef enum {
++    FEETECH_STS_REG_CHECK_OK = 0,
++    FEETECH_STS_REG_CHECK_INVALID,
++    FEETECH_STS_REG_CHECK_UNKNOWN,
++    FEETECH_STS_REG_CHECK_PARTIAL,
++    FEETECH_STS_REG_CHECK_READ_ONLY,
++    FEETECH_STS_REG_CHECK_DISABLED,
++    FEETECH_STS_REG_CHECK_DANGEROUS,
++    FEETECH_STS_REG_CHECK_RANGE
++} FeetechStsRegisterCheckResult_t;
++
++typedef struct {
++    uint8_t address;
++    uint8_t width;
++    FeetechStsRegisterStorage_t storage;
++    FeetechStsRegisterAccess_t access;
++    FeetechStsRegisterValueType_t value_type;
++    FeetechStsRegisterUnit_t unit;
++    int32_t min_value;
++    int32_t max_value;
++    uint8_t write_enable;
++    uint8_t dangerous;
++    const char *name;
++} FeetechStsRegisterDesc_t;
++
++// 按寄存器起始地址查找。
++const FeetechStsRegisterDesc_t *FeetechStsRegister_FindByStart(uint8_t address);
++
++// 查找覆盖指定字节的寄存器。
++const FeetechStsRegisterDesc_t *FeetechStsRegister_FindContaining(uint8_t address);
++
++// 校验连续写入范围、权限和数值。
++FeetechStsRegisterCheckResult_t FeetechStsRegister_CheckWriteRange(
++    uint8_t start_address,
++    const uint8_t *data,
++    uint8_t data_len,
++    const FeetechStsRegisterDesc_t **failed_desc,
++    int32_t *failed_value);
++
++// 按描述表解码小端值。
++uint8_t FeetechStsRegister_DecodeValue(
++    const FeetechStsRegisterDesc_t *desc,
++    const uint8_t *data,
++    uint8_t data_len,
++    int32_t *value);
++
++// 判断整个地址范围是否均有描述。
++uint8_t FeetechStsRegister_IsKnownRange(uint8_t start_address, uint8_t data_len);
++
++#ifdef __cplusplus
++}
++#endif
++
+ #endif--- upstream/Project/code/claw_host_protocol.c
++++ project/App/modules/claw_core/claw_host_protocol.c
+@@ -14,7 +14,7 @@
+     } converter;
+ 
+     if ((frame == 0) || (frame_size < CLAW_HOST_FRAME_TOTAL_LEN) ||
+-        (command > CLAW_HOST_CMD_RANGE)) {
++        (command > CLAW_HOST_CMD_MAX)) {
+         return 0U;
+     }
+     converter.value = value;
+@@ -45,7 +45,7 @@
+         (frame[2] != CLAW_HOST_FRAME_ID) ||
+         (frame[3] != CLAW_HOST_FRAME_LENGTH_FIELD) ||
+         (frame[4] != CLAW_HOST_INST_ACTION) ||
+-        (frame[5] > CLAW_HOST_CMD_RANGE)) {
++        (frame[5] > CLAW_HOST_CMD_MAX)) {
+         return 0U;
+     }
+     return 1U;
+--- upstream/Project/code/claw_host_protocol.h
++++ project/App/modules/claw_core/claw_host_protocol.h
+@@ -21,6 +21,9 @@
+ #define CLAW_HOST_CMD_A0                      1U  // A0：1单击，2双击，3停止
+ #define CLAW_HOST_CMD_B0                      2U  // B0：0停止，1扫描，2反向
+ #define CLAW_HOST_CMD_RANGE                   3U  // 范围：0机械极限，1为0~270度
++#define CLAW_HOST_CMD_PWM1_KEY                4U  // PWM1虚拟按键：0松开，1按下
++#define CLAW_HOST_CMD_PWM2_KEY                5U  // PWM2虚拟按键：0松开，1按下
++#define CLAW_HOST_CMD_MAX                     CLAW_HOST_CMD_PWM2_KEY
+ 
+ typedef struct {
+     uint8_t command;
+--- upstream/Project/code/screen_display.c
++++ project/App/drivers/display/screen_display.c
+@@ -1,132 +1,132 @@
+-/*********************************************************************************************************************
+- * @file    screen_display.c
+- * @brief   OLED 状态页显示实现。
+- *********************************************************************************************************************/
+-
+-#include "screen_display.h"
+-#include "OLED.h"
+-#include "feetech_sts_control.h"
+-
+-static uint32_t s_screen_last_refresh_tick;
+-
+-static void Screen_DrawTemplate(void);
+-static void Screen_ShowFixedText(uint8_t line, uint8_t column, const char *text, uint8_t width);
+-static uint16_t Screen_FloatToU16(float value);
+-
+-// 初始化 OLED 状态页。
+-void Screen_Init(void)
+-{
+-#if (SCREEN_ENABLE_OLED != 0U)
+-    s_screen_last_refresh_tick = 0U;
+-    OLED_Init();
+-    OLED_Clear();
+-    Screen_DrawTemplate();
+-#else
+-    s_screen_last_refresh_tick = 0U;
+-#endif
+-}
+-
+-// 刷新位置、目标、电压和电流。
+-void Screen_Task(void)
+-{
+-#if (SCREEN_ENABLE_OLED != 0U)
+-    uint32_t now_tick;
+-    const FeetechStsManager_t *manager;
+-    uint16_t voltage_mv;
+-    uint16_t actual_angle;
+-    uint16_t target_angle;
+-    uint16_t current_ma;
+-    uint16_t min_angle;
+-    uint16_t max_angle;
+-
+-    now_tick = HAL_GetTick();
+-    if ((uint32_t)(now_tick - s_screen_last_refresh_tick) < SCREEN_REFRESH_PERIOD_MS) {
+-        return;
+-    }
+-    s_screen_last_refresh_tick = now_tick;
+-
+-    manager = FeetechStsControl_GetManager();
+-    if (manager == 0) {
+-        return;
+-    }
+-
+-    voltage_mv = manager->feedback.voltage_mv;
+-    actual_angle = Screen_FloatToU16(manager->feedback.angle_deg);
+-    target_angle = Screen_FloatToU16(manager->target.target_angle_deg);
+-    current_ma = manager->feedback.current_ma;
+-    min_angle = Screen_FloatToU16(FeetechStsControl_GetMotionMinAngle());
+-    max_angle = Screen_FloatToU16(FeetechStsControl_GetMotionMaxAngle());
+-
+-    OLED_ShowString(1U, 1U, "A:");
+-    if (manager->feedback.position_valid != 0U) {
+-        OLED_ShowNum(1U, 3U, actual_angle, 3U);
+-    } else {
+-        OLED_ShowString(1U, 3U, "---");
+-    }
+-    OLED_ShowString(1U, 6U, " TG:");
+-    OLED_ShowNum(1U, 10U, target_angle, 3U);
+-    OLED_ShowString(1U, 13U, "    ");
+-
+-    OLED_ShowString(2U, 1U, "V:");
+-    if (manager->feedback.telemetry_valid != 0U) {
+-        OLED_ShowNum(2U, 3U, voltage_mv, 5U);
+-    } else {
+-        OLED_ShowString(2U, 3U, "---- ");
+-    }
+-    OLED_ShowString(2U, 8U, " I:");
+-    if (manager->feedback.telemetry_valid != 0U) {
+-        OLED_ShowNum(2U, 11U, current_ma, 4U);
+-    } else {
+-        OLED_ShowString(2U, 11U, "----");
+-    }
+-    OLED_ShowString(2U, 15U, "  ");
+-
+-    OLED_ShowString(3U, 1U, "MN:");
+-    OLED_ShowNum(3U, 4U, min_angle, 3U);
+-    OLED_ShowString(3U, 7U, " MX:");
+-    OLED_ShowNum(3U, 11U, max_angle, 3U);
+-    OLED_ShowString(3U, 14U, "   ");
+-
+-    OLED_ShowString(4U, 1U, "ST:");
+-    Screen_ShowFixedText(4U, 4U, FeetechStsControl_GetStateText(), 4U);
+-    OLED_ShowString(4U, 8U, " SRC:");
+-    Screen_ShowFixedText(4U, 13U, FeetechStsControl_GetOwnerText(), 4U);
+-#endif
+-}
+-
+-// 绘制 OLED 固定模板。
+-static void Screen_DrawTemplate(void)
+-{
+-    OLED_ShowString(1U, 1U, "A:--- TG:---   ");
+-    OLED_ShowString(2U, 1U, "V:----  I:---- ");
+-    OLED_ShowString(3U, 1U, "MN:--- MX:---   ");
+-    OLED_ShowString(4U, 1U, "ST:---- SRC:----");
+-}
+-
+-// 定宽显示文本并覆盖旧字符。
+-static void Screen_ShowFixedText(uint8_t line, uint8_t column, const char *text, uint8_t width)
+-{
+-    uint8_t i;
+-    char buf[8];
+-
+-    if (width >= sizeof(buf)) {
+-        width = (uint8_t)(sizeof(buf) - 1U);
+-    }
+-    for (i = 0U; i < width; i++) {
+-        buf[i] = ((text != 0) && (text[i] != '\0')) ? text[i] : ' ';
+-    }
+-    buf[width] = '\0';
+-    OLED_ShowString(line, column, buf);
+-}
+-
+-// 浮点角度转换为显示整数。
+-static uint16_t Screen_FloatToU16(float value)
+-{
+-    if (value <= 0.0f) {
+-        return 0U;
+-    }
+-    if (value >= 999.0f) {
+-        return 999U;
+-    }
+-    return (uint16_t)(value + 0.5f);
++/*********************************************************************************************************************
++ * @file    screen_display.c
++ * @brief   OLED 状态页显示实现。
++ *********************************************************************************************************************/
++
++#include "screen_display.h"
++#include "OLED.h"
++#include "feetech_sts_control.h"
++
++static uint32_t s_screen_last_refresh_tick;
++
++static void Screen_DrawTemplate(void);
++static void Screen_ShowFixedText(uint8_t line, uint8_t column, const char *text, uint8_t width);
++static uint16_t Screen_FloatToU16(float value);
++
++// 初始化 OLED 状态页。
++void Screen_Init(void)
++{
++#if (SCREEN_ENABLE_OLED != 0U)
++    s_screen_last_refresh_tick = 0U;
++    OLED_Init();
++    OLED_Clear();
++    Screen_DrawTemplate();
++#else
++    s_screen_last_refresh_tick = 0U;
++#endif
++}
++
++// 刷新位置、目标、电压和电流。
++void Screen_Task(void)
++{
++#if (SCREEN_ENABLE_OLED != 0U)
++    uint32_t now_tick;
++    const FeetechStsManager_t *manager;
++    uint16_t voltage_mv;
++    uint16_t actual_angle;
++    uint16_t target_angle;
++    uint16_t current_ma;
++    uint16_t min_angle;
++    uint16_t max_angle;
++
++    now_tick = HAL_GetTick();
++    if ((uint32_t)(now_tick - s_screen_last_refresh_tick) < SCREEN_REFRESH_PERIOD_MS) {
++        return;
++    }
++    s_screen_last_refresh_tick = now_tick;
++
++    manager = FeetechStsControl_GetManager();
++    if (manager == 0) {
++        return;
++    }
++
++    voltage_mv = manager->feedback.voltage_mv;
++    actual_angle = Screen_FloatToU16(manager->feedback.angle_deg);
++    target_angle = Screen_FloatToU16(manager->target.target_angle_deg);
++    current_ma = manager->feedback.current_ma;
++    min_angle = Screen_FloatToU16(FeetechStsControl_GetMotionMinAngle());
++    max_angle = Screen_FloatToU16(FeetechStsControl_GetMotionMaxAngle());
++
++    OLED_ShowString(1U, 1U, "A:");
++    if (manager->feedback.position_valid != 0U) {
++        OLED_ShowNum(1U, 3U, actual_angle, 3U);
++    } else {
++        OLED_ShowString(1U, 3U, "---");
++    }
++    OLED_ShowString(1U, 6U, " TG:");
++    OLED_ShowNum(1U, 10U, target_angle, 3U);
++    OLED_ShowString(1U, 13U, "    ");
++
++    OLED_ShowString(2U, 1U, "V:");
++    if (manager->feedback.telemetry_valid != 0U) {
++        OLED_ShowNum(2U, 3U, voltage_mv, 5U);
++    } else {
++        OLED_ShowString(2U, 3U, "---- ");
++    }
++    OLED_ShowString(2U, 8U, " I:");
++    if (manager->feedback.telemetry_valid != 0U) {
++        OLED_ShowNum(2U, 11U, current_ma, 4U);
++    } else {
++        OLED_ShowString(2U, 11U, "----");
++    }
++    OLED_ShowString(2U, 15U, "  ");
++
++    OLED_ShowString(3U, 1U, "MN:");
++    OLED_ShowNum(3U, 4U, min_angle, 3U);
++    OLED_ShowString(3U, 7U, " MX:");
++    OLED_ShowNum(3U, 11U, max_angle, 3U);
++    OLED_ShowString(3U, 14U, "   ");
++
++    OLED_ShowString(4U, 1U, "ST:");
++    Screen_ShowFixedText(4U, 4U, FeetechStsControl_GetStateText(), 4U);
++    OLED_ShowString(4U, 8U, " SRC:");
++    Screen_ShowFixedText(4U, 13U, FeetechStsControl_GetOwnerText(), 4U);
++#endif
++}
++
++// 绘制 OLED 固定模板。
++static void Screen_DrawTemplate(void)
++{
++    OLED_ShowString(1U, 1U, "A:--- TG:---   ");
++    OLED_ShowString(2U, 1U, "V:----  I:---- ");
++    OLED_ShowString(3U, 1U, "MN:--- MX:---   ");
++    OLED_ShowString(4U, 1U, "ST:---- SRC:----");
++}
++
++// 定宽显示文本并覆盖旧字符。
++static void Screen_ShowFixedText(uint8_t line, uint8_t column, const char *text, uint8_t width)
++{
++    uint8_t i;
++    char buf[8];
++
++    if (width >= sizeof(buf)) {
++        width = (uint8_t)(sizeof(buf) - 1U);
++    }
++    for (i = 0U; i < width; i++) {
++        buf[i] = ((text != 0) && (text[i] != '\0')) ? text[i] : ' ';
++    }
++    buf[width] = '\0';
++    OLED_ShowString(line, column, buf);
++}
++
++// 浮点角度转换为显示整数。
++static uint16_t Screen_FloatToU16(float value)
++{
++    if (value <= 0.0f) {
++        return 0U;
++    }
++    if (value >= 999.0f) {
++        return 999U;
++    }
++    return (uint16_t)(value + 0.5f);
+ }--- upstream/Project/code/feetech_sts_bus.c
++++ project/App/drivers/Servo/feetech_sts_bus.c
+@@ -95,12 +95,20 @@
+ {
+     HAL_StatusTypeDef status;                            // HAL 接收启动结果
+ 
+-    if (huart2.RxState != HAL_UART_STATE_READY) {        // UART 非空闲 -> 返回忙
+-        return HAL_BUSY;
+-    }
+-
+-    __HAL_UART_CLEAR_OREFLAG(&huart2);                   // 清 UART 溢出标志
+-    status = HAL_UART_Receive_IT(&huart2, &s_feetech_sts.rx_byte, 1U); // 启动单字节中断接收
++
++    status = FeetechStsPort_StartReceiveIT(
++        &s_feetech_sts.rx_byte);
++
++    /*
++     * 接收已挂起时返回 HAL_BUSY 是正常情况，
++     * 不要因此覆盖刚刚成功的发送状态。
++     */
++    if (status != HAL_BUSY) {
++        s_feetech_sts.bus.last_status = status;
++    }
++
++    return status;
++
+     s_feetech_sts.bus.last_status = status;              // 记录最近 HAL 状态
+     return status;
+ }
+@@ -220,12 +228,12 @@
+                         frame,
+                         len);                                      // 记录最近发送状态
+     FeetechSts_ResetRxParser();                                     // 发送前复位接收解析器
+-    __HAL_UART_CLEAR_OREFLAG(&huart2);                              // 清 UART 溢出标志
+-
+-    status = HAL_UART_Transmit(&huart2,
+-                               (uint8_t *)frame,
+-                               len,
+-                               FEETECH_STS_TX_TIMEOUT_MS);          // 完整 STS 帧 -> UART2
++    FeetechStsPort_ClearOverrun();
++
++    status = FeetechStsPort_Transmit(
++        frame,
++        len,
++        FEETECH_STS_TX_TIMEOUT_MS);
+     s_feetech_sts.bus.last_status = status;                         // 记录 HAL 发送结果
+ 
+     if (status == HAL_OK) {
+@@ -798,9 +806,12 @@
+ 
+     FeetechSts_RecordTx(command, id, instruction, address, data_len, packet, packet_len);
+     FeetechSts_ResetRxParser();
+-    __HAL_UART_CLEAR_OREFLAG(&huart2);
+-
+-    status = HAL_UART_Transmit(&huart2, packet, packet_len, FEETECH_STS_TX_TIMEOUT_MS);
++    FeetechStsPort_ClearOverrun();
++
++    status = FeetechStsPort_Transmit(
++        frame,
++        len,
++        FEETECH_STS_TX_TIMEOUT_MS);
+     s_feetech_sts.bus.last_status = status;
+     if (status == HAL_OK) {
+         s_feetech_sts.bus.tx.tx_count++;
+--- upstream/Project/code/feetech_sts_bus.h
++++ project/App/drivers/Servo/feetech_sts_bus.h
+@@ -14,7 +14,7 @@
+ extern "C" {
+ #endif
+ 
+-#include "stm32f1xx_hal.h"
++#include "HAL_H.h"
+ #include <stdint.h>
+ 
+ /*============================================================
+--- upstream/Project/code/feetech_sts_command.c
++++ project/App/drivers/Servo/feetech_sts_command.c
+@@ -14,6 +14,7 @@
+ #include "claw_host_protocol.h"
+ #include "feetech_sts_control.h"
+ #include "feetech_sts_register.h"
++#include "pwm_servo_control.h"
+ #include "vofa_protocol.h"
+ #include <stdio.h>
+ #include <stdarg.h>
+@@ -785,6 +786,18 @@
+         return HAL_ERROR;
+     }
+     action = (int32_t)(command.value + 0.5f);
++    if ((command.command == CLAW_HOST_CMD_PWM1_KEY) ||
++        (command.command == CLAW_HOST_CMD_PWM2_KEY)) {
++        if (action > 1) {
++            return HAL_ERROR;
++        }
++        status = PwmServoControl_SetVirtualKeyLevel(
++            (command.command == CLAW_HOST_CMD_PWM1_KEY) ?
++                PWM_SERVO_ID_1 : PWM_SERVO_ID_2,
++            (action == 1) ? 1U : 0U);
++        s_sts_command.last_status = status;
++        return status;
++    }
+     if (((command.command == CLAW_HOST_CMD_A0) || (command.command == CLAW_HOST_CMD_B0)) &&
+         (action <= 1)) {
+         FeetechStsCommand_SetHostKeyLevel(command.command, (action == 1) ? 1U : 0U, source);
+@@ -1131,6 +1144,7 @@
+ static void FeetechStsCommand_TaskManagerPrint(uint32_t now)
+ {
+ #if (FEETECH_STS_COMMAND_VOFA_TELEMETRY_ENABLE != 0U)
++
+     const FeetechStsManager_t *manager;
+     uint16_t period_ms;
+ 
+@@ -1620,11 +1634,6 @@
+         case FEETECH_STS_PARAM_RELEASE_PERMISSION:   return "释放允许";
+         case FEETECH_STS_PARAM_PRINT_ENABLE:         return "打印开关";
+         case FEETECH_STS_PARAM_PRINT_PERIOD_MS:      return "打印周期";
+-        case FEETECH_STS_PARAM_SERVO_BACKEND:        return "舵机后端";
+-        case FEETECH_STS_PARAM_PWM_MIN_US:           return "PWM最小脉宽";
+-        case FEETECH_STS_PARAM_PWM_MAX_US:           return "PWM最大脉宽";
+-        case FEETECH_STS_PARAM_PWM_MIN_ANGLE:        return "PWM最小角";
+-        case FEETECH_STS_PARAM_PWM_MAX_ANGLE:        return "PWM最大角";
+         default:                                     return "未知参数";
+     }
+ }
+@@ -1646,13 +1655,13 @@
+ static void FeetechStsCommand_PrintCurrentTarget(uint8_t source, const char *text)
+ {
+     const FeetechStsFeedback_t *feedback;
+-    const FeetechStsManager_t *manager;
++
+     float target;
+     uint32_t now;
+ 
+     now = HAL_GetTick();
+     feedback = FeetechStsBus_GetFeedback();
+-    manager = FeetechStsControl_GetManager();
++
+     target = FeetechStsControl_GetTargetAngle();
+ 
+     if ((feedback != 0) && (feedback->position_valid != 0U) &&
+@@ -1662,13 +1671,6 @@
+                                  (text != 0) ? text : "动作",
+                                  (uint16_t)(feedback->angle_deg + 0.5f),
+                                  feedback->position,
+-                                 (uint16_t)(target + 0.5f));
+-    } else if ((manager != 0) &&
+-               (manager->config.servo_backend == FEETECH_STS_SERVO_BACKEND_PWM)) {
+-        FeetechStsCommand_Printf(source,
+-                                 "%s 当前=%u°(PWM估算) 目标=%u°",
+-                                 (text != 0) ? text : "动作",
+-                                 (uint16_t)(target + 0.5f),
+                                  (uint16_t)(target + 0.5f));
+     } else {
+         FeetechStsCommand_Printf(source,
+--- upstream/Project/code/feetech_sts_command.h
++++ project/App/drivers/Servo/feetech_sts_command.h
+@@ -1,66 +1,66 @@
+-/*********************************************************************************************************************
+- * @file    feetech_sts_command.h
+- * @brief   舵机命令层接口。
+- *
+- * @details
+- * 1. 本文件负责：声明命令任务、转发入口和命令层状态。
+- * 2. 主要流程：外部帧/按键 -> command 层统一调度。
+- *********************************************************************************************************************/
+-
+-#ifndef __FEETECH_STS_COMMAND_H__
+-#define __FEETECH_STS_COMMAND_H__
+-
+-#ifdef __cplusplus
+-extern "C" {
+-#endif
+-
+-#include "stm32f1xx_hal.h"
+-#include "feature_config.h"
+-#include "feetech_sts_bus.h"
+-#include <stdint.h>
+-
+-#define FEETECH_STS_CMD_SOURCE_NONE          0U      // 命令来源：无来源
+-#define FEETECH_STS_CMD_SOURCE_BLUETOOTH     1U      //         蓝牙 App，帧格式由蓝牙传输模式决定
+-#define FEETECH_STS_CMD_SOURCE_VOFA          2U      //         VOFA，接收裸官方帧
+-#define FEETECH_STS_CMD_SOURCE_KEY           3U      //         本地按键
+-
+-#define FEETECH_STS_INST_LOCAL_STATUS_PRINT   0xF0U  // 本地指令，不转发舵机：控制/查询状态打印
+-#define FEETECH_STS_INST_LOCAL_EXAMPLE_PRINT  0xF1U  //                 打印常用官方协议
+-#define FEETECH_STS_INST_LOCAL_PARAM          0xF2U  //                 查询/修改本地参数
+-#define FEETECH_STS_INST_LOCAL_AUTHORITY      0xF3U  //                 旧控制权命令兼容，不改变运行状态
+-#define FEETECH_STS_INST_LOCAL_SAFETY         0xF4U  //                 机械极限管理
+-
+-#define FEETECH_STS_COMMAND_RESP_TIMEOUT_MS   FEETECH_STS_RESP_TIMEOUT_MS // 应答超时：查询帧等待状态包时间
+-#define FEETECH_STS_COMMAND_FORWARD_WRITE_WAIT_RESP CLAW_FEATURE_STS_WRITE_ACK_WAIT_ENABLE // 非广播 WRITE/REG_WRITE 等待 ACK
+-#define FEETECH_STS_COMMAND_STATUS_TEXT_MAX   CLAW_STATUS_TEXT_CAPACITY    // 单条返回文本容量
+-#define FEETECH_STS_COMMAND_ECHO_RX_FRAME     CLAW_FEATURE_RX_FRAME_ECHO_ENABLE // 收帧回显开关
+-#define FEETECH_STS_COMMAND_VOFA_TELEMETRY_ENABLE  CLAW_FEATURE_VOFA_TELEMETRY_SUPPORT // 编译 claw 反馈
+-#define FEETECH_STS_COMMAND_VOFA_TELEMETRY_MS      CLAW_DEFAULT_AUTO_PRINT_PERIOD_MS // 默认反馈周期
+-  
+-typedef struct {
+-    uint32_t bluetooth_rx_count;       // 入口统计：蓝牙收到有效官方帧次数
+-    uint32_t vofa_rx_count;            // 入口统计：VOFA 收到有效官方帧次数
+-    uint32_t key_event_count;          // 入口统计：本地按键动作触发次数
+-
+-    uint32_t forward_ok_count;         // 转发统计：官方帧转发成功次数
+-    uint32_t forward_error_count;      // 转发统计：官方帧转发失败次数
+-    uint32_t response_count;           // 转发统计：已回传舵机应答次数
+-    uint32_t passthrough_count;        // 转发统计：WRITE/ACTION 类帧直接透传次数
+-    uint32_t query_count;              // 转发统计：PING/READ 等查询帧次数
+-
+-    uint8_t last_source;               // 最近命令：来源，蓝牙/VOFA/按键
+-    uint8_t last_frame_len;            // 最近命令：转发帧长度
+-    uint8_t last_instruction;          // 最近命令：飞特指令码
+-    HAL_StatusTypeDef last_status;     // 最近命令：转发/动作执行结果
+-} FeetechStsCommandStatus_t;
+-
+-void FeetechStsCommand_Init(void);     // 初始化命令层。
+-void FeetechStsCommand_Task(void);     // 周期检查：按键/蓝牙/VOFA -> 控制层。
+-HAL_StatusTypeDef FeetechStsCommand_ForwardFrame(const uint8_t *frame, uint8_t len, uint8_t source); // 外部帧 -> 本地命令/总线转发。
+-const FeetechStsCommandStatus_t *FeetechStsCommand_GetStatus(void); // 获取命令层统计状态。
+-
+-#ifdef __cplusplus
+-}
+-#endif
+-
+-#endif
++/*********************************************************************************************************************
++ * @file    feetech_sts_command.h
++ * @brief   舵机命令层接口。
++ *
++ * @details
++ * 1. 本文件负责：声明命令任务、转发入口和命令层状态。
++ * 2. 主要流程：外部帧/按键 -> command 层统一调度。
++ *********************************************************************************************************************/
++
++#ifndef __FEETECH_STS_COMMAND_H__
++#define __FEETECH_STS_COMMAND_H__
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++#include "stm32f1xx_hal.h"
++#include "feature_config.h"
++#include "feetech_sts_bus.h"
++#include <stdint.h>
++
++#define FEETECH_STS_CMD_SOURCE_NONE          0U      // 命令来源：无来源
++#define FEETECH_STS_CMD_SOURCE_BLUETOOTH     1U      //         蓝牙 App，帧格式由蓝牙传输模式决定
++#define FEETECH_STS_CMD_SOURCE_VOFA          2U      //         VOFA，接收裸官方帧
++#define FEETECH_STS_CMD_SOURCE_KEY           3U      //         本地按键
++
++#define FEETECH_STS_INST_LOCAL_STATUS_PRINT   0xF0U  // 本地指令，不转发舵机：控制/查询状态打印
++#define FEETECH_STS_INST_LOCAL_EXAMPLE_PRINT  0xF1U  //                 打印常用官方协议
++#define FEETECH_STS_INST_LOCAL_PARAM          0xF2U  //                 查询/修改本地参数
++#define FEETECH_STS_INST_LOCAL_AUTHORITY      0xF3U  //                 旧控制权命令兼容，不改变运行状态
++#define FEETECH_STS_INST_LOCAL_SAFETY         0xF4U  //                 机械极限管理
++
++#define FEETECH_STS_COMMAND_RESP_TIMEOUT_MS   FEETECH_STS_RESP_TIMEOUT_MS // 应答超时：查询帧等待状态包时间
++#define FEETECH_STS_COMMAND_FORWARD_WRITE_WAIT_RESP CLAW_FEATURE_STS_WRITE_ACK_WAIT_ENABLE // 非广播 WRITE/REG_WRITE 等待 ACK
++#define FEETECH_STS_COMMAND_STATUS_TEXT_MAX   CLAW_STATUS_TEXT_CAPACITY    // 单条返回文本容量
++#define FEETECH_STS_COMMAND_ECHO_RX_FRAME     CLAW_FEATURE_RX_FRAME_ECHO_ENABLE // 收帧回显开关
++#define FEETECH_STS_COMMAND_VOFA_TELEMETRY_ENABLE  CLAW_FEATURE_VOFA_TELEMETRY_SUPPORT // 编译 claw 反馈
++#define FEETECH_STS_COMMAND_VOFA_TELEMETRY_MS      CLAW_DEFAULT_AUTO_PRINT_PERIOD_MS // 默认反馈周期
++  
++typedef struct {
++    uint32_t bluetooth_rx_count;       // 入口统计：蓝牙收到有效官方帧次数
++    uint32_t vofa_rx_count;            // 入口统计：VOFA 收到有效官方帧次数
++    uint32_t key_event_count;          // 入口统计：本地按键动作触发次数
++
++    uint32_t forward_ok_count;         // 转发统计：官方帧转发成功次数
++    uint32_t forward_error_count;      // 转发统计：官方帧转发失败次数
++    uint32_t response_count;           // 转发统计：已回传舵机应答次数
++    uint32_t passthrough_count;        // 转发统计：WRITE/ACTION 类帧直接透传次数
++    uint32_t query_count;              // 转发统计：PING/READ 等查询帧次数
++
++    uint8_t last_source;               // 最近命令：来源，蓝牙/VOFA/按键
++    uint8_t last_frame_len;            // 最近命令：转发帧长度
++    uint8_t last_instruction;          // 最近命令：飞特指令码
++    HAL_StatusTypeDef last_status;     // 最近命令：转发/动作执行结果
++} FeetechStsCommandStatus_t;
++
++void FeetechStsCommand_Init(void);     // 初始化命令层。
++void FeetechStsCommand_Task(void);     // 周期检查：按键/蓝牙/VOFA -> 控制层。
++HAL_StatusTypeDef FeetechStsCommand_ForwardFrame(const uint8_t *frame, uint8_t len, uint8_t source); // 外部帧 -> 本地命令/总线转发。
++const FeetechStsCommandStatus_t *FeetechStsCommand_GetStatus(void); // 获取命令层统计状态。
++
++#ifdef __cplusplus
++}
++#endif
++
++#endif
+--- upstream/Project/code/feetech_sts_control.c
++++ project/App/drivers/Servo/feetech_sts_control.c
+@@ -11,7 +11,6 @@
+ #include "feetech_sts_control.h"
+ #include "claw_limit_storage.h"
+ #include "shared_state.h"
+-#include "tim.h"
+ #include <string.h>
+ #include <limits.h>
+ 
+@@ -23,11 +22,9 @@
+ static FeetechStsSweepPrintEvent_t s_sweep_print_event; /* B0 扫描打印事件。 */
+ static uint8_t s_sweep_print_event_ready;         /* 1：有待打印的 B0 扫描事件。 */
+ static FeetechStsMotionPrintEvent_t s_motion_print_event; /* 到位/卡死打印事件。 */
+-static uint8_t s_motion_print_event_ready;         /* 1：有待打印的运动事件。 */static float s_pwm_target_angle_deg;              /* PWM 映射后的角度。 */
+-static uint16_t s_pwm_pulse_us;                   /* PWM 当前脉宽。 */
+-
+-
+-static uint8_t s_pwm_started;                     /* 1：PWM 已启动。 */
++static uint8_t s_motion_print_event_ready;         /* 1：有待打印的运动事件。 */
++
++
+ static uint8_t s_feedback_retry_active;            /* 1：反馈读取失败，按重试周期再次读取。 */
+ 
+ /* 自适应与保护变量：默认关闭，集中放置便于后续移除。 */
+@@ -50,13 +47,7 @@
+ static HAL_StatusTypeDef FeetechStsControl_MoveToAngleWithSpeed(float angle_deg, uint16_t time_ms, uint16_t speed, uint8_t acc);
+ static HAL_StatusTypeDef FeetechStsControl_SendAngleToBackend(float angle_deg, uint16_t time_ms, uint16_t speed, uint8_t acc);
+ static HAL_StatusTypeDef FeetechStsControl_SendPositionToBackend(uint16_t position, float angle_deg, uint16_t time_ms, uint16_t speed, uint8_t acc);
+-static HAL_StatusTypeDef FeetechStsControl_StartPwmBackend(void);
+-static HAL_StatusTypeDef FeetechStsControl_OutputPwmTarget(float angle_deg);
+-static float FeetechStsControl_MapTargetToPwmAngle(float angle_deg);
+-static uint16_t FeetechStsControl_PwmAngleToPulseUs(float pwm_angle_deg);
+-static uint8_t FeetechStsControl_IsStsBackendEnabled(void);
+-static uint8_t FeetechStsControl_IsPwmBackendEnabled(void);
+-static FeetechStsServoBackend_t FeetechStsControl_LimitServoBackend(int32_t value);
++
+ static float FeetechStsControl_LimitFloatRange(float value, float min_value, float max_value);
+ static void FeetechStsControl_TaskFeedback(uint32_t now);
+ static void FeetechStsControl_TaskStall(uint32_t now);
+@@ -206,45 +197,34 @@
+  * 4. 配置和基础动作接口
+  *============================================================*/
+ 
+-// 配置舵机基础模式和力矩。
++// 配置 STS 舵机基础模式和力矩。
+ HAL_StatusTypeDef FeetechStsControl_ConfigureServo(void)
+ {
+     HAL_StatusTypeDef status;
+ 
+-    if (FeetechStsControl_IsStsBackendEnabled() != 0U) {
+-        // 卸力 -> 写当前位置目标 -> 限矩 -> 上力，避免沿用旧目标跳动。
+-        status = FeetechStsBus_DisableTorque(g_claw_control_state.servo_id);
+-        if (status == HAL_OK) {
+-            status = FeetechStsBus_SetMode(g_claw_control_state.servo_id, FEETECH_STS_MODE_POSITION);
+-        }
+-        if (status == HAL_OK) {
+-            status = FeetechStsBus_SetPositionEx(g_claw_control_state.servo_id,
+-                                                 g_claw_control_state.target_position,
+-                                                 0U,
+-                                                 0U,
+-                                                 g_claw_manager_state.config.default_acc);
+-        }
+-        if (status == HAL_OK) {
+-            status = FeetechStsControl_SetTorqueLimitLocal(g_claw_manager_state.config.full_torque_limit);
+-        }
+-        if (status == HAL_OK) {
+-            status = FeetechStsBus_EnableTorque(g_claw_control_state.servo_id);
+-        }
+-        if (status != HAL_OK) {
+-            g_claw_control_state.last_status = status;
+-            FeetechStsControl_SetState(FEETECH_STS_CONTROL_ERROR);
+-            FeetechStsControl_SetResult(FEETECH_STS_GRIP_RESULT_COMM_ERROR);
+-            return status;
+-        }
+-    }
+-
+-    if ((FeetechStsControl_IsPwmBackendEnabled() != 0U) &&
+-        ((FeetechStsControl_IsStsBackendEnabled() != 0U) || (s_pwm_started != 0U))) {
+-        status = FeetechStsControl_StartPwmBackend();
+-        if (status != HAL_OK) {
+-            g_claw_control_state.last_status = status;
+-            return status;
+-        }
++    // 卸力 -> 写当前位置目标 -> 限矩 -> 上力，避免沿用旧目标跳动。
++    status = FeetechStsBus_DisableTorque(g_claw_control_state.servo_id);
++    if (status == HAL_OK) {
++        status = FeetechStsBus_SetMode(g_claw_control_state.servo_id, FEETECH_STS_MODE_POSITION);
++    }
++    if (status == HAL_OK) {
++        status = FeetechStsBus_SetPositionEx(g_claw_control_state.servo_id,
++                                             g_claw_control_state.target_position,
++                                             0U,
++                                             0U,
++                                             g_claw_manager_state.config.default_acc);
++    }
++    if (status == HAL_OK) {
++        status = FeetechStsControl_SetTorqueLimitLocal(g_claw_manager_state.config.full_torque_limit);
++    }
++    if (status == HAL_OK) {
++        status = FeetechStsBus_EnableTorque(g_claw_control_state.servo_id);
++    }
++    if (status != HAL_OK) {
++        g_claw_control_state.last_status = status;
++        FeetechStsControl_SetState(FEETECH_STS_CONTROL_ERROR);
++        FeetechStsControl_SetResult(FEETECH_STS_GRIP_RESULT_COMM_ERROR);
++        return status;
+     }
+ 
+     g_claw_control_state.last_status = HAL_OK;
+@@ -476,11 +456,9 @@
+     if (status != HAL_OK) {
+         return status;
+     }
+-    if (FeetechStsControl_IsStsBackendEnabled() != 0U) {
+-        status = FeetechStsControl_RequestFeedback();
+-        if (status != HAL_OK) {
+-            return status;
+-        }
++    status = FeetechStsControl_RequestFeedback();
++    if (status != HAL_OK) {
++        return status;
+     }
+     status = FeetechStsControl_SetTorqueLimitLocal(g_claw_manager_state.config.full_torque_limit);
+     if (status != HAL_OK) {
+@@ -497,11 +475,9 @@
+         g_claw_control_state.target_angle_deg = FeetechStsControl_LimitLocalAngle(feedback->angle_deg);
+         g_claw_control_state.target_position = feedback->position;
+         g_claw_control_state.grip_last_rx_packet_count = feedback->rx_packet_count;
+-    } else if (FeetechStsControl_IsStsBackendEnabled() != 0U) {
++    } else {
+         g_claw_control_state.last_status = HAL_TIMEOUT;
+         return HAL_TIMEOUT;
+-    } else {
+-        g_claw_control_state.grip_last_rx_packet_count = 0UL;
+     }
+     FeetechStsControl_ResetGripStableState(feedback);
+ 
+@@ -645,32 +621,24 @@
+     feedback = FeetechStsBus_GetFeedback();
+     feedback_status = HAL_OK;
+ 
+-    if (FeetechStsControl_IsStsBackendEnabled() != 0U) {
+-        feedback_status = FeetechStsControl_RequestFeedback();
+-        now = HAL_GetTick();
+-        feedback = FeetechStsBus_GetFeedback();
+-        if ((feedback == 0) || (feedback->position_valid == 0U) ||
+-            ((feedback_status != HAL_OK) &&
+-             ((uint32_t)(now - feedback->last_update_tick) >
+-              FEETECH_STS_CONTROL_FEEDBACK_FRESH_MS))) {
+-
+-            FeetechStsControl_ClearMotionRuntime(1U);
+-
+-            g_claw_control_state.local_write_enable = 0U;
+-            g_claw_control_state.last_status =
+-                (feedback_status == HAL_OK) ? HAL_ERROR : feedback_status;
+-
+-            FeetechStsControl_SetResult(FEETECH_STS_GRIP_RESULT_COMM_ERROR);
+-            FeetechStsControl_SetState(FEETECH_STS_CONTROL_ERROR);
+-
+-            return g_claw_control_state.last_status;
+-        }
+-        stop_position = feedback->position;
+-        stop_angle = feedback->angle_deg;
+-    } else {
+-        stop_position = g_claw_control_state.target_position;
+-        stop_angle = g_claw_control_state.target_angle_deg;
+-    }
++    feedback_status = FeetechStsControl_RequestFeedback();
++    now = HAL_GetTick();
++    feedback = FeetechStsBus_GetFeedback();
++    if ((feedback == 0) || (feedback->position_valid == 0U) ||
++        ((feedback_status != HAL_OK) &&
++         ((uint32_t)(now - feedback->last_update_tick) >
++          FEETECH_STS_CONTROL_FEEDBACK_FRESH_MS))) {
++
++        FeetechStsControl_ClearMotionRuntime(1U);
++        g_claw_control_state.local_write_enable = 0U;
++        g_claw_control_state.last_status =
++            (feedback_status == HAL_OK) ? HAL_ERROR : feedback_status;
++        FeetechStsControl_SetResult(FEETECH_STS_GRIP_RESULT_COMM_ERROR);
++        FeetechStsControl_SetState(FEETECH_STS_CONTROL_ERROR);
++        return g_claw_control_state.last_status;
++    }
++    stop_position = feedback->position;
++    stop_angle = feedback->angle_deg;
+ 
+     FeetechStsControl_ClearMotionRuntime(1U);
+     g_claw_control_state.object_detected = 0U;
+@@ -715,10 +683,6 @@
+      * 屏幕 A/I/U/L 长期不变时，常见原因是周期 READ 只发送不等待，随后动作写帧打断回读解析。
+      * 这里等待完整应答窗口，确保新反馈先进入 FeetechStsBus 缓存，再供屏幕和状态机读取。
+      */
+-    if (FeetechStsControl_IsStsBackendEnabled() == 0U) {
+-        g_claw_control_state.last_status = HAL_OK;
+-        return HAL_OK;
+-    }
+ 
+     g_claw_control_state.last_status = FeetechStsBus_ReadFeedbackBlocking(g_claw_control_state.servo_id, FEETECH_STS_RESP_TIMEOUT_MS);
+     return g_claw_control_state.last_status;
+@@ -901,11 +865,9 @@
+     const FeetechStsFeedback_t *feedback;
+     HAL_StatusTypeDef status;
+ 
+-    if (FeetechStsControl_IsStsBackendEnabled() != 0U) {
+-        status = FeetechStsControl_RequestFeedback();
+-        if (status != HAL_OK) {
+-            return status;
+-        }
++    status = FeetechStsControl_RequestFeedback();
++    if (status != HAL_OK) {
++        return status;
+     }
+ 
+     if (g_claw_control_state.sweep_active == 0U) {
+@@ -1130,7 +1092,7 @@
+ // 读取实际角度。
+ float FeetechStsControl_GetActualAngle(void)
+ {
+-    // STS 使用新鲜编码反馈；仅纯 PWM 后端允许使用输出目标估算角度。
++    // 实际角度只来自 STS 新鲜编码反馈。
+     const FeetechStsFeedback_t *feedback;
+     uint32_t now;
+ 
+@@ -1141,10 +1103,6 @@
+         return feedback->angle_deg;
+     }
+ 
+-    if ((FeetechStsControl_IsStsBackendEnabled() == 0U) &&
+-        (FeetechStsControl_IsPwmBackendEnabled() != 0U)) {
+-        return g_claw_control_state.target_angle_deg;
+-    }
+ 
+     return 0.0f;
+ }
+@@ -1433,11 +1391,10 @@
+     return (open_angle >= close_angle) ? open_angle : close_angle;
+ }
+ 
+-// 外部官方目标同步到控制层和 PWM 后端。
++// 外部官方目标同步到控制层。
+ HAL_StatusTypeDef FeetechStsControl_ApplyExternalTarget(float angle_deg, uint16_t time_ms, uint16_t speed, uint8_t acc, FeetechStsControlOwner_t owner)
+ {
+     float limited_angle;
+-    HAL_StatusTypeDef status;
+     uint32_t now;
+ 
+     now = HAL_GetTick();
+@@ -1464,16 +1421,13 @@
+                                  speed,
+                                  acc);
+ 
+-    status = FeetechStsControl_OutputPwmTarget(limited_angle);
+-    g_claw_control_state.last_status = status;
+-    if (status == HAL_OK) {
+-        FeetechStsControl_UpdateLastMotionDirection(FeetechStsControl_GetActualAngle(), limited_angle);
+-        FeetechStsControl_StartMotionTrack(now);
+-    }
++    g_claw_control_state.last_status = HAL_OK;
++    FeetechStsControl_UpdateLastMotionDirection(FeetechStsControl_GetActualAngle(), limited_angle);
++    FeetechStsControl_StartMotionTrack(now);
+     FeetechStsControl_SetState(FEETECH_STS_CONTROL_HOLDING);
+     FeetechStsControl_SetResult(FEETECH_STS_GRIP_RESULT_NONE);
+     FeetechStsControl_SyncManager();
+-    return status;
++    return HAL_OK;
+ }
+ 
+ 
+@@ -1545,11 +1499,6 @@
+ 
+         case FEETECH_STS_PARAM_PRINT_ENABLE:        return "PRINT_ENABLE";
+         case FEETECH_STS_PARAM_PRINT_PERIOD_MS:     return "PRINT_PERIOD_MS";
+-        case FEETECH_STS_PARAM_SERVO_BACKEND:       return "SERVO_BACKEND";
+-        case FEETECH_STS_PARAM_PWM_MIN_US:          return "PWM_MIN_US";
+-        case FEETECH_STS_PARAM_PWM_MAX_US:          return "PWM_MAX_US";
+-        case FEETECH_STS_PARAM_PWM_MIN_ANGLE:       return "PWM_MIN_ANGLE";
+-        case FEETECH_STS_PARAM_PWM_MAX_ANGLE:       return "PWM_MAX_ANGLE";
+         default:                                    return "UNKNOWN";
+     }
+ }
+@@ -1587,11 +1536,6 @@
+ 
+         case FEETECH_STS_PARAM_PRINT_ENABLE:        *out_value = (int32_t)g_claw_manager_state.option.print_enable; break;
+         case FEETECH_STS_PARAM_PRINT_PERIOD_MS:     *out_value = (int32_t)g_claw_manager_state.option.print_period_ms; break;
+-        case FEETECH_STS_PARAM_SERVO_BACKEND:       *out_value = (int32_t)g_claw_manager_state.config.servo_backend; break;
+-        case FEETECH_STS_PARAM_PWM_MIN_US:          *out_value = (int32_t)g_claw_manager_state.config.pwm_min_pulse_us; break;
+-        case FEETECH_STS_PARAM_PWM_MAX_US:          *out_value = (int32_t)g_claw_manager_state.config.pwm_max_pulse_us; break;
+-        case FEETECH_STS_PARAM_PWM_MIN_ANGLE:       *out_value = (int32_t)(g_claw_manager_state.config.pwm_min_angle_deg + 0.5f); break;
+-        case FEETECH_STS_PARAM_PWM_MAX_ANGLE:       *out_value = (int32_t)(g_claw_manager_state.config.pwm_max_angle_deg + 0.5f); break;
+         default: return 0U;
+     }
+ 
+@@ -1658,11 +1602,6 @@
+ 
+         case FEETECH_STS_PARAM_PRINT_ENABLE:        g_claw_manager_state.option.print_enable = (value == 0) ? 0U : 1U; break;
+         case FEETECH_STS_PARAM_PRINT_PERIOD_MS:     g_claw_manager_state.option.print_period_ms = (uint16_t)value; break;
+-        case FEETECH_STS_PARAM_SERVO_BACKEND:       g_claw_manager_state.config.servo_backend = FeetechStsControl_LimitServoBackend(value); break;
+-        case FEETECH_STS_PARAM_PWM_MIN_US:          g_claw_manager_state.config.pwm_min_pulse_us = (uint16_t)value; break;
+-        case FEETECH_STS_PARAM_PWM_MAX_US:          g_claw_manager_state.config.pwm_max_pulse_us = (uint16_t)value; break;
+-        case FEETECH_STS_PARAM_PWM_MIN_ANGLE:       g_claw_manager_state.config.pwm_min_angle_deg = (float)value; break;
+-        case FEETECH_STS_PARAM_PWM_MAX_ANGLE:       g_claw_manager_state.config.pwm_max_angle_deg = (float)value; break;
+         default: return 0U;
+     }
+ 
+@@ -1695,11 +1634,6 @@
+         case FEETECH_STS_PARAM_RELEASE_PERMISSION:return FeetechStsControl_SetParamValue(id, 1);
+         case FEETECH_STS_PARAM_PRINT_ENABLE:     return FeetechStsControl_SetParamValue(id, FEETECH_STS_MANAGER_PRINT_DEFAULT);
+         case FEETECH_STS_PARAM_PRINT_PERIOD_MS:  return FeetechStsControl_SetParamValue(id, FEETECH_STS_MANAGER_PRINT_PERIOD_MS);
+-        case FEETECH_STS_PARAM_SERVO_BACKEND:    return FeetechStsControl_SetParamValue(id, (int32_t)FEETECH_STS_CONTROL_SERVO_BACKEND_DEFAULT);
+-        case FEETECH_STS_PARAM_PWM_MIN_US:       return FeetechStsControl_SetParamValue(id, FEETECH_STS_CONTROL_PWM_MIN_PULSE_US);
+-        case FEETECH_STS_PARAM_PWM_MAX_US:       return FeetechStsControl_SetParamValue(id, FEETECH_STS_CONTROL_PWM_MAX_PULSE_US);
+-        case FEETECH_STS_PARAM_PWM_MIN_ANGLE:    return FeetechStsControl_SetParamValue(id, (int32_t)FEETECH_STS_CONTROL_PWM_MIN_ANGLE_DEG);
+-        case FEETECH_STS_PARAM_PWM_MAX_ANGLE:    return FeetechStsControl_SetParamValue(id, (int32_t)FEETECH_STS_CONTROL_PWM_MAX_ANGLE_DEG);
+         default: return 0U;
+     }
+ }
+@@ -1746,11 +1680,6 @@
+         case FEETECH_STS_PARAM_RELEASE_PERMISSION:max_value = 1; default_value = 1; break;
+         case FEETECH_STS_PARAM_PRINT_ENABLE:     max_value = 1; default_value = FEETECH_STS_MANAGER_PRINT_DEFAULT; break;
+         case FEETECH_STS_PARAM_PRINT_PERIOD_MS:  min_value = 100; max_value = 10000; default_value = FEETECH_STS_MANAGER_PRINT_PERIOD_MS; break;
+-        case FEETECH_STS_PARAM_SERVO_BACKEND:    max_value = (int32_t)FEETECH_STS_SERVO_BACKEND_STS_PWM; default_value = (int32_t)FEETECH_STS_CONTROL_SERVO_BACKEND_DEFAULT; break;
+-        case FEETECH_STS_PARAM_PWM_MIN_US:       min_value = 300; max_value = 3000; default_value = FEETECH_STS_CONTROL_PWM_MIN_PULSE_US; break;
+-        case FEETECH_STS_PARAM_PWM_MAX_US:       min_value = 300; max_value = 3000; default_value = FEETECH_STS_CONTROL_PWM_MAX_PULSE_US; break;
+-        case FEETECH_STS_PARAM_PWM_MIN_ANGLE:    min_value = 0; max_value = 180; default_value = (int32_t)FEETECH_STS_CONTROL_PWM_MIN_ANGLE_DEG; break;
+-        case FEETECH_STS_PARAM_PWM_MAX_ANGLE:    min_value = 1; max_value = 180; default_value = (int32_t)FEETECH_STS_CONTROL_PWM_MAX_ANGLE_DEG; break;
+         default: break;
+     }
+ 
+@@ -1985,8 +1914,7 @@
+ 
+     if ((FEETECH_STS_CONTROL_STALL_ENABLE == 0U) ||
+         (g_claw_control_state.motion_track_active == 0U) ||
+-        (g_claw_control_state.limit_setting_active != 0U) ||
+-        (FeetechStsControl_IsStsBackendEnabled() == 0U)) {
++        (g_claw_control_state.limit_setting_active != 0U)) {
+         return;
+     }
+     feedback = FeetechStsBus_GetFeedback();
+@@ -2042,9 +1970,6 @@
+     uint32_t period;
+     HAL_StatusTypeDef status;
+ 
+-    if (FeetechStsControl_IsStsBackendEnabled() == 0U) {
+-        return;
+-    }
+ 
+     if (s_feedback_retry_active != 0U) {
+         period = FEETECH_STS_CONTROL_FEEDBACK_RETRY_MS;
+@@ -2080,12 +2005,6 @@
+         return;
+     }
+ 
+-    if ((FeetechStsControl_IsStsBackendEnabled() == 0U) &&
+-        ((uint32_t)(now - g_claw_control_state.state_tick_ms) >= g_claw_manager_state.config.default_release_time_ms)) {
+-        FeetechStsControl_ClearMotionRuntime(0U);
+-        FeetechStsControl_SetState(FEETECH_STS_CONTROL_IDLE);
+-        return;
+-    }
+ 
+     feedback = FeetechStsBus_GetFeedback();
+     if ((feedback != 0) && (feedback->position_valid != 0U)) {
+@@ -2098,7 +2017,7 @@
+ // B0 扫描状态机。
+ static void FeetechStsControl_TaskSweep(uint32_t now)
+ {
+-    // STS 扫描仅由真实到位反馈换向；纯 PWM 使用时间估算。
++    // STS 扫描仅由真实到位反馈换向。
+     const FeetechStsFeedback_t *feedback;
+     float diff;
+     uint32_t elapsed;
+@@ -2121,9 +2040,6 @@
+         if ((diff <= 3.0f) && (feedback->moving == 0U)) {
+             reached = 1U;
+         }
+-    } else if ((FeetechStsControl_IsStsBackendEnabled() == 0U) &&
+-               (elapsed >= (uint32_t)g_claw_manager_state.config.default_sweep_time_ms)) {
+-        reached = 1U;
+     }
+ 
+     if (reached == 0U) {
+@@ -2145,11 +2061,9 @@
+     if ((feedback != 0) && (feedback->position_valid != 0U) &&
+         ((uint32_t)(now - feedback->last_update_tick) <= FEETECH_STS_CONTROL_FEEDBACK_FRESH_MS)) {
+         current_angle = feedback->angle_deg;
+-    } else if (FeetechStsControl_IsStsBackendEnabled() != 0U) {
++    } else {
+         g_claw_control_state.last_status = HAL_TIMEOUT;
+         return HAL_TIMEOUT;
+-    } else {
+-        current_angle = g_claw_control_state.target_angle_deg;
+     }
+ 
+     if (g_claw_control_state.sweep_direction_close != 0U) {
+@@ -2207,11 +2121,7 @@
+ {
+     // 加载默认动作、力矩、反馈周期等参数。
+     g_claw_manager_state.config.servo_id = FEETECH_STS_CONTROL_SERVO_ID;
+-    g_claw_manager_state.config.servo_backend = (FeetechStsServoBackend_t)g_claw_feature_defaults.servo_backend;
+-    g_claw_manager_state.config.pwm_min_pulse_us = g_claw_feature_defaults.pwm_min_pulse_us;
+-    g_claw_manager_state.config.pwm_max_pulse_us = g_claw_feature_defaults.pwm_max_pulse_us;
+-    g_claw_manager_state.config.pwm_min_angle_deg = g_claw_feature_defaults.pwm_min_angle_deg;
+-    g_claw_manager_state.config.pwm_max_angle_deg = g_claw_feature_defaults.pwm_max_angle_deg;
++
+     g_claw_manager_state.config.open_angle_deg = FEETECH_STS_CONTROL_OPEN_ANGLE_DEG;
+     g_claw_manager_state.config.close_angle_deg = FEETECH_STS_CONTROL_CLOSE_ANGLE_DEG;
+ 
+@@ -2259,33 +2169,10 @@
+ // 配置参数 -> 运行时缓存。
+ static void FeetechStsControl_ApplyConfigToRuntime(void)
+ {
+-    // 把配置项应用到运行态目标和屏幕刷新请求。
+-    uint16_t tmp_pulse;
+-    float tmp_angle;
+-
++    // 把 STS 配置项应用到运行态目标和屏幕刷新请求。
+     g_claw_control_state.servo_id = g_claw_manager_state.config.servo_id;
+-
+-    g_claw_manager_state.config.servo_backend = FeetechStsControl_LimitServoBackend((int32_t)g_claw_manager_state.config.servo_backend);
+-
+-    if (g_claw_manager_state.config.pwm_min_pulse_us > g_claw_manager_state.config.pwm_max_pulse_us) {
+-        tmp_pulse = g_claw_manager_state.config.pwm_min_pulse_us;
+-        g_claw_manager_state.config.pwm_min_pulse_us = g_claw_manager_state.config.pwm_max_pulse_us;
+-        g_claw_manager_state.config.pwm_max_pulse_us = tmp_pulse;
+-    }
+-
+-    if (g_claw_manager_state.config.pwm_min_angle_deg > g_claw_manager_state.config.pwm_max_angle_deg) {
+-        tmp_angle = g_claw_manager_state.config.pwm_min_angle_deg;
+-        g_claw_manager_state.config.pwm_min_angle_deg = g_claw_manager_state.config.pwm_max_angle_deg;
+-        g_claw_manager_state.config.pwm_max_angle_deg = tmp_angle;
+-    }
+-
+     g_claw_control_state.target_angle_deg = FeetechStsControl_LimitLocalAngle(g_claw_control_state.target_angle_deg);
+     g_claw_control_state.target_position = FeetechSts_AngleToPosition(g_claw_control_state.target_angle_deg);
+-
+-    if ((FeetechStsControl_IsPwmBackendEnabled() != 0U) &&
+-        (s_pwm_started != 0U)) {
+-        (void)FeetechStsControl_StartPwmBackend();
+-    }
+ 
+     g_claw_manager_state.option.screen_update_request = 1U;
+ }
+@@ -2321,8 +2208,7 @@
+ // 判断当前是否仍需周期维护运动目标。
+ static uint8_t FeetechStsControl_ShouldRunMotionTask(void)
+ {
+-    if ((FeetechStsControl_CanLocalWriteTarget() == 0U) ||
+-        (FeetechStsControl_IsStsBackendEnabled() == 0U)) {
++    if (FeetechStsControl_CanLocalWriteTarget() == 0U) {
+         return 0U;
+     }
+ 
+@@ -2384,166 +2270,16 @@
+                                                    acc);
+ }
+ 
+-// 目标位置分发到当前后端。
++// 目标位置仅下发到 STS 总线。
+ static HAL_StatusTypeDef FeetechStsControl_SendPositionToBackend(uint16_t position, float angle_deg, uint16_t time_ms, uint16_t speed, uint8_t acc)
+ {
+-    HAL_StatusTypeDef status;
+-    HAL_StatusTypeDef pwm_status;
+-
+-    status = HAL_OK;
+-    pwm_status = HAL_OK;
+-
+-    if (FeetechStsControl_IsPwmBackendEnabled() != 0U) {
+-        if (s_pwm_started == 0U) {
+-            pwm_status = TIM3_SERVO_PWM_Start();
+-            if (pwm_status == HAL_OK) {
+-                s_pwm_started = 1U;
+-            }
+-        }
+-        if (pwm_status == HAL_OK) {
+-            pwm_status = FeetechStsControl_OutputPwmTarget(angle_deg);
+-        }
+-    }
+-
+-    if (FeetechStsControl_IsStsBackendEnabled() != 0U) {
+-        status = FeetechStsBus_SetPositionEx(g_claw_control_state.servo_id,
+-                                             position,
+-                                             time_ms,
+-                                             speed,
+-                                             acc);
+-    } else {
+-        status = pwm_status;
+-    }
+-
+-    if ((status == HAL_OK) && (pwm_status != HAL_OK)) {
+-        status = pwm_status;
+-    }
+-
+-    return status;
+-}
+-
+-// 启动 PWM 后端并输出当前目标。
+-static HAL_StatusTypeDef FeetechStsControl_StartPwmBackend(void)
+-{
+-    HAL_StatusTypeDef status;
+-
+-    status = HAL_OK;
+-    if (s_pwm_started == 0U) {
+-        status = TIM3_SERVO_PWM_Start();
+-        if (status == HAL_OK) {
+-            s_pwm_started = 1U;
+-        }
+-    }
+-
+-    if (status == HAL_OK) {
+-        status = FeetechStsControl_OutputPwmTarget(g_claw_control_state.target_angle_deg);
+-    }
+-
+-    return status;
+-}
+-
+-// 输出 PWM 目标脉宽。
+-static HAL_StatusTypeDef FeetechStsControl_OutputPwmTarget(float angle_deg)
+-{
+-    if (FeetechStsControl_IsPwmBackendEnabled() == 0U) {
+-        return HAL_OK;
+-    }
+-
+-    s_pwm_target_angle_deg = FeetechStsControl_MapTargetToPwmAngle(angle_deg);
+-    s_pwm_pulse_us = FeetechStsControl_PwmAngleToPulseUs(s_pwm_target_angle_deg);
+-    TIM3_SERVO_PWM_SetPulseUs(s_pwm_pulse_us);
+-    return HAL_OK;
+-}
+-
+-// target_angle_deg 映射到 PWM 0~180 度范围。
+-static float FeetechStsControl_MapTargetToPwmAngle(float angle_deg)
+-{
+-    float source_min;
+-    float source_max;
+-    float ratio;
+-    float pwm_range;
+-
+-    source_min = g_claw_manager_state.config.open_angle_deg;
+-    source_max = g_claw_manager_state.config.close_angle_deg;
+-
+-    if (source_max == source_min) {
+-        ratio = 0.0f;
+-    } else {
+-        ratio = (angle_deg - source_min) / (source_max - source_min);
+-    }
+-
+-    ratio = FeetechStsControl_LimitFloatRange(ratio, 0.0f, 1.0f);
+-    pwm_range = g_claw_manager_state.config.pwm_max_angle_deg - g_claw_manager_state.config.pwm_min_angle_deg;
+-    return g_claw_manager_state.config.pwm_min_angle_deg + (ratio * pwm_range);
+-}
+-
+-// PWM 角度转换为脉宽。
+-static uint16_t FeetechStsControl_PwmAngleToPulseUs(float pwm_angle_deg)
+-{
+-    float limited_angle;
+-    float ratio;
+-    float angle_range;
+-    float pulse_range;
+-    float pulse_float;
+-
+-    limited_angle = FeetechStsControl_LimitFloatRange(pwm_angle_deg,
+-                                                       g_claw_manager_state.config.pwm_min_angle_deg,
+-                                                       g_claw_manager_state.config.pwm_max_angle_deg);
+-    angle_range = g_claw_manager_state.config.pwm_max_angle_deg - g_claw_manager_state.config.pwm_min_angle_deg;
+-    if (angle_range == 0.0f) {
+-        ratio = 0.0f;
+-    } else {
+-        ratio = (limited_angle - g_claw_manager_state.config.pwm_min_angle_deg) / angle_range;
+-    }
+-
+-    ratio = FeetechStsControl_LimitFloatRange(ratio, 0.0f, 1.0f);
+-    pulse_range = (float)g_claw_manager_state.config.pwm_max_pulse_us - (float)g_claw_manager_state.config.pwm_min_pulse_us;
+-    pulse_float = (float)g_claw_manager_state.config.pwm_min_pulse_us + (ratio * pulse_range);
+-
+-    if (pulse_float < 0.0f) {
+-        return 0U;
+-    }
+-
+-    if (pulse_float > 65535.0f) {
+-        return 65535U;
+-    }
+-
+-    return (uint16_t)(pulse_float + 0.5f);
+-}
+-
+-// 判断是否启用 STS 后端。
+-static uint8_t FeetechStsControl_IsStsBackendEnabled(void)
+-{
+-    if ((g_claw_manager_state.config.servo_backend == FEETECH_STS_SERVO_BACKEND_STS) ||
+-        (g_claw_manager_state.config.servo_backend == FEETECH_STS_SERVO_BACKEND_STS_PWM)) {
+-        return 1U;
+-    }
+-
+-    return 0U;
+-}
+-
+-// 判断是否启用 PWM 后端。
+-static uint8_t FeetechStsControl_IsPwmBackendEnabled(void)
+-{
+-    if ((g_claw_manager_state.config.servo_backend == FEETECH_STS_SERVO_BACKEND_PWM) ||
+-        (g_claw_manager_state.config.servo_backend == FEETECH_STS_SERVO_BACKEND_STS_PWM)) {
+-        return 1U;
+-    }
+-
+-    return 0U;
+-}
+-
+-// 限制后端类型。
+-static FeetechStsServoBackend_t FeetechStsControl_LimitServoBackend(int32_t value)
+-{
+-    if ((value < (int32_t)FEETECH_STS_SERVO_BACKEND_STS) ||
+-        (value > (int32_t)FEETECH_STS_SERVO_BACKEND_STS_PWM)) {
+-        return (FeetechStsServoBackend_t)FEETECH_STS_CONTROL_SERVO_BACKEND_DEFAULT;
+-    }
+-
+-    return (FeetechStsServoBackend_t)value;
+-}
+-
++    (void)angle_deg;
++    return FeetechStsBus_SetPositionEx(g_claw_control_state.servo_id,
++                                       position,
++                                       time_ms,
++                                       speed,
++                                       acc);
++}
+ // 限制浮点范围。
+ static float FeetechStsControl_LimitFloatRange(float value, float min_value, float max_value)
+ {
+@@ -2659,11 +2395,6 @@
+     // 从反馈缓存更新负载和电流快照。
+     const FeetechStsFeedback_t *feedback;
+ 
+-    if (FeetechStsControl_IsStsBackendEnabled() == 0U) {
+-        g_claw_control_state.present_load_abs = 0U;
+-        g_claw_control_state.present_current_ma = 0U;
+-        return;
+-    }
+ 
+     feedback = FeetechStsBus_GetFeedback();
+     if (feedback == 0) {
+@@ -2691,13 +2422,10 @@
+ // 本地写入力矩限制并同步缓存。
+ static HAL_StatusTypeDef FeetechStsControl_SetTorqueLimitLocal(uint16_t limit)
+ {
+-    // 目标转矩写入仅对 STS 后端有效。
++    // 目标转矩写入 STS 总线。
+     limit = FeetechStsControl_LimitTorque(limit);
+     g_claw_control_state.target_torque_limit = limit;
+ 
+-    if (FeetechStsControl_IsStsBackendEnabled() == 0U) {
+-        return HAL_OK;
+-    }
+ 
+     return FeetechStsBus_SetTorqueLimit(g_claw_control_state.servo_id, limit);
+ }
+@@ -2978,13 +2706,6 @@
+         return;
+     }
+ 
+-    // PWM 无物理反馈：按夹取超时转保持，不执行负载/电流判断。
+-    if (FeetechStsControl_IsStsBackendEnabled() == 0U) {
+-        if ((is_a0_closing != 0U) && (elapsed >= cfg->timeout_ms)) {
+-            FeetechStsControl_HandleGripSuccess();
+-        }
+-        return;
+-    }
+ 
+     if ((feedback == 0) || (feedback->position_valid == 0U)) {
+         if ((is_a0_closing != 0U) && (elapsed >= cfg->timeout_ms)) {
+@@ -3183,9 +2904,6 @@
+     uint16_t load_drop;
+     float next_angle;
+ 
+-    if (FeetechStsControl_IsStsBackendEnabled() == 0U) {
+-        return;
+-    }
+ 
+     if ((FeetechStsControl_IsHoldLikeState() == 0U) ||
+         (g_claw_control_state.object_detected == 0U)) {
+--- upstream/Project/code/feetech_sts_control.h
++++ project/App/drivers/Servo/feetech_sts_control.h
+@@ -72,11 +72,6 @@
+ #define FEETECH_STS_CONTROL_EXTERNAL_TIMEOUT_MS   3000U                      // 外部控制超时接管时间
+ #define FEETECH_STS_CONTROL_PASS_FEEDBACK_MS      100U                       // 透传/手动模式反馈读取周期
+ 
+-#define FEETECH_STS_CONTROL_SERVO_BACKEND_DEFAULT CLAW_DEFAULT_SERVO_BACKEND // 默认舵机后端
+-#define FEETECH_STS_CONTROL_PWM_MIN_PULSE_US      CLAW_DEFAULT_PWM_MIN_PULSE_US // PWM 最小脉宽
+-#define FEETECH_STS_CONTROL_PWM_MAX_PULSE_US      CLAW_DEFAULT_PWM_MAX_PULSE_US // PWM 最大脉宽
+-#define FEETECH_STS_CONTROL_PWM_MIN_ANGLE_DEG     CLAW_DEFAULT_PWM_MIN_ANGLE_DEG // PWM 最小角
+-#define FEETECH_STS_CONTROL_PWM_MAX_ANGLE_DEG     CLAW_DEFAULT_PWM_MAX_ANGLE_DEG // PWM 最大角
+ 
+ /* 自适应与保护配置：默认关闭，集中放置便于后续移除。 */
+ #define FEETECH_STS_CONTROL_A0_STABLE_DELTA_DEG  0.5f                    // A0 角度基本不变阈值
+@@ -98,11 +93,6 @@
+  * 2. 状态和参数定义
+  *============================================================*/
+ 
+-typedef enum {
+-    FEETECH_STS_SERVO_BACKEND_STS = 0,            /* 仅飞特舵机。 */
+-    FEETECH_STS_SERVO_BACKEND_PWM,                /* 仅 PWM 舵机。 */
+-    FEETECH_STS_SERVO_BACKEND_STS_PWM             /* 飞特 + PWM 同步。 */
+-} FeetechStsServoBackend_t;
+ 
+ typedef enum {
+     FEETECH_STS_SWEEP_RANGE_LIMITS = 0,           /* 使用已保存机械极限。 */
+@@ -275,11 +265,6 @@
+ 
+ typedef struct {
+     uint8_t servo_id;                               /* 当前控制舵机 ID。 */
+-    FeetechStsServoBackend_t servo_backend;         /* 执行后端：STS/PWM/同步。 */
+-    uint16_t pwm_min_pulse_us;                      /* PWM 最小脉宽，单位 us。 */
+-    uint16_t pwm_max_pulse_us;                      /* PWM 最大脉宽，单位 us。 */
+-    float pwm_min_angle_deg;                        /* PWM 舵机最小角。 */
+-    float pwm_max_angle_deg;                        /* PWM 舵机最大角。 */
+     float open_angle_deg;                          /* 张开基准角度，单位：度。 */
+     float close_angle_deg;                         /* 闭合基准角度，单位：度。 */
+ 
+@@ -460,11 +445,6 @@
+     FEETECH_STS_PARAM_RELEASE_PERMISSION,          /* 释放允许开关。 */
+     FEETECH_STS_PARAM_PRINT_ENABLE,                /* 自动打印开关。 */
+     FEETECH_STS_PARAM_PRINT_PERIOD_MS,             /* 自动打印周期，单位：ms。 */
+-    FEETECH_STS_PARAM_SERVO_BACKEND,               /* 执行后端：0 STS，1 PWM，2 同步。 */
+-    FEETECH_STS_PARAM_PWM_MIN_US,                  /* PWM 最小脉宽。 */
+-    FEETECH_STS_PARAM_PWM_MAX_US,                  /* PWM 最大脉宽。 */
+-    FEETECH_STS_PARAM_PWM_MIN_ANGLE,               /* PWM 最小角。 */
+-    FEETECH_STS_PARAM_PWM_MAX_ANGLE,               /* PWM 最大角。 */
+     FEETECH_STS_PARAM_COUNT
+ } FeetechStsParamId_t;
+ 

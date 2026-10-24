@@ -1,0 +1,6 @@
+{
+  "scope": "host-only HAL and flash fault model; no target-board test",
+  "exit_code": 0,
+  "stdout": "PASS FLASH: alternating slots, erase failure, partial program/power loss, CRC corruption fallback, clear record, invalid range\nPASS mapped console: strict keys/masks, source release, detents, numeric overflow/trailing-token rejection, shared param bounds/read-only, executable help index/list\nPASS quiet/help: explicit paced category output, idle silence, all streams disabled, independent camera/LCD controls\nPASS CONSOLE: binary isolation, dual-channel lines, full mailbox, overflow, timeout recovery, moving-state maintenance gate, PWM range\nPASS catalog: all printable text examples recognized by actual parser with mocked hardware\nPASS PWM: no startup output, independent channels, angle clamping, invalid ID, virtual key edges/open-close toggles\nPASS startup log gate: all shared init output suppressed, explicit replies restored\n",
+  "stderr": ""
+}

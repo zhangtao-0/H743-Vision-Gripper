@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pip",
+    "install",
+    "--index-url",
+    "https://pypi.org/simple",
+    "--disable-pip-version-check",
+    "--no-input",
+    "--only-binary=:all:",
+    "-r",
+    "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\requirements-baseline.txt"
+  ],
+  "authorized_packages": [
+    "numpy==2.5.4",
+    "opencv-python==4.14.0.94",
+    "Pillow==12.3.0"
+  ],
+  "started_at": "2026-10-24T02:13:37.249237+08:00"
+}

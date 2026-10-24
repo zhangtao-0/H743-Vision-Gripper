@@ -1,0 +1,42 @@
+{
+  "version": "20261024-l298n-pa8-feedback-v1",
+  "firmware_flashed": true,
+  "programmer_verified": true,
+  "independent_readback_verified": true,
+  "hex": "Docs/电机控制/20261024_L298N切换与实测/固件/H743_FD5640_L298N_PA8_5V.hex",
+  "hex_sha256": "65578d65e8ed7f51732a1184600c81dc6ddd37ceed11dd62f7bfc11a331232af",
+  "driver_profile": 1,
+  "hall_A": "PA8",
+  "hall_B": "PE11",
+  "hall_pull": "GPIO_NOPULL",
+  "hall_supply": "5V comparison, user confirmed wiring",
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "configuration": "H743_VisionGripper_OV2640",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "configuration": "H743_VisionGripper_NoCamera",
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "software_tests": "Docs/电机控制/20261024_L298N切换与实测/最终PA8软件验证.json",
+  "physical_evidence": "Docs/电机控制/20261024_L298N切换与实测/最终实测状态.json",
+  "motor_rotation_confirmed": true,
+  "physical_pid_tracking_passed": false,
+  "final_output_disabled": true,
+  "fault_latched": 1,
+  "default_pid": [
+    1.8,
+    5,
+    0
+  ],
+  "previous_failures_preserved": true
+}

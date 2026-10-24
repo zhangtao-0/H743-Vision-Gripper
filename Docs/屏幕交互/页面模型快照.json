@@ -1,0 +1,667 @@
+[
+  {
+    "name": "home",
+    "rows": [
+      {
+        "index": 0,
+        "chinese": 1,
+        "selected": 0,
+        "text": "                         H743"
+      },
+      {
+        "index": 1,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 2,
+        "chinese": 2,
+        "selected": 1,
+        "text": ""
+      },
+      {
+        "index": 3,
+        "chinese": 3,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 4,
+        "chinese": 4,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 5,
+        "chinese": 5,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 6,
+        "chinese": 9,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 7,
+        "chinese": 10,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 8,
+        "chinese": 0,
+        "selected": 0,
+        "text": "DEBUG / KEY GRANTS"
+      },
+      {
+        "index": 9,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 10,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Select a function"
+      },
+      {
+        "index": 11,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 12,
+        "chinese": 0,
+        "selected": 0,
+        "text": "OK"
+      },
+      {
+        "index": 13,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K1:Up K2:Down K3:OK K4:Back"
+      },
+      {
+        "index": 14,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K3+4 shortcut:Debug"
+      }
+    ]
+  },
+  {
+    "name": "edit",
+    "rows": [
+      {
+        "index": 0,
+        "chinese": 6,
+        "selected": 0,
+        "text": "                         H743"
+      },
+      {
+        "index": 1,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 2,
+        "chinese": 0,
+        "selected": 0,
+        "text": "TORQUE"
+      },
+      {
+        "index": 3,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 4,
+        "chinese": 0,
+        "selected": 1,
+        "text": "Draft: 105"
+      },
+      {
+        "index": 5,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 6,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Range:0..400"
+      },
+      {
+        "index": 7,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 8,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Step:5  Orig:100"
+      },
+      {
+        "index": 9,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 10,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K3:Apply K4:Discard"
+      },
+      {
+        "index": 11,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 12,
+        "chinese": 0,
+        "selected": 0,
+        "text": "OK"
+      },
+      {
+        "index": 13,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K1:Up K2:Down K3:OK K4:Back"
+      },
+      {
+        "index": 14,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K3+4 shortcut:Debug"
+      }
+    ]
+  },
+  {
+    "name": "debug",
+    "rows": [
+      {
+        "index": 0,
+        "chinese": 0,
+        "selected": 0,
+        "text": "DEBUG / KEY GRANTS"
+      },
+      {
+        "index": 1,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 2,
+        "chinese": 0,
+        "selected": 1,
+        "text": "?"
+      },
+      {
+        "index": 3,
+        "chinese": 0,
+        "selected": 0,
+        "text": "?"
+      },
+      {
+        "index": 4,
+        "chinese": 0,
+        "selected": 0,
+        "text": "?"
+      },
+      {
+        "index": 5,
+        "chinese": 0,
+        "selected": 0,
+        "text": "?"
+      },
+      {
+        "index": 6,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 7,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 8,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K5 start/stop K6 -/+ RPM"
+      },
+      {
+        "index": 9,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Grants persist after BACK"
+      },
+      {
+        "index": 10,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 11,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 12,
+        "chinese": 0,
+        "selected": 0,
+        "text": "HOT: OK"
+      },
+      {
+        "index": 13,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K1:Up K2:Down K3:OK K4:Back"
+      },
+      {
+        "index": 14,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K3+4 shortcut:Return"
+      }
+    ]
+  },
+  {
+    "name": "confirm",
+    "rows": [
+      {
+        "index": 0,
+        "chinese": 7,
+        "selected": 0,
+        "text": "                         H743"
+      },
+      {
+        "index": 1,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 2,
+        "chinese": 0,
+        "selected": 0,
+        "text": "STS stop request"
+      },
+      {
+        "index": 3,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 4,
+        "chinese": 0,
+        "selected": 1,
+        "text": "CANCEL"
+      },
+      {
+        "index": 5,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 6,
+        "chinese": 0,
+        "selected": 0,
+        "text": "EXECUTE"
+      },
+      {
+        "index": 7,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 8,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 9,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Check load / power first"
+      },
+      {
+        "index": 10,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 11,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 12,
+        "chinese": 0,
+        "selected": 0,
+        "text": "OK"
+      },
+      {
+        "index": 13,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K1:Up K2:Down K3:OK K4:Back"
+      },
+      {
+        "index": 14,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K3+4 shortcut:Debug"
+      }
+    ]
+  },
+  {
+    "name": "defaults",
+    "rows": [
+      {
+        "index": 0,
+        "chinese": 4,
+        "selected": 0,
+        "text": "                         H743"
+      },
+      {
+        "index": 1,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 2,
+        "chinese": 0,
+        "selected": 1,
+        "text": "View factory values"
+      },
+      {
+        "index": 3,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Restore STS RAM"
+      },
+      {
+        "index": 4,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Restore motor RAM"
+      },
+      {
+        "index": 5,
+        "chinese": 0,
+        "selected": 0,
+        "text": "SAVE boot profile"
+      },
+      {
+        "index": 6,
+        "chinese": 0,
+        "selected": 0,
+        "text": "LOAD boot profile"
+      },
+      {
+        "index": 7,
+        "chinese": 0,
+        "selected": 0,
+        "text": "CLEAR boot profile"
+      },
+      {
+        "index": 8,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 9,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 10,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Item 1/6"
+      },
+      {
+        "index": 11,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 12,
+        "chinese": 0,
+        "selected": 0,
+        "text": "OK"
+      },
+      {
+        "index": 13,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K1:Up K2:Down K3:OK K4:Back"
+      },
+      {
+        "index": 14,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K3+4 shortcut:Debug"
+      }
+    ]
+  },
+  {
+    "name": "help",
+    "rows": [
+      {
+        "index": 0,
+        "chinese": 9,
+        "selected": 0,
+        "text": "                         H743"
+      },
+      {
+        "index": 1,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 2,
+        "chinese": 0,
+        "selected": 1,
+        "text": "SYSTEM / QUIET"
+      },
+      {
+        "index": 3,
+        "chinese": 0,
+        "selected": 0,
+        "text": "CLAW / STS"
+      },
+      {
+        "index": 4,
+        "chinese": 0,
+        "selected": 0,
+        "text": "MG310 MOTOR"
+      },
+      {
+        "index": 5,
+        "chinese": 0,
+        "selected": 0,
+        "text": "CAMERA / IMAGE"
+      },
+      {
+        "index": 6,
+        "chinese": 0,
+        "selected": 0,
+        "text": "PWM OUTPUT"
+      },
+      {
+        "index": 7,
+        "chinese": 0,
+        "selected": 0,
+        "text": "STORAGE / RTC"
+      },
+      {
+        "index": 8,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 9,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 10,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Item 1/9"
+      },
+      {
+        "index": 11,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 12,
+        "chinese": 0,
+        "selected": 0,
+        "text": "OK"
+      },
+      {
+        "index": 13,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K1:Up K2:Down K3:OK K4:Back"
+      },
+      {
+        "index": 14,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K3+4 shortcut:Debug"
+      }
+    ]
+  },
+  {
+    "name": "image_menu",
+    "rows": [
+      {
+        "index": 0,
+        "chinese": 10,
+        "selected": 0,
+        "text": "                         H743"
+      },
+      {
+        "index": 1,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 2,
+        "chinese": 0,
+        "selected": 1,
+        "text": "View live image"
+      },
+      {
+        "index": 3,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Take still (RAM)"
+      },
+      {
+        "index": 4,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Image rotate +90"
+      },
+      {
+        "index": 5,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Image mirror L/R"
+      },
+      {
+        "index": 6,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Image flip U/D"
+      },
+      {
+        "index": 7,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Edge view toggle"
+      },
+      {
+        "index": 8,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 9,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 10,
+        "chinese": 0,
+        "selected": 0,
+        "text": "Item 1/7"
+      },
+      {
+        "index": 11,
+        "chinese": 0,
+        "selected": 0,
+        "text": ""
+      },
+      {
+        "index": 12,
+        "chinese": 0,
+        "selected": 0,
+        "text": "OK"
+      },
+      {
+        "index": 13,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K1:Up K2:Down K3:OK K4:Back"
+      },
+      {
+        "index": 14,
+        "chinese": 0,
+        "selected": 0,
+        "text": "K3+4 shortcut:Debug"
+      }
+    ]
+  }
+]

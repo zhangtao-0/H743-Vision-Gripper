@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-22",
+  "scope": "planning documents, referenced sources and external ino preservation",
+  "local_links_checked": 36,
+  "web_snapshots_checked": 4,
+  "external_ino_unchanged": true,
+  "production_evidence_unchanged": true,
+  "protocol_implemented": false,
+  "flashed": false,
+  "hardware_test": false,
+  "issues": [],
+  "passed": true
+}

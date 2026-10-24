@@ -1,0 +1,6 @@
+{
+  "scope": "new ledger preparation, corrected before delivery",
+  "issue": "first canonical draft omitted PD12/PD13 PWM owners; macro-to-ledger checker rejected it",
+  "fix": "added TIM4_CH1/2 local PWM servo ownership; free candidates corrected from 41 to 39; all views regenerated",
+  "production_code_changed": false
+}

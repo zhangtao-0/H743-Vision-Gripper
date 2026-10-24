@@ -1,0 +1,8 @@
+{
+  "motion_commands_sent": false,
+  "ports": [
+    "COM11"
+  ],
+  "commands": [],
+  "error": "Cannot configure port, something went wrong. Original message: PermissionError(13, '连到系统上的设备没有发挥作用。', None, 31)"
+}

@@ -1,0 +1,120 @@
+{
+  "schema": "h743.grasp_rules.v1",
+  "minimum_confidence": 0.55,
+  "strategies": [
+    "side_wrap",
+    "opposed_faces",
+    "handle_support",
+    "compliant_enclose"
+  ],
+  "priors": [
+    {
+      "when": [
+        "semantic:cup"
+      ],
+      "strategy": "side_wrap",
+      "weight": 30
+    },
+    {
+      "when": [
+        "semantic:bottle"
+      ],
+      "strategy": "side_wrap",
+      "weight": 30
+    },
+    {
+      "when": [
+        "shape:cylinder"
+      ],
+      "strategy": "side_wrap",
+      "weight": 25
+    },
+    {
+      "when": [
+        "semantic:box"
+      ],
+      "strategy": "opposed_faces",
+      "weight": 30
+    },
+    {
+      "when": [
+        "shape:rectangular"
+      ],
+      "strategy": "opposed_faces",
+      "weight": 25
+    },
+    {
+      "when": [
+        "shape:l_shaped"
+      ],
+      "strategy": "compliant_enclose",
+      "weight": 20
+    }
+  ],
+  "combinations": [
+    {
+      "id": "cup_with_verified_handle",
+      "all": [
+        "semantic:cup",
+        "part:handle_present"
+      ],
+      "strategy": "handle_support",
+      "priority": 200,
+      "bonus": 75,
+      "requirements": [
+        "handle_clearance_measured"
+      ]
+    },
+    {
+      "id": "fragile_handle_veto",
+      "all": [
+        "state:fragile",
+        "part:handle_present"
+      ],
+      "forbid": [
+        "handle_support"
+      ],
+      "priority": 400,
+      "requirements": [
+        "force_limit_measured"
+      ]
+    },
+    {
+      "id": "liquid_upright",
+      "all": [
+        "state:contains_liquid"
+      ],
+      "constraints": [
+        "keep_upright",
+        "no_inversion"
+      ],
+      "priority": 500
+    },
+    {
+      "id": "fragile_force",
+      "all": [
+        "state:fragile"
+      ],
+      "constraints": [
+        "low_force"
+      ],
+      "requirements": [
+        "force_limit_measured"
+      ],
+      "priority": 500
+    }
+  ],
+  "hard_reject_tags": [
+    "safety:hot",
+    "safety:human_contact",
+    "safety:electrical_hazard"
+  ],
+  "execution_requirements": [
+    "camera_calibrated",
+    "gripper_geometry_verified",
+    "workspace_verified",
+    "feedback_verified",
+    "operator_hardware_authorization"
+  ],
+  "inferred_facts_cannot_satisfy_measured_requirements": true
+}

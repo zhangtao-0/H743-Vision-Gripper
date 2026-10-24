@@ -1,0 +1,93 @@
+{
+  "version": "20261024-l298n-pa8-feedback-v1",
+  "firmware_flashed": true,
+  "firmware_hex_sha256": "65578d65e8ed7f51732a1184600c81dc6ddd37ceed11dd62f7bfc11a331232af",
+  "readback_passed": true,
+  "motor_motion_user_confirmed": true,
+  "closed_loop_passed": false,
+  "default_pid_restored": [
+    1.8,
+    5,
+    0
+  ],
+  "hall_A": "PA8/U10-47",
+  "hall_B": "PE11/U9-38",
+  "hall_supply": "user connected board+5V, not meter verified",
+  "vm": "user reports10.3V, electrically unmeasured",
+  "final_status": "MOTOR ready=1 driver=1 on=0 fault=1 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=549 blocked=0 invalid=0\r\n",
+  "notes": "fault1 retained; no further enable until feedback/power conditions reviewed",
+  "tests": [
+    {
+      "file": "L298N实际运行.json",
+      "label": "L298N old guard, user observed continuous rotation",
+      "transport_errors": [],
+      "feedback_peak_rpm": 1.4134035110473633,
+      "reference_peak_rpm": 400.0,
+      "pwm_peak_permille": 950.0,
+      "fault_codes": [
+        0.0
+      ],
+      "closed_loop_passed": false
+    },
+    {
+      "file": "PA8版本实际运行.json",
+      "label": "PA8 Hall 3.3V, new protection",
+      "transport_errors": [
+        "motor fault 1.0"
+      ],
+      "feedback_peak_rpm": 0.0,
+      "reference_peak_rpm": 111.0,
+      "pwm_peak_permille": 407.0,
+      "fault_codes": [
+        0.0,
+        1.0
+      ],
+      "closed_loop_passed": false
+    },
+    {
+      "file": "编码器5V实际运行.json",
+      "label": "PA8 Hall 5V, default gains",
+      "transport_errors": [
+        "motor fault 1.0"
+      ],
+      "feedback_peak_rpm": 2.802596928649634e-45,
+      "reference_peak_rpm": 111.0,
+      "pwm_peak_permille": 407.0,
+      "fault_codes": [
+        0.0,
+        1.0
+      ],
+      "closed_loop_passed": false
+    },
+    {
+      "file": "有界起转诊断.json",
+      "label": "Bounded Kp12 Ki0 diagnostic",
+      "transport_errors": [
+        "motor fault 1.0"
+      ],
+      "feedback_peak_rpm": 1.413405418395996,
+      "reference_peak_rpm": 60.0,
+      "pwm_peak_permille": 719.0,
+      "fault_codes": [
+        0.0,
+        1.0
+      ],
+      "closed_loop_passed": false
+    },
+    {
+      "file": "快速有界起转诊断.json",
+      "label": "Bounded Kp40 Ki0 diagnostic",
+      "transport_errors": [
+        "motor fault 1.0"
+      ],
+      "feedback_peak_rpm": 2.802596928649634e-45,
+      "reference_peak_rpm": 48.0,
+      "pwm_peak_permille": 950.0,
+      "fault_codes": [
+        0.0,
+        1.0
+      ],
+      "closed_loop_passed": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Host\\vision_gripper\\.venv\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\Resources\\教学包原件\\03_最小可运行演示\\tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_centers_are_image_pixels (test_baseline.TestSyntheticVision.test_centers_are_image_pixels) ... ok\ntest_three_shapes (test_baseline.TestSyntheticVision.test_three_shapes) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.010s\n\nOK\n"
+}

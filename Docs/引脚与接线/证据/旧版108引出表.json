@@ -1,0 +1,974 @@
+[
+  {
+    "Pin": "PA11",
+    "Connector": "U9",
+    "HeaderPin": "5",
+    "Role": "USB FS / Type-C",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA12",
+    "Connector": "U9",
+    "HeaderPin": "6",
+    "Role": "USB FS / Type-C",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC1",
+    "Connector": "U9",
+    "HeaderPin": "7",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC0",
+    "Connector": "U9",
+    "HeaderPin": "8",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA1",
+    "Connector": "U9",
+    "HeaderPin": "9",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA0",
+    "Connector": "U9",
+    "HeaderPin": "10",
+    "Role": "KEY1 input",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA2",
+    "Connector": "U9",
+    "HeaderPin": "11",
+    "Role": "USART2_TX / STS servo",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC2_C",
+    "Connector": "U9",
+    "HeaderPin": "15",
+    "Role": "Analog switch pin electrical review required",
+    "Status": "专用电气待核对",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC3_C",
+    "Connector": "U9",
+    "HeaderPin": "16",
+    "Role": "Analog switch pin electrical review required",
+    "Status": "专用电气待核对",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA4",
+    "Connector": "U9",
+    "HeaderPin": "17",
+    "Role": "DCMI_HSYNC",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA5",
+    "Connector": "U9",
+    "HeaderPin": "18",
+    "Role": "Camera module reserved (XCLK/RESET?)",
+    "Status": "摄像头预留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA6",
+    "Connector": "U9",
+    "HeaderPin": "19",
+    "Role": "DCMI_PIXCLK",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA3",
+    "Connector": "U9",
+    "HeaderPin": "20",
+    "Role": "USART2_RX / STS servo",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC4",
+    "Connector": "U9",
+    "HeaderPin": "21",
+    "Role": "Camera module reserved (XCLK/RESET?)",
+    "Status": "摄像头预留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA7",
+    "Connector": "U9",
+    "HeaderPin": "22",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB0",
+    "Connector": "U9",
+    "HeaderPin": "23",
+    "Role": "KEY2 input",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC5",
+    "Connector": "U9",
+    "HeaderPin": "24",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB2",
+    "Connector": "U9",
+    "HeaderPin": "25",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB1",
+    "Connector": "U9",
+    "HeaderPin": "26",
+    "Role": "Unallocated GPIO; legacy PWM moved to PD12/PD13",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF12",
+    "Connector": "U9",
+    "HeaderPin": "27",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF11",
+    "Connector": "U9",
+    "HeaderPin": "28",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF14",
+    "Connector": "U9",
+    "HeaderPin": "29",
+    "Role": "SCCB_SCL",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF13",
+    "Connector": "U9",
+    "HeaderPin": "30",
+    "Role": "CAMERA PWDN",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG0",
+    "Connector": "U9",
+    "HeaderPin": "31",
+    "Role": "LED_STATUS output",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF15",
+    "Connector": "U9",
+    "HeaderPin": "32",
+    "Role": "SCCB_SDA",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE7",
+    "Connector": "U9",
+    "HeaderPin": "33",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG1",
+    "Connector": "U9",
+    "HeaderPin": "34",
+    "Role": "LED_FAULT output",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE8",
+    "Connector": "U9",
+    "HeaderPin": "35",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE9",
+    "Connector": "U9",
+    "HeaderPin": "36",
+    "Role": "MG310编码器 / A",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE10",
+    "Connector": "U9",
+    "HeaderPin": "37",
+    "Role": "H桥待选型 / 方向IN1",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE11",
+    "Connector": "U9",
+    "HeaderPin": "38",
+    "Role": "MG310编码器 / B",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE12",
+    "Connector": "U9",
+    "HeaderPin": "39",
+    "Role": "H桥待选型 / 方向IN2",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE13",
+    "Connector": "U9",
+    "HeaderPin": "40",
+    "Role": "H桥待选型 / STBY",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE14",
+    "Connector": "U9",
+    "HeaderPin": "41",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB11",
+    "Connector": "U9",
+    "HeaderPin": "42",
+    "Role": "USART3_RX Bluetooth optional",
+    "Status": "预留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE15",
+    "Connector": "U9",
+    "HeaderPin": "43",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB10",
+    "Connector": "U9",
+    "HeaderPin": "44",
+    "Role": "USART3_TX Bluetooth optional",
+    "Status": "预留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB14",
+    "Connector": "U9",
+    "HeaderPin": "45",
+    "Role": "H桥待选型 / PWM/IN1",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB13",
+    "Connector": "U9",
+    "HeaderPin": "46",
+    "Role": "KEY4 input",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB12",
+    "Connector": "U9",
+    "HeaderPin": "47",
+    "Role": "KEY3 input",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB15",
+    "Connector": "U9",
+    "HeaderPin": "48",
+    "Role": "H桥待选型 / IN2双PWM",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD8",
+    "Connector": "U9",
+    "HeaderPin": "49",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD9",
+    "Connector": "U9",
+    "HeaderPin": "50",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD10",
+    "Connector": "U9",
+    "HeaderPin": "51",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD11",
+    "Connector": "U9",
+    "HeaderPin": "52",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF10",
+    "Connector": "U9",
+    "HeaderPin": "53",
+    "Role": "W25Q64 QSPI",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF6",
+    "Connector": "U9",
+    "HeaderPin": "54",
+    "Role": "W25Q64 QSPI",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF8",
+    "Connector": "U9",
+    "HeaderPin": "55",
+    "Role": "W25Q64 QSPI",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF7",
+    "Connector": "U9",
+    "HeaderPin": "56",
+    "Role": "W25Q64 QSPI",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF9",
+    "Connector": "U9",
+    "HeaderPin": "57",
+    "Role": "W25Q64 QSPI",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG6",
+    "Connector": "U9",
+    "HeaderPin": "58",
+    "Role": "W25Q64 QSPI",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD12",
+    "Connector": "U9",
+    "HeaderPin": "59",
+    "Role": "PWM1 TIM4_CH1",
+    "Status": "PWM专用，显式命令启动",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD13",
+    "Connector": "U9",
+    "HeaderPin": "60",
+    "Role": "PWM2 TIM4_CH2",
+    "Status": "PWM专用，显式命令启动",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA10",
+    "Connector": "U10",
+    "HeaderPin": "5",
+    "Role": "USART1_RX / VOFA HOST",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA9",
+    "Connector": "U10",
+    "HeaderPin": "6",
+    "Role": "USART1_TX / VOFA HOST",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC13",
+    "Connector": "U10",
+    "HeaderPin": "7",
+    "Role": "电机按键 / SW",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF0",
+    "Connector": "U10",
+    "HeaderPin": "8",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF1",
+    "Connector": "U10",
+    "HeaderPin": "9",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF2",
+    "Connector": "U10",
+    "HeaderPin": "10",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF4",
+    "Connector": "U10",
+    "HeaderPin": "11",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF3",
+    "Connector": "U10",
+    "HeaderPin": "12",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PF5",
+    "Connector": "U10",
+    "HeaderPin": "14",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE5",
+    "Connector": "U10",
+    "HeaderPin": "15",
+    "Role": "DCMI Camera / SCCB / PWDN",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE6",
+    "Connector": "U10",
+    "HeaderPin": "16",
+    "Role": "DCMI Camera / SCCB / PWDN",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE3",
+    "Connector": "U10",
+    "HeaderPin": "17",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE4",
+    "Connector": "U10",
+    "HeaderPin": "18",
+    "Role": "DCMI Camera / SCCB / PWDN",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB8",
+    "Connector": "U10",
+    "HeaderPin": "19",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE2",
+    "Connector": "U10",
+    "HeaderPin": "20",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE0",
+    "Connector": "U10",
+    "HeaderPin": "21",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB9",
+    "Connector": "U10",
+    "HeaderPin": "22",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB7",
+    "Connector": "U10",
+    "HeaderPin": "23",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PE1",
+    "Connector": "U10",
+    "HeaderPin": "24",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB5",
+    "Connector": "U10",
+    "HeaderPin": "25",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB6",
+    "Connector": "U10",
+    "HeaderPin": "26",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB3",
+    "Connector": "U10",
+    "HeaderPin": "27",
+    "Role": "JTAG/SWO reuse requires debugger configuration review",
+    "Status": "调试复用待核对",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PB4",
+    "Connector": "U10",
+    "HeaderPin": "28",
+    "Role": "JTAG/SWO reuse requires debugger configuration review",
+    "Status": "调试复用待核对",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG14",
+    "Connector": "U10",
+    "HeaderPin": "29",
+    "Role": "SPI6 LCD MOSI",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG15",
+    "Connector": "U10",
+    "HeaderPin": "30",
+    "Role": "LCD DC",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG12",
+    "Connector": "U10",
+    "HeaderPin": "31",
+    "Role": "LCD backlight",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG13",
+    "Connector": "U10",
+    "HeaderPin": "32",
+    "Role": "SPI6 LCD SCK",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG10",
+    "Connector": "U10",
+    "HeaderPin": "33",
+    "Role": "DCMI Camera / SCCB / PWDN",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG11",
+    "Connector": "U10",
+    "HeaderPin": "34",
+    "Role": "DCMI Camera / SCCB / PWDN",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD7",
+    "Connector": "U10",
+    "HeaderPin": "35",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG9",
+    "Connector": "U10",
+    "HeaderPin": "36",
+    "Role": "DCMI_VSYNC",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD5",
+    "Connector": "U10",
+    "HeaderPin": "37",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD6",
+    "Connector": "U10",
+    "HeaderPin": "38",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD3",
+    "Connector": "U10",
+    "HeaderPin": "39",
+    "Role": "DCMI Camera / SCCB / PWDN",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD4",
+    "Connector": "U10",
+    "HeaderPin": "40",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC10",
+    "Connector": "U10",
+    "HeaderPin": "41",
+    "Role": "TF / SDMMC1",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD2",
+    "Connector": "U10",
+    "HeaderPin": "42",
+    "Role": "TF / SDMMC1",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD1",
+    "Connector": "U10",
+    "HeaderPin": "43",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA15",
+    "Connector": "U10",
+    "HeaderPin": "44",
+    "Role": "JTAG/SWO reuse requires debugger configuration review",
+    "Status": "调试复用待核对",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC12",
+    "Connector": "U10",
+    "HeaderPin": "45",
+    "Role": "TF / SDMMC1",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD0",
+    "Connector": "U10",
+    "HeaderPin": "46",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PA8",
+    "Connector": "U10",
+    "HeaderPin": "47",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC11",
+    "Connector": "U10",
+    "HeaderPin": "48",
+    "Role": "TF / SDMMC1",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC8",
+    "Connector": "U10",
+    "HeaderPin": "49",
+    "Role": "TF / SDMMC1",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC9",
+    "Connector": "U10",
+    "HeaderPin": "50",
+    "Role": "TF / SDMMC1",
+    "Status": "板载保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC6",
+    "Connector": "U10",
+    "HeaderPin": "51",
+    "Role": "DCMI Camera / SCCB / PWDN",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PC7",
+    "Connector": "U10",
+    "HeaderPin": "52",
+    "Role": "DCMI Camera / SCCB / PWDN",
+    "Status": "摄像头保留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG7",
+    "Connector": "U10",
+    "HeaderPin": "53",
+    "Role": "Onboard LED1 blue active-low",
+    "Status": "板载",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG8",
+    "Connector": "U10",
+    "HeaderPin": "54",
+    "Role": "SPI6 LCD CS",
+    "Status": "方案已定",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG4",
+    "Connector": "U10",
+    "HeaderPin": "55",
+    "Role": "Reserved expansion GPIO",
+    "Status": "明确预留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG5",
+    "Connector": "U10",
+    "HeaderPin": "56",
+    "Role": "Reserved expansion GPIO",
+    "Status": "明确预留",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG2",
+    "Connector": "U10",
+    "HeaderPin": "57",
+    "Role": "EC11 / A/CLK",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PG3",
+    "Connector": "U10",
+    "HeaderPin": "58",
+    "Role": "EC11 / B/DT",
+    "Status": "MG310源码分配；未烧录/未实测",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD14",
+    "Connector": "U10",
+    "HeaderPin": "59",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  },
+  {
+    "Pin": "PD15",
+    "Connector": "U10",
+    "HeaderPin": "60",
+    "Role": "Unallocated header GPIO candidate",
+    "Status": "外接GPIO候选",
+    "PhysicalTest": "未执行",
+    "Evidence": "LXB743ZI-P1原理图.pdf p1; visually checked U9/U10"
+  }
+]

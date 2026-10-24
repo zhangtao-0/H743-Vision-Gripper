@@ -1,0 +1,115 @@
+{
+  "version": "20261022-input-map-v1",
+  "date": "2026-10-22",
+  "source_changes": 10,
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "project/EWARM/H743_VisionGripper/Exe/H743_VisionGripper.hex",
+      "hex_sha256": "b51521b82a7d02dc74b8c60e325763ac2d795722d479417e97c92b13de9cd214",
+      "data_address_range": [
+        "0x8000000",
+        "0x8023901"
+      ],
+      "log": "Docs/屏幕交互/构建_default.log"
+    },
+    {
+      "configuration": "H743_VisionGripper_OV2640",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "project/EWARM/H743_VisionGripper_OV2640/Exe/H743_VisionGripper.hex",
+      "hex_sha256": "eda5848faedf038bb38e4d46fe2ca0837c7622593828b9539d28803c52986f34",
+      "data_address_range": [
+        "0x8000000",
+        "0x80223a6"
+      ],
+      "log": "Docs/屏幕交互/构建_OV2640.log"
+    },
+    {
+      "configuration": "H743_VisionGripper_NoCamera",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "project/EWARM/H743_VisionGripper_NoCamera/Exe/H743_VisionGripper.hex",
+      "hex_sha256": "ffc9a9962830bd9a7c78cb3dbe44186e7500630c2490148eb45947437880d895",
+      "data_address_range": [
+        "0x8000000",
+        "0x8021ab2"
+      ],
+      "log": "Docs/屏幕交互/构建_NoCamera.log"
+    }
+  ],
+  "mapping": {
+    "version": "input-map-v1",
+    "help_categories": 9,
+    "text_examples": 73,
+    "hex_examples": 6,
+    "presets": 79,
+    "key_rows": 8,
+    "parameter_rows": 25,
+    "generated_header_consistent": true,
+    "serial_ports_opened": false,
+    "hardware_test": false,
+    "passed": true
+  },
+  "checks": [
+    {
+      "path": "Docs/适配规划/05_调查证据/P2主机测试.json",
+      "exit_code": 0,
+      "sha256": "07db053a5986334ec24f81fa4400972afadcb29936f8114f4de23a6e40bcbca2"
+    },
+    {
+      "path": "Docs/适配规划/05_调查证据/P3主机测试.json",
+      "exit_code": 0,
+      "sha256": "b24b13066d9df58a329344cd2e1054eefa7b1158beb806c766233e5bf49d1b8e"
+    },
+    {
+      "path": "Docs/电机控制/主机测试.json",
+      "exit_code": 0,
+      "sha256": "970225546c79403ca9f1ff8dab10de37783421bac0681af232ac5955314fc304"
+    },
+    {
+      "path": "Docs/整合交付/整合主机测试.json",
+      "exit_code": 0,
+      "sha256": "48c8f8856559966193c36e59b1368b042a21eaaa2be28e1baabcc5c8c8e7140e"
+    },
+    {
+      "path": "Docs/屏幕交互/主机状态机测试.json",
+      "exit_code": 0,
+      "sha256": "bbe1f1e6bfe138066119df5ff38747d4daf3ab68c1ec60500d861fef68301eaa"
+    },
+    {
+      "path": "Docs/屏幕交互/主机开机配置测试.json",
+      "exit_code": 0,
+      "sha256": "97d1532c75fa6c7e725493386ce221d9471fcedeb1b1910d0c7daee0e428b0ef"
+    },
+    {
+      "path": "Docs/屏幕交互/主机配置Flash模型测试.json",
+      "exit_code": 0,
+      "sha256": "d6311edba8f8e7fe189641e3270d62f427344d86cdc6335fe8cb3e73873aad0e"
+    },
+    {
+      "path": "Docs/故障排查/20261021_花屏与舵机离线/摄像头主机测试.json",
+      "exit_code": 0,
+      "sha256": "059bbc137edab4fb0ceaaf89a11d5f73a8a12eefd7cfc03b017e0fff93d5aef4"
+    },
+    {
+      "path": "Docs/指令手册/04_维护与证据/指令核验报告.json",
+      "passed": true
+    },
+    {
+      "path": "Docs/教学手册/05_维护与证据/资料核验报告.json",
+      "passed": true
+    }
+  ],
+  "default_input_mode": "mixed",
+  "gpio_mapping_preserved": true,
+  "virtual_key_max_ms": 5000,
+  "help_line_min_interval_ms": 25,
+  "legacy_F2_enum_changed": false,
+  "flashed": false,
+  "physical_validation": false,
+  "vofa_project_imported": false,
+  "passed": true
+}

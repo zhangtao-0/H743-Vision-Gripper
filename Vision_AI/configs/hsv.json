@@ -1,0 +1,15 @@
+{
+  "mode": "hsv",
+  "threshold": 225,
+  "min_area": 800,
+  "hsv_low": [
+    0,
+    0,
+    0
+  ],
+  "hsv_high": [
+    179,
+    255,
+    180
+  ]
+}

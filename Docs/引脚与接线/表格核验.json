@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-24",
+  "board": "LXB743ZI-P1 / STM32H743ZIT6",
+  "header_positions": 120,
+  "h1_positions": 8,
+  "exported_mcu_named_signals": 108,
+  "ordinary_exported_gpio": 106,
+  "special_analog_pads": 2,
+  "port_index_records": 116,
+  "free_candidates": 36,
+  "status_counts": {
+    "板载专用": 34,
+    "已分配": 24,
+    "空闲候选": 36,
+    "特殊脚待核对": 2,
+    "明确预留": 8,
+    "条件预留": 2,
+    "接口候选预留": 2
+  },
+  "device_signal_rows": 80,
+  "generated_files": 8,
+  "source_files_checked": 25,
+  "production_changes": false,
+  "physical_test": false,
+  "passed": true
+}

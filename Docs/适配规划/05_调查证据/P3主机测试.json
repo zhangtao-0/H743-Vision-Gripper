@@ -1,0 +1,7 @@
+{
+  "scope": "host HAL stub; not hardware validation",
+  "exit_code": 0,
+  "stdout": "PASS PROTO: frame build/checksum, angle/position, limit\nPASS SCAN: unicast 0..253, stops after exhaustion, identity mismatch rejected; no writes\nPASS alarm/echo: voltage-error reply preserved, identity verified, echo-only cannot establish online\nPASS P3: ping/id/model/baud/limits/feedback, offline retry, safe baud rearm, explicit ID probe, no writes\n",
+  "stderr": "",
+  "compiler": "C:\\Dev-Cpp\\MinGW64\\bin\\gcc.exe"
+}

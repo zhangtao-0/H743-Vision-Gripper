@@ -1,0 +1,37 @@
+[
+  {
+    "name": "OpenCV",
+    "url": "https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html",
+    "observed_at": "2026-10-24",
+    "local_path": "Resources/官方文档快照/vision20261024-opencv-calibration.md",
+    "sha256": "3d3488b09b99e5e0273db5e805d7c34dbbdf09c4488c597d6494c8e6b7f954a5"
+  },
+  {
+    "name": "Ultralytics",
+    "url": "https://docs.ultralytics.com/tasks/segment/",
+    "observed_at": "2026-10-24",
+    "local_path": "Resources/官方文档快照/vision20261024-ultralytics-segment.md",
+    "sha256": "f8f36d73b253e4f22c40848f1bf198c86c43da9773642dca0b92298e16839ac6"
+  },
+  {
+    "name": "PyTorch",
+    "url": "https://pytorch.org/get-started/locally/",
+    "observed_at": "2026-10-24",
+    "local_path": "Resources/官方文档快照/vision20261024-pytorch-install.md",
+    "sha256": "74df0ae52420c4ec4ec4643ff9f4baa8e19197005ad4fc5c13b8cdf965572e69"
+  },
+  {
+    "name": "CVAT",
+    "url": "https://docs.cvat.ai/docs/dataset_management/formats/format-yolo-ultralytics/",
+    "observed_at": "2026-10-24",
+    "local_path": "Resources/官方文档快照/vision20261024-cvat-yolo.md",
+    "sha256": "444a40c6fc4962a3849d3d69033c1a6e1d90a5e3a412e1fc7106d6e7417a33ec"
+  },
+  {
+    "name": "GraspNet",
+    "url": "https://github.com/graspnet/graspnet-baseline",
+    "observed_at": "2026-10-24",
+    "local_path": "Resources/官方文档快照/vision20261024-graspnet.md",
+    "sha256": "9b23b8c7d3bc1c0fbd44f68dade29d5c8dcdb971c81887a21fc682ae68bf43ba"
+  }
+]

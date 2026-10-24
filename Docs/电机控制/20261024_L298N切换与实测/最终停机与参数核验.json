@@ -1,0 +1,34 @@
+[
+  {
+    "command": "@motor disable",
+    "reply": "motor disable=1; setpoint retained\r\n"
+  },
+  {
+    "command": "@quiet",
+    "reply": ""
+  },
+  {
+    "command": "@motor plot off",
+    "reply": "motor plot stopped\r\n"
+  },
+  {
+    "command": "@param get 22",
+    "reply": "PARAM 22 KP_milli value=1800 min=0 max=100000 step=50 state=0\r\n"
+  },
+  {
+    "command": "@param get 23",
+    "reply": "PARAM 23 KI_milli value=5000 min=0 max=100000 step=50 state=0\r\n"
+  },
+  {
+    "command": "@param get 24",
+    "reply": "PARAM 24 KD_milli value=0 min=0 max=100000 step=50 state=0\r\n"
+  },
+  {
+    "command": "@debug status",
+    "reply": "DEBUG sts=0 motor=0 plot=0; runtime grants only\r\n"
+  },
+  {
+    "command": "@motor status",
+    "reply": "MOTOR ready=1 driver=1 on=0 fault=1 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=549 blocked=0 invalid=0\r\n"
+  }
+]

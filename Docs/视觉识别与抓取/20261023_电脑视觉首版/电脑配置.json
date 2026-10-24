@@ -1,0 +1,9 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "memory_MiB": 8188,
+  "driver": "592.82",
+  "evidence": "nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader",
+  "python_preview": "3.12.14",
+  "training_dependencies_installed": false,
+  "torch_cuda_verified": false
+}

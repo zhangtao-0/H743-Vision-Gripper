@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.firecrawl/
+datasets/raw/*
+!datasets/raw/.gitkeep
+datasets/annotations/*
+!datasets/annotations/.gitkeep
+*.pt
+
+# Local public assets/models: publish manifests separately, never silently upload bulk assets
+Library/01_来源原件/TACO/images/
+Library/04_数据集版本/*/images/
+Library/05_模型注册/pretrained/*.pt
+experiments/auto_*/train/weights/

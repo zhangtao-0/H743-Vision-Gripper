@@ -1,0 +1,81 @@
+﻿设备,信号,MCU引脚,排针,专用插座,状态,模式,接线,来源
+实体按键,KEY1,PA0,U9-10,,已分配,GPIO输入/上拉/按下低有效,屏幕上一项/减少；常开按键另一端GND,App/platform/boards/lxb743zi_p1/board_io_cfg.h
+实体按键,KEY2,PB0,U9-23,,已分配,GPIO输入/上拉/按下低有效,屏幕下一项/增加；常开按键另一端GND,App/platform/boards/lxb743zi_p1/board_io_cfg.h
+实体按键,KEY3,PB12,U9-47,,已分配,GPIO输入/上拉/按下低有效,屏幕确认/进入；常开按键另一端GND,App/platform/boards/lxb743zi_p1/board_io_cfg.h
+实体按键,KEY4,PB13,U9-46,,已分配,GPIO输入/上拉/按下低有效,屏幕取消/返回；常开按键另一端GND,App/platform/boards/lxb743zi_p1/board_io_cfg.h
+实体按键,KEY5,PC0,U9-8,,已分配,GPIO输入/上拉/按下低有效,舵机A0；常开按键另一端GND,App/platform/boards/lxb743zi_p1/board_io_cfg.h
+实体按键,KEY6,PC1,U9-7,,已分配,GPIO输入/上拉/按下低有效,舵机B0；常开按键另一端GND,App/platform/boards/lxb743zi_p1/board_io_cfg.h
+SM0488050V0.1旋钮模块,C/SW/KEY7（按压已确认，极性待实测）,PC13,U10-7,,已分配,GPIO数字输入/NOPULL/5V容限；外部上拉或模块驱动,用户确认模块VCC=5V、C为按压；A→PG2/U10-57、B→PG3/U10-58、C→PC13/U10-7。FT输入，内部上下拉禁用。C按下低有效待实测，不接公共地。Motor keys授权后旋转±5RPM、点按启停、长按1秒换向。,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+SM0488050V0.1旋钮模块,A,PG2,U10-57,,已分配,GPIO数字输入/NOPULL/5V容限；外部上拉或模块驱动,用户确认模块VCC=5V、C为按压；A→PG2/U10-57、B→PG3/U10-58、C→PC13/U10-7。FT输入，内部上下拉禁用。C按下低有效待实测，不接公共地。Motor keys授权后旋转±5RPM、点按启停、长按1秒换向。,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+SM0488050V0.1旋钮模块,B,PG3,U10-58,,已分配,GPIO数字输入/NOPULL/5V容限；外部上拉或模块驱动,用户确认模块VCC=5V、C为按压；A→PG2/U10-57、B→PG3/U10-58、C→PC13/U10-7。FT输入，内部上下拉禁用。C按下低有效待实测，不接公共地。Motor keys授权后旋转±5RPM、点按启停、长按1秒换向。,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+待核查输入,旧霍尔A（停用）,PE9,U9-36,,明确预留,不再初始化作霍尔输入,拔线且切普通上拉输入仍读低；暂不判定损坏，不当空闲候选，不接电机A,App/platform/boards/lxb743zi_p1/board_devices.h
+MG310霍尔编码器,B,PE11,U9-38,,已分配,TIM1_CH2/AF1/上拉,霍尔A=PA8/U10-47、B=PE11/U9-38；拟做VCC=板上+5V对照；FT数字输入、无内部上下拉，使用编码器内置上拉；GND共地，10.3V仅接L298N VM；实测阶段另记,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+MG310霍尔编码器,霍尔A / TIM1_CH1,PA8,U10-47,,已分配,TIM1_CH1/AF1,霍尔A=PA8/U10-47、B=PE11/U9-38；拟做VCC=板上+5V对照；FT数字输入、无内部上下拉，使用编码器内置上拉；GND共地，10.3V仅接L298N VM；实测阶段另记,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+MG310 L298N A通道,ENA / PWM,PB14,U9-45,,已分配,TIM12_CH1/AF2,L298N逻辑供电5V，MCU控制3.3V；ENA跳帽移除，VM独立10.3V（用户报告）；接线/电压实测状态另记,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+MG310 L298N A通道,IN1,PE10,U9-37,,已分配,GPIO输出,L298N逻辑供电5V，MCU控制3.3V；ENA跳帽移除，VM独立10.3V（用户报告）；接线/电压实测状态另记,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+MG310 L298N A通道,IN2,PE12,U9-39,,已分配,GPIO输出,L298N逻辑供电5V，MCU控制3.3V；ENA跳帽移除，VM独立10.3V（用户报告）；接线/电压实测状态另记,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+H桥备用双PWM接口,双PWM IN2,PB15,U9-48,,条件预留,TIM12_CH2/AF2,仅profile3使用，当前L298N profile1不使用PB15，仍保留,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+H桥STBY条件预留,STBY（L298N不接）,PE13,U9-40,,条件预留,GPIO输出,当前profile1不初始化PE13；保留给TB6612 profile2，旧板内profile2仍会驱动，换L298N时此线断开,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+STS3215-C001,MCU TX,PA2,U9-11,,已分配,USART2_TX/AF7,本实物转接板同名丝印接：PA2 TX→板TX、PA3 RX→板RX；共地。其他转接板须核对丝印命名方向,App/platform/boards/lxb743zi_p1/board_serial_cfg.h
+STS3215-C001,MCU RX,PA3,U9-20,,已分配,USART2_RX/AF7,本实物转接板同名丝印接：PA2 TX→板TX、PA3 RX→板RX；共地。其他转接板须核对丝印命名方向,App/platform/boards/lxb743zi_p1/board_serial_cfg.h
+VOFA/USB-TTL,MCU TX,PA9,"U10-6, H1-6",,已分配,USART1_TX/AF7,接对端RXD，3.3V逻辑，共地；115200,App/platform/boards/lxb743zi_p1/board_serial_cfg.h
+VOFA/USB-TTL,MCU RX,PA10,"U10-5, H1-5",,已分配,USART1_RX/AF7,接对端TXD，3.3V逻辑，共地；115200,App/platform/boards/lxb743zi_p1/board_serial_cfg.h
+JDY-31蓝牙,MCU TX,PB10,U9-44,,已分配,USART3_TX/AF7,接对端RXD，3.3V逻辑，共地；9600,App/platform/boards/lxb743zi_p1/board_serial_cfg.h
+JDY-31蓝牙,MCU RX,PB11,U9-42,,已分配,USART3_RX/AF7,接对端TXD，3.3V逻辑，共地；9600,App/platform/boards/lxb743zi_p1/board_serial_cfg.h
+1.54寸SPI屏,SCK,PG13,U10-32,U7-2,板载专用,SPI6_SCK/AF5,接板载U7配套FPC；不要同时从排针驱动该信号,App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c
+1.54寸SPI屏,MOSI,PG14,U10-29,U7-7,板载专用,SPI6_MOSI/AF5,接板载U7配套FPC；不要同时从排针驱动该信号,App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c
+1.54寸SPI屏,NSS/CS,PG8,U10-54,U7-6,板载专用,SPI6_NSS/AF5硬件片选,接板载U7配套FPC；不要同时从排针驱动该信号,App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c
+1.54寸SPI屏,DC,PG15,U10-30,U7-5,板载专用,GPIO输出,接板载U7配套FPC；不要同时从排针驱动该信号,App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c
+1.54寸SPI屏,BL,PG12,U10-31,U7-4,板载专用,GPIO输出/高有效,接板载U7配套FPC；不要同时从排针驱动该信号,App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c
+FD5640摄像头,D0,PC6,U10-51,FPC1-14,板载专用,DCMI_D0/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,D1,PC7,U10-52,FPC1-15,板载专用,DCMI_D1/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,D2,PG10,U10-33,FPC1-16,板载专用,DCMI_D2/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,D3,PG11,U10-34,FPC1-17,板载专用,DCMI_D3/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,D4,PE4,U10-18,FPC1-18,板载专用,DCMI_D4/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,D5,PD3,U10-39,FPC1-19,板载专用,DCMI_D5/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,D6,PE5,U10-15,FPC1-20,板载专用,DCMI_D6/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,D7,PE6,U10-16,FPC1-21,板载专用,DCMI_D7/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,PCLK,PA6,U9-19,FPC1-22,板载专用,DCMI_PCLK/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,HSYNC,PA4,U9-17,FPC1-12,板载专用,DCMI_HSYNC/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,VSYNC,PG9,U10-36,FPC1-13,板载专用,DCMI_VSYNC/AF13,接板载摄像头FPC，不复用为普通GPIO,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,SDA,PF15,U9-32,FPC1-6,板载专用,软件SCCB数据,模块控制线，需保留,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,SCL,PF14,U9-29,FPC1-7,板载专用,软件SCCB时钟,模块控制线，需保留,App/platform/boards/lxb743zi_p1/board_devices.h
+FD5640摄像头,PWDN,PF13,U9-30,FPC1-11,板载专用,GPIO输出/高电平掉电,模块控制线，需保留,App/platform/boards/lxb743zi_p1/board_devices.h
+摄像头接口预留,模块脚位待核对,PC4,U9-21,FPC1-9,明确预留,当前业务不使用/模块定义待确认,原理图已接摄像头插座，即使未初始化也不当作通用空闲脚,App/platform/boards/lxb743zi_p1/board_devices.h
+摄像头接口预留,模块脚位待核对,PA5,U9-18,FPC1-10,明确预留,当前业务不使用/模块定义待确认,原理图已接摄像头插座，即使未初始化也不当作通用空闲脚,App/platform/boards/lxb743zi_p1/board_devices.h
+板载W25Q64,QSPI_CLK,PF10,U9-53,U6,板载专用,QUADSPI/AF9或AF10（见板级宏）,板上已焊Flash，不因不调用读写就视为空闲,App/platform/boards/lxb743zi_p1/board_devices.h
+板载W25Q64,QSPI_NCS,PG6,U9-58,U6,板载专用,QUADSPI/AF9或AF10（见板级宏）,板上已焊Flash，不因不调用读写就视为空闲,App/platform/boards/lxb743zi_p1/board_devices.h
+板载W25Q64,QSPI_IO0,PF8,U9-55,U6,板载专用,QUADSPI/AF9或AF10（见板级宏）,板上已焊Flash，不因不调用读写就视为空闲,App/platform/boards/lxb743zi_p1/board_devices.h
+板载W25Q64,QSPI_IO1,PF9,U9-57,U6,板载专用,QUADSPI/AF9或AF10（见板级宏）,板上已焊Flash，不因不调用读写就视为空闲,App/platform/boards/lxb743zi_p1/board_devices.h
+板载W25Q64,QSPI_IO2,PF7,U9-56,U6,板载专用,QUADSPI/AF9或AF10（见板级宏）,板上已焊Flash，不因不调用读写就视为空闲,App/platform/boards/lxb743zi_p1/board_devices.h
+板载W25Q64,QSPI_IO3,PF6,U9-54,U6,板载专用,QUADSPI/AF9或AF10（见板级宏）,板上已焊Flash，不因不调用读写就视为空闲,App/platform/boards/lxb743zi_p1/board_devices.h
+TF/SD卡,SDMMC1_D0,PC8,U10-49,U12,板载专用,SDMMC1/AF12,已接板载TF卡座；未插卡也先保留,App/platform/boards/lxb743zi_p1/board_devices.h
+TF/SD卡,SDMMC1_D1,PC9,U10-50,U12,板载专用,SDMMC1/AF12,已接板载TF卡座；未插卡也先保留,App/platform/boards/lxb743zi_p1/board_devices.h
+TF/SD卡,SDMMC1_D2,PC10,U10-41,U12,板载专用,SDMMC1/AF12,已接板载TF卡座；未插卡也先保留,App/platform/boards/lxb743zi_p1/board_devices.h
+TF/SD卡,SDMMC1_D3,PC11,U10-48,U12,板载专用,SDMMC1/AF12,已接板载TF卡座；未插卡也先保留,App/platform/boards/lxb743zi_p1/board_devices.h
+TF/SD卡,SDMMC1_CK,PC12,U10-45,U12,板载专用,SDMMC1/AF12,已接板载TF卡座；未插卡也先保留,App/platform/boards/lxb743zi_p1/board_devices.h
+TF/SD卡,SDMMC1_CMD,PD2,U10-42,U12,板载专用,SDMMC1/AF12,已接板载TF卡座；未插卡也先保留,App/platform/boards/lxb743zi_p1/board_devices.h
+Type-C原生USB,D-,PA11,U9-5,U11-A7/B7,板载专用,USB_OTG_FS/AF10,USB CDC图像/文本；无USB转UART芯片；不是USART1的TX/RX,App/platform/boards/lxb743zi_p1/board_serial_cfg.h
+Type-C原生USB,D+,PA12,U9-6,U11-A6/B6,板载专用,USB_OTG_FS/AF10,USB CDC图像/文本；无USB转UART芯片；不是USART1的TX/RX,App/platform/boards/lxb743zi_p1/board_serial_cfg.h
+LED反馈,心跳,PG7,U10-53,LED1,板载专用,GPIO输出/低有效,板载蓝灯，已有限流；不是空闲GPIO,App/platform/boards/lxb743zi_p1/board_io_cfg.h
+LED反馈,状态,PG0,U9-31,,已分配,GPIO输出/高有效,此脚→1kΩ→LED正极，LED负极→GND；不得直接短接,App/platform/boards/lxb743zi_p1/board_io_cfg.h
+LED反馈,故障,PG1,U9-34,,已分配,GPIO输出/高有效,此脚→1kΩ→LED正极，LED负极→GND；不得直接短接,App/platform/boards/lxb743zi_p1/board_io_cfg.h
+后续扩展,限位/反馈预留,PG4,U10-55,,明确预留,未分配,明确预留，新增功能先确认再分配,App/platform/boards/lxb743zi_p1/board_devices.h
+后续扩展,限位/反馈预留,PG5,U10-56,,明确预留,未分配,明确预留，新增功能先确认再分配,App/platform/boards/lxb743zi_p1/board_devices.h
+多控制器扩展候选,候选UART4_RX,PB8,U10-19,,接口候选预留,候选AF8；当前未初始化UART4,候选ESP执行节点接口；不等于已接线/已启用；若要改作其他功能先同步规划,Docs/多控制器扩展规划/03_H743资源与连接方案.md
+多控制器扩展候选,候选UART4_TX,PB9,U10-22,,接口候选预留,候选AF8；当前未初始化UART4,候选ESP执行节点接口；不等于已接线/已启用；若要改作其他功能先同步规划,Docs/多控制器扩展规划/03_H743资源与连接方案.md
+调试扩展,JTAG/SWO复用核对,PA15,U10-44,,明确预留,复用/调试功能待核对,保守预留；未完成调试配置核对前不列为普通空闲,Docs/电机控制/01_硬件参数与按设备接线.md
+调试扩展,JTAG/SWO复用核对,PB3,U10-27,,明确预留,复用/调试功能待核对,保守预留；未完成调试配置核对前不列为普通空闲,Docs/电机控制/01_硬件参数与按设备接线.md
+调试扩展,JTAG/SWO复用核对,PB4,U10-28,,明确预留,复用/调试功能待核对,保守预留；未完成调试配置核对前不列为普通空闲,Docs/电机控制/01_硬件参数与按设备接线.md
+特殊模拟焊盘,模拟引出,PC2_C,U9-15,,特殊脚待核对,ADC/模拟开关相关,不是PC2/PC3的普通等价接线；先核对数据手册、模拟开关和电压条件，不列普通GPIO空闲,LXB743ZI-P1原理图.pdf p1; STM32H743 datasheet
+特殊模拟焊盘,模拟引出,PC3_C,U9-16,,特殊脚待核对,ADC/模拟开关相关,不是PC2/PC3的普通等价接线；先核对数据手册、模拟开关和电压条件，不列普通GPIO空闲,LXB743ZI-P1原理图.pdf p1; STM32H743 datasheet
+SWD调试,SWDIO,PA13,H1-2,H1-2,板载专用,调试复用,保留调试连接，不作普通业务键,Core/Src/main.c; schematic H1
+SWD调试,SWCLK,PA14,H1-1,H1-1,板载专用,调试复用,保留调试连接，不作普通业务键,Core/Src/main.c; schematic H1
+板载晶振,LSE_IN,PC14,未普通引出,,板载专用,LSE 32.768kHz,连接晶振，不从普通排针引出，不作扩展GPIO,Core/Src/main.c; App/platform/board_peripherals.c; schematic
+板载晶振,LSE_OUT,PC15,未普通引出,,板载专用,LSE 32.768kHz,连接晶振，不从普通排针引出，不作扩展GPIO,Core/Src/main.c; App/platform/board_peripherals.c; schematic
+板载晶振,HSE_IN,PH0,未普通引出,,板载专用,HSE 25MHz,连接晶振，不从普通排针引出，不作扩展GPIO,Core/Src/main.c; App/platform/board_peripherals.c; schematic
+板载晶振,HSE_OUT,PH1,未普通引出,,板载专用,HSE 25MHz,连接晶振，不从普通排针引出，不作扩展GPIO,Core/Src/main.c; App/platform/board_peripherals.c; schematic
+未普通引出,普通封装焊盘,PC2,未普通引出,,未从排针引出,未用于当前业务,U9引出的是_C焊盘；不能拿排针PC2_C/PC3_C直接替代,schematic U1/U9
+未普通引出,普通封装焊盘,PC3,未普通引出,,未从排针引出,未用于当前业务,U9引出的是_C焊盘；不能拿排针PC2_C/PC3_C直接替代,schematic U1/U9
+本地PWM舵机,PWM1,PD12,U9-59,,已分配,TIM4_CH1/AF2，50Hz,仅接舵机信号；动力独立供电并共地；500–2500us显式指令启动，上电不输出,App/platform/boards/lxb743zi_p1/board_motion_cfg.h
+本地PWM舵机,PWM2,PD13,U9-60,,已分配,TIM4_CH2/AF2，50Hz,仅接舵机信号；动力独立供电并共地；500–2500us显式指令启动，上电不输出,App/platform/boards/lxb743zi_p1/board_motion_cfg.h

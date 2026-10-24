@@ -1,0 +1,30 @@
+[
+  {
+    "control": "STS keys",
+    "command_on": "@debug sts on",
+    "command_off": "@debug sts off",
+    "default": "OFF",
+    "scope": "KEY5/6 + legacy A/B; independent grant"
+  },
+  {
+    "control": "Motor keys",
+    "command_on": "@debug motor on",
+    "command_off": "@debug motor off",
+    "default": "OFF",
+    "scope": "KEY5 toggle; KEY6 single -5 double +5; KEY7 and knob"
+  },
+  {
+    "control": "PID plot ONLY",
+    "command_on": "@motor plot on",
+    "command_off": "@motor plot off",
+    "default": "OFF",
+    "scope": "HOST JustFloat only; command RX remains enabled"
+  },
+  {
+    "control": "Shortcut",
+    "command_on": "@keys 12 100",
+    "command_off": "@keys 12 100",
+    "default": "DEBUG destination",
+    "scope": "KEY3+KEY4 enter/restore"
+  }
+]

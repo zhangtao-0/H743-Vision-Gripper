@@ -1,0 +1,12 @@
+STS target=0 rate=1000000 rawRx=0 valid=0 parser=0 tx=0 hal=0
+SYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1
+CAM diag format=6F01 pclk=2208 dcmi=00000000 dma=00000000 remaining=0
+CAM ready=1 enabled=1 frames=0 errors=0 timeout=0 loopmax=0 cmdDrop=0 usbDrop=0
+camera clock=0 (0=vendor auto)
+
+STS target=0 rate=128000 rawRx=0 valid=0 parser=0 tx=43 hal=0
+SYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1
+CAM diag format=6F01 pclk=2204 dcmi=00000000 dma=00000000 remaining=28800
+CAM ready=1 enabled=1 frames=15 errors=0 timeout=13 loopmax=1751 cmdDrop=0 usbDrop=0
+
+

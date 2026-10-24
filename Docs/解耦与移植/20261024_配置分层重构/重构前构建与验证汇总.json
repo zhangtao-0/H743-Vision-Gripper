@@ -1,0 +1,35 @@
+{
+  "version": "20261024-ec11-5v-input-v1",
+  "firmware_flashed": true,
+  "programmer_verified": true,
+  "independent_readback_verified": true,
+  "hex": "Docs/电机控制/20261024_EC11五伏模块接线/H743_EC11_5V_NOPULL.hex",
+  "hex_sha256": "bc81a024e85c5262b3eeb1415fc2e75d4dd2aec8dc235c8da24ac72c5b6731ac",
+  "driver_profile": 1,
+  "hall_A": "PA8",
+  "hall_B": "PE11",
+  "hall_pull": "GPIO_NOPULL",
+  "hall_supply": "5V user confirmed",
+  "encoder_sign": -1,
+  "ramp_rpm_s": 1000,
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "other_configurations": "Not rebuilt this revision; previous build evidence archived",
+  "physical_evidence": "Docs/电机控制/20261024_L298N切换与实测/最终实测状态.json",
+  "physical_pid_tracking_passed": false,
+  "final_output_disabled": true,
+  "fault_latched": 0,
+  "physical_keys_verified": false,
+  "simulated_shared_key_start_stop_verified": true,
+  "previous_summary": "../电机控制/20261024_L298N切换与实测/独立驱动诊断/历史_构建与验证汇总.json",
+  "physical_ec11_verified": false,
+  "prior_revision_pid_tracking_passed": true,
+  "prior_revision_pid_evidence": "Docs/电机控制/20261024_L298N切换与实测/独立驱动诊断/README.md",
+  "current_revision_note": "Only EC11 GPIO pull configuration changed; motor algorithm unchanged. No motor motion test on this HEX.",
+  "current_revision_evidence": "Docs/电机控制/20261024_EC11五伏模块接线/验证汇总.json"
+}

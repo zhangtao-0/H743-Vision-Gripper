@@ -1,0 +1,74 @@
+[
+  {
+    "file": "App/protocol/vofa_protocol.c",
+    "command_snapshot_sha256": "5312ad639cbbbb091a925319bdf315b86150e8e09d0342512199f0c43579d288",
+    "pre_refactor_sha256": "5312ad639cbbbb091a925319bdf315b86150e8e09d0342512199f0c43579d288",
+    "current_sha256": "65e9c4b6f4366071f34120ac1abd59b1df25d5b5e470f63ec49754a59c3efdcd",
+    "predates_this_refactor": false,
+    "reason": "Reviewed role adapter/config split; protocol parser and enum regressions passed. Motor config predates refactor; physical closed-loop revision evidence retained."
+  },
+  {
+    "file": "App/bsp/bsp_bluetooth.c",
+    "command_snapshot_sha256": "2cc8323b1fe13be5f3849424f0bc344e0b31f5453d8e1d569c880d25d32cd0df",
+    "pre_refactor_sha256": "2cc8323b1fe13be5f3849424f0bc344e0b31f5453d8e1d569c880d25d32cd0df",
+    "current_sha256": "dd1c418890d71d13c2724279315e91db2b5e6201ee9bdd6211e6e4e047c963e7",
+    "predates_this_refactor": false,
+    "reason": "Reviewed role adapter/config split; protocol parser and enum regressions passed. Motor config predates refactor; physical closed-loop revision evidence retained."
+  },
+  {
+    "file": "App/modules/motor/motor_service.c",
+    "command_snapshot_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca",
+    "pre_refactor_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca",
+    "current_sha256": "96821f46dd12322b4f2bfebd7151324cd67d9db49a6e685cd411bc85cb1b264b",
+    "predates_this_refactor": false,
+    "reason": "Reviewed role adapter/config split; protocol parser and enum regressions passed. Motor config predates refactor; physical closed-loop revision evidence retained."
+  },
+  {
+    "file": "App/bsp/bsp_key.h",
+    "command_snapshot_sha256": "66c55cef571bc3616cd26ef0c0c649bf6c78959ecbf67f92fc411b87e0389c53",
+    "pre_refactor_sha256": "66c55cef571bc3616cd26ef0c0c649bf6c78959ecbf67f92fc411b87e0389c53",
+    "current_sha256": "8437369c3f8c3bcf0215e17dbb2d6d620ef6ab1e4727e7c97fa35ab92b265021",
+    "predates_this_refactor": false,
+    "reason": "Reviewed role adapter/config split; protocol parser and enum regressions passed. Motor config predates refactor; physical closed-loop revision evidence retained."
+  },
+  {
+    "file": "App/bsp/bsp_key.c",
+    "command_snapshot_sha256": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a",
+    "pre_refactor_sha256": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a",
+    "current_sha256": "dffabc0865b2a799332b165bace40627239e8f5a57d2afd108c565da5f6020a0",
+    "predates_this_refactor": false,
+    "reason": "Reviewed role adapter/config split; protocol parser and enum regressions passed. Motor config predates refactor; physical closed-loop revision evidence retained."
+  },
+  {
+    "file": "App/platform/boards/lxb743zi_p1/board_config.h",
+    "command_snapshot_sha256": "2b8cd2a1ae56c4880a8a9302c122b4fbb1a802ec0d332eab0e36347f5cfe2ed3",
+    "pre_refactor_sha256": "2b8cd2a1ae56c4880a8a9302c122b4fbb1a802ec0d332eab0e36347f5cfe2ed3",
+    "current_sha256": "d545d72ea0bd40733290ac5b40378c406f0ca9b13bb2c575796f37d7d94db735",
+    "predates_this_refactor": false,
+    "reason": "Reviewed role adapter/config split; protocol parser and enum regressions passed. Motor config predates refactor; physical closed-loop revision evidence retained."
+  },
+  {
+    "file": "App/config/motor_config.h",
+    "command_snapshot_sha256": "7296c29b795642ea27eb7b49852a23f5c34e5904301d58aedbff60f6ca1d72a7",
+    "pre_refactor_sha256": "2196d742c8a12d486a9f126cc7581a79301626cf1f14058d40c735048ea0c1d8",
+    "current_sha256": "2196d742c8a12d486a9f126cc7581a79301626cf1f14058d40c735048ea0c1d8",
+    "predates_this_refactor": true,
+    "reason": "Reviewed role adapter/config split; protocol parser and enum regressions passed. Motor config predates refactor; physical closed-loop revision evidence retained."
+  },
+  {
+    "file": "EWARM/H743_VisionGripper.ewp",
+    "command_snapshot_sha256": "f8096e8ac57a0f438e2d37403445bb7b111b249031814ffeca1dffc0ccb8c5a3",
+    "pre_refactor_sha256": "f8096e8ac57a0f438e2d37403445bb7b111b249031814ffeca1dffc0ccb8c5a3",
+    "current_sha256": "c84813e25d7d0d80fc4897ae72b4a4be8a85dc8ba4cbb89d696da75925ed9284",
+    "predates_this_refactor": false,
+    "reason": "Reviewed role adapter/config split; protocol parser and enum regressions passed. Motor config predates refactor; physical closed-loop revision evidence retained."
+  },
+  {
+    "file": "App/protocol/vofa_protocol.h",
+    "command_snapshot_sha256": "cc1f8bad8977bab6a5f2fb60545208eafb87e9ca060944ab99699ebd8e18df97",
+    "pre_refactor_sha256": "cc1f8bad8977bab6a5f2fb60545208eafb87e9ca060944ab99699ebd8e18df97",
+    "current_sha256": "c15acf13bb3c75809e0fb08c7c15a2d9520011841cf7ca62e74f90b5cc0756b6",
+    "predates_this_refactor": false,
+    "reason": "Reviewed role adapter/config split; protocol parser and enum regressions passed. Motor config predates refactor; physical closed-loop revision evidence retained."
+  }
+]

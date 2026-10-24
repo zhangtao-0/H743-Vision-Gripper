@@ -1,0 +1,2 @@
+STS target=0 rate=1000000 rawRx=0 valid=0 parser=0 tx=0 hal=0
+S

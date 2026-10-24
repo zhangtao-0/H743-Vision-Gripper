@@ -1,0 +1,20 @@
+{
+  "branch": "codex/test-6101c97",
+  "commit": "0cf70fb0120a53d5c7caf75cd276cb3a366e8522",
+  "source_repository": "https://github.com/207-Smart-Cat/WHEEL_LEGGED_207.git",
+  "files": [
+    {
+      "path": "C:\\Users\\tk457\\AppData\\Local\\Temp\\wheel_ui_reference_20261022\\project\\code\\vofa_protocol.c",
+      "sha256": "655929afa0a4b7ffe346185e6a0656e51cc43f48dde23e928ecba85a44a2a387"
+    },
+    {
+      "path": "C:\\Users\\tk457\\AppData\\Local\\Temp\\wheel_ui_reference_20261022\\project\\code\\param_registry.def",
+      "sha256": "08652735ec0d5d489996b795b467e38dc71afda8597180eb690661fff8df9620"
+    },
+    {
+      "path": "C:\\Users\\tk457\\AppData\\Local\\Temp\\wheel_ui_reference_20261022\\project\\code\\screen_display.c",
+      "sha256": "7caf72cef940826a0ea6b296ecd7e2de67ee6d992b36292a89d248ad5d5095cb"
+    }
+  ],
+  "native_source_modified": false
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "h743.vision.baseline.v1",
+  "coordinate_system": "Pixel",
+  "origin": "top_left",
+  "x_axis": "right",
+  "y_axis": "down",
+  "source_kind": "synthetic",
+  "image_sha256": "706d05bfa4b37e17c166e08213384bcc75d9f85749e73c65b263b17da6b1525f",
+  "input": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\20261024_isolated_baseline_v1\\inputs\\overexposed.png",
+  "image_size": [
+    640,
+    480
+  ],
+  "config": {
+    "mode": "gray_dark",
+    "threshold": 225,
+    "min_area": 800,
+    "hsv_low": [
+      0,
+      0,
+      0
+    ],
+    "hsv_high": [
+      179,
+      255,
+      180
+    ]
+  },
+  "objects": [],
+  "rejected": [],
+  "grasp_valid": false,
+  "motion_commands_sent": false
+}

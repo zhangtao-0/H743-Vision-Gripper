@@ -1,0 +1,339 @@
+[
+  {
+    "hex": "FF FF 00 02 00 FD",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 00 02 01 FC",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 00 04 02 38 02 BF",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 00 04 02 38 0F B2",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 01 02 01 FB",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 01 04 02 38 02 BE",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 01 04 03 21 00 D6",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 01 04 03 21 00 D7",
+    "kind": "historical_invalid_checksum",
+    "documents": [
+      "04_维护与证据/01_上游对照与修订记录.md"
+    ],
+    "expected_valid": false,
+    "reason": "Historical wrong checksum, must not send; correct final byte D6"
+  },
+  {
+    "hex": "FF FF 01 04 03 28 00 CF",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 01 04 03 28 01 CE",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 01 09 03 2A 00 08 00 00 E8 03 D5",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF 01 0A 03 29 00 00 08 00 00 E8 03 D5",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 02 05 FA",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/01_STS官方帧.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 02 F1 0E",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F0 00 0E",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F0 01 0D",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F0 02 0C",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F2 00 0C",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F2 04 08",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F3 00 0B",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F4 00 0A",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F4 03 07",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F4 04 06",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F4 05 05",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 03 F4 06 04",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 04 F2 01 04 06",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 04 F2 03 04 04",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 06 F2 02 04 84 03 7C",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 00 00 00 B4 42 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 01 00 00 00 00 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 01 00 00 00 40 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 01 00 00 40 40 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 01 00 00 80 3F 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 02 00 00 00 00 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 02 00 00 00 40 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 02 00 00 80 3F 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 03 00 00 00 00 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 04 00 00 00 00 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 04 00 00 80 3F 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 05 00 00 00 00 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 07 F5 05 00 00 80 3F 00",
+    "kind": "F5",
+    "documents": [
+      "02_原有二进制协议/03_F5与蓝牙滑块.md"
+    ],
+    "expected_valid": true
+  },
+  {
+    "hex": "FF FF FE 08 F2 02 04 84 03 00 00 7A",
+    "kind": "checksum_frame",
+    "documents": [
+      "02_原有二进制协议/02_F0到F4本地扩展.md"
+    ],
+    "expected_valid": true
+  }
+]

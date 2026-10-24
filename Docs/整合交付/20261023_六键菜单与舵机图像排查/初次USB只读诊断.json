@@ -1,0 +1,6 @@
+{
+  "port": "COM11",
+  "purpose": "read-only video/status diagnostics; no motion or flash",
+  "opened": false,
+  "error": "could not open port 'COM11': PermissionError(13, '拒绝访问。', None, 5)"
+}

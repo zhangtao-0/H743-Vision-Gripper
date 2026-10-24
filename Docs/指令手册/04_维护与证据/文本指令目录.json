@@ -1,0 +1,827 @@
+[
+  {
+    "command": "@af",
+    "parser_pattern": "af",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 123,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@camera clock N",
+    "parser_pattern": "camera clock %u",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 246,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@camera edge off",
+    "parser_pattern": "camera edge off",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 253
+  },
+  {
+    "command": "@camera edge on",
+    "parser_pattern": "camera edge on",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 252
+  },
+  {
+    "command": "@camera flip",
+    "parser_pattern": "camera flip",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 251
+  },
+  {
+    "command": "@camera live",
+    "parser_pattern": "camera live",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 248
+  },
+  {
+    "command": "@camera mirror",
+    "parser_pattern": "camera mirror",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 250
+  },
+  {
+    "command": "@camera off",
+    "parser_pattern": "camera off",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 259,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@camera on",
+    "parser_pattern": "camera on",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 260,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@camera retry",
+    "parser_pattern": "camera retry",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 122,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@camera rotate",
+    "parser_pattern": "camera rotate",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 249
+  },
+  {
+    "command": "@camera shot",
+    "parser_pattern": "camera shot",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 247
+  },
+  {
+    "command": "@claw close",
+    "parser_pattern": "claw close",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 189
+  },
+  {
+    "command": "@claw open",
+    "parser_pattern": "claw open",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 188
+  },
+  {
+    "command": "@claw stop",
+    "parser_pattern": "claw stop",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 190
+  },
+  {
+    "command": "@help",
+    "parser_pattern": "help",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 191,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@help GROUP",
+    "parser_pattern": "help %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 131
+  },
+  {
+    "command": "@input mode MODE",
+    "parser_pattern": "input mode %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 136
+  },
+  {
+    "command": "@input status",
+    "parser_pattern": "input status",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 134
+  },
+  {
+    "command": "@key ID ACTION [MS]",
+    "parser_pattern": "key %23s %23s %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 146
+  },
+  {
+    "command": "@keys MASK MS",
+    "parser_pattern": "keys %23s %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 157
+  },
+  {
+    "command": "@keys release",
+    "parser_pattern": "keys release",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 144
+  },
+  {
+    "command": "@knob STEPS",
+    "parser_pattern": "knob %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 162
+  },
+  {
+    "command": "@lcd rotate",
+    "parser_pattern": "lcd rotate",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 254
+  },
+  {
+    "command": "@lcd test",
+    "parser_pattern": "lcd test",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 123,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor clear",
+    "parser_pattern": "motor clear",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 240,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor cpr N",
+    "parser_pattern": "motor cpr %u",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 243,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor disable",
+    "parser_pattern": "motor disable",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 236,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor enable",
+    "parser_pattern": "motor enable",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 237,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor pid KP KI KD",
+    "parser_pattern": "motor pid %u %u %u",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 244,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor plot off",
+    "parser_pattern": "motor plot off",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 234,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor plot on",
+    "parser_pattern": "motor plot on",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 233,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor plot status",
+    "parser_pattern": "motor plot status",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 235,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor reverse",
+    "parser_pattern": "motor reverse",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 239,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor rpm N",
+    "parser_pattern": "motor rpm %u",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 242,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor status",
+    "parser_pattern": "motor status",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 232,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor stop",
+    "parser_pattern": "motor stop",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 238,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@motor zero",
+    "parser_pattern": "motor zero",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 241,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@param get ID",
+    "parser_pattern": "param get %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 170
+  },
+  {
+    "command": "@param list",
+    "parser_pattern": "param list",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 166
+  },
+  {
+    "command": "@param set ID VALUE",
+    "parser_pattern": "param set %23s %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 178
+  },
+  {
+    "command": "@profile clear",
+    "parser_pattern": "profile clear",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 187
+  },
+  {
+    "command": "@profile load",
+    "parser_pattern": "profile load",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 186
+  },
+  {
+    "command": "@profile save",
+    "parser_pattern": "profile save",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 185
+  },
+  {
+    "command": "@pwm US",
+    "parser_pattern": "pwm %u",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 277,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@pwm angle CH DEG",
+    "parser_pattern": "pwm angle %u %u",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 275,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@pwm off",
+    "parser_pattern": "pwm off",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 276,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@pwm2 US",
+    "parser_pattern": "pwm2 %u",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 274,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@qspi map",
+    "parser_pattern": "qspi map",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 272,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@qspi test",
+    "parser_pattern": "qspi test",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 271,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@qspi unmap",
+    "parser_pattern": "qspi unmap",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 273,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@quiet",
+    "parser_pattern": "quiet",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 127
+  },
+  {
+    "command": "@rtc",
+    "parser_pattern": "rtc",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 278,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@rtc set Y M D h m s",
+    "parser_pattern": "rtc set %u %u %u %u %u %u",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 282,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@sd filetest",
+    "parser_pattern": "sd filetest",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 270,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@sd read",
+    "parser_pattern": "sd read",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 269,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@sd retry",
+    "parser_pattern": "sd retry",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 268,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@servo angle DEG",
+    "parser_pattern": "servo angle %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 206,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@servo probe ID BAUD",
+    "parser_pattern": "servo probe %u %u",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 211,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@servo scan BAUD",
+    "parser_pattern": "servo scan %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 201,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@servo status",
+    "parser_pattern": "servo status",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 195,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@status",
+    "parser_pattern": "status",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 245,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@stream off",
+    "parser_pattern": "stream off",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 194,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@stream on",
+    "parser_pattern": "stream on",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 193,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@telemetry off",
+    "parser_pattern": "telemetry off",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 129
+  },
+  {
+    "command": "@telemetry on",
+    "parser_pattern": "telemetry on",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 128
+  },
+  {
+    "command": "@video fps N",
+    "parser_pattern": "video fps %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 219
+  },
+  {
+    "command": "@video off",
+    "parser_pattern": "video off",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 216
+  },
+  {
+    "command": "@video on",
+    "parser_pattern": "video on",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 215
+  },
+  {
+    "command": "@video status",
+    "parser_pattern": "video status",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 217
+  },
+  {
+    "command": "@vision clear",
+    "parser_pattern": "vision clear",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 223
+  },
+  {
+    "command": "@vision status",
+    "parser_pattern": "vision status",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 222
+  },
+  {
+    "command": "@vision target SEQ U V ANGLE10 WIDTH SCORE",
+    "parser_pattern": "vision target %23s %23s %23s %23s %23s %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false,
+    "line": 225
+  },
+  {
+    "command": "@debug <sts|motor> <on|off>",
+    "parser_pattern": "debug %23s %23s %23s",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 136,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  },
+  {
+    "command": "@debug status",
+    "parser_pattern": "debug status",
+    "source": "App/modules/integration/integration_console.c",
+    "line": 134,
+    "inputs": [
+      "USART1 HOST 115200 8N1",
+      "USB CDC"
+    ],
+    "bluetooth_supported": false
+  }
+]

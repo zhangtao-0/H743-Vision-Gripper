@@ -1,0 +1,10 @@
+{
+  "compared_hex_bytes": 149853,
+  "mismatched_records": [],
+  "hex_sha256": "aca79cbb8cb45036e4215c815f6b16dedda83b073dba7967a27a168aba7aba5f",
+  "backup_sha256": "abf0face9af52f094f10510e28f6232e907e54cae1857cd21d2d4f53534d8e45",
+  "readback_sha256": "8fc3144f82617a0f3a9774f939751f105177eb4ae0100a4d63babbee51eef853",
+  "outside_program_sectors_start": "0x08040000",
+  "outside_program_sectors_unchanged": true,
+  "verified": true
+}

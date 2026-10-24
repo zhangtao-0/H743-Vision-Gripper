@@ -1,0 +1,8 @@
+[
+  {
+    "path": "App/config/motor_config.h",
+    "before": "9a806a48296852e6da126cce9c0b90b4235e09b905861f5487c69a5c2b8c8c5a",
+    "after": "7296c29b795642ea27eb7b49852a23f5c34e5904301d58aedbff60f6ca1d72a7",
+    "change": "default driver2 TB6612 -> driver1 L298N; PID/protection unchanged"
+  }
+]

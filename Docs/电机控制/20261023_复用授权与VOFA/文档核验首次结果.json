@@ -1,0 +1,12 @@
+[
+  {
+    "test": "verify_command_manual.py",
+    "exit": 1,
+    "output": "{\n  \"checked_at\": \"2026-10-23T23:37:44+08:00\",\n  \"scope\": \"documentation, parser branch coverage, arithmetic and offline formatter; no hardware execution\",\n  \"upstream_commit\": \"aebb357dd4096350ec17f49fdaf23d1b27decb3d\",\n  \"text_command_variants\": 75,\n  \"binary_examples\": 42,\n  \"valid_binary_examples\": 41,\n  \"historical_invalid_examples\": 1,\n  \"f5_subcommands\": 6,\n  \"parameter_count\": 21,\n  \"offline_formatter_cases\": 4,\n  \"source_files_checked\": 40,\n  \"source_changed_since_observed_release\": false,\n  \"serial_commands_sent\": false,\n  \"issues\": [\n    \"Command undocumented: @debug %23s %23s %23s\",\n    \"Command undocumented: @debug status\"\n  ],\n  \"passed\": false\n}\n"
+  },
+  {
+    "test": "validate_learning_library.py",
+    "exit": 1,
+    "output": "{\n  \"observed_at\": \"2026-10-23T23:37:51\",\n  \"scope\": \"New registered learning documents and source snapshot; excludes unrelated historical navigation links\",\n  \"registered_documents\": 165,\n  \"checked_markdown_files\": 166,\n  \"characters\": 256810,\n  \"internal_links\": 871,\n  \"source_links\": 269,\n  \"production_files_checked\": 1633,\n  \"production_changes\": [],\n  \"hal_references\": 36,\n  \"function_locations\": 88,\n  \"example_compile_only\": 2,\n  \"firmware_flashed\": false,\n  \"issues\": [\n    \"Stale function location: {'path': 'App/app_main.c', 'symbol': 'App_MotionReady', 'line': 188, 'source_sha256': '4a30e1b9ca11fa896e6bb5589e3488e89616c924b31be332cc2209575e0ea87e'}\"\n  ],\n  \"passed\": false\n}\n"
+  }
+]

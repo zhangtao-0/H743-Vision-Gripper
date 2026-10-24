@@ -1,0 +1,31 @@
+{
+  "data": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\Library\\04_数据集版本\\taco_containers_v1\\data.yaml",
+  "weights": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\Library\\05_模型注册\\pretrained\\yolo26n-seg.pt",
+  "output": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\auto_20261024_143657_780206",
+  "threads": 4,
+  "epochs": 2,
+  "batch": 2,
+  "imgsz": 160,
+  "identity": {
+    "manifest_sha256": "a4fbf8858f97121e1e553a1ee93b8d3a5518bb802740a5b8e32c82bb0906d54a",
+    "yaml_sha256": "f410bf79b388ea8e278662275a211d644db1d364419bd4fba1eb8df8b8f37103",
+    "weights_sha256": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f",
+    "recipe": {
+      "max_images_per_ingest": 48,
+      "max_download_bytes": 536870912,
+      "max_model_bytes": 33554432,
+      "cpu_threads": 4,
+      "epochs": 2,
+      "imgsz": 160,
+      "batch": 2,
+      "max_minutes_per_job": 20
+    },
+    "worker_sha256": "ac8bb1c40a1c11903261c26f195ccd6cb5f85c5ff521905c0ad7d06b7e37a48f"
+  },
+  "split_counts": {
+    "test": 9,
+    "val": 9,
+    "train": 30
+  },
+  "fingerprint": "f87ea977a27e06a3b1eed8e6bfbcd7d35a109f8ee28836385b398b6836b0ac8f"
+}

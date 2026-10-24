@@ -1,0 +1,254 @@
+[
+  {
+    "path": "project/App/app_main.c",
+    "action": "modified",
+    "before": "ee45891178b416d1f4bd90d034a6373ba974930c9846de7418da88938a265dfe",
+    "after": "3c27bea1ae1e05616c1594a2efc0c4af8c55567ba2869e66d78e1f4cba1ec774"
+  },
+  {
+    "path": "project/App/app_main.h",
+    "action": "modified",
+    "before": "4f73b9a0ded1e2b77a1661a9133dfed397724b9bacd76412d2caa7eb88392903",
+    "after": "c0961bad65e59b5c61928374b864addf40df2ddc297e99878f68847695d8a1ff"
+  },
+  {
+    "path": "project/App/config/integration_config.h",
+    "action": "modified",
+    "before": "4e0b1b88af2f8e437423e517db4ea45f88eb16021aa459661ed3b4fc6a114e80",
+    "after": "45f59eb8081bc23ece281638a86c65d236f18f26ce1c1d0a0c020df4d40d1730"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_control.c",
+    "action": "modified",
+    "before": "b908d0952712262e9275d60d34d849f39701ea00a8415df9258f6953cacccbcf",
+    "after": "c1f1abcd79ab0f1ba5afa67559c921fb9a8c407c4509b738b252675895af049c"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_control.h",
+    "action": "modified",
+    "before": "d98c820adc249744b66bd15977c85e3aafdf4f5ddd6178e4a4b7e7414c54ea20",
+    "after": "4a3706aa459b1e16c78ba42233f45c5cc7aaa0e0e05c08dc7d274f9844d3a7b0"
+  },
+  {
+    "path": "project/App/modules/integration/integration_console.c",
+    "action": "modified",
+    "before": "0e60628fb82918c4c276591247f23bc259c15040160b2ead6035798a21783b25",
+    "after": "1430d765b5766a45eb358d2805c11b37d8feaa644450a511dcc0c7037dcfa3ed"
+  },
+  {
+    "path": "project/App/modules/integration/integration_service.c",
+    "action": "modified",
+    "before": "9fb86cf5c6f0ba45b5ef20a4e7364483c0d438ba1471e09ec3ea45997c121347",
+    "after": "86d142a85207fcaec39e78f42b116537f3c4cae40470e48d69279855470d8885"
+  },
+  {
+    "path": "project/App/modules/motor/motor_service.c",
+    "action": "modified",
+    "before": "d3ed7079af78abd48c654997b2b7b442436c536d0674e7fec8789de0bb28777e",
+    "after": "f2f64098a0c0e008eb67e091c1913e101ff13de59ad371235c2f069a5c2ced5f"
+  },
+  {
+    "path": "project/App/modules/motor/motor_service.h",
+    "action": "modified",
+    "before": "b91f13a60423a0dd2a08422e61224175bd4e2dc560fef672878ec4155ce1f637",
+    "after": "f2b8aa9d98f4287832f6b9c9ca40ae2049fd92208826c1549bb87aadbe656764"
+  },
+  {
+    "path": "project/App/modules/ui/ui_core.c",
+    "action": "added",
+    "before": null,
+    "after": "886d238fbe69720c2fbf7523f763e94569dfb35349a1f1a17e373fe8d818fd69"
+  },
+  {
+    "path": "project/App/modules/ui/ui_core.h",
+    "action": "added",
+    "before": null,
+    "after": "71ac92bba96c59d014a216070ca8dec3492c514f5481d29081797f60c537c83e"
+  },
+  {
+    "path": "project/App/modules/ui/ui_font.h",
+    "action": "added",
+    "before": null,
+    "after": "8d2cbbda0886a2813838d812bd4e797e0737dbd8d5969dddc15db73288bd6995"
+  },
+  {
+    "path": "project/App/modules/ui/ui_input.c",
+    "action": "added",
+    "before": null,
+    "after": "c1352152495d8dbc106602f478b2b7e6a57995de97cecb997cfdc0d443fef3ff"
+  },
+  {
+    "path": "project/App/modules/ui/ui_input.h",
+    "action": "added",
+    "before": null,
+    "after": "678329c1d6a589e0dc45aba3e61f14fee9ed82eba52c010a68ece5408245b2e2"
+  },
+  {
+    "path": "project/App/modules/ui/ui_port.c",
+    "action": "added",
+    "before": null,
+    "after": "93023f656e41205bdbd965a2278f5c9b2b9091a6b96b2ab20edd5b3282c7bc79"
+  },
+  {
+    "path": "project/App/modules/ui/ui_port.h",
+    "action": "added",
+    "before": null,
+    "after": "a99764f6f5689257c806a74538632203660a5d53af1b6f8fc1cf77643af74ea1"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile.c",
+    "action": "added",
+    "before": null,
+    "after": "2700df5128b6e4373a55818b0f23bbc690eec2f2cabf81f6e83565c73b60c005"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile.h",
+    "action": "added",
+    "before": null,
+    "after": "302a0bac82d84f08b2956a27c27f50e18020e1857aaf1a3adba92e9f530a2d05"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile_store.c",
+    "action": "added",
+    "before": null,
+    "after": "a8856423f6ff23f47a7088ebfeede42f9e99b98124c8ffe1706cf7b630a54922"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile_store.h",
+    "action": "added",
+    "before": null,
+    "after": "b0708407cf6251433418931012acc1c8651f37a6119bde6d81551168d9b00f4c"
+  },
+  {
+    "path": "project/App/modules/ui/ui_service.c",
+    "action": "added",
+    "before": null,
+    "after": "35202d2501543c329fef4c129bdca79c037734ae5b81ad702af3641a2303c4e5"
+  },
+  {
+    "path": "project/App/modules/ui/ui_service.h",
+    "action": "added",
+    "before": null,
+    "after": "0f80460265415f02ef5bd3b530d893bab221918f75dfb96803ddbd3860eafb5a"
+  },
+  {
+    "path": "project/App/modules/ui/ui_settings.c",
+    "action": "added",
+    "before": null,
+    "after": "37d01340df3dd43fadee726d18bb59d487dd43f845bcf499831133595b7951d2"
+  },
+  {
+    "path": "project/App/modules/ui/ui_settings.h",
+    "action": "added",
+    "before": null,
+    "after": "0e4dff5f0e9addc77ff9f156684063899de2e385a6068da5833336961f2d5476"
+  },
+  {
+    "path": "project/App/platform/board_camera.c",
+    "action": "modified",
+    "before": "63c5ac0625b2dd882c5a3588bac2d10ca84774a5197d0dcb7990bf907188aeae",
+    "after": "0976bd7471ce3e9edc565deafa533e973b0975f4400a43f6a4410837ed178f20"
+  },
+  {
+    "path": "project/App/platform/board_camera.h",
+    "action": "modified",
+    "before": "d97074ac88cfdd4db29292e065c1cd29544a372885f43d7152a998aad7847052",
+    "after": "a5e877a063cedc8e4a5efbad1fce8e03dd87ab4d912f074fd36ed06ac8f93795"
+  },
+  {
+    "path": "project/App/platform/claw_limit_storage_h7.c",
+    "action": "modified",
+    "before": "436bf8fc42e645ac389a5f0848226524b7128b01049b0daac37d704b2e327e1b",
+    "after": "96595967ee1b9df1160d4f5b60ca53b2dd38379fbd33c98e82579fff766663a1"
+  },
+  {
+    "path": "project/EWARM/H743_VisionGripper.ewp",
+    "action": "modified",
+    "before": "28be0d745b1184d5af69e62e758757b5f1fcc654a839d419e717babf12ff21ac",
+    "after": "52fa439b01e40b45535c2b8211fba6766758824ebe58fe6bd33442fa3e8c5998"
+  },
+  {
+    "path": "project/EWARM/stm32h743xx_flash.icf",
+    "action": "modified",
+    "before": "d1803181ad33f60e98f0e38c1c0f8b1f93bd16caef667c9cddee0b6520a63b96",
+    "after": "1b959b4cf0b87784b40093624b969bc3908c4a28094a436f234c7031c70d2738"
+  },
+  {
+    "path": "project/App/config/feature_config.h",
+    "action": "modified",
+    "before": "8c4642137451977aacee1fd1755e0ba185dc3f96f8d0a2648648934c6e68ee8b",
+    "after": "6c62c1f659dc1b228879c2b26d54cf632f9768c8e7fce9d0bee00b8cbcbf370d"
+  },
+  {
+    "path": "project/App/modules/integration/integration_console.h",
+    "action": "modified",
+    "before": "105a2c02fc1463b1b31aaa692aedf72e1c0f5f66283e11f9d2f451bd220768c8",
+    "after": "f796ade7dfa6babbfe2791c9672676cd26b571750faf37ed97d767ea024ef56b"
+  },
+  {
+    "path": "project/App/modules/integration/vendor_log.c",
+    "action": "modified",
+    "before": "cb9d34baed7baf716eef640cddb844c2abc0b9ad1c90cc6156faa6164c723f3d",
+    "after": "a0139da21b313a27d8c2ba0224fe839509378e7500f35b2ea9fb5869bfc4c64c"
+  },
+  {
+    "path": "project/App/modules/integration/vendor_log.h",
+    "action": "modified",
+    "before": "ac248c12e70b598dd0039b32d9e2827ad9e8ffb67be3832abfa144cff1bb398c",
+    "after": "dc20d4af13e5a534615c7e4f47b7d57dd499d360b20263f4f06300da23380033"
+  },
+  {
+    "path": "project/App/modules/motor/motor_control.c",
+    "action": "modified",
+    "before": "56d897b496db46102a3d765d79cffb66dbd40bd523b57df4e5045edf322a6f2e",
+    "after": "dd2c8dea484afdd28635f6c9721287e55f8ee34845685d10014c2ec950ee91a6"
+  },
+  {
+    "path": "project/App/modules/motor/motor_control.h",
+    "action": "modified",
+    "before": "9446aad9c98793174f46f111e601bf9f5b747fb062ed5b701705471935a4bdc0",
+    "after": "b66d1904078dc6d48ede657f628864331fc716a2e3a2aa7448593d551e160000"
+  },
+  {
+    "path": "project/App/modules/servo_p3/servo_p3.c",
+    "action": "modified",
+    "before": "ee0a5e0ed3456b0d0d99aa4da58d385af434b964bb3ec458a532d20e43da2024",
+    "after": "3a32ac6b0637607ac4f9495f0c5c8eb820db665c45c5c1b17188661cf676844b"
+  },
+  {
+    "path": "project/App/modules/servo_p3/servo_p3.h",
+    "action": "modified",
+    "before": "18e1e014b1bc66534b4d7be9db16eeda36c9ef1709a656483645826c7f8341dc",
+    "after": "d23a1cd9a8e0a8e12a064b43d57498022b8ed0f2be79bb204cb4fdc593d80443"
+  },
+  {
+    "path": "project/App/bsp/bsp_key.c",
+    "action": "modified",
+    "before": "9f4136c8033df3e32da52455dd80aed1a45234044b24d10e57758c5b305f2a99",
+    "after": "7161c5450c8b916a2a2f5fb900ebb16b00a6cbb536a2542ad6d5ad3c2fa14b10"
+  },
+  {
+    "path": "project/App/bsp/bsp_key.h",
+    "action": "modified",
+    "before": "d61c5c9191c71809cc7e581e0a02c2e160ec80c8b55da6cfc449a0a32b675708",
+    "after": "2e4825ed76557d8e162a055c0e5e78232f7b828b3490b2f8fcd0d28efca7d82e"
+  },
+  {
+    "path": "project/App/bsp/input_control.h",
+    "action": "added",
+    "before": null,
+    "after": "49177192d3f8150751fd4e15a5a467b2f704fb1dbc761c3c65f16bf4146ca342"
+  },
+  {
+    "path": "project/App/modules/integration/console_help.h",
+    "action": "added",
+    "before": null,
+    "after": "a8360821c30292cbb005d3eb39f353bbbcf82e1b8d414ec61aa055c7428daf7b"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_command.c",
+    "action": "modified",
+    "before": "4631a37395ac5f42024bc2e01b474a093977891396cc4c6b8bfcc0955b85e2e3",
+    "after": "95302d1eb982e4da340d226d6388eadc5ce91fe547dd87489d85f0af0432fb99"
+  }
+]

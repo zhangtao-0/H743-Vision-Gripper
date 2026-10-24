@@ -1,0 +1,42 @@
+[
+  {
+    "command": [
+      "py",
+      "-0p"
+    ],
+    "exit_code": 0,
+    "stdout": " -V:3.14 *        C:\\Users\\tk457\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe\n -V:3.13          C:\\Users\\tk457\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=name,memory.total,driver_version",
+      "--format=csv,noheader"
+    ],
+    "exit_code": 0,
+    "stdout": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 592.82\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Host\\vision_gripper\\.venv\\Scripts\\python.exe",
+      "-c",
+      "import sys,cv2,numpy,torch,importlib.metadata as m,json;print(json.dumps(dict(python=sys.version,base=sys._base_executable,opencv=cv2.__version__,numpy=numpy.__version__,torch=torch.__version__,cuda=torch.cuda.is_available(),ultralytics=m.version('ultralytics')),ensure_ascii=False))"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"python\": \"3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]\", \"base\": \"C:\\\\Users\\\\tk457\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\python\\\\python.exe\", \"opencv\": \"4.14.0\", \"numpy\": \"2.5.4\", \"torch\": \"2.14.1+cpu\", \"cuda\": false, \"ultralytics\": \"8.4.184\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,Version,TotalVisibleMemorySize,FreePhysicalMemory | ConvertTo-Json; Get-PSDrive C | Select-Object Used,Free | ConvertTo-Json; Get-Command code,docker -ErrorAction SilentlyContinue | Select-Object Name,Source | ConvertTo-Json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\n    \"Caption\":  \"Microsoft Windows 11 家庭版 中文版\",\n    \"Version\":  \"10.0.26200\",\n    \"TotalVisibleMemorySize\":  16463352,\n    \"FreePhysicalMemory\":  2421456\n}\n{\n    \"Used\":  821536153600,\n    \"Free\":  201174618112\n}\n{\n    \"Name\":  \"code.cmd\",\n    \"Source\":  \"C:\\\\Users\\\\tk457\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\bin\\\\code.cmd\"\n}\n",
+    "stderr": ""
+  }
+]

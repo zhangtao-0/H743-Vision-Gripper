@@ -1,0 +1,38 @@
+{
+  "observed_at": "2026-10-24T15:22:28.504507+08:00",
+  "port": "COM9",
+  "baud": 115200,
+  "motion_commands_sent": false,
+  "commands": [
+    {
+      "command": "@motor disable",
+      "raw_hex": "",
+      "reply": ""
+    },
+    {
+      "command": "@quiet",
+      "raw_hex": "",
+      "reply": ""
+    },
+    {
+      "command": "@motor plot off",
+      "raw_hex": "",
+      "reply": ""
+    },
+    {
+      "command": "@motor status",
+      "raw_hex": "",
+      "reply": ""
+    },
+    {
+      "command": "@debug status",
+      "raw_hex": "",
+      "reply": ""
+    },
+    {
+      "command": "@status",
+      "raw_hex": "",
+      "reply": ""
+    }
+  ]
+}

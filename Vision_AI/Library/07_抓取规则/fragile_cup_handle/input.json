@@ -1,0 +1,29 @@
+{
+  "tags": [
+    {
+      "id": "semantic:cup",
+      "source": "human_verified",
+      "confidence": 1.0
+    },
+    {
+      "id": "shape:cylinder",
+      "source": "human_verified",
+      "confidence": 1.0
+    },
+    {
+      "id": "part:handle_present",
+      "source": "human_verified",
+      "confidence": 1.0
+    },
+    {
+      "id": "state:fragile",
+      "source": "human_verified",
+      "confidence": 1.0
+    },
+    {
+      "id": "state:contains_liquid",
+      "source": "human_verified",
+      "confidence": 1.0
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "h743.tags.v1",
+  "description": "Open tag vocabulary. Unknown tags are preserved, never silently treated as known physical facts.",
+  "namespaces": {
+    "semantic": "native dataset/model category; keep source namespace and original ID",
+    "shape": "mask/depth/measured geometry",
+    "material": "observed material; semantic hints are inferred evidence only",
+    "state": "fragile/full/empty/deformed/etc",
+    "part": "body/handle/rim; per-part scope",
+    "affordance": "candidate action capability, not commanded motion",
+    "safety": "hazards and rejection conditions"
+  },
+  "source_rank": {
+    "measured": 50,
+    "human_verified": 40,
+    "source_annotation": 30,
+    "model": 20,
+    "inferred": 10
+  },
+  "exclusive_groups": [
+    [
+      "state:empty",
+      "state:contains_liquid"
+    ],
+    [
+      "part:handle_present",
+      "part:handle_absent"
+    ]
+  ],
+  "tag_examples": [
+    "semantic:cup",
+    "semantic:box",
+    "semantic:bottle",
+    "shape:cylinder",
+    "shape:rectangular",
+    "shape:l_shaped",
+    "material:glass",
+    "state:fragile",
+    "state:contains_liquid",
+    "part:handle_present",
+    "safety:hot"
+  ],
+  "max_tags": null,
+  "unknown_is_not_false": true
+}

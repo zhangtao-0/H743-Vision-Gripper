@@ -1,0 +1,40 @@
+{
+  "version": "20261023-debug-grants-v1",
+  "firmware_flashed": false,
+  "hardware_tested": false,
+  "serial_ports_opened": false,
+  "current_board_last_verified_release": "20261023-motor-vofa-v1",
+  "prior_release_evidence": "Docs/电机控制/20261023_复用授权与VOFA/变更前整合汇总.json",
+  "hex": "Docs/电机控制/20261023_复用授权与VOFA/固件/H743_FD5640_DebugGrants.hex",
+  "hex_sha256": "012e39056c80dc3600b8df181dd3ca1af9d35db681a286d63a9cf24e3f160ffe",
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "configuration": "H743_VisionGripper_OV2640",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "configuration": "H743_VisionGripper_NoCamera",
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "tests": "Docs/电机控制/20261023_复用授权与VOFA/软件测试.json",
+  "physical_result": "Previous 50RPM twice and 400RPM once: no-feedback fault, not PID tracking PASS. User reports changed VM to10.3V, no subsequent measurement.",
+  "runtime_grants": "STS and motor boot OFF, independent runtime-only, no automatic output enable",
+  "latest_motor_hardware_attempt": {
+    "date": "2026-10-24",
+    "evidence": "Docs/电机控制/20261024_重新接线实测/实测汇总.json",
+    "tested_firmware": "previous motor interface; debug-grants not flashed",
+    "result": "FAIL_NO_FEEDBACK",
+    "output_disabled": true,
+    "fault_latched": 1,
+    "vm_reported": 10.3,
+    "vm_measured": false
+  }
+}

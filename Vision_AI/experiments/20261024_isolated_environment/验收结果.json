@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-10-24T02:14:13.828883+08:00",
+  "installation_exit": 0,
+  "all_checks_passed": true,
+  "original_tests": 2,
+  "adapted_tests": 9,
+  "synthetic_cases": 8,
+  "new_venv": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\.venv\\Scripts\\python.exe",
+  "host_pip_freeze_unchanged": true,
+  "production_checked": 1633,
+  "production_changed": [],
+  "gpu_packages_installed": false,
+  "weights_downloaded": false,
+  "training_started": false,
+  "serial_opened": false
+}

@@ -1,0 +1,2 @@
+MOTOR ready=1 driver=1 on=0 fault=1 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=1 blocked=0 invalid=0
+

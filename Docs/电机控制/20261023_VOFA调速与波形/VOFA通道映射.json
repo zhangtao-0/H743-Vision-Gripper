@@ -1,0 +1,50 @@
+[
+  {
+    "channel": 0,
+    "name": "用户目标转速",
+    "unit": "RPM",
+    "meaning": "target_rpm × requested_direction；禁用时仍保留设定"
+  },
+  {
+    "channel": 1,
+    "name": "实测转速",
+    "unit": "RPM",
+    "meaning": "霍尔四倍频计数换算，低通滤波；不是目标复制或仿真"
+  },
+  {
+    "channel": 2,
+    "name": "PID实际参考",
+    "unit": "RPM",
+    "meaning": "斜坡参考×active_direction；禁用/换向滑行时0"
+  },
+  {
+    "channel": 3,
+    "name": "原始实测转速",
+    "unit": "RPM",
+    "meaning": "10ms内计数差未滤波值"
+  },
+  {
+    "channel": 4,
+    "name": "PWM输出",
+    "unit": "千分比",
+    "meaning": "-950..950；正负代表方向"
+  },
+  {
+    "channel": 5,
+    "name": "跟踪误差",
+    "unit": "RPM",
+    "meaning": "通道2−通道1"
+  },
+  {
+    "channel": 6,
+    "name": "使能状态",
+    "unit": "0/1",
+    "meaning": "实际控制器启用；不是直接供电状态"
+  },
+  {
+    "channel": 7,
+    "name": "故障编号",
+    "unit": "enum",
+    "meaning": "0无；1无反馈；2换向超时；3方向错；4调度超时；5超速"
+  }
+]

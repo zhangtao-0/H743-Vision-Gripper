@@ -1,0 +1,6 @@
+{
+  "scope": "actual C settings service with simulated storage/actuator APIs; no physical Flash test",
+  "exit_code": 0,
+  "stdout": "PASS settings: no boot writes, save/reboot, exact float CPR, pending STS apply, mechanical endpoints excluded\nPASS settings: motion gates, interrupted-save recovery, atomic clear tombstone, no motor auto-enable path\n",
+  "stderr": ""
+}

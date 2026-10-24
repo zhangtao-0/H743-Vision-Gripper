@@ -1,0 +1,67 @@
+{
+  "ports": [
+    "COM11",
+    "COM12"
+  ],
+  "motion_commands_sent": false,
+  "key_simulation_is_not_physical_key_verification": true,
+  "commands": [
+    {
+      "port": "COM12",
+      "command": "@status",
+      "usb_reply": "STS target=1 rate=1000000 rawRx=149432 valid=5 parser=0 tx=7114 hal=0\r\nSYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1\r\nCAM diag format=6F01 pclk=2204 dcmi=00000000 dma=00000000 remaining=0\r\nCAM ready=1 enabled=1 frames=790 errors=0 timeout=0 loopmax=11 cmdDrop=0 usbDrop=0\r\nMOTOR ready=1 driver=0 on=0 fault=0 dir=1 target=0 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n",
+      "host_reply": "STS target=1 rate=1000000 rawRx=149432 valid=5 parser=0 tx=7114 hal=0\r\nSYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1\r\nCAM diag format=6F01 pclk=2204 dcmi=00000000 dma=00000000 remaining=0\r\nCAM ready=1 enabled=1 frames=790 errors=0 timeout=0 loopmax=11 cmdDrop=0 usbDrop=0\r\nMOTOR ready=1 driver=0 on=0 fault=0 dir=1 target=0 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n"
+    },
+    {
+      "port": "COM11",
+      "command": "@quiet",
+      "usb_reply": "\n",
+      "host_reply": ""
+    },
+    {
+      "port": "COM11",
+      "command": "@servo status",
+      "usb_reply": "SERVO configured=1 probed=1 state=6 online=1 stack=1 baud=1000000 scan=0 error=0 broadcast=254\r\nSERVO rxBytes=151322 replies=5 timeout=0 parser=0 txErrors=0; ID0 is unicast\r\n\n",
+      "host_reply": "SERVO configured=1 probed=1 state=6 online=1 stack=1 baud=1000000 scan=0 error=0 broadcast=254\r\nSERVO rxBytes=151322 replies=5 timeout=0 parser=0 txErrors=0; ID0 is unicast\r\n"
+    },
+    {
+      "port": "COM11",
+      "command": "@key 3 tap",
+      "usb_reply": "key accepted=1; ids1..7, pulse40..5000ms\r\n\n",
+      "host_reply": "key accepted=1; ids1..7, pulse40..5000ms\r\n"
+    },
+    {
+      "port": "COM11",
+      "command": "@key 4 tap",
+      "usb_reply": "key accepted=1; ids1..7, pulse40..5000ms\r\n\n",
+      "host_reply": "key accepted=1; ids1..7, pulse40..5000ms\r\n"
+    },
+    {
+      "port": "COM11",
+      "command": "@key 2 tap",
+      "usb_reply": "key accepted=1; ids1..7, pulse40..5000ms\r\n\n",
+      "host_reply": "key accepted=1; ids1..7, pulse40..5000ms\r\n"
+    },
+    {
+      "port": "COM11",
+      "command": "@key 1 tap",
+      "usb_reply": "key accepted=1; ids1..7, pulse40..5000ms\r\n\n",
+      "host_reply": "key accepted=1; ids1..7, pulse40..5000ms\r\n"
+    },
+    {
+      "port": "COM11",
+      "command": "@keys 12 180",
+      "usb_reply": "keys accepted=1; mask1..127, pulse40..5000ms\r\n\n",
+      "host_reply": "keys accepted=1; mask1..127, pulse40..5000ms\r\n"
+    },
+    {
+      "port": "COM11",
+      "command": "@keys 12 180",
+      "usb_reply": "keys accepted=1; mask1..127, pulse40..5000ms\r\n\n",
+      "host_reply": "keys accepted=1; mask1..127, pulse40..5000ms\r\n"
+    }
+  ],
+  "quiet_observation_seconds": 3,
+  "unsolicited_usb_bytes": 0,
+  "unsolicited_host_bytes": 0
+}

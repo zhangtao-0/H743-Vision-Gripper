@@ -1,0 +1,42 @@
+[
+  {
+    "case": "dark_background_light_mode",
+    "identical_png": true,
+    "sha256": "5466d969034def9d992d3ad846a1abd52253975aabd329377beb6eb8019b8587"
+  },
+  {
+    "case": "dark_background_wrong_polarity",
+    "identical_png": true,
+    "sha256": "fcbb460d390e1354ded315bb576cac379100930655802c24fe93702f8554eec7"
+  },
+  {
+    "case": "dim_background_fixed_threshold",
+    "identical_png": true,
+    "sha256": "1b67e6824edbed335f45657d900ce8d8281536106e2e2f5750101fcd2a87abf7"
+  },
+  {
+    "case": "dim_background_threshold_retuned",
+    "identical_png": true,
+    "sha256": "eab39700aa70cf03e358656ea0b6bcc16935b19e97e00fadfb6d11a5546c135f"
+  },
+  {
+    "case": "hsv_dark_foreground",
+    "identical_png": true,
+    "sha256": "d913740ed4711b4df32e5182077069ee0344233ea9fc601c8557d243253f0a7b"
+  },
+  {
+    "case": "normal",
+    "identical_png": true,
+    "sha256": "d913740ed4711b4df32e5182077069ee0344233ea9fc601c8557d243253f0a7b"
+  },
+  {
+    "case": "occluded_circle",
+    "identical_png": true,
+    "sha256": "ad4ab72d70bcf63a059cfdc39be56326f47edc24cc9ab494921b7b7dc3795bcf"
+  },
+  {
+    "case": "overexposed",
+    "identical_png": true,
+    "sha256": "1c12a2159892d6bf27642b91a8d3cdeda12e7aa5a6edc28798accd307e556d67"
+  }
+]

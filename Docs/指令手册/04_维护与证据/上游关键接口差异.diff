@@ -1,0 +1,45 @@
+--- upstream/claw_host_protocol.c
+
++++ H743/claw_host_protocol.c
+
+@@ -15,5 +15,5 @@
+
+ 
+     if ((frame == 0) || (frame_size < CLAW_HOST_FRAME_TOTAL_LEN) ||
+-        (command > CLAW_HOST_CMD_RANGE)) {
++        (command > CLAW_HOST_CMD_MAX)) {
+         return 0U;
+     }
+@@ -46,5 +46,5 @@
+
+         (frame[3] != CLAW_HOST_FRAME_LENGTH_FIELD) ||
+         (frame[4] != CLAW_HOST_INST_ACTION) ||
+-        (frame[5] > CLAW_HOST_CMD_RANGE)) {
++        (frame[5] > CLAW_HOST_CMD_MAX)) {
+         return 0U;
+     }
+--- upstream/claw_host_protocol.h
+
++++ H743/claw_host_protocol.h
+
+@@ -22,4 +22,7 @@
+
+ #define CLAW_HOST_CMD_B0                      2U  // B0：0停止，1扫描，2反向
+ #define CLAW_HOST_CMD_RANGE                   3U  // 范围：0机械极限，1为0~270度
++#define CLAW_HOST_CMD_PWM1_KEY                4U  // PWM1虚拟按键：0松开，1按下
++#define CLAW_HOST_CMD_PWM2_KEY                5U  // PWM2虚拟按键：0松开，1按下
++#define CLAW_HOST_CMD_MAX                     CLAW_HOST_CMD_PWM2_KEY
+ 
+ typedef struct {
+--- upstream/feetech_sts_command.h
+
++++ H743/feetech_sts_command.h
+
+@@ -15,5 +15,5 @@
+
+ #endif
+ 
+-#include "stm32f1xx_hal.h"
++#include "platform_hal.h"
+ #include "feature_config.h"
+ #include "feetech_sts_bus.h"

@@ -1,0 +1,122 @@
+{
+  "version": "20261024-portability-config-v1",
+  "passed": true,
+  "firmware_flashed": false,
+  "serial_ports_opened": false,
+  "motor_or_servo_motion_sent": false,
+  "physical_tested": false,
+  "hardware_configuration_values_preserved": 110,
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "Docs/解耦与移植/20261024_配置分层重构/固件/H743_VisionGripper.hex",
+      "hex_sha256": "80bbe773cbe1c31dce256edaabe567685bdd069fb6b0bb8a36ab7bf41e6ddd94",
+      "log": "Docs/解耦与移植/20261024_配置分层重构/H743_VisionGripper.log"
+    },
+    {
+      "configuration": "H743_VisionGripper_OV2640",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "Docs/解耦与移植/20261024_配置分层重构/固件/H743_VisionGripper_OV2640.hex",
+      "hex_sha256": "210b0164d044bd0387096ed1654b6bc4297ee17ee246fdcf863ab533649bdbf1",
+      "log": "Docs/解耦与移植/20261024_配置分层重构/H743_VisionGripper_OV2640.log"
+    },
+    {
+      "configuration": "H743_VisionGripper_NoCamera",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "Docs/解耦与移植/20261024_配置分层重构/固件/H743_VisionGripper_NoCamera.hex",
+      "hex_sha256": "90ed7487071785f45b40fbb31456a126bda8a5b0c2b7f7bca8ee3b144c3d596a",
+      "log": "Docs/解耦与移植/20261024_配置分层重构/H743_VisionGripper_NoCamera.log"
+    }
+  ],
+  "test_suites": [
+    {
+      "tool": "Tools/run_p2_host_tests.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/run_p2_host_tests.py.log"
+    },
+    {
+      "tool": "Tools/run_p3_host_tests.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/run_p3_host_tests.py.log"
+    },
+    {
+      "tool": "Tools/run_motor_tests.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/run_motor_tests.py.log"
+    },
+    {
+      "tool": "Tools/run_motor_plot_tests.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/run_motor_plot_tests.py.log"
+    },
+    {
+      "tool": "Tools/run_ui_tests.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/run_ui_tests.py.log"
+    },
+    {
+      "tool": "Tools/run_integration_host_tests.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/run_integration_host_tests.py.log"
+    },
+    {
+      "tool": "Tools/run_camera_regression.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/run_camera_regression.py.log"
+    },
+    {
+      "tool": "Tools/run_portability_tests.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/run_portability_tests.py.log"
+    },
+    {
+      "tool": "Tools/run_config_guard_tests.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/run_config_guard_tests.py.log"
+    },
+    {
+      "tool": "Tools/check_motor_profiles.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/check_motor_profiles.py.log"
+    },
+    {
+      "tool": "Tools/verify_pin_reference.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/verify_pin_reference.py.log"
+    },
+    {
+      "tool": "Tools/verify_input_mapping.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/verify_input_mapping.py.log"
+    },
+    {
+      "tool": "Tools/validate_learning_library.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/validate_learning_library.py.log"
+    },
+    {
+      "tool": "Tools/verify_command_manual.py",
+      "passed": true,
+      "log": "Docs/解耦与移植/20261024_配置分层重构/verify_command_manual.py.log"
+    }
+  ],
+  "registered_sources_checked": 120,
+  "record_compatibility": "160-byte UiProfile v1 and32-byte claw limit v1; same Bank2 sectors4/5/6/7",
+  "backup": "Backups/pre_portability_config_20261024.zip",
+  "source_changes": 43,
+  "configuration_groups": [
+    "io",
+    "serial",
+    "motion",
+    "vision",
+    "storage",
+    "system"
+  ],
+  "cross_mcu_verified": false,
+  "prior_device_firmware": "20261024-ec11-5v-input-v1; left unchanged",
+  "iar_build_note": "Sequential build required; prior parallel shared-clean failures archived"
+}

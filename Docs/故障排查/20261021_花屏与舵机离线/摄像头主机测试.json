@@ -1,0 +1,6 @@
+{
+  "scope": "host-only actual board_camera.c with DMA/DCMI fault model",
+  "exit_code": 0,
+  "stdout": "PASS transform: all 16 rotate/mirror/flip combinations over full frame; immutable raw capture; snapshot holds frame; resume restarts capture; edge path executes\nPASS CAMERA: reject erroneous and incomplete DMA frames, accept full frame, strip display, stop capture\nPASS VIEWPORT: capture without LCD writes, bounded 240x144 preview at y32, cancel partial preview on navigation, invalid-window guard\nPASS frame lease: capture paused until release; double acquire rejected\n",
+  "stderr": ""
+}

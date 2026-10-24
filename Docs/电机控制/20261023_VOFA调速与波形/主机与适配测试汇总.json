@@ -1,0 +1,34 @@
+[
+  {
+    "name": "run_motor_tests.py",
+    "exit_code": 0
+  },
+  {
+    "name": "run_motor_plot_tests.py",
+    "exit_code": 0
+  },
+  {
+    "name": "run_ui_tests.py",
+    "exit_code": 0
+  },
+  {
+    "name": "run_p2_host_tests.py",
+    "exit_code": 0
+  },
+  {
+    "name": "run_p3_host_tests.py",
+    "exit_code": 0
+  },
+  {
+    "name": "run_integration_host_tests.py",
+    "exit_code": 0
+  },
+  {
+    "name": "run_vision_tests.py",
+    "exit_code": 0
+  },
+  {
+    "name": "check_motor_profiles.py",
+    "exit_code": 0
+  }
+]

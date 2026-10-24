@@ -1,0 +1,10 @@
+{
+  "hex_sha256": "76ca56258dfcbb82b2aae1d55f2668b67e748d97adf750499bc49a8f4c09ea39",
+  "backup_sha256": "36bed30cb29ad2cb70cae82cced8ed9c91c45be81255ba8210cbeb7ff63db73d",
+  "readback_sha256": "a324ce3dd01237bec0c41cc53de8b2dfc8c59a331c51150a4f11a3eb78fc14ae",
+  "verified_hex_data_bytes": 153562,
+  "mismatches": [],
+  "firmware_end_offset": "0x257da",
+  "outside_0x08040000_unchanged": true,
+  "passed": true
+}

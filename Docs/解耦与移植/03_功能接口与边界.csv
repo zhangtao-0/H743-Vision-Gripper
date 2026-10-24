@@ -1,0 +1,12 @@
+﻿功能,主要配置,适配实现,上层接口,本轮解耦方式,仍需适配的硬件边界
+KEY1～6/LED,board_io_cfg.h,bsp_key.c / board_led.c / board_gpio.c,Key_* / Input_* / BoardLed_*,逐键GPIO/有效电平/上拉；逻辑ID不变,CMSIS锁与HAL时间/GPIO由目标平台提供
+UART与蓝牙,board_serial_cfg.h,board_resources.c / board_uart.c / mcu/stm32h743/uart_backend.inc,BoardUart_* / Bluetooth_*,角色表生成初始化/MSP/IRQ；蓝牙业务帧单独配置,其他MCU需UART后端；旧回调/状态类型仍保留HAL兼容ABI
+USB CDC,board_serial_cfg.h,USB_DEVICE/Target/usbd_conf.c / usb_console.c,UsbConsole_*,USB设备句柄/协议栈属于目标SDK适配,HAL PCD/USB描述符、中断与DMA内存另配
+MG310/EC11,board_motion_cfg.h + motor_config.h,board_motor.c / board_gpio.c,MotorService_* / MotorControl_*,算法与GPIO/TIM隔离；反馈/旋钮是不同输入,TIMPRE/编码器/IRQ当前H743；1ms调度固定契约
+PWM舵机,board_motion_cfg.h,board_peripherals.c / bsp/tim.c,BoardPwm_* / PwmServoControl_*,TIM实例、引脚、AF和核频率归配置,当前1MHz微秒计数器；不得另改为电机20kHz时基
+STS总线舵机,board_serial_cfg.h + feature_config.h,feetech_sts_port.c / board_uart.c,FeetechSts* / ServoP3_*,SERVO角色不绑定huart2实例号,线路电平/转接板方向、帧时序、HAL兼容返回类型需核实
+LCD,board_vision_cfg.h,vendor/lcd / board_peripherals.c,LCD_* / UiService_*,SPI实例/AF/GPIO/时钟选择集中,换控制器需新驱动，非只换引脚
+摄像头,board_vision_cfg.h + integration_config.h,vendor/camera / board_camera.c,BoardCamera_*,DCMI/SCCB/IRQ/DMA资源集中,当前H743 DCMI后端、IAR.camera_dma缓冲段，不是通用摄像头HAL
+SD/QSPI,board_storage_cfg.h,vendor/sd / vendor/qspi / board_storage.c,BoardStorage_*,资源与时钟选择集中,SDMMC/QSPI/Flash命令驱动仍依赖目标SDK与器件
+开机配置/限位,board_storage_cfg.h,board_nv_storage.c / mcu/stm32h743/nv_backend.inc,BoardNv_* / UiProfileStore_* / ClawLimitStorage_*,业务记录格式与物理擦写分离,当前只允许2MiB H743预留扇区；布局变化同步链接脚本与保护
+时钟/RTC/MPU,board_system_cfg.h,Core/main.c / board_peripherals.c,SystemClock_Config / BoardRtc_* / BoardMemory_*,PLL/APB/定时器时钟事实与能力归配置,供电模式、RTC/MPU/Cache/DMA内存属于芯片后端；跨系列替换Core/SDK

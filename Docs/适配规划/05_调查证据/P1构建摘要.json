@@ -1,0 +1,16 @@
+{
+  "compiler": "9.40.1.364",
+  "phase": "P1 最小系统可编译",
+  "warning_detail": "feetech_sts_control.c(1768): Pe177 FeetechStsControl_HoldFeedbackPosition declared but never referenced",
+  "builder": "9.2.2.10770",
+  "warnings": 1,
+  "code_bytes": 19494,
+  "date": "2026-10-20",
+  "readwrite_data_bytes": 4648,
+  "readonly_data_bytes": 58,
+  "output": "project/EWARM/H743_VisionGripper/Exe/H743_VisionGripper.hex",
+  "hardware_tests": "not performed",
+  "errors": 0,
+  "configuration": "H743_VisionGripper",
+  "result": "Build succeeded"
+}

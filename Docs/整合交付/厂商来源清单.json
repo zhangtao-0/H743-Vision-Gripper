@@ -1,0 +1,289 @@
+[
+  {
+    "example": 6,
+    "source": "Docs/官方参考历程/【6】1.54寸彩色液晶屏驱动/【6】1.54寸彩色液晶屏驱动/Drivers/User/Src/lcd_spi_154.c",
+    "target": "project/App/vendor/lcd/lcd_spi_154.c",
+    "original_sha256": "98f59ea99a80abba23779c4bb53939991afc667695e9636281b2d9b8ac20aff0",
+    "adapted_sha256": "1b228c36deb2321a85a8da52965ff757bbcb7385518c76f4a188d64b961f356a"
+  },
+  {
+    "example": 6,
+    "source": "Docs/官方参考历程/【6】1.54寸彩色液晶屏驱动/【6】1.54寸彩色液晶屏驱动/Drivers/User/Inc/lcd_spi_154.h",
+    "target": "project/App/vendor/lcd/lcd_spi_154.h",
+    "original_sha256": "51640815c12c5b21aeb980d473db84b03e72e9f0d0c10027f680b7b8a778c8dd",
+    "adapted_sha256": "bf35cef500c2983c040228fce5908779c150380df6a1f668ffafadc6a9ef35c7"
+  },
+  {
+    "example": 6,
+    "source": "Docs/官方参考历程/【6】1.54寸彩色液晶屏驱动/【6】1.54寸彩色液晶屏驱动/Drivers/User/Src/lcd_fonts.c",
+    "target": "project/App/vendor/lcd/lcd_fonts.c",
+    "original_sha256": "2a97daf856e8f34486fb9115201b828b6ca186d7d127e1c61010a25d763fd592",
+    "adapted_sha256": "7dbbc6253b0cfff74a4c42fb8532b3cbcc0a319506aaf5d1901e0c3c4c5df22d"
+  },
+  {
+    "example": 6,
+    "source": "Docs/官方参考历程/【6】1.54寸彩色液晶屏驱动/【6】1.54寸彩色液晶屏驱动/Drivers/User/Inc/lcd_fonts.h",
+    "target": "project/App/vendor/lcd/lcd_fonts.h",
+    "original_sha256": "5261b1be24585299c268acc3d0d22ec2f9c4e6cfb4265d96c0feae55da9d23a0",
+    "adapted_sha256": "218bdfcb252667d621033b2fa4736fcc2b5302b3f3665c2f5d4f9e93c6b20d25"
+  },
+  {
+    "example": 6,
+    "source": "Docs/官方参考历程/【6】1.54寸彩色液晶屏驱动/【6】1.54寸彩色液晶屏驱动/Drivers/User/Src/lcd_image.c",
+    "target": "project/App/vendor/lcd/lcd_image.c",
+    "original_sha256": "780a171c9abb735b8ff0fb2fc36f42fee6225a7b48dcb8200c1ab90fc9a5acc1",
+    "adapted_sha256": "55566c67d4c198da58a9a995d226764f83668601ab43fc26340ba4338363d5a9"
+  },
+  {
+    "example": 6,
+    "source": "Docs/官方参考历程/【6】1.54寸彩色液晶屏驱动/【6】1.54寸彩色液晶屏驱动/Drivers/User/Inc/lcd_image.h",
+    "target": "project/App/vendor/lcd/lcd_image.h",
+    "original_sha256": "85fa6d0996ebc8136b9dfc7112e26d54b54408dbae80dd9cc11be9dbd0512206",
+    "adapted_sha256": "5ec6f632d6d4cf36e468f79116fd46cb6be7456d34b3ba57cd072ed7df6e569e"
+  },
+  {
+    "example": 10,
+    "source": "Docs/官方参考历程/【10】DCMI-OV5640摄像头实验/【10】DCMI-OV5640摄像头实验/图像显示到1.54寸屏幕-240x240分辨率/Drivers/User/Src/dcmi_ov5640.c",
+    "target": "project/App/vendor/camera/dcmi_ov5640.c",
+    "original_sha256": "268ad3be19c879ae872506dac6b80a1ae5038582d8c07710b10b37ed02c6badd",
+    "adapted_sha256": "c7165c2bd793f60881f2a8ef2e37b6bacb6b9d92c17eeac4f835864bf030eabc"
+  },
+  {
+    "example": 10,
+    "source": "Docs/官方参考历程/【10】DCMI-OV5640摄像头实验/【10】DCMI-OV5640摄像头实验/图像显示到1.54寸屏幕-240x240分辨率/Drivers/User/Inc/dcmi_ov5640.h",
+    "target": "project/App/vendor/camera/dcmi_ov5640.h",
+    "original_sha256": "44a16a59555f8b23a419887a10ce75cba9563cc4f7b5249b53f90b241c420ceb",
+    "adapted_sha256": "0dbfee644fbc502beaa33ac145ba5ffedf07028319a01099045261aa9cd5717f"
+  },
+  {
+    "example": 10,
+    "source": "Docs/官方参考历程/【10】DCMI-OV5640摄像头实验/【10】DCMI-OV5640摄像头实验/图像显示到1.54寸屏幕-240x240分辨率/Drivers/User/Inc/dcmi_ov5640_cfg.h",
+    "target": "project/App/vendor/camera/dcmi_ov5640_cfg.h",
+    "original_sha256": "3d868fcd8b6013d1b7e175a68df7016288a8aa5cf5a45e7a560a6d484d874c1f",
+    "adapted_sha256": "2dc8224eb58407e2384483d1da3648372ffb4e55f28d05d8cc3afffdefaac186"
+  },
+  {
+    "example": 10,
+    "source": "Docs/官方参考历程/【10】DCMI-OV5640摄像头实验/【10】DCMI-OV5640摄像头实验/图像显示到1.54寸屏幕-240x240分辨率/Drivers/User/Src/sccb.c",
+    "target": "project/App/vendor/camera/sccb.c",
+    "original_sha256": "f7f61618a8fdb4bc30d85dacc2ab9eb1da6fdc652ba9c20989ca9bb19212b9cd",
+    "adapted_sha256": "54d000bf65bedcf96a00d61c58b4c9ded0aa53b1a6715c23f3c88941388052be"
+  },
+  {
+    "example": 10,
+    "source": "Docs/官方参考历程/【10】DCMI-OV5640摄像头实验/【10】DCMI-OV5640摄像头实验/图像显示到1.54寸屏幕-240x240分辨率/Drivers/User/Inc/sccb.h",
+    "target": "project/App/vendor/camera/sccb.h",
+    "original_sha256": "0ab5aa240b099c516f5a38d6f8dc1b9b2868e96110316ccd796f0e31bb406a72",
+    "adapted_sha256": "98604aaf80a1c9f8718573ca443116b3cf7c7f1a169410afb462b58c374fc56b"
+  },
+  {
+    "example": 9,
+    "source": "Docs/官方参考历程/【9】DCMI-OV2640摄像头实验/【9】DCMI-OV2640摄像头实验/图像显示到1.54寸屏幕-240x240分辨率/Drivers/User/Src/dcmi_ov2640.c",
+    "target": "project/App/vendor/camera/dcmi_ov2640.c",
+    "original_sha256": "a49824c02af30c0a5d1067bf8dd015b8652a337b6face6eafd5a86ce4776237b",
+    "adapted_sha256": "5924bd16821b875498c69adafe1ab2e479afb828df972cb7c8849ebe35591364"
+  },
+  {
+    "example": 9,
+    "source": "Docs/官方参考历程/【9】DCMI-OV2640摄像头实验/【9】DCMI-OV2640摄像头实验/图像显示到1.54寸屏幕-240x240分辨率/Drivers/User/Inc/dcmi_ov2640.h",
+    "target": "project/App/vendor/camera/dcmi_ov2640.h",
+    "original_sha256": "817429d1c15f1aebfb104c754deca837db4045359471b8f307f0d90210a1780c",
+    "adapted_sha256": "2d51fa05b6f08b0f9d9bb34c218a7dc6015b32a45047e77085d4bac292541796"
+  },
+  {
+    "example": 9,
+    "source": "Docs/官方参考历程/【9】DCMI-OV2640摄像头实验/【9】DCMI-OV2640摄像头实验/图像显示到1.54寸屏幕-240x240分辨率/Drivers/User/Inc/dcmi_ov2640_cfg.h",
+    "target": "project/App/vendor/camera/dcmi_ov2640_cfg.h",
+    "original_sha256": "b1ea6d797a2b478168a4bf5451330a8b4351f914fc6116d9ea1ac9e719d5923f",
+    "adapted_sha256": "93cb9685bac70720982b23feec5df9e7a6afff88f57a6041c25362a59a2881df"
+  },
+  {
+    "example": 8,
+    "source": "Docs/官方参考历程/【8】QSPI-W25Q64使用HAL库直接读写/【8】QSPI-W25Q64使用HAL库直接读写/Drivers/User/Src/qspi_w25q64.c",
+    "target": "project/App/vendor/qspi/qspi_w25q64.c",
+    "original_sha256": "a8fed9d694567c0bb17cb9d2378490e01744dda41fad90f1103bb1a4d5d4a125",
+    "adapted_sha256": "cd158779bd2ab0bd6c21241b91c154d44138226ff4c1212fe6975d7aab58f9da"
+  },
+  {
+    "example": 8,
+    "source": "Docs/官方参考历程/【8】QSPI-W25Q64使用HAL库直接读写/【8】QSPI-W25Q64使用HAL库直接读写/Drivers/User/Inc/qspi_w25q64.h",
+    "target": "project/App/vendor/qspi/qspi_w25q64.h",
+    "original_sha256": "12cb384426b56fc0b51d4ccbda3b294b9b32ae57e75d3397eb2f4d081b1e956a",
+    "adapted_sha256": "3e7fd7e62591f597962e0df014f04c4b0f730674d72fe42ec0761d56c3dea94a"
+  },
+  {
+    "example": 5,
+    "source": "Docs/官方参考历程/【5】SDIO-移植FatFs/【5】SDIO-移植FatFs/Drivers/User/Src/sdmmc_sd.c",
+    "target": "project/App/vendor/sd/sdmmc_sd.c",
+    "original_sha256": "d3dab9452cb5c78b6e299ec239ac9e132e831daffcad2a330f0aae79ef36d050",
+    "adapted_sha256": "32e2e6b46a85e2edcd0a950fc8f6577d6b31f0928dbc739c9967d93972e5cd6f"
+  },
+  {
+    "example": 5,
+    "source": "Docs/官方参考历程/【5】SDIO-移植FatFs/【5】SDIO-移植FatFs/Drivers/User/Inc/sdmmc_sd.h",
+    "target": "project/App/vendor/sd/sdmmc_sd.h",
+    "original_sha256": "e5195ca73f962402f85a2fa043277d9e63d424135b1b2406be1e52bff101e707",
+    "adapted_sha256": "2568989d46713b830d3ca1f55c56c3278bc758bad33b646e66a97c411bc54bb3"
+  },
+  {
+    "example": 5,
+    "source": "Docs/官方参考历程/【5】SDIO-移植FatFs/【5】SDIO-移植FatFs/FatFs/ff.c",
+    "target": "project/Middlewares/FatFs/ff.c",
+    "original_sha256": "1664ae0bfeea5cc39405ca860cb49f1d1237d0e1284346abcefc14f627b62948",
+    "adapted_sha256": "7d5dd93eac02aff0339b71a653acf8a0f9eb8f93a966c7110cd7775f5f97edf0"
+  },
+  {
+    "example": 5,
+    "source": "Docs/官方参考历程/【5】SDIO-移植FatFs/【5】SDIO-移植FatFs/FatFs/ff.h",
+    "target": "project/Middlewares/FatFs/ff.h",
+    "original_sha256": "031e574d78a31e550bf624fe211d6241622a6b6dc715dd91397dcb4f6b9f3d9e",
+    "adapted_sha256": "6f5ed437117d5c5cc79adf50f0009318c313a320a99d3765c41e557e63d849a0"
+  },
+  {
+    "example": 5,
+    "source": "Docs/官方参考历程/【5】SDIO-移植FatFs/【5】SDIO-移植FatFs/FatFs/ffconf.h",
+    "target": "project/Middlewares/FatFs/ffconf.h",
+    "original_sha256": "2eff769faa647eef1fd9c6b0037151bbaa6b8f59527937b94db7e2b280487bbf",
+    "adapted_sha256": "f1ed609d44490d239d8baee4e60c60901c2b462d9cf43d784abf13d31d5e1cbc"
+  },
+  {
+    "example": 5,
+    "source": "Docs/官方参考历程/【5】SDIO-移植FatFs/【5】SDIO-移植FatFs/FatFs/ffunicode.c",
+    "target": "project/Middlewares/FatFs/ffunicode.c",
+    "original_sha256": "c7b55d23989c34b4c387d761204f91d2ac718ffa3f0314499da412d11e378537",
+    "adapted_sha256": "aafce7aabba73882a90164272e122f570af001a0743cf2686e4e1b66cdcdfd2d"
+  },
+  {
+    "example": 5,
+    "source": "Docs/官方参考历程/【5】SDIO-移植FatFs/【5】SDIO-移植FatFs/FatFs/diskio.h",
+    "target": "project/Middlewares/FatFs/diskio.h",
+    "original_sha256": "1c30db73df9e5ce75e3e752a4bda0938a1312575168365d678e21bf33e4a311f",
+    "adapted_sha256": "c55d1af687edd985faa7e5fe808fc3983ee52244ad8961b2b26ea0ed9117c2fa"
+  },
+  {
+    "example": 5,
+    "source": "Docs/官方参考历程/【5】SDIO-移植FatFs/【5】SDIO-移植FatFs/FatFs/integer.h",
+    "target": "project/Middlewares/FatFs/integer.h",
+    "original_sha256": "448e739264a12dee0bf9eecb74ab3b963dadd8faefa3f27f4b0e5f9c03097203",
+    "adapted_sha256": "310b206c5624685e649d7ad43606ba957a4616a53f36b51d2bdfb9bf37f84580"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/USB_DEVICE/App/usb_device.c",
+    "target": "project/USB_DEVICE/App/usb_device.c",
+    "original_sha256": "89cc9ba4e31fdb157538f6eaec3accfcf2a122d20bfce18d2b8e70582f8579ab",
+    "adapted_sha256": "5a8dba687dae4caad95a05e750eca4e785f2ecb6282aac1b8a95d62435c40d55"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/USB_DEVICE/App/usb_device.h",
+    "target": "project/USB_DEVICE/App/usb_device.h",
+    "original_sha256": "a024820f5873ce996712a05d27474b0e924c3ebd1dccbfd1425c00af61bc2648",
+    "adapted_sha256": "a024820f5873ce996712a05d27474b0e924c3ebd1dccbfd1425c00af61bc2648"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/USB_DEVICE/App/usbd_desc.c",
+    "target": "project/USB_DEVICE/App/usbd_desc.c",
+    "original_sha256": "175e2709c3e8296a73c0e8efa513639382afce94a6ed6cd050d8bfe918395878",
+    "adapted_sha256": "175e2709c3e8296a73c0e8efa513639382afce94a6ed6cd050d8bfe918395878"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/USB_DEVICE/App/usbd_desc.h",
+    "target": "project/USB_DEVICE/App/usbd_desc.h",
+    "original_sha256": "3cdc2095314accbff63c0b785eda1a55dce7f0b225ba838b964550db86dd54d3",
+    "adapted_sha256": "3cdc2095314accbff63c0b785eda1a55dce7f0b225ba838b964550db86dd54d3"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/USB_DEVICE/App/usbd_cdc_if.c",
+    "target": "project/USB_DEVICE/App/usbd_cdc_if.c",
+    "original_sha256": "e6828e7bed1e32857f419be08185f45be25db7ab2e0ef9843896ebaae2842c71",
+    "adapted_sha256": "0e66741efe2fcd2a01bb8beeeff85d7a9f1f4a0731376a7f0c1939dc37479d1a"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/USB_DEVICE/App/usbd_cdc_if.h",
+    "target": "project/USB_DEVICE/App/usbd_cdc_if.h",
+    "original_sha256": "7aca0b9f2e2dce612dd4f26cce1a6938b730042dd554b840be7e24af33da8761",
+    "adapted_sha256": "983ab24a52f967848cbbd277dc763ed5f3f4d37baaf9e3b872b50eb0445b72c6"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/USB_DEVICE/Target/usbd_conf.c",
+    "target": "project/USB_DEVICE/Target/usbd_conf.c",
+    "original_sha256": "4a9906878f3222fae2f4cb08c88eccb3cd435d11f556f76de66e792c471baeeb",
+    "adapted_sha256": "80046e68568332fac22af88284b090096c81e4f21bd4165b36efb1bf6ac3a515"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/USB_DEVICE/Target/usbd_conf.h",
+    "target": "project/USB_DEVICE/Target/usbd_conf.h",
+    "original_sha256": "c19ab346dfe64167cf84b52fab1f5d5804245e6ecdc4a1f337c872966f2aaf23",
+    "adapted_sha256": "6899e6b700042b8b8c0f013ccca46b41c9d3bb13d5699033298365b83813daa9"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h",
+    "target": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h",
+    "original_sha256": "634775ec822aa50684a7cd1d0aa34f9b921c9407e7c70a73d7427cf67c1ce653",
+    "adapted_sha256": "5871b7f20c9a714253d4c31b34309317f74bfc3435c45026837b0a214eba8c69"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h",
+    "target": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h",
+    "original_sha256": "0d766fe68a0f746b29caa7c6ea1e96c45c5fca50360e1d224c19935a76eb666f",
+    "adapted_sha256": "4a7c81df2a717ced28eaaa45f652adaf32b4964c94cd64ea3c223645ed09d076"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h",
+    "target": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h",
+    "original_sha256": "748f08a7eb3f8842483d5b3b004665171f58da128668e92aa09474f84f971409",
+    "adapted_sha256": "819dadbc9fc0493d68e52e17d650c40347359d0b2d2907c89fdb84412d866fcf"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h",
+    "target": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h",
+    "original_sha256": "fc7ffbed8ff7752453bb510493b43165ef29f4c5091e50fb6d0c4c8652d4f560",
+    "adapted_sha256": "c66da9d90d46f4760f08dd35a6259ff910ba9438783e4d3905c2b7a04e3634d2"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c",
+    "target": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c",
+    "original_sha256": "595af70687e3b8ef251110b0794476bce2d384cb994fcfde2cefb8a3c6e536d9",
+    "adapted_sha256": "5979f67c42c7304bd16e25fda6f3572b831fe269b78df5afa0c82cf543e7495c"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c",
+    "target": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c",
+    "original_sha256": "623ebebb6948ec16a281c1cc17b50d4a96e635d5af2516c79d260252fca5133c",
+    "adapted_sha256": "9e0a89a99436b22e884ea1d5c520ba8e87d20b522342f425890cf2ee48015ab5"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c",
+    "target": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c",
+    "original_sha256": "047c63014d1242a8d4254495d019f710bead71de566897c6daaf97f496a019b4",
+    "adapted_sha256": "b3ebbf81c3cebf387ccf68bdce3004512f2d95e0e3d3e1983f2ee01abd1d29cb"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h",
+    "target": "project/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h",
+    "original_sha256": "74e8344735af1711285dae8797104b0c02aa0967a7f65283cf99f81b70dff404",
+    "adapted_sha256": "893b30db859fa044a4f7fd49f8c378e4d989f08219b86cc74213819558f97b34"
+  },
+  {
+    "example": 11,
+    "source": "Docs/官方参考历程/【11】USB-虚拟串口/【11】USB-虚拟串口/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c",
+    "target": "project/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c",
+    "original_sha256": "50b507f2f42afb1fe65232a7144567a49ccda19e97c214166eadd6261ca374b5",
+    "adapted_sha256": "c74ec6267aa43ebc3dc67d4796b068f0ac9797892b1a95811d9c9f24a616d5df"
+  }
+]

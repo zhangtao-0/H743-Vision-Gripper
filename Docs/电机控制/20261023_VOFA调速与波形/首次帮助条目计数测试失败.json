@@ -1,0 +1,6 @@
+{
+  "scope": "host-only HAL and flash fault model; no target-board test",
+  "exit_code": 3,
+  "stdout": "PASS FLASH: alternating slots, erase failure, partial program/power loss, CRC corruption fallback, clear record, invalid range\nPASS PWM: no startup output, independent channels, angle clamping, invalid ID, virtual key edges/open-close toggles\nPASS startup log gate: all shared init output suppressed, explicit replies restored\n",
+  "stderr": "Assertion failed!\n\nProgram: C:\\Users\\tk457\\AppData\\Local\\Temp\\h743-integration-test-bjzgf730\\test.exe\nFile: C:\\Users\\tk457\\AppData\\Local\\Temp\\h743-integration-test-bjzgf730\\test.c, Line 131\n\nExpression: log_calls==21\n"
+}

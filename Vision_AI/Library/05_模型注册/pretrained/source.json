@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n-seg.pt",
+  "release": "v8.4.0",
+  "license": "Ultralytics AGPL-3.0 / enterprise; review model and upstream dataset terms",
+  "local_path": "Library/05_模型注册/pretrained/yolo26n-seg.pt",
+  "bytes": 6719965,
+  "sha256": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f",
+  "cached": false,
+  "status": "downloaded"
+}

@@ -1,0 +1,59 @@
+{
+  "champion": null,
+  "runs": [
+    {
+      "run_id": "auto_20261024_143657_780206",
+      "fingerprint": "f87ea977a27e06a3b1eed8e6bfbcd7d35a109f8ee28836385b398b6836b0ac8f",
+      "status": "completed",
+      "command": [
+        "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Host\\vision_gripper\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\training\\train_worker.py",
+        "--job",
+        "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\auto_20261024_143657_780206\\job.json"
+      ],
+      "output": "experiments/auto_20261024_143657_780206",
+      "metrics": {
+        "validation": {
+          "metrics/precision(B)": 0.9896336357530607,
+          "metrics/recall(B)": 0.1111111111111111,
+          "metrics/mAP50(B)": 0.11520000000000001,
+          "metrics/mAP50-95(B)": 0.09519602138220695,
+          "metrics/precision(M)": 0.9896336357530607,
+          "metrics/recall(M)": 0.1111111111111111,
+          "metrics/mAP50(M)": 0.11166666666666668,
+          "metrics/mAP50-95(M)": 0.09483333333333334,
+          "fitness": 0.19002935471554028
+        },
+        "test": {
+          "metrics/precision(B)": 1.0,
+          "metrics/recall(B)": 0.1992969198769272,
+          "metrics/mAP50(B)": 0.3732965597255851,
+          "metrics/mAP50-95(B)": 0.3491150131431061,
+          "metrics/precision(M)": 1.0,
+          "metrics/recall(M)": 0.1992969198769272,
+          "metrics/mAP50(M)": 0.3732965597255851,
+          "metrics/mAP50-95(M)": 0.29666692031430414,
+          "fitness": 0.6457819334574102
+        },
+        "speed_ms": {
+          "preprocess": 0.582655556273595,
+          "inference": 103.52916666791619,
+          "loss": 0.0028666682838876215,
+          "postprocess": 27.307099999032086
+        },
+        "checkpoint": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\auto_20261024_143657_780206\\train\\weights\\best.pt",
+        "purpose": "pipeline_smoke_only",
+        "hardware_deployed": false
+      },
+      "checkpoint_sha256": "629a3de458d29640a0db6a4dacf609c75749c2340d971e643f6e6e378797ae32",
+      "promotion": {
+        "status": "challenger_only",
+        "blocked_reasons": [
+          "no_heldout_H743_domain_benchmark",
+          "mask_map50_below_gate"
+        ],
+        "hardware_deployed": false
+      }
+    }
+  ]
+}

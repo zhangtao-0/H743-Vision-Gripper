@@ -1,0 +1,12 @@
+{
+  "installed_wheel_versions": {
+    "numpy": "2.5.4",
+    "opencv-python": "4.14.0.94",
+    "Pillow": "12.3.0",
+    "ultralytics": "8.4.184",
+    "torch": "2.14.1+cpu"
+  },
+  "installed_release_tag_commit_lookup": "GitHub commits API returned 403 rate limit; not confirmed. Current repository main SHA is separately recorded and is NOT asserted to be installed wheel SHA.",
+  "cvat_old_paths": "Two guessed segmentation URLs returned404; preserved .firecrawl outputs; corrected official unified Ultralytics YOLO URL verified through search+scrape.",
+  "weights_downloaded": false
+}

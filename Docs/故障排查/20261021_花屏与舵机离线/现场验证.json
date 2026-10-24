@@ -1,0 +1,30 @@
+{
+  "flashed": true,
+  "verified": true,
+  "hex_sha256": "88ccf2751b48a4f66e1ee3ce3cfbba535eecac53b2eddf685c8f62f8e8476d61",
+  "target": "STM32H743ZIT6 Rev V, Device ID 0x450, 2MB",
+  "camera": {
+    "sensor": "FD5640/OV5640",
+    "format": "0x6F01",
+    "pclk": "0x2204",
+    "final_status": {
+      "frames": 329,
+      "errors": 0,
+      "timeouts": 0,
+      "loop_max_ms": 7
+    },
+    "user_confirmed_live_image_changes": true
+  },
+  "servo": {
+    "online": false,
+    "raw_rx_bytes": 0,
+    "tested_ids_at_1Mbps": [
+      0,
+      1
+    ],
+    "power_user_report": "communication-side 5V; independent 7.4V planned",
+    "remaining": "verify independent power supply, TTL-BUS selection and adapter MCU-side path"
+  },
+  "scope": "camera capture/preview verified on board and by user; no servo motion, external SD/FatFs or autonomous grasp acceptance",
+  "log": "Docs/故障排查/20261021_花屏与舵机离线/flash_final_readback.log"
+}

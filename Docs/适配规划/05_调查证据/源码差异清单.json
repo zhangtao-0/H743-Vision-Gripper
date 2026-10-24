@@ -1,0 +1,261 @@
+{
+  "upstream_url": "https://github.com/zhangtao-labs/servo.git",
+  "upstream_commit": "aebb357dd4096350ec17f49fdaf23d1b27decb3d",
+  "method": "Same basename candidates; byte SHA256 comparison; no overwrites. Upstream-only files require separate dependency audit.",
+  "files": [
+    {
+      "local": "project/App/HAL_H.h",
+      "sha256": "a5c2de56a461fd7005138b173933dfe01926d7b22a60025f5f396fad394c7297",
+      "upstream": [],
+      "status": "local_only"
+    },
+    {
+      "local": "project/App/bsp/bsp_bluetooth.c",
+      "sha256": "d99fe7781e1665ddb4832420c79f3d6b9f91ecec41596770baf2d353d3d9feaa",
+      "upstream": [
+        "Project/code/bsp_bluetooth.c"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/bsp/bsp_bluetooth.h",
+      "sha256": "1f3b397b002b2a16813200185c88ef144b8bec4223bb05cc7722cd98ad779020",
+      "upstream": [
+        "Project/code/bsp_bluetooth.h"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/bsp/bsp_key.c",
+      "sha256": "f547d957a3d7bb454eab0b2036bddf28db9994ae825c6b2e5c3615c5e12b8ad4",
+      "upstream": [
+        "Project/code/bsp_key.c"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/bsp/bsp_key.h",
+      "sha256": "918a1327ce19a166e7be2109000549c11a8a1312eee3c0969575931a00290499",
+      "upstream": [
+        "Project/code/bsp_key.h"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/bsp/tim.c",
+      "sha256": "01fa583e6ad7d7b689159412ad557be8c74ac099a66f837961c97412ce802d75",
+      "upstream": [
+        "Project/code/tim.c"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/bsp/tim.h",
+      "sha256": "bf66684d9ca3f788e2dce7bc83b066e2529b74a307e78f63f89ab9517de9d155",
+      "upstream": [
+        "Project/code/tim.h"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/bsp/usart.c",
+      "sha256": "9a8d588e43725e43bf8d2fdb9b2ed5f2a1d628bc87c9719fe56307ddb79d527a",
+      "upstream": [
+        "Project/code/usart.c"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/bsp/usart.h",
+      "sha256": "d2d03dbf3273996a3f6572358e7b04d780c8cdb0fcafdaf7b3f57ec86dc8a7f4",
+      "upstream": [
+        "Project/code/usart.h"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/config/feature_config.c",
+      "sha256": "e7750f02a3ec9488a7f9c4b8c122fb9e3d800b6af343b39be333fc357a5d8544",
+      "upstream": [
+        "Project/code/feature_config.c"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/config/feature_config.h",
+      "sha256": "6b38e38c3972e83d8d617cc4ce55a4c99f8d898cd5345095f711976f2a92210f",
+      "upstream": [
+        "Project/code/feature_config.h"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/config/feetech_sts_register.c",
+      "sha256": "32670ea18d31bfebb7e12d8a9e90568a8a6764c9d173a61b9df472c1c0a66453",
+      "upstream": [
+        "Project/code/feetech_sts_register.c"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/config/feetech_sts_register.h",
+      "sha256": "4bda3b9156195d8430fb6397ae9d9aabcb690f3736918aeaeb7d8b8e4e4ec56d",
+      "upstream": [
+        "Project/code/feetech_sts_register.h"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/protocol/vofa_protocol.c",
+      "sha256": "36aef6ce813fc0580825006097a7762561536d4e6c899102711e8d781f429f9a",
+      "upstream": [
+        "Project/code/vofa_protocol.c"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/protocol/vofa_protocol.h",
+      "sha256": "9d33bec3ea3bd6a7a1171647bd7f510cda6921efcfc51b67ba8b2235a442b2a2",
+      "upstream": [
+        "Project/code/vofa_protocol.h"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/modules/claw_core/claw_host_protocol.c",
+      "sha256": "4352056f1052077650f7ea69125394b94e6375aa4f10f10e928c2f8b7019afee",
+      "upstream": [
+        "Project/code/claw_host_protocol.c"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/modules/claw_core/claw_host_protocol.h",
+      "sha256": "958776c9eb129a9f1b39f775569dcf33148d7ce5ef71c0b2bbb57f80d46ddd19",
+      "upstream": [
+        "Project/code/claw_host_protocol.h"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/modules/claw_core/claw_limit_storage.c",
+      "sha256": "3af6f4be63122d738231d2bf46886971e2e4fde91ece4f295419efd267b551aa",
+      "upstream": [
+        "Project/code/claw_limit_storage.c"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/modules/claw_core/claw_limit_storage.h",
+      "sha256": "5c2fd8a67bdcf5308d1d3cc04d2eea78e3e0aabc338bad4114aece36062195c5",
+      "upstream": [
+        "Project/code/claw_limit_storage.h"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/modules/shared_state/shared_state.c",
+      "sha256": "330eb5cfdd8b8d3a9dc373ed31256c3531414ce5c829121f2a66cfc4870861cf",
+      "upstream": [
+        "Project/code/shared_state.c"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/modules/shared_state/shared_state.h",
+      "sha256": "a60351883f710ced45b20a702f2f717dde4b8bb63f38ba8fd07c1b66e2f1fefc",
+      "upstream": [
+        "Project/code/shared_state.h"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/drivers/display/screen_display.c",
+      "sha256": "cb83d1dd9d2095ca34d0b03f2a6ce81c4d8a0062a5ec735b6814bb3dca75599d",
+      "upstream": [
+        "Project/code/screen_display.c"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/drivers/display/screen_display.h",
+      "sha256": "594e086285d2c298396b9e69ef8ce2b83572c5c21f11dcb8b81f9094612251c4",
+      "upstream": [
+        "Project/code/screen_display.h"
+      ],
+      "status": "identical"
+    },
+    {
+      "local": "project/App/drivers/Servo/feetech_sts_bus.c",
+      "sha256": "4a5869ec72df66d936b0b7566869058468529a55bc672a382f2b6736af8a33b1",
+      "upstream": [
+        "Project/code/feetech_sts_bus.c"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/drivers/Servo/feetech_sts_bus.h",
+      "sha256": "cf09d3bf7c83d8dc3fd764cfc831103bb0821d12c05bb6480e157a3bf0b6c768",
+      "upstream": [
+        "Project/code/feetech_sts_bus.h"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/drivers/Servo/feetech_sts_command.c",
+      "sha256": "47da02ff834e9644261e8293742bf088f3c447c6cc51b0d9ff05a14e604011ed",
+      "upstream": [
+        "Project/code/feetech_sts_command.c"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/drivers/Servo/feetech_sts_command.h",
+      "sha256": "f5710794ce25b70c3821d3d14d11b016f2f145e7d768e5e3c7b95f27cccfa9f5",
+      "upstream": [
+        "Project/code/feetech_sts_command.h"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/drivers/Servo/feetech_sts_control.c",
+      "sha256": "71969a5381a4ee49727f13a31890de0cf3321dcce877c91cdd14bffde55aba82",
+      "upstream": [
+        "Project/code/feetech_sts_control.c"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/drivers/Servo/feetech_sts_control.h",
+      "sha256": "cc3b6575da78f7912d98769b4a1ee0b8f61aeebed2bf168bd455cf06367771d6",
+      "upstream": [
+        "Project/code/feetech_sts_control.h"
+      ],
+      "status": "modified"
+    },
+    {
+      "local": "project/App/drivers/Servo/feetech_sts_port.c",
+      "sha256": "23c2ce70de893b11fbcb17ac26d004e6fe8ff4c8fcaf8db04d70ed84fc863004",
+      "upstream": [],
+      "status": "local_only"
+    },
+    {
+      "local": "project/App/drivers/Servo/feetech_sts_port.h",
+      "sha256": "eecaa74be2fd6c28f3a3460ae0d4536eee52ea964941dd3f3a4a1f686eff8756",
+      "upstream": [],
+      "status": "local_only"
+    },
+    {
+      "local": "project/App/drivers/Servo/pwm_servo_control.c",
+      "sha256": "fba0552b030ddfe50edd9c1e86951a25d3fd0a021eca469f1d91740e5e6be28a",
+      "upstream": [],
+      "status": "local_only"
+    },
+    {
+      "local": "project/App/drivers/Servo/pwm_servo_control.h",
+      "sha256": "2c93769cfe5d5bc30941646aff9ae3364035a38ba8d7125415eb9cb6a765b40e",
+      "upstream": [],
+      "status": "local_only"
+    }
+  ]
+}

@@ -1,0 +1,656 @@
+[
+  {
+    "path": "project/H743_VisionGripper.ioc",
+    "action": "modified",
+    "before": "e08fa5842604061bf8899327b54c7b727bfd34cb5e1580cc298e2e7355022c84",
+    "after": "38ea0663068cd130a2aa9d5fc4070cbef41926c8330955c8fcda806ceae81623"
+  },
+  {
+    "path": "project/App/app_main.c",
+    "action": "modified",
+    "before": "b61f747f3d9994047789d4306609165dffa127aed851196467b4bc52c39978f0",
+    "after": "3c27bea1ae1e05616c1594a2efc0c4af8c55567ba2869e66d78e1f4cba1ec774"
+  },
+  {
+    "path": "project/App/app_main.h",
+    "action": "modified",
+    "before": "4f73b9a0ded1e2b77a1661a9133dfed397724b9bacd76412d2caa7eb88392903",
+    "after": "c0961bad65e59b5c61928374b864addf40df2ddc297e99878f68847695d8a1ff"
+  },
+  {
+    "path": "project/EWARM/H743_VisionGripper.ewp",
+    "action": "modified",
+    "before": "1b4e67fc8a41c846b8de0a7335316d941fe72ca721e1215c2a933b3e65d339d8",
+    "after": "52fa439b01e40b45535c2b8211fba6766758824ebe58fe6bd33442fa3e8c5998"
+  },
+  {
+    "path": "project/EWARM/stm32h743xx_flash.icf",
+    "action": "modified",
+    "before": "e507e436806bf3ce50af8a3ff9fa2d01fc5ecf959dcacc9c59690c8b66e9db2e",
+    "after": "1b959b4cf0b87784b40093624b969bc3908c4a28094a436f234c7031c70d2738"
+  },
+  {
+    "path": "project/USB_DEVICE/App/usbd_cdc_if.c",
+    "action": "added",
+    "before": null,
+    "after": "0e66741efe2fcd2a01bb8beeeff85d7a9f1f4a0731376a7f0c1939dc37479d1a"
+  },
+  {
+    "path": "project/USB_DEVICE/App/usbd_cdc_if.h",
+    "action": "added",
+    "before": null,
+    "after": "983ab24a52f967848cbbd277dc763ed5f3f4d37baaf9e3b872b50eb0445b72c6"
+  },
+  {
+    "path": "project/USB_DEVICE/App/usbd_desc.c",
+    "action": "added",
+    "before": null,
+    "after": "175e2709c3e8296a73c0e8efa513639382afce94a6ed6cd050d8bfe918395878"
+  },
+  {
+    "path": "project/USB_DEVICE/App/usbd_desc.h",
+    "action": "added",
+    "before": null,
+    "after": "3cdc2095314accbff63c0b785eda1a55dce7f0b225ba838b964550db86dd54d3"
+  },
+  {
+    "path": "project/USB_DEVICE/App/usb_device.c",
+    "action": "added",
+    "before": null,
+    "after": "5a8dba687dae4caad95a05e750eca4e785f2ecb6282aac1b8a95d62435c40d55"
+  },
+  {
+    "path": "project/USB_DEVICE/App/usb_device.h",
+    "action": "added",
+    "before": null,
+    "after": "a024820f5873ce996712a05d27474b0e924c3ebd1dccbfd1425c00af61bc2648"
+  },
+  {
+    "path": "project/USB_DEVICE/Target/usbd_conf.c",
+    "action": "added",
+    "before": null,
+    "after": "80046e68568332fac22af88284b090096c81e4f21bd4165b36efb1bf6ac3a515"
+  },
+  {
+    "path": "project/USB_DEVICE/Target/usbd_conf.h",
+    "action": "added",
+    "before": null,
+    "after": "6899e6b700042b8b8c0f013ccca46b41c9d3bb13d5699033298365b83813daa9"
+  },
+  {
+    "path": "project/Middlewares/FatFs/diskio.h",
+    "action": "added",
+    "before": null,
+    "after": "c55d1af687edd985faa7e5fe808fc3983ee52244ad8961b2b26ea0ed9117c2fa"
+  },
+  {
+    "path": "project/Middlewares/FatFs/ff.c",
+    "action": "added",
+    "before": null,
+    "after": "7d5dd93eac02aff0339b71a653acf8a0f9eb8f93a966c7110cd7775f5f97edf0"
+  },
+  {
+    "path": "project/Middlewares/FatFs/ff.h",
+    "action": "added",
+    "before": null,
+    "after": "6f5ed437117d5c5cc79adf50f0009318c313a320a99d3765c41e557e63d849a0"
+  },
+  {
+    "path": "project/Middlewares/FatFs/ffconf.h",
+    "action": "added",
+    "before": null,
+    "after": "f1ed609d44490d239d8baee4e60c60901c2b462d9cf43d784abf13d31d5e1cbc"
+  },
+  {
+    "path": "project/Middlewares/FatFs/ffunicode.c",
+    "action": "added",
+    "before": null,
+    "after": "aafce7aabba73882a90164272e122f570af001a0743cf2686e4e1b66cdcdfd2d"
+  },
+  {
+    "path": "project/Middlewares/FatFs/integer.h",
+    "action": "added",
+    "before": null,
+    "after": "310b206c5624685e649d7ad43606ba957a4616a53f36b51d2bdfb9bf37f84580"
+  },
+  {
+    "path": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h",
+    "action": "added",
+    "before": null,
+    "after": "5871b7f20c9a714253d4c31b34309317f74bfc3435c45026837b0a214eba8c69"
+  },
+  {
+    "path": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h",
+    "action": "added",
+    "before": null,
+    "after": "4a7c81df2a717ced28eaaa45f652adaf32b4964c94cd64ea3c223645ed09d076"
+  },
+  {
+    "path": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h",
+    "action": "added",
+    "before": null,
+    "after": "819dadbc9fc0493d68e52e17d650c40347359d0b2d2907c89fdb84412d866fcf"
+  },
+  {
+    "path": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h",
+    "action": "added",
+    "before": null,
+    "after": "c66da9d90d46f4760f08dd35a6259ff910ba9438783e4d3905c2b7a04e3634d2"
+  },
+  {
+    "path": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c",
+    "action": "added",
+    "before": null,
+    "after": "5979f67c42c7304bd16e25fda6f3572b831fe269b78df5afa0c82cf543e7495c"
+  },
+  {
+    "path": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c",
+    "action": "added",
+    "before": null,
+    "after": "9e0a89a99436b22e884ea1d5c520ba8e87d20b522342f425890cf2ee48015ab5"
+  },
+  {
+    "path": "project/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c",
+    "action": "added",
+    "before": null,
+    "after": "b3ebbf81c3cebf387ccf68bdce3004512f2d95e0e3d3e1983f2ee01abd1d29cb"
+  },
+  {
+    "path": "project/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h",
+    "action": "added",
+    "before": null,
+    "after": "893b30db859fa044a4f7fd49f8c378e4d989f08219b86cc74213819558f97b34"
+  },
+  {
+    "path": "project/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c",
+    "action": "added",
+    "before": null,
+    "after": "c74ec6267aa43ebc3dc67d4796b068f0ac9797892b1a95811d9c9f24a616d5df"
+  },
+  {
+    "path": "project/Core/Inc/stm32h7xx_hal_conf.h",
+    "action": "modified",
+    "before": "7231ef4f16f13262e78bd346313dec4f1071b1b6b7e33919934eb850dc670876",
+    "after": "44e1d86183f41ab95cb27e755f5223897909f4badb429fb5bb57992327c61922"
+  },
+  {
+    "path": "project/Core/Src/main.c",
+    "action": "modified",
+    "before": "3b7b7ce289cac3d13c512b34d3c7e4064515c2a7a08a45eac703cf5f1a9fbe86",
+    "after": "5ac5d12d24213d30fe331d11874838dab14d534959ec519bb2f8cf84992c1e36"
+  },
+  {
+    "path": "project/Core/Src/stm32h7xx_it.c",
+    "action": "modified",
+    "before": "32184c5cb5de0c658551ac6a98a41e045ab69eb8a2ec8139458d0338a72ae2fc",
+    "after": "f09ef8f9f457e1ffb34054ff43aa4afb2deaf8b80fd8eb92a5f6536146258c11"
+  },
+  {
+    "path": "project/App/bsp/bsp_key.c",
+    "action": "modified",
+    "before": "9f4136c8033df3e32da52455dd80aed1a45234044b24d10e57758c5b305f2a99",
+    "after": "7161c5450c8b916a2a2f5fb900ebb16b00a6cbb536a2542ad6d5ad3c2fa14b10"
+  },
+  {
+    "path": "project/App/bsp/bsp_key.h",
+    "action": "modified",
+    "before": "d61c5c9191c71809cc7e581e0a02c2e160ec80c8b55da6cfc449a0a32b675708",
+    "after": "2e4825ed76557d8e162a055c0e5e78232f7b828b3490b2f8fcd0d28efca7d82e"
+  },
+  {
+    "path": "project/App/bsp/input_control.h",
+    "action": "added",
+    "before": null,
+    "after": "49177192d3f8150751fd4e15a5a467b2f704fb1dbc761c3c65f16bf4146ca342"
+  },
+  {
+    "path": "project/App/bsp/tim.c",
+    "action": "modified",
+    "before": "06ca4a17032b22823baab7ec475d7011dfb15f9fed5b055b566d3489feffc4d1",
+    "after": "84a26e0d3bccd6491c9e45697f226c33fc44d09fbb37f75f3008dbcf02191b02"
+  },
+  {
+    "path": "project/App/bsp/tim.h",
+    "action": "modified",
+    "before": "0266b3c9c72e82943d399dbc1b2c369d9b7a9b561ec6e68245ee59845e61f4cc",
+    "after": "941706af880b650faab0f6e3c0a76cee9aa6e50eee7218b3b5df8445fe18d25b"
+  },
+  {
+    "path": "project/App/config/feature_config.h",
+    "action": "modified",
+    "before": "8c4642137451977aacee1fd1755e0ba185dc3f96f8d0a2648648934c6e68ee8b",
+    "after": "6c62c1f659dc1b228879c2b26d54cf632f9768c8e7fce9d0bee00b8cbcbf370d"
+  },
+  {
+    "path": "project/App/config/integration_config.h",
+    "action": "added",
+    "before": null,
+    "after": "45f59eb8081bc23ece281638a86c65d236f18f26ce1c1d0a0c020df4d40d1730"
+  },
+  {
+    "path": "project/App/config/motor_config.h",
+    "action": "added",
+    "before": null,
+    "after": "263ed2837a97853a69443f3a02f02412a2b298f23ba6bd9280fbac6893f9e75c"
+  },
+  {
+    "path": "project/App/platform/board_camera.c",
+    "action": "added",
+    "before": null,
+    "after": "0976bd7471ce3e9edc565deafa533e973b0975f4400a43f6a4410837ed178f20"
+  },
+  {
+    "path": "project/App/platform/board_camera.h",
+    "action": "added",
+    "before": null,
+    "after": "a5e877a063cedc8e4a5efbad1fce8e03dd87ab4d912f074fd36ed06ac8f93795"
+  },
+  {
+    "path": "project/App/platform/board_motor.c",
+    "action": "added",
+    "before": null,
+    "after": "e04f563e3da3d9172291897890a8df394764f2abe9f88d100cf0b3316f84cb5f"
+  },
+  {
+    "path": "project/App/platform/board_motor.h",
+    "action": "added",
+    "before": null,
+    "after": "955007a32739847b3ba25765cfd586b71e94e9523189f34da4997ef8f42119bc"
+  },
+  {
+    "path": "project/App/platform/board_peripherals.c",
+    "action": "added",
+    "before": null,
+    "after": "ad32e4589285de21ff2cfb4e7b4341065dfa844389f793fbb701848dbed0147d"
+  },
+  {
+    "path": "project/App/platform/board_peripherals.h",
+    "action": "added",
+    "before": null,
+    "after": "5dc1717034f74d38979efb2e8e89b67de5a02d2a0277bc0771d7a81eff52a354"
+  },
+  {
+    "path": "project/App/platform/board_storage.c",
+    "action": "added",
+    "before": null,
+    "after": "a2f9cb9419fbfa039a76bc5d5b56a813cc13414a3871fb44c616db6d4192d066"
+  },
+  {
+    "path": "project/App/platform/board_storage.h",
+    "action": "added",
+    "before": null,
+    "after": "77d1c6b2c343e90326a8ee02a6296cad68f351bb07bee6c790c51e406b2686af"
+  },
+  {
+    "path": "project/App/platform/board_uart.c",
+    "action": "modified",
+    "before": "99c2e40fb39c5b92baf22e7824c7dd503a8c203851010241b9bf08c7582d6bb9",
+    "after": "b6e8cc86f9281d96ee3445cac92010fcaea72e9ab7d53a8855045a07de0b21c4"
+  },
+  {
+    "path": "project/App/platform/claw_limit_storage_h7.c",
+    "action": "added",
+    "before": null,
+    "after": "96595967ee1b9df1160d4f5b60ca53b2dd38379fbd33c98e82579fff766663a1"
+  },
+  {
+    "path": "project/App/platform/usb_console.c",
+    "action": "added",
+    "before": null,
+    "after": "948f9c26219d26c9f255375b0156636d2f1eab2b6bdcc1dd2fb14639bfee3485"
+  },
+  {
+    "path": "project/App/platform/usb_console.h",
+    "action": "added",
+    "before": null,
+    "after": "4dcb2e7635d1f25a24059bf9199aaef8e9164a53e0e9deb63490cd81f60416c5"
+  },
+  {
+    "path": "project/App/protocol/vofa_protocol.c",
+    "action": "modified",
+    "before": "c6e5b79a072595e2500f2d8e0a946ee17ef8526cac5af9cdcb3e9c9cea54f91a",
+    "after": "55bb5ec46457ceb9e7f02199e81cf9d81cbcaa3dd0387c9f7e18d67bbec8233e"
+  },
+  {
+    "path": "project/App/protocol/vofa_protocol.h",
+    "action": "modified",
+    "before": "fe9b3d9a332483eb118d7d84d0cc31080f8996eecb536632ed2217d7c8a827cc",
+    "after": "44209261c5d03d76371a3bd4cc9eb987dc1d26b1203b54790ad5f543c6a11105"
+  },
+  {
+    "path": "project/App/vendor/camera/dcmi_ov2640.c",
+    "action": "added",
+    "before": null,
+    "after": "5924bd16821b875498c69adafe1ab2e479afb828df972cb7c8849ebe35591364"
+  },
+  {
+    "path": "project/App/vendor/camera/dcmi_ov2640.h",
+    "action": "added",
+    "before": null,
+    "after": "2d51fa05b6f08b0f9d9bb34c218a7dc6015b32a45047e77085d4bac292541796"
+  },
+  {
+    "path": "project/App/vendor/camera/dcmi_ov2640_cfg.h",
+    "action": "added",
+    "before": null,
+    "after": "93cb9685bac70720982b23feec5df9e7a6afff88f57a6041c25362a59a2881df"
+  },
+  {
+    "path": "project/App/vendor/camera/dcmi_ov5640.c",
+    "action": "added",
+    "before": null,
+    "after": "c7165c2bd793f60881f2a8ef2e37b6bacb6b9d92c17eeac4f835864bf030eabc"
+  },
+  {
+    "path": "project/App/vendor/camera/dcmi_ov5640.h",
+    "action": "added",
+    "before": null,
+    "after": "0dbfee644fbc502beaa33ac145ba5ffedf07028319a01099045261aa9cd5717f"
+  },
+  {
+    "path": "project/App/vendor/camera/dcmi_ov5640_cfg.h",
+    "action": "added",
+    "before": null,
+    "after": "2dc8224eb58407e2384483d1da3648372ffb4e55f28d05d8cc3afffdefaac186"
+  },
+  {
+    "path": "project/App/vendor/camera/sccb.c",
+    "action": "added",
+    "before": null,
+    "after": "54d000bf65bedcf96a00d61c58b4c9ded0aa53b1a6715c23f3c88941388052be"
+  },
+  {
+    "path": "project/App/vendor/camera/sccb.h",
+    "action": "added",
+    "before": null,
+    "after": "98604aaf80a1c9f8718573ca443116b3cf7c7f1a169410afb462b58c374fc56b"
+  },
+  {
+    "path": "project/App/vendor/lcd/lcd_fonts.c",
+    "action": "added",
+    "before": null,
+    "after": "7dbbc6253b0cfff74a4c42fb8532b3cbcc0a319506aaf5d1901e0c3c4c5df22d"
+  },
+  {
+    "path": "project/App/vendor/lcd/lcd_fonts.h",
+    "action": "added",
+    "before": null,
+    "after": "218bdfcb252667d621033b2fa4736fcc2b5302b3f3665c2f5d4f9e93c6b20d25"
+  },
+  {
+    "path": "project/App/vendor/lcd/lcd_image.c",
+    "action": "added",
+    "before": null,
+    "after": "55566c67d4c198da58a9a995d226764f83668601ab43fc26340ba4338363d5a9"
+  },
+  {
+    "path": "project/App/vendor/lcd/lcd_image.h",
+    "action": "added",
+    "before": null,
+    "after": "5ec6f632d6d4cf36e468f79116fd46cb6be7456d34b3ba57cd072ed7df6e569e"
+  },
+  {
+    "path": "project/App/vendor/lcd/lcd_spi_154.c",
+    "action": "added",
+    "before": null,
+    "after": "1b228c36deb2321a85a8da52965ff757bbcb7385518c76f4a188d64b961f356a"
+  },
+  {
+    "path": "project/App/vendor/lcd/lcd_spi_154.h",
+    "action": "added",
+    "before": null,
+    "after": "bf35cef500c2983c040228fce5908779c150380df6a1f668ffafadc6a9ef35c7"
+  },
+  {
+    "path": "project/App/vendor/qspi/qspi_w25q64.c",
+    "action": "added",
+    "before": null,
+    "after": "cd158779bd2ab0bd6c21241b91c154d44138226ff4c1212fe6975d7aab58f9da"
+  },
+  {
+    "path": "project/App/vendor/qspi/qspi_w25q64.h",
+    "action": "added",
+    "before": null,
+    "after": "3e7fd7e62591f597962e0df014f04c4b0f730674d72fe42ec0761d56c3dea94a"
+  },
+  {
+    "path": "project/App/vendor/sd/sdmmc_sd.c",
+    "action": "added",
+    "before": null,
+    "after": "32e2e6b46a85e2edcd0a950fc8f6577d6b31f0928dbc739c9967d93972e5cd6f"
+  },
+  {
+    "path": "project/App/vendor/sd/sdmmc_sd.h",
+    "action": "added",
+    "before": null,
+    "after": "2568989d46713b830d3ca1f55c56c3278bc758bad33b646e66a97c411bc54bb3"
+  },
+  {
+    "path": "project/App/platform/boards/lxb743zi_p1/board_config.h",
+    "action": "modified",
+    "before": "7fbeaf65707f325619c2de55283e3134451c050939eb1d393e87e60ac7802c94",
+    "after": "1c9d8e7429fe6995ebfff74ec3ffa640b7a6feea475bfb54165649f207f4c53e"
+  },
+  {
+    "path": "project/App/platform/boards/lxb743zi_p1/board_devices.h",
+    "action": "added",
+    "before": null,
+    "after": "3e52039415075ddf8759a96df8cd4e51fac574dab04fb487caec0fa257fdd987"
+  },
+  {
+    "path": "project/App/modules/claw_core/claw_limit_storage.h",
+    "action": "modified",
+    "before": "0b42af5a72681cb2527907927446710e7fd3be29c5978c1736e6f6621395bc15",
+    "after": "918416e4413e08f74ce96e76c12db33b25a7c50326e5cbdcdd6a3bb5738d6950"
+  },
+  {
+    "path": "project/App/modules/integration/console_help.h",
+    "action": "added",
+    "before": null,
+    "after": "a8360821c30292cbb005d3eb39f353bbbcf82e1b8d414ec61aa055c7428daf7b"
+  },
+  {
+    "path": "project/App/modules/integration/integration_console.c",
+    "action": "added",
+    "before": null,
+    "after": "1430d765b5766a45eb358d2805c11b37d8feaa644450a511dcc0c7037dcfa3ed"
+  },
+  {
+    "path": "project/App/modules/integration/integration_console.h",
+    "action": "added",
+    "before": null,
+    "after": "f796ade7dfa6babbfe2791c9672676cd26b571750faf37ed97d767ea024ef56b"
+  },
+  {
+    "path": "project/App/modules/integration/integration_service.c",
+    "action": "added",
+    "before": null,
+    "after": "86d142a85207fcaec39e78f42b116537f3c4cae40470e48d69279855470d8885"
+  },
+  {
+    "path": "project/App/modules/integration/integration_service.h",
+    "action": "added",
+    "before": null,
+    "after": "396c2be47692204051b2ed185964e9b005a8befc9c911814ecf7f587db8c50d8"
+  },
+  {
+    "path": "project/App/modules/integration/vendor_log.c",
+    "action": "added",
+    "before": null,
+    "after": "a0139da21b313a27d8c2ba0224fe839509378e7500f35b2ea9fb5869bfc4c64c"
+  },
+  {
+    "path": "project/App/modules/integration/vendor_log.h",
+    "action": "added",
+    "before": null,
+    "after": "dc20d4af13e5a534615c7e4f47b7d57dd499d360b20263f4f06300da23380033"
+  },
+  {
+    "path": "project/App/modules/motor/motor_control.c",
+    "action": "added",
+    "before": null,
+    "after": "dd2c8dea484afdd28635f6c9721287e55f8ee34845685d10014c2ec950ee91a6"
+  },
+  {
+    "path": "project/App/modules/motor/motor_control.h",
+    "action": "added",
+    "before": null,
+    "after": "b66d1904078dc6d48ede657f628864331fc716a2e3a2aa7448593d551e160000"
+  },
+  {
+    "path": "project/App/modules/motor/motor_service.c",
+    "action": "added",
+    "before": null,
+    "after": "f2f64098a0c0e008eb67e091c1913e101ff13de59ad371235c2f069a5c2ced5f"
+  },
+  {
+    "path": "project/App/modules/motor/motor_service.h",
+    "action": "added",
+    "before": null,
+    "after": "f2b8aa9d98f4287832f6b9c9ca40ae2049fd92208826c1549bb87aadbe656764"
+  },
+  {
+    "path": "project/App/modules/servo_p3/servo_p3.c",
+    "action": "modified",
+    "before": "cd393bf67f72c1e5939ec0a8ecab731b9b3e0c51a9c0665ae67bbc09b4440f72",
+    "after": "3a32ac6b0637607ac4f9495f0c5c8eb820db665c45c5c1b17188661cf676844b"
+  },
+  {
+    "path": "project/App/modules/servo_p3/servo_p3.h",
+    "action": "modified",
+    "before": "0038dc7dadf1c8d1796c462c5f5ea492c25d4b32bf13b94389f4ff3bb0809f62",
+    "after": "d23a1cd9a8e0a8e12a064b43d57498022b8ed0f2be79bb204cb4fdc593d80443"
+  },
+  {
+    "path": "project/App/modules/ui/ui_core.c",
+    "action": "added",
+    "before": null,
+    "after": "886d238fbe69720c2fbf7523f763e94569dfb35349a1f1a17e373fe8d818fd69"
+  },
+  {
+    "path": "project/App/modules/ui/ui_core.h",
+    "action": "added",
+    "before": null,
+    "after": "71ac92bba96c59d014a216070ca8dec3492c514f5481d29081797f60c537c83e"
+  },
+  {
+    "path": "project/App/modules/ui/ui_font.h",
+    "action": "added",
+    "before": null,
+    "after": "8d2cbbda0886a2813838d812bd4e797e0737dbd8d5969dddc15db73288bd6995"
+  },
+  {
+    "path": "project/App/modules/ui/ui_input.c",
+    "action": "added",
+    "before": null,
+    "after": "c1352152495d8dbc106602f478b2b7e6a57995de97cecb997cfdc0d443fef3ff"
+  },
+  {
+    "path": "project/App/modules/ui/ui_input.h",
+    "action": "added",
+    "before": null,
+    "after": "678329c1d6a589e0dc45aba3e61f14fee9ed82eba52c010a68ece5408245b2e2"
+  },
+  {
+    "path": "project/App/modules/ui/ui_port.c",
+    "action": "added",
+    "before": null,
+    "after": "93023f656e41205bdbd965a2278f5c9b2b9091a6b96b2ab20edd5b3282c7bc79"
+  },
+  {
+    "path": "project/App/modules/ui/ui_port.h",
+    "action": "added",
+    "before": null,
+    "after": "a99764f6f5689257c806a74538632203660a5d53af1b6f8fc1cf77643af74ea1"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile.c",
+    "action": "added",
+    "before": null,
+    "after": "2700df5128b6e4373a55818b0f23bbc690eec2f2cabf81f6e83565c73b60c005"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile.h",
+    "action": "added",
+    "before": null,
+    "after": "302a0bac82d84f08b2956a27c27f50e18020e1857aaf1a3adba92e9f530a2d05"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile_store.c",
+    "action": "added",
+    "before": null,
+    "after": "a8856423f6ff23f47a7088ebfeede42f9e99b98124c8ffe1706cf7b630a54922"
+  },
+  {
+    "path": "project/App/modules/ui/ui_profile_store.h",
+    "action": "added",
+    "before": null,
+    "after": "b0708407cf6251433418931012acc1c8651f37a6119bde6d81551168d9b00f4c"
+  },
+  {
+    "path": "project/App/modules/ui/ui_service.c",
+    "action": "added",
+    "before": null,
+    "after": "35202d2501543c329fef4c129bdca79c037734ae5b81ad702af3641a2303c4e5"
+  },
+  {
+    "path": "project/App/modules/ui/ui_service.h",
+    "action": "added",
+    "before": null,
+    "after": "0f80460265415f02ef5bd3b530d893bab221918f75dfb96803ddbd3860eafb5a"
+  },
+  {
+    "path": "project/App/modules/ui/ui_settings.c",
+    "action": "added",
+    "before": null,
+    "after": "37d01340df3dd43fadee726d18bb59d487dd43f845bcf499831133595b7951d2"
+  },
+  {
+    "path": "project/App/modules/ui/ui_settings.h",
+    "action": "added",
+    "before": null,
+    "after": "0e4dff5f0e9addc77ff9f156684063899de2e385a6068da5833336961f2d5476"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_bus.c",
+    "action": "modified",
+    "before": "faaf9fd17748b6e14299cfa1be93c01ac9b776a9a82c8d5a355eff1cebdbb7a8",
+    "after": "e94d6c3aa7d625abc690427b6135afb07518da1643b7779aab7c6d82188eb24d"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_bus.h",
+    "action": "modified",
+    "before": "4dc96ca7d4f61ba43a8a6e60cfd8ded81f00670a537d3e60ddc37dd20fc83d08",
+    "after": "87804b91e0a27754825b60bb933289c7bea65a16d2074e7d8d2abbc7eddb69e6"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_command.c",
+    "action": "modified",
+    "before": "4631a37395ac5f42024bc2e01b474a093977891396cc4c6b8bfcc0955b85e2e3",
+    "after": "95302d1eb982e4da340d226d6388eadc5ce91fe547dd87489d85f0af0432fb99"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_control.c",
+    "action": "modified",
+    "before": "dc32058945f983dd9c7f69772466cc2f097a02e8f6be8e1cf302eb89abee2a20",
+    "after": "c1f1abcd79ab0f1ba5afa67559c921fb9a8c407c4509b738b252675895af049c"
+  },
+  {
+    "path": "project/App/drivers/Servo/feetech_sts_control.h",
+    "action": "modified",
+    "before": "d98c820adc249744b66bd15977c85e3aafdf4f5ddd6178e4a4b7e7414c54ea20",
+    "after": "4a3706aa459b1e16c78ba42233f45c5cc7aaa0e0e05c08dc7d274f9844d3a7b0"
+  },
+  {
+    "path": "project/App/drivers/Servo/pwm_servo_control.c",
+    "action": "modified",
+    "before": "eebb6da723bcbf535507be2802e3ce64966ce2ea45907fb0b835602ec5662a07",
+    "after": "d62afb1dcbf065f9f81e1e25b457dc2a1385639470fe7e8ecf7c087a1335dd24"
+  },
+  {
+    "path": "project/App/drivers/Servo/pwm_servo_control.h",
+    "action": "modified",
+    "before": "1ad0780860cfa017fc8c01626fd43dce49d8f859bc9b80af4350dbba4e1ace99",
+    "after": "0af2c848f6128925a9c7306ac0979d57795f747929589411b6f0bfb3f00d48ed"
+  }
+]

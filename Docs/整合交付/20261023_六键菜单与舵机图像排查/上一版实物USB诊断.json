@@ -1,0 +1,9 @@
+{
+  "status_before": "VIDEO on=0 fpsMax=2 sent=0 abort=0 busy=0 USB=1\r\nVISION advisory=0 seq=0 u=0 v=0 angle10=0 widthPx=0 score=0; NO MOTION\r\n\nSTS target=0 rate=19200 rawRx=14 valid=0 parser=0 tx=5364 hal=0\r\nSYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1\r\nCAM diag format=6F01 pclk=2204 dcmi=00000000 dma=00000000 remaining=0\r\nCAM ready=1 enabled=1 frames=4914 errors=0 timeout=0 loopmax=15 cmdDrop=0 usbDrop=0\r\nMOTOR ready=1 driver=0 on=0 fault=0 dir=1 target=0 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n\n",
+  "frames": 7,
+  "crc_errors": 0,
+  "seconds": 6.19,
+  "motion_commands_sent": false,
+  "firmware_flashed": false,
+  "last_sequence": 4953
+}

@@ -1,0 +1,73 @@
+# Local backups, web caches, and duplicated original vendor example packages
+/Backups/
+/.firecrawl/
+/Docs/官方参考历程/
+
+# IAR build directories; keep .ewp/.eww/.ewd, startup and linker scripts
+/project/EWARM/H743_VisionGripper/
+/project/EWARM/H743_VisionGripper_OV2640/
+/project/EWARM/H743_VisionGripper_NoCamera/
+**/Obj/
+**/Exe/
+**/List/
+**/BrowseInfo/
+**/settings/
+/project/EWARM/Backup*of*
+
+# Generated firmware, object files, dependency indexes and debug/flash captures
+*.o
+*.obj
+*.out
+*.elf
+*.axf
+*.hex
+*.ihex
+*.bin
+*.map
+*.lst
+*.dep
+*.d
+*.pbi
+*.pbd
+*.pbw
+*.browse
+*.sim
+*.log
+
+# Python runtimes and caches; dependency manifests and lock files stay versioned
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.egg-info/
+
+# Model weights and generated training runs; keep code/configs/manifests/metrics
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.engine
+/Vision_AI/experiments/auto_*/train/
+/Vision_AI/experiments/auto_*/predict*/
+/Vision_AI/training/runs/
+
+# Local credentials and editor/OS temporary files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.vs/
+Thumbs.db
+.DS_Store
+~$*
+*.tmp
+*.swp
+
+# Bundled SDK .a/.lib files are dependencies, not outputs of this project.
+# Do not blanket-ignore those extensions under project/Drivers.

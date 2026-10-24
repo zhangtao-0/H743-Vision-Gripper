@@ -1,0 +1,10 @@
+# Preserve byte-exact source hashes used by the project evidence checks.
+# Do not normalize the mixed upstream SDK line endings on checkout.
+* -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.a binary
+*.lib binary

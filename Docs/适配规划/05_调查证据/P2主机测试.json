@@ -1,0 +1,7 @@
+{
+  "scope": "host HAL stub; not hardware validation",
+  "exit_code": 0,
+  "stdout": "PASS UART: role/baud validation, duplicate resources, invalid role, timeout/busy propagation, wire budget\nPASS LED: active-low/high defaults, 100ms duty boundary, uint32 tick rollover, invalid role\nPASS KEY: bounce rejected, stable press accepted at debounce boundary, event consumed once\nPASS HOST: bounded overflow, byte order/ring wrap, busy retry, timeout drop, receive recovery\nPASS MAPPING: actual BSP+UI, tap/hold/chord, physical OR remote, source isolation, modes, expiry/wrap, PRIMASK\n",
+  "stderr": "",
+  "compiler": "C:\\Dev-Cpp\\MinGW64\\bin\\gcc.exe"
+}

@@ -1,0 +1,1755 @@
+{
+  "schema": "h743.dataset.v1",
+  "version": "taco_containers_v1",
+  "seed": 42,
+  "classes": [
+    "cup",
+    "box",
+    "bottle"
+  ],
+  "records": [
+    {
+      "image_id": 79,
+      "split": "test",
+      "sha256": "55fc9bfee7ea36a26074316bd88c1006f59ef2e89bf8a25c03fd827412a5f07f",
+      "objects": [
+        {
+          "native_annotation_id": 197,
+          "native_category_id": 22,
+          "native_category": "Foam cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803365772.jpg",
+      "image": "images/test/taco_000079.jpg",
+      "label": "labels/test/taco_000079.txt",
+      "label_sha256": "2790a9eca36e03eaf6a81a4b68af64c5ffa62932a0efdb1f627c69bb7809600d",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000100.JPG"
+    },
+    {
+      "image_id": 90,
+      "split": "test",
+      "sha256": "77deedd8749593e7ea7148d3fa00bc5a6cf9852d295f919c1c800a2a97f9d2d4",
+      "objects": [
+        {
+          "native_annotation_id": 239,
+          "native_category_id": 20,
+          "native_category": "Paper cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/40888917783.jpg",
+      "image": "images/test/taco_000090.jpg",
+      "label": "labels/test/taco_000090.txt",
+      "label_sha256": "bb44618ddeea9ce79f07a02986a3004129357e8f4b2eb4965421025cbc70cd53",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000117.JPG"
+    },
+    {
+      "image_id": 63,
+      "split": "test",
+      "sha256": "0def73913954efb0fa0af67a7b972011b03c83c6de8f9b5b7185daa3be0b4ebd",
+      "objects": [
+        {
+          "native_annotation_id": 149,
+          "native_category_id": 21,
+          "native_category": "Disposable plastic cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/40888905013.jpg",
+      "image": "images/test/taco_000063.jpg",
+      "label": "labels/test/taco_000063.txt",
+      "label_sha256": "64bb511f6c78415b94ccaa7be484265b2fceaffdb4bed047420a2b33fb58c17f",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000084.JPG"
+    },
+    {
+      "image_id": 78,
+      "split": "val",
+      "sha256": "d10d15b1e761772b7b3555874cf06f6ccfb9e934d5707b52b825a7edc62b25ab",
+      "objects": [
+        {
+          "native_annotation_id": 196,
+          "native_category_id": 22,
+          "native_category": "Foam cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/40888911413.jpg",
+      "image": "images/val/taco_000078.jpg",
+      "label": "labels/val/taco_000078.txt",
+      "label_sha256": "0760ce9e5269f6249a727a401a850a6e63b31b6619b5ec9e6fe932440f7ba951",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000064.JPG"
+    },
+    {
+      "image_id": 197,
+      "split": "val",
+      "sha256": "3482637b366b222bfcc76efc88a57d721ce1c9f08e6cede0cfbc4534b0a16770",
+      "objects": [
+        {
+          "native_annotation_id": 674,
+          "native_category_id": 21,
+          "native_category": "Disposable plastic cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/48694074286.jpg",
+      "image": "images/val/taco_000197.jpg",
+      "label": "labels/val/taco_000197.txt",
+      "label_sha256": "c2ac0e7a2255d47e75c084ea9c268f04ed8554995122c6d0d4eb88bcce35f21b",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_10\\000096.jpg"
+    },
+    {
+      "image_id": 104,
+      "split": "val",
+      "sha256": "a1c3cc24050a93213c67fb4bd87038ea40dc83427afc855408c58cab00def0e8",
+      "objects": [
+        {
+          "native_annotation_id": 330,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 331,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 335,
+          "native_category_id": 21,
+          "native_category": "Disposable plastic cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/48701316277.jpg",
+      "image": "images/val/taco_000104.jpg",
+      "label": "labels/val/taco_000104.txt",
+      "label_sha256": "34cad05bf4b9d1c2841f7762883f015b8ae5e60e6d85e4de92331ebd2feb6fb5",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_10\\000003.jpg"
+    },
+    {
+      "image_id": 190,
+      "split": "train",
+      "sha256": "7041ef29c5d250ea64897fcec749755c12c52413105a981b63b99c4dc851afa7",
+      "objects": [
+        {
+          "native_annotation_id": 636,
+          "native_category_id": 21,
+          "native_category": "Disposable plastic cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 637,
+          "native_category_id": 21,
+          "native_category": "Disposable plastic cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/48694107166.jpg",
+      "image": "images/train/taco_000190.jpg",
+      "label": "labels/train/taco_000190.txt",
+      "label_sha256": "189c534e9c8bacb96989f965b58596fbbd5251a717437b828a04bc4017952e21",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_10\\000089.jpg"
+    },
+    {
+      "image_id": 80,
+      "split": "train",
+      "sha256": "9c0365bc8d0beb1bd526357ff66786a7aa4fffe556a9c1e148a2ac786d43c579",
+      "objects": [
+        {
+          "native_annotation_id": 199,
+          "native_category_id": 23,
+          "native_category": "Glass cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/33978228348.jpg",
+      "image": "images/train/taco_000080.jpg",
+      "label": "labels/train/taco_000080.txt",
+      "label_sha256": "2ea54dd759a5a7d300aa4182eb8e270453307e91a8b2971304d73bbde17a688d",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000101.JPG"
+    },
+    {
+      "image_id": 17,
+      "split": "train",
+      "sha256": "a8072a8f415a4c2e1fdb84e89c50723c7af765640c018e92ab8531c0246d8283",
+      "objects": [
+        {
+          "native_annotation_id": 52,
+          "native_category_id": 20,
+          "native_category": "Paper cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803339122.jpg",
+      "image": "images/train/taco_000017.jpg",
+      "label": "labels/train/taco_000017.txt",
+      "label_sha256": "6d98cf3862d46292a72cab52cc8cd22932f5a7231b1c92333fac4b0bacdd1c0b",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000003.jpg"
+    },
+    {
+      "image_id": 43,
+      "split": "train",
+      "sha256": "4d1caf804d80b17ca2f34a47f2622e478913756337d5522e830c9eb1f17ad684",
+      "objects": [
+        {
+          "native_annotation_id": 107,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 108,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 109,
+          "native_category_id": 23,
+          "native_category": "Glass cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/46939259475.jpg",
+      "image": "images/train/taco_000043.jpg",
+      "label": "labels/train/taco_000043.txt",
+      "label_sha256": "bb42529bd2a79178e67720f95dbb304a990fbf8223f0f56a036d9e1fce8be729",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000035.jpg"
+    },
+    {
+      "image_id": 195,
+      "split": "train",
+      "sha256": "15d32b1f7599eaf288c8cb910ef1e2b95855684badd79daa16aa0405ea962f06",
+      "objects": [
+        {
+          "native_annotation_id": 666,
+          "native_category_id": 21,
+          "native_category": "Disposable plastic cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/48693735823.jpg",
+      "image": "images/train/taco_000195.jpg",
+      "label": "labels/train/taco_000195.txt",
+      "label_sha256": "f3d895e2dda3d117a8ce605d2e59bc46fce1598ea8907fb6f7605ae7341c3177",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_10\\000094.jpg"
+    },
+    {
+      "image_id": 693,
+      "split": "train",
+      "sha256": "b5b9df8824410f3550ae2b2591c379c1218f5e55cb0d5cc5d9e4f8fce87bc320",
+      "objects": [
+        {
+          "native_annotation_id": 2216,
+          "native_category_id": 20,
+          "native_category": "Paper cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 2217,
+          "native_category_id": 20,
+          "native_category": "Paper cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/40889040103.jpg",
+      "image": "images/train/taco_000693.jpg",
+      "label": "labels/train/taco_000693.txt",
+      "label_sha256": "4edf25e7d51a4dce60d2c25c4bb02f71434124d9f453dc294eb59974312c6c64",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_2\\000009.JPG"
+    },
+    {
+      "image_id": 62,
+      "split": "train",
+      "sha256": "2286512186dcef8f59017ba4597a5f5f1f1079cfc2d82310b4bfd9666f468cbb",
+      "objects": [
+        {
+          "native_annotation_id": 147,
+          "native_category_id": 20,
+          "native_category": "Paper cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/33978218448.jpg",
+      "image": "images/train/taco_000062.jpg",
+      "label": "labels/train/taco_000062.txt",
+      "label_sha256": "03d180fe19dbd42e459a21c1a610fc5c6a2ae1957cdc3d79ef32e8e536149f52",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000083.JPG"
+    },
+    {
+      "image_id": 112,
+      "split": "train",
+      "sha256": "468d60ac5f1d1a204a014a5dd4e72d5efd16926ff172238c54d6a4d99b9eaa42",
+      "objects": [
+        {
+          "native_annotation_id": 376,
+          "native_category_id": 6,
+          "native_category": "Glass bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 380,
+          "native_category_id": 23,
+          "native_category": "Glass cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 381,
+          "native_category_id": 23,
+          "native_category": "Glass cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 382,
+          "native_category_id": 6,
+          "native_category": "Glass bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 383,
+          "native_category_id": 23,
+          "native_category": "Glass cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 384,
+          "native_category_id": 6,
+          "native_category": "Glass bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 385,
+          "native_category_id": 6,
+          "native_category": "Glass bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/48694150056.jpg",
+      "image": "images/train/taco_000112.jpg",
+      "label": "labels/train/taco_000112.txt",
+      "label_sha256": "6ead3bfff1f4cd45fb34b968c7dc2c7070d5706116f08240f41ec1b84d5e624a",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_10\\000011.jpg"
+    },
+    {
+      "image_id": 9,
+      "split": "train",
+      "sha256": "00d5dbb9f432595892036c6d706bb6209bf65cc80e5591c2634dfe8297a31e4a",
+      "objects": [
+        {
+          "native_annotation_id": 22,
+          "native_category_id": 23,
+          "native_category": "Glass cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47855505601.jpg",
+      "image": "images/train/taco_000009.jpg",
+      "label": "labels/train/taco_000009.txt",
+      "label_sha256": "da897069432901b88813be30b825f914dd182647447424f2038c32dc0d72bce1",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000007.jpg"
+    },
+    {
+      "image_id": 56,
+      "split": "train",
+      "sha256": "b4b13e4e1176c5940f198f15856a4942aa234318114875a5bea07ee258748df2",
+      "objects": [
+        {
+          "native_annotation_id": 140,
+          "native_category_id": 20,
+          "native_category": "Paper cup",
+          "training_group": "cup",
+          "tags": [
+            {
+              "id": "semantic:cup",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/33978214998.jpg",
+      "image": "images/train/taco_000056.jpg",
+      "label": "labels/train/taco_000056.txt",
+      "label_sha256": "307bd36184a45c203bc2ee0d2017f64b2d475f31fc21b43b1a27cc213b56d805",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000074.JPG"
+    },
+    {
+      "image_id": 70,
+      "split": "test",
+      "sha256": "abd3ca3dc5a83f35805d88680a3a39e859ff653119cdb2dc62b70bf283c78ef7",
+      "objects": [
+        {
+          "native_annotation_id": 166,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/40888908063.jpg",
+      "image": "images/test/taco_000070.jpg",
+      "label": "labels/test/taco_000070.txt",
+      "label_sha256": "de6394df980af1639fb073e601c2453daf5f25343205939d3c0aedad43522330",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000092.JPG"
+    },
+    {
+      "image_id": 89,
+      "split": "test",
+      "sha256": "df8981784ba2e5b30969fe0bff1df7ce5d25c9649aa90e83c1a45624db4e627b",
+      "objects": [
+        {
+          "native_annotation_id": 231,
+          "native_category_id": 18,
+          "native_category": "Meal carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 232,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47855540001.jpg",
+      "image": "images/test/taco_000089.jpg",
+      "label": "labels/test/taco_000089.txt",
+      "label_sha256": "cd61410e87fa3846f8d520c6bddc423907c885fbb896c4ac53a7ac56578c211d",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000115.JPG"
+    },
+    {
+      "image_id": 49,
+      "split": "test",
+      "sha256": "b55f05059b0944b54233003a0c491577d6cf99daa11ff12ff77ef2ddd0e149f0",
+      "objects": [
+        {
+          "native_annotation_id": 132,
+          "native_category_id": 15,
+          "native_category": "Egg carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/32911405727.jpg",
+      "image": "images/test/taco_000049.jpg",
+      "label": "labels/test/taco_000049.txt",
+      "label_sha256": "37e901c99542ae3e589c700cde8b0391e610df59bde2a53069409f5f4866f371",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000067.JPG"
+    },
+    {
+      "image_id": 53,
+      "split": "val",
+      "sha256": "6640469cca5dcb2c641dda2998d08ac37fb822b10a845d93e5c8dae2ef1dddab",
+      "objects": [
+        {
+          "native_annotation_id": 136,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/46939264125.jpg",
+      "image": "images/val/taco_000053.jpg",
+      "label": "labels/val/taco_000053.txt",
+      "label_sha256": "a1ba9404787980cea8cc7093424c71683e3791d4f440986da9561cf3a4be7a84",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000071.JPG"
+    },
+    {
+      "image_id": 128,
+      "split": "val",
+      "sha256": "22854271d6055141e6b8103b8b4d8d160a90e0ac14dddd7afc00d9db8064cac3",
+      "objects": [
+        {
+          "native_annotation_id": 433,
+          "native_category_id": 16,
+          "native_category": "Drink carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/48694318172.jpg",
+      "image": "images/val/taco_000128.jpg",
+      "label": "labels/val/taco_000128.txt",
+      "label_sha256": "af384f849008e25a3a9fe4094b47aedbd05a6c7684f79655227e95db2641f2e1",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_10\\000027.jpg"
+    },
+    {
+      "image_id": 98,
+      "split": "val",
+      "sha256": "aa0c4fe0466c605a47b68498761ea28c7116e29b8de0ea7a5de375c2d00d9a6b",
+      "objects": [
+        {
+          "native_annotation_id": 258,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 259,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47066101834.jpg",
+      "image": "images/val/taco_000098.jpg",
+      "label": "labels/val/taco_000098.txt",
+      "label_sha256": "5893c150fa0979e42740f202265ba0a7af424e248a9d4ab7c4cbd995b68c77f2",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000127.JPG"
+    },
+    {
+      "image_id": 100,
+      "split": "train",
+      "sha256": "874e9231e5615481724c124f7474e63b5d9cb8a50120ceca3b5f05f48cb758de",
+      "objects": [
+        {
+          "native_annotation_id": 276,
+          "native_category_id": 17,
+          "native_category": "Corrugated carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 278,
+          "native_category_id": 16,
+          "native_category": "Drink carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 279,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 280,
+          "native_category_id": 15,
+          "native_category": "Egg carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 281,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 282,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803377832.jpg",
+      "image": "images/train/taco_000100.jpg",
+      "label": "labels/train/taco_000100.txt",
+      "label_sha256": "31dfd90a53d690eb11f48c7cc3aec0d9183efe223fb1cc51d4db1bbdc89a0faf",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000129.JPG"
+    },
+    {
+      "image_id": 81,
+      "split": "train",
+      "sha256": "65e734c2724e0edecca64cc535cedfd099b408d16f9d4187ce61a09577136b58",
+      "objects": [
+        {
+          "native_annotation_id": 200,
+          "native_category_id": 17,
+          "native_category": "Corrugated carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 201,
+          "native_category_id": 17,
+          "native_category": "Corrugated carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 202,
+          "native_category_id": 17,
+          "native_category": "Corrugated carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803367282.jpg",
+      "image": "images/train/taco_000081.jpg",
+      "label": "labels/train/taco_000081.txt",
+      "label_sha256": "6597ec0b2131b663db76cfe25daa6276afa4661f0fff6ef5a93cbe0b92880ff8",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000102.JPG"
+    },
+    {
+      "image_id": 11,
+      "split": "train",
+      "sha256": "8827ce5d558b6613ce0ecb3ae36f789d6b1cafb689f62d0a5ffb0915d799bdd1",
+      "objects": [
+        {
+          "native_annotation_id": 30,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47066066634.jpg",
+      "image": "images/train/taco_000011.jpg",
+      "label": "labels/train/taco_000011.txt",
+      "label_sha256": "2cccb664b07ada0ae9db13d04cb6f17e762e1d01d96c93d47c3b11d04e1dbc2a",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000014.jpg"
+    },
+    {
+      "image_id": 12,
+      "split": "train",
+      "sha256": "4bc418e25c3067af0447c3a0f1dbb6b0545902134ed9389f07b74e6739ff5f72",
+      "objects": [
+        {
+          "native_annotation_id": 32,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 33,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 34,
+          "native_category_id": 6,
+          "native_category": "Glass bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 35,
+          "native_category_id": 16,
+          "native_category": "Drink carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 36,
+          "native_category_id": 16,
+          "native_category": "Drink carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803337262.jpg",
+      "image": "images/train/taco_000012.jpg",
+      "label": "labels/train/taco_000012.txt",
+      "label_sha256": "9b639d88dd28fb393d6def9a802969900ba3280bbb70840079cbf7a8ee37181e",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000048.jpg"
+    },
+    {
+      "image_id": 127,
+      "split": "train",
+      "sha256": "0d23ce5b84bf9db818de345284011b85562871d0c7d450a3c961768e08fd4e01",
+      "objects": [
+        {
+          "native_annotation_id": 430,
+          "native_category_id": 15,
+          "native_category": "Egg carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 431,
+          "native_category_id": 15,
+          "native_category": "Egg carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/48694144626.jpg",
+      "image": "images/train/taco_000127.jpg",
+      "label": "labels/train/taco_000127.txt",
+      "label_sha256": "57e37cadc07a53b6c4d886d3e3dbdf5b6e3f52fefcffe643acf6ef58c232bb1e",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_10\\000026.jpg"
+    },
+    {
+      "image_id": 131,
+      "split": "train",
+      "sha256": "aee75c64f8945dd6c3500fbd51b8c4f5b313c510e81193631618c9f9111d7d54",
+      "objects": [
+        {
+          "native_annotation_id": 442,
+          "native_category_id": 17,
+          "native_category": "Corrugated carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/48694143141.jpg",
+      "image": "images/train/taco_000131.jpg",
+      "label": "labels/train/taco_000131.txt",
+      "label_sha256": "56aea8cce079f7fec1e5ececa944e310bd82c57d55badd072350e336f44847d8",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_10\\000030.jpg"
+    },
+    {
+      "image_id": 48,
+      "split": "train",
+      "sha256": "8b9c697feda26397e8efe6d46c978a46068a51f0786c1d6f4798184f4736f787",
+      "objects": [
+        {
+          "native_annotation_id": 131,
+          "native_category_id": 15,
+          "native_category": "Egg carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47066073914.jpg",
+      "image": "images/train/taco_000048.jpg",
+      "label": "labels/train/taco_000048.txt",
+      "label_sha256": "d6a09b1243e5859d3ff8e92bb3e278a3f494b18c4236161bb1de87c5f7008e8b",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000066.JPG"
+    },
+    {
+      "image_id": 99,
+      "split": "train",
+      "sha256": "edd142253a2a99dce7d3e9fb3d0cd58c746e887f44511479631c8840f1b79760",
+      "objects": [
+        {
+          "native_annotation_id": 263,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 264,
+          "native_category_id": 16,
+          "native_category": "Drink carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 265,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 271,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/40888924973.jpg",
+      "image": "images/train/taco_000099.jpg",
+      "label": "labels/train/taco_000099.txt",
+      "label_sha256": "639953f265169b400aead0cb73d7defaed7ac77324036047b6d2ba4d3a00f8a7",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000128.JPG"
+    },
+    {
+      "image_id": 1,
+      "split": "train",
+      "sha256": "5706c32973ef602fa0f8d1ed7cec9c637dfafb3e5055e3bab4e4e969f55084e3",
+      "objects": [
+        {
+          "native_annotation_id": 2,
+          "native_category_id": 18,
+          "native_category": "Meal carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 3,
+          "native_category_id": 14,
+          "native_category": "Other carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803331152.jpg",
+      "image": "images/train/taco_000001.jpg",
+      "label": "labels/train/taco_000001.txt",
+      "label_sha256": "2c27d229d50e1ee50e7c0b10885ef88fbab1b37894c0a4039bdf51d0887733d4",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000008.jpg"
+    },
+    {
+      "image_id": 47,
+      "split": "train",
+      "sha256": "f5cd65d1639ffbc395d76322f274516d5fca49afe5e73fa62520dc7274f3ad29",
+      "objects": [
+        {
+          "native_annotation_id": 129,
+          "native_category_id": 15,
+          "native_category": "Egg carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 130,
+          "native_category_id": 15,
+          "native_category": "Egg carton",
+          "training_group": "box",
+          "tags": [
+            {
+              "id": "semantic:box",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/40888891223.jpg",
+      "image": "images/train/taco_000047.jpg",
+      "label": "labels/train/taco_000047.txt",
+      "label_sha256": "c00c3747c16fb0f4f9b69304dd809eb484851722c0ec2680554aeda9450fe250",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000065.JPG"
+    },
+    {
+      "image_id": 13,
+      "split": "test",
+      "sha256": "ac0d182108f251350d9262dfa386b633db78170d20263bf6881bb073c37c3859",
+      "objects": [
+        {
+          "native_annotation_id": 42,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47066067064.jpg",
+      "image": "images/test/taco_000013.jpg",
+      "label": "labels/test/taco_000013.txt",
+      "label_sha256": "3db47fb23372d3646fa03e7c0f8b5f9c21eb9574e63e1a2ceba34926b0721da8",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000053.jpg"
+    },
+    {
+      "image_id": 15,
+      "split": "test",
+      "sha256": "abfb7fc6659ca93d6a768cdced290a9672db99c37da2d1ad3eb525b4c4508d79",
+      "objects": [
+        {
+          "native_annotation_id": 47,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 48,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/46939252345.jpg",
+      "image": "images/test/taco_000015.jpg",
+      "label": "labels/test/taco_000015.txt",
+      "label_sha256": "1a667ac93fa94eea972a42e2292df9ee1b4a64b3ecf1e4e430c7e3f26930ee45",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000058.jpg"
+    },
+    {
+      "image_id": 8,
+      "split": "test",
+      "sha256": "3009c2de41d89f59050d81fa70517d892a312d75c8f3f823a1f6ed7e0d0af252",
+      "objects": [
+        {
+          "native_annotation_id": 20,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803335992.jpg",
+      "image": "images/test/taco_000008.jpg",
+      "label": "labels/test/taco_000008.txt",
+      "label_sha256": "1b4de3e522d56722ffc668f4730634c196c541ed951cc0ce2f99ee1c3c8bddbe",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000005.jpg"
+    },
+    {
+      "image_id": 10,
+      "split": "val",
+      "sha256": "ce48fafa85f8ac38ff8cdc15b48cf2eef64ecbd096f45adfae75e9a52d4dca2e",
+      "objects": [
+        {
+          "native_annotation_id": 24,
+          "native_category_id": 6,
+          "native_category": "Glass bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/40888877173.jpg",
+      "image": "images/val/taco_000010.jpg",
+      "label": "labels/val/taco_000010.txt",
+      "label_sha256": "f9c9e196522203497fe020c7fe9f31672b3264203259fd87aff763a0af2819aa",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000012.jpg"
+    },
+    {
+      "image_id": 28,
+      "split": "val",
+      "sha256": "b58a4a1e74a2b5ba2f342a7bf124e15d4abdfee41d2def375579b63ae2556685",
+      "objects": [
+        {
+          "native_annotation_id": 82,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/46939255385.jpg",
+      "image": "images/val/taco_000028.jpg",
+      "label": "labels/val/taco_000028.txt",
+      "label_sha256": "6f828de37dcd0f1eec2484dbed6e2a99cf85db668110c6c3c9f693f5003a9529",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000024.jpg"
+    },
+    {
+      "image_id": 23,
+      "split": "val",
+      "sha256": "6cf2161f02f1dd10ad6322ae3759835682ae706fd010efc648ad697c005ee9a6",
+      "objects": [
+        {
+          "native_annotation_id": 65,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 66,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803340592.jpg",
+      "image": "images/val/taco_000023.jpg",
+      "label": "labels/val/taco_000023.txt",
+      "label_sha256": "78131424215294484a90c13bdd728b742d719e06409b8e0ba51e9007aed237d9",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000054.jpg"
+    },
+    {
+      "image_id": 26,
+      "split": "train",
+      "sha256": "5a7ce4a19f366639a9499e1356e3e6831f31aef324f29dc9dc4c5a8bde693498",
+      "objects": [
+        {
+          "native_annotation_id": 71,
+          "native_category_id": 6,
+          "native_category": "Glass bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/46939254875.jpg",
+      "image": "images/train/taco_000026.jpg",
+      "label": "labels/train/taco_000026.txt",
+      "label_sha256": "44735ea7833d6f8e362804a469b79c119a469f430042416a184d04b717d7a4b3",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000022.jpg"
+    },
+    {
+      "image_id": 14,
+      "split": "train",
+      "sha256": "2c396cddb02cb094b01ed0861f1bf780e5430fbfee5c0054a84002301ab0e73e",
+      "objects": [
+        {
+          "native_annotation_id": 46,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803337932.jpg",
+      "image": "images/train/taco_000014.jpg",
+      "label": "labels/train/taco_000014.txt",
+      "label_sha256": "db8104d0ca040e6cc9d383e27265ca3a7d4645fb4471faff4c58de64bbf02164",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000056.jpg"
+    },
+    {
+      "image_id": 2,
+      "split": "train",
+      "sha256": "3183f77d3e19cb465148d0db6c8a234806b6a361a51875258f3114261d724c74",
+      "objects": [
+        {
+          "native_annotation_id": 4,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/40888872753.jpg",
+      "image": "images/train/taco_000002.jpg",
+      "label": "labels/train/taco_000002.txt",
+      "label_sha256": "2245eaf5262cd70e63bae3d5faf9b275c9c084d73ad99481420a3035da36d18e",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000010.jpg"
+    },
+    {
+      "image_id": 3,
+      "split": "train",
+      "sha256": "e3378a764032963028c24ecc623a9b9ea190ff48928781555401c348abb791c9",
+      "objects": [
+        {
+          "native_annotation_id": 6,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        },
+        {
+          "native_annotation_id": 7,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47803331492.jpg",
+      "image": "images/train/taco_000003.jpg",
+      "label": "labels/train/taco_000003.txt",
+      "label_sha256": "5abbb65527a6903fbfdc416f3054064ce2274ee90f91bc334aff6515a8c6191c",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000019.jpg"
+    },
+    {
+      "image_id": 27,
+      "split": "train",
+      "sha256": "c827e659b929e870b007d4bbfa7400e40bd076fb2dae04067c578157a567c43e",
+      "objects": [
+        {
+          "native_annotation_id": 73,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/33978206458.jpg",
+      "image": "images/train/taco_000027.jpg",
+      "label": "labels/train/taco_000027.txt",
+      "label_sha256": "e13b070be8385defb3c10d119ba03cb34b2f5070fe7bf4174675597bdcee6f22",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000023.jpg"
+    },
+    {
+      "image_id": 36,
+      "split": "train",
+      "sha256": "b0ba2f6a7fb7779264d04f8177c997e25847e63ea2f566020b0752d8223640f0",
+      "objects": [
+        {
+          "native_annotation_id": 97,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/47066071374.jpg",
+      "image": "images/train/taco_000036.jpg",
+      "label": "labels/train/taco_000036.txt",
+      "label_sha256": "78183077769b1023df3f2eeac9f5086e4d003ff2a2d19ae0a0abd555989c2a05",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000000.jpg"
+    },
+    {
+      "image_id": 7,
+      "split": "train",
+      "sha256": "e1b53cd0782659b6caa11951b1baf2bdc8f0bf9a3ba3e9b605abe6dcac329d0b",
+      "objects": [
+        {
+          "native_annotation_id": 18,
+          "native_category_id": 5,
+          "native_category": "Clear plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/33978202498.jpg",
+      "image": "images/train/taco_000007.jpg",
+      "label": "labels/train/taco_000007.txt",
+      "label_sha256": "7f2d30ca6f810b5068d35acc9984583f46b0472e6c64a0a11b6df4b62b166ec6",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000001.jpg"
+    },
+    {
+      "image_id": 25,
+      "split": "train",
+      "sha256": "5f5afd5fb32b2cc598c32a5a54c0989b4c7899e64916d4abece4d6dbf4e76463",
+      "objects": [
+        {
+          "native_annotation_id": 69,
+          "native_category_id": 6,
+          "native_category": "Glass bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/46939254645.jpg",
+      "image": "images/train/taco_000025.jpg",
+      "label": "labels/train/taco_000025.txt",
+      "label_sha256": "b27ea30428e797a719bfd8bec4b81c5dc349d0f536316d4571b207383ae49931",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000021.jpg"
+    },
+    {
+      "image_id": 0,
+      "split": "train",
+      "sha256": "bb162f3b9428a0f4232a887b977d72bc7106b720ffaf7ab27b895d2a46092caa",
+      "objects": [
+        {
+          "native_annotation_id": 1,
+          "native_category_id": 6,
+          "native_category": "Glass bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/33978196618.jpg",
+      "image": "images/train/taco_000000.jpg",
+      "label": "labels/train/taco_000000.txt",
+      "label_sha256": "8e543b18632ccef6351c4ea918790ee51bf727974bf8a0fccb8d8707db9b8a66",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000006.jpg"
+    },
+    {
+      "image_id": 5,
+      "split": "train",
+      "sha256": "d82bca08ecf0eeb962187359f6d92db85150e7463596919e66578359373aa8df",
+      "objects": [
+        {
+          "native_annotation_id": 13,
+          "native_category_id": 4,
+          "native_category": "Other plastic bottle",
+          "training_group": "bottle",
+          "tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 1.0,
+              "source": "source_annotation"
+            }
+          ]
+        }
+      ],
+      "license": "CC-BY-4.0 (official missing-entry default)",
+      "attribution": "TACO contributors; Pedro F. Proenca and Pedro Simoes; retain source image URL",
+      "original_url": "https://img.tacodataset.org/img/33978200068.jpg",
+      "image": "images/train/taco_000005.jpg",
+      "label": "labels/train/taco_000005.txt",
+      "label_sha256": "0f1e4cc22642cfcb6b89365f693dd68ec9b402041d22e1e98935c39c9397a321",
+      "native_source": "Library\\01_来源原件\\TACO\\images\\batch_1\\000047.jpg"
+    }
+  ],
+  "source_kind": "public_real_images",
+  "grouping": "source_image_id; all instances share split",
+  "capture_sessions": "unknown in public metadata; perceptual/scene correlation not ruled out",
+  "h743_domain_images": 0,
+  "purpose": "bounded pipeline training; not a gripper performance benchmark"
+}

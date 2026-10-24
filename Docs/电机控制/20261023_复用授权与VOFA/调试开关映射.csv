@@ -1,0 +1,5 @@
+﻿control,command_on,command_off,default,scope
+STS keys,@debug sts on,@debug sts off,OFF,KEY5/6 + legacy A/B; independent grant
+Motor keys,@debug motor on,@debug motor off,OFF,KEY5 toggle; KEY6 single -5 double +5; KEY7 and knob
+PID plot ONLY,@motor plot on,@motor plot off,OFF,HOST JustFloat only; command RX remains enabled
+Shortcut,@keys 12 100,@keys 12 100,DEBUG destination,KEY3+KEY4 enter/restore

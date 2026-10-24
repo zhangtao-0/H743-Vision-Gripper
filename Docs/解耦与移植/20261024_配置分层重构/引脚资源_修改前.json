@@ -1,0 +1,880 @@
+{
+  "board": "LXB743ZI-P1 / STM32H743ZIT6",
+  "date": "2026-10-24",
+  "scope": "默认FD5640+UI+SD+QSPI+USB源码；L298N profile1；不是实物电压/烧录确认表",
+  "headers": {
+    "U9": [
+      "3.3V",
+      "3.3V",
+      "+5V",
+      "+5V",
+      "PA11",
+      "PA12",
+      "PC1",
+      "PC0",
+      "PA1",
+      "PA0",
+      "PA2",
+      "VREF",
+      "GND",
+      "GND",
+      "PC2_C",
+      "PC3_C",
+      "PA4",
+      "PA5",
+      "PA6",
+      "PA3",
+      "PC4",
+      "PA7",
+      "PB0",
+      "PC5",
+      "PB2",
+      "PB1",
+      "PF12",
+      "PF11",
+      "PF14",
+      "PF13",
+      "PG0",
+      "PF15",
+      "PE7",
+      "PG1",
+      "PE8",
+      "PE9",
+      "PE10",
+      "PE11",
+      "PE12",
+      "PE13",
+      "PE14",
+      "PB11",
+      "PE15",
+      "PB10",
+      "PB14",
+      "PB13",
+      "PB12",
+      "PB15",
+      "PD8",
+      "PD9",
+      "PD10",
+      "PD11",
+      "PF10",
+      "PF6",
+      "PF8",
+      "PF7",
+      "PF9",
+      "PG6",
+      "PD12",
+      "PD13"
+    ],
+    "U10": [
+      "GND",
+      "GND",
+      "GND",
+      "GND",
+      "PA10",
+      "PA9",
+      "PC13",
+      "PF0",
+      "PF1",
+      "PF2",
+      "PF4",
+      "PF3",
+      "VBAT",
+      "PF5",
+      "PE5",
+      "PE6",
+      "PE3",
+      "PE4",
+      "PB8",
+      "PE2",
+      "PE0",
+      "PB9",
+      "PB7",
+      "PE1",
+      "PB5",
+      "PB6",
+      "PB3",
+      "PB4",
+      "PG14",
+      "PG15",
+      "PG12",
+      "PG13",
+      "PG10",
+      "PG11",
+      "PD7",
+      "PG9",
+      "PD5",
+      "PD6",
+      "PD3",
+      "PD4",
+      "PC10",
+      "PD2",
+      "PD1",
+      "PA15",
+      "PC12",
+      "PD0",
+      "PA8",
+      "PC11",
+      "PC8",
+      "PC9",
+      "PC6",
+      "PC7",
+      "PG7",
+      "PG8",
+      "PG4",
+      "PG5",
+      "PG2",
+      "PG3",
+      "PD14",
+      "PD15"
+    ],
+    "H1": [
+      "PA14",
+      "PA13",
+      "GND",
+      "+5V",
+      "PA10",
+      "PA9",
+      "NRST",
+      "3.3V"
+    ]
+  },
+  "roles": {
+    "PA0": {
+      "device": "实体按键",
+      "signal": "KEY1",
+      "status": "已分配",
+      "mode": "GPIO输入/上拉/按下低有效",
+      "wiring": "屏幕上一项/减少；常开按键另一端GND",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h"
+    },
+    "PB0": {
+      "device": "实体按键",
+      "signal": "KEY2",
+      "status": "已分配",
+      "mode": "GPIO输入/上拉/按下低有效",
+      "wiring": "屏幕下一项/增加；常开按键另一端GND",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h"
+    },
+    "PB12": {
+      "device": "实体按键",
+      "signal": "KEY3",
+      "status": "已分配",
+      "mode": "GPIO输入/上拉/按下低有效",
+      "wiring": "屏幕确认/进入；常开按键另一端GND",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h"
+    },
+    "PB13": {
+      "device": "实体按键",
+      "signal": "KEY4",
+      "status": "已分配",
+      "mode": "GPIO输入/上拉/按下低有效",
+      "wiring": "屏幕取消/返回；常开按键另一端GND",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h"
+    },
+    "PC13": {
+      "device": "SM0488050V0.1旋钮模块",
+      "signal": "C/SW/KEY7（按压已确认，极性待实测）",
+      "status": "已分配",
+      "mode": "GPIO数字输入/NOPULL/5V容限；外部上拉或模块驱动",
+      "wiring": "用户确认模块VCC=5V、C为按压；A→PG2/U10-57、B→PG3/U10-58、C→PC13/U10-7。FT输入，内部上下拉禁用。C按下低有效待实测，不接公共地。Motor keys授权后旋转±5RPM、点按启停、长按1秒换向。",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PG2": {
+      "device": "SM0488050V0.1旋钮模块",
+      "signal": "A",
+      "status": "已分配",
+      "mode": "GPIO数字输入/NOPULL/5V容限；外部上拉或模块驱动",
+      "wiring": "用户确认模块VCC=5V、C为按压；A→PG2/U10-57、B→PG3/U10-58、C→PC13/U10-7。FT输入，内部上下拉禁用。C按下低有效待实测，不接公共地。Motor keys授权后旋转±5RPM、点按启停、长按1秒换向。",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PG3": {
+      "device": "SM0488050V0.1旋钮模块",
+      "signal": "B",
+      "status": "已分配",
+      "mode": "GPIO数字输入/NOPULL/5V容限；外部上拉或模块驱动",
+      "wiring": "用户确认模块VCC=5V、C为按压；A→PG2/U10-57、B→PG3/U10-58、C→PC13/U10-7。FT输入，内部上下拉禁用。C按下低有效待实测，不接公共地。Motor keys授权后旋转±5RPM、点按启停、长按1秒换向。",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PE9": {
+      "device": "待核查输入",
+      "signal": "旧霍尔A（停用）",
+      "status": "明确预留",
+      "mode": "不再初始化作霍尔输入",
+      "wiring": "拔线且切普通上拉输入仍读低；暂不判定损坏，不当空闲候选，不接电机A",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PE11": {
+      "device": "MG310霍尔编码器",
+      "signal": "B",
+      "status": "已分配",
+      "mode": "TIM1_CH2/AF1/上拉",
+      "wiring": "霍尔A=PA8/U10-47、B=PE11/U9-38；拟做VCC=板上+5V对照；FT数字输入、无内部上下拉，使用编码器内置上拉；GND共地，10.3V仅接L298N VM；实测阶段另记",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PB14": {
+      "device": "MG310 L298N A通道",
+      "signal": "ENA / PWM",
+      "status": "已分配",
+      "mode": "TIM12_CH1/AF2",
+      "wiring": "L298N逻辑供电5V，MCU控制3.3V；ENA跳帽移除，VM独立10.3V（用户报告）；接线/电压实测状态另记",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/config/motor_config.h"
+    },
+    "PB15": {
+      "device": "H桥备用双PWM接口",
+      "signal": "双PWM IN2",
+      "status": "条件预留",
+      "mode": "TIM12_CH2/AF2",
+      "wiring": "仅profile3使用，当前L298N profile1不使用PB15，仍保留",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/config/motor_config.h"
+    },
+    "PE10": {
+      "device": "MG310 L298N A通道",
+      "signal": "IN1",
+      "status": "已分配",
+      "mode": "GPIO输出",
+      "wiring": "L298N逻辑供电5V，MCU控制3.3V；ENA跳帽移除，VM独立10.3V（用户报告）；接线/电压实测状态另记",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/config/motor_config.h"
+    },
+    "PE12": {
+      "device": "MG310 L298N A通道",
+      "signal": "IN2",
+      "status": "已分配",
+      "mode": "GPIO输出",
+      "wiring": "L298N逻辑供电5V，MCU控制3.3V；ENA跳帽移除，VM独立10.3V（用户报告）；接线/电压实测状态另记",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/config/motor_config.h"
+    },
+    "PE13": {
+      "device": "H桥STBY条件预留",
+      "signal": "STBY（L298N不接）",
+      "status": "条件预留",
+      "mode": "GPIO输出",
+      "wiring": "当前profile1不初始化PE13；保留给TB6612 profile2，旧板内profile2仍会驱动，换L298N时此线断开",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/config/motor_config.h"
+    },
+    "PA2": {
+      "device": "STS3215-C001",
+      "signal": "MCU TX",
+      "status": "已分配",
+      "mode": "USART2_TX/AF7",
+      "wiring": "本实物转接板同名丝印接：PA2 TX→板TX、PA3 RX→板RX；共地。其他转接板须核对丝印命名方向",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h; Core/Src/stm32h7xx_hal_msp.c"
+    },
+    "PA3": {
+      "device": "STS3215-C001",
+      "signal": "MCU RX",
+      "status": "已分配",
+      "mode": "USART2_RX/AF7",
+      "wiring": "本实物转接板同名丝印接：PA2 TX→板TX、PA3 RX→板RX；共地。其他转接板须核对丝印命名方向",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h; Core/Src/stm32h7xx_hal_msp.c"
+    },
+    "PA9": {
+      "device": "VOFA/USB-TTL",
+      "signal": "MCU TX",
+      "status": "已分配",
+      "mode": "USART1_TX/AF7",
+      "wiring": "接对端RXD，3.3V逻辑，共地；115200",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h; Core/Src/stm32h7xx_hal_msp.c"
+    },
+    "PA10": {
+      "device": "VOFA/USB-TTL",
+      "signal": "MCU RX",
+      "status": "已分配",
+      "mode": "USART1_RX/AF7",
+      "wiring": "接对端TXD，3.3V逻辑，共地；115200",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h; Core/Src/stm32h7xx_hal_msp.c"
+    },
+    "PB10": {
+      "device": "JDY-31蓝牙",
+      "signal": "MCU TX",
+      "status": "已分配",
+      "mode": "USART3_TX/AF7",
+      "wiring": "接对端RXD，3.3V逻辑，共地；9600",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h; Core/Src/stm32h7xx_hal_msp.c"
+    },
+    "PB11": {
+      "device": "JDY-31蓝牙",
+      "signal": "MCU RX",
+      "status": "已分配",
+      "mode": "USART3_RX/AF7",
+      "wiring": "接对端TXD，3.3V逻辑，共地；9600",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h; Core/Src/stm32h7xx_hal_msp.c"
+    },
+    "PG13": {
+      "device": "1.54寸SPI屏",
+      "signal": "SCK",
+      "status": "板载专用",
+      "mode": "SPI6_SCK/AF5",
+      "wiring": "接板载U7配套FPC；不要同时从排针驱动该信号",
+      "other_connector": "U7-2",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c"
+    },
+    "PG14": {
+      "device": "1.54寸SPI屏",
+      "signal": "MOSI",
+      "status": "板载专用",
+      "mode": "SPI6_MOSI/AF5",
+      "wiring": "接板载U7配套FPC；不要同时从排针驱动该信号",
+      "other_connector": "U7-7",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c"
+    },
+    "PG8": {
+      "device": "1.54寸SPI屏",
+      "signal": "NSS/CS",
+      "status": "板载专用",
+      "mode": "SPI6_NSS/AF5硬件片选",
+      "wiring": "接板载U7配套FPC；不要同时从排针驱动该信号",
+      "other_connector": "U7-6",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c"
+    },
+    "PG15": {
+      "device": "1.54寸SPI屏",
+      "signal": "DC",
+      "status": "板载专用",
+      "mode": "GPIO输出",
+      "wiring": "接板载U7配套FPC；不要同时从排针驱动该信号",
+      "other_connector": "U7-5",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c"
+    },
+    "PG12": {
+      "device": "1.54寸SPI屏",
+      "signal": "BL",
+      "status": "板载专用",
+      "mode": "GPIO输出/高有效",
+      "wiring": "接板载U7配套FPC；不要同时从排针驱动该信号",
+      "other_connector": "U7-4",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/vendor/lcd/lcd_spi_154.c"
+    },
+    "PC6": {
+      "device": "FD5640摄像头",
+      "signal": "D0",
+      "status": "板载专用",
+      "mode": "DCMI_D0/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-14",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PC7": {
+      "device": "FD5640摄像头",
+      "signal": "D1",
+      "status": "板载专用",
+      "mode": "DCMI_D1/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-15",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PG10": {
+      "device": "FD5640摄像头",
+      "signal": "D2",
+      "status": "板载专用",
+      "mode": "DCMI_D2/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-16",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PG11": {
+      "device": "FD5640摄像头",
+      "signal": "D3",
+      "status": "板载专用",
+      "mode": "DCMI_D3/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-17",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PE4": {
+      "device": "FD5640摄像头",
+      "signal": "D4",
+      "status": "板载专用",
+      "mode": "DCMI_D4/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-18",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PD3": {
+      "device": "FD5640摄像头",
+      "signal": "D5",
+      "status": "板载专用",
+      "mode": "DCMI_D5/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-19",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PE5": {
+      "device": "FD5640摄像头",
+      "signal": "D6",
+      "status": "板载专用",
+      "mode": "DCMI_D6/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-20",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PE6": {
+      "device": "FD5640摄像头",
+      "signal": "D7",
+      "status": "板载专用",
+      "mode": "DCMI_D7/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-21",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PA6": {
+      "device": "FD5640摄像头",
+      "signal": "PCLK",
+      "status": "板载专用",
+      "mode": "DCMI_PCLK/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-22",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PA4": {
+      "device": "FD5640摄像头",
+      "signal": "HSYNC",
+      "status": "板载专用",
+      "mode": "DCMI_HSYNC/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-12",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PG9": {
+      "device": "FD5640摄像头",
+      "signal": "VSYNC",
+      "status": "板载专用",
+      "mode": "DCMI_VSYNC/AF13",
+      "wiring": "接板载摄像头FPC，不复用为普通GPIO",
+      "other_connector": "FPC1-13",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PF15": {
+      "device": "FD5640摄像头",
+      "signal": "SDA",
+      "status": "板载专用",
+      "mode": "软件SCCB数据",
+      "wiring": "模块控制线，需保留",
+      "other_connector": "FPC1-6",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PF14": {
+      "device": "FD5640摄像头",
+      "signal": "SCL",
+      "status": "板载专用",
+      "mode": "软件SCCB时钟",
+      "wiring": "模块控制线，需保留",
+      "other_connector": "FPC1-7",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PF13": {
+      "device": "FD5640摄像头",
+      "signal": "PWDN",
+      "status": "板载专用",
+      "mode": "GPIO输出/高电平掉电",
+      "wiring": "模块控制线，需保留",
+      "other_connector": "FPC1-11",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PC4": {
+      "device": "摄像头接口预留",
+      "signal": "模块脚位待核对",
+      "status": "明确预留",
+      "mode": "当前业务不使用/模块定义待确认",
+      "wiring": "原理图已接摄像头插座，即使未初始化也不当作通用空闲脚",
+      "other_connector": "FPC1-9",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PA5": {
+      "device": "摄像头接口预留",
+      "signal": "模块脚位待核对",
+      "status": "明确预留",
+      "mode": "当前业务不使用/模块定义待确认",
+      "wiring": "原理图已接摄像头插座，即使未初始化也不当作通用空闲脚",
+      "other_connector": "FPC1-10",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PF10": {
+      "device": "板载W25Q64",
+      "signal": "QSPI_CLK",
+      "status": "板载专用",
+      "mode": "QUADSPI/AF9或AF10（见板级宏）",
+      "wiring": "板上已焊Flash，不因不调用读写就视为空闲",
+      "other_connector": "U6",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PG6": {
+      "device": "板载W25Q64",
+      "signal": "QSPI_NCS",
+      "status": "板载专用",
+      "mode": "QUADSPI/AF9或AF10（见板级宏）",
+      "wiring": "板上已焊Flash，不因不调用读写就视为空闲",
+      "other_connector": "U6",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PF8": {
+      "device": "板载W25Q64",
+      "signal": "QSPI_IO0",
+      "status": "板载专用",
+      "mode": "QUADSPI/AF9或AF10（见板级宏）",
+      "wiring": "板上已焊Flash，不因不调用读写就视为空闲",
+      "other_connector": "U6",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PF9": {
+      "device": "板载W25Q64",
+      "signal": "QSPI_IO1",
+      "status": "板载专用",
+      "mode": "QUADSPI/AF9或AF10（见板级宏）",
+      "wiring": "板上已焊Flash，不因不调用读写就视为空闲",
+      "other_connector": "U6",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PF7": {
+      "device": "板载W25Q64",
+      "signal": "QSPI_IO2",
+      "status": "板载专用",
+      "mode": "QUADSPI/AF9或AF10（见板级宏）",
+      "wiring": "板上已焊Flash，不因不调用读写就视为空闲",
+      "other_connector": "U6",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PF6": {
+      "device": "板载W25Q64",
+      "signal": "QSPI_IO3",
+      "status": "板载专用",
+      "mode": "QUADSPI/AF9或AF10（见板级宏）",
+      "wiring": "板上已焊Flash，不因不调用读写就视为空闲",
+      "other_connector": "U6",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PC8": {
+      "device": "TF/SD卡",
+      "signal": "SDMMC1_D0",
+      "status": "板载专用",
+      "mode": "SDMMC1/AF12",
+      "wiring": "已接板载TF卡座；未插卡也先保留",
+      "other_connector": "U12",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PC9": {
+      "device": "TF/SD卡",
+      "signal": "SDMMC1_D1",
+      "status": "板载专用",
+      "mode": "SDMMC1/AF12",
+      "wiring": "已接板载TF卡座；未插卡也先保留",
+      "other_connector": "U12",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PC10": {
+      "device": "TF/SD卡",
+      "signal": "SDMMC1_D2",
+      "status": "板载专用",
+      "mode": "SDMMC1/AF12",
+      "wiring": "已接板载TF卡座；未插卡也先保留",
+      "other_connector": "U12",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PC11": {
+      "device": "TF/SD卡",
+      "signal": "SDMMC1_D3",
+      "status": "板载专用",
+      "mode": "SDMMC1/AF12",
+      "wiring": "已接板载TF卡座；未插卡也先保留",
+      "other_connector": "U12",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PC12": {
+      "device": "TF/SD卡",
+      "signal": "SDMMC1_CK",
+      "status": "板载专用",
+      "mode": "SDMMC1/AF12",
+      "wiring": "已接板载TF卡座；未插卡也先保留",
+      "other_connector": "U12",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PD2": {
+      "device": "TF/SD卡",
+      "signal": "SDMMC1_CMD",
+      "status": "板载专用",
+      "mode": "SDMMC1/AF12",
+      "wiring": "已接板载TF卡座；未插卡也先保留",
+      "other_connector": "U12",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PA11": {
+      "device": "Type-C原生USB",
+      "signal": "D-",
+      "status": "板载专用",
+      "mode": "USB_OTG_FS/AF10",
+      "wiring": "USB CDC图像/文本；无USB转UART芯片；不是USART1的TX/RX",
+      "other_connector": "U11-A7/B7",
+      "source": "USB_DEVICE/Target/usbd_conf.c"
+    },
+    "PA12": {
+      "device": "Type-C原生USB",
+      "signal": "D+",
+      "status": "板载专用",
+      "mode": "USB_OTG_FS/AF10",
+      "wiring": "USB CDC图像/文本；无USB转UART芯片；不是USART1的TX/RX",
+      "other_connector": "U11-A6/B6",
+      "source": "USB_DEVICE/Target/usbd_conf.c"
+    },
+    "PG7": {
+      "device": "LED反馈",
+      "signal": "心跳",
+      "status": "板载专用",
+      "mode": "GPIO输出/低有效",
+      "wiring": "板载蓝灯，已有限流；不是空闲GPIO",
+      "other_connector": "LED1",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h"
+    },
+    "PG0": {
+      "device": "LED反馈",
+      "signal": "状态",
+      "status": "已分配",
+      "mode": "GPIO输出/高有效",
+      "wiring": "此脚→1kΩ→LED正极，LED负极→GND；不得直接短接",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h"
+    },
+    "PG1": {
+      "device": "LED反馈",
+      "signal": "故障",
+      "status": "已分配",
+      "mode": "GPIO输出/高有效",
+      "wiring": "此脚→1kΩ→LED正极，LED负极→GND；不得直接短接",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h"
+    },
+    "PG4": {
+      "device": "后续扩展",
+      "signal": "限位/反馈预留",
+      "status": "明确预留",
+      "mode": "未分配",
+      "wiring": "明确预留，新增功能先确认再分配",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PG5": {
+      "device": "后续扩展",
+      "signal": "限位/反馈预留",
+      "status": "明确预留",
+      "mode": "未分配",
+      "wiring": "明确预留，新增功能先确认再分配",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    },
+    "PB8": {
+      "device": "多控制器扩展候选",
+      "signal": "候选UART4_RX",
+      "status": "接口候选预留",
+      "mode": "候选AF8；当前未初始化UART4",
+      "wiring": "候选ESP执行节点接口；不等于已接线/已启用；若要改作其他功能先同步规划",
+      "other_connector": "",
+      "source": "Docs/多控制器扩展规划/03_H743资源与连接方案.md"
+    },
+    "PB9": {
+      "device": "多控制器扩展候选",
+      "signal": "候选UART4_TX",
+      "status": "接口候选预留",
+      "mode": "候选AF8；当前未初始化UART4",
+      "wiring": "候选ESP执行节点接口；不等于已接线/已启用；若要改作其他功能先同步规划",
+      "other_connector": "",
+      "source": "Docs/多控制器扩展规划/03_H743资源与连接方案.md"
+    },
+    "PA15": {
+      "device": "调试扩展",
+      "signal": "JTAG/SWO复用核对",
+      "status": "明确预留",
+      "mode": "复用/调试功能待核对",
+      "wiring": "保守预留；未完成调试配置核对前不列为普通空闲",
+      "other_connector": "",
+      "source": "Docs/电机控制/01_硬件参数与按设备接线.md"
+    },
+    "PB3": {
+      "device": "调试扩展",
+      "signal": "JTAG/SWO复用核对",
+      "status": "明确预留",
+      "mode": "复用/调试功能待核对",
+      "wiring": "保守预留；未完成调试配置核对前不列为普通空闲",
+      "other_connector": "",
+      "source": "Docs/电机控制/01_硬件参数与按设备接线.md"
+    },
+    "PB4": {
+      "device": "调试扩展",
+      "signal": "JTAG/SWO复用核对",
+      "status": "明确预留",
+      "mode": "复用/调试功能待核对",
+      "wiring": "保守预留；未完成调试配置核对前不列为普通空闲",
+      "other_connector": "",
+      "source": "Docs/电机控制/01_硬件参数与按设备接线.md"
+    },
+    "PC2_C": {
+      "device": "特殊模拟焊盘",
+      "signal": "模拟引出",
+      "status": "特殊脚待核对",
+      "mode": "ADC/模拟开关相关",
+      "wiring": "不是PC2/PC3的普通等价接线；先核对数据手册、模拟开关和电压条件，不列普通GPIO空闲",
+      "other_connector": "",
+      "source": "LXB743ZI-P1原理图.pdf p1; STM32H743 datasheet"
+    },
+    "PC3_C": {
+      "device": "特殊模拟焊盘",
+      "signal": "模拟引出",
+      "status": "特殊脚待核对",
+      "mode": "ADC/模拟开关相关",
+      "wiring": "不是PC2/PC3的普通等价接线；先核对数据手册、模拟开关和电压条件，不列普通GPIO空闲",
+      "other_connector": "",
+      "source": "LXB743ZI-P1原理图.pdf p1; STM32H743 datasheet"
+    },
+    "PA13": {
+      "device": "SWD调试",
+      "signal": "SWDIO",
+      "status": "板载专用",
+      "mode": "调试复用",
+      "wiring": "保留调试连接，不作普通业务键",
+      "other_connector": "H1-2",
+      "source": "Core/Src/main.c; schematic H1"
+    },
+    "PA14": {
+      "device": "SWD调试",
+      "signal": "SWCLK",
+      "status": "板载专用",
+      "mode": "调试复用",
+      "wiring": "保留调试连接，不作普通业务键",
+      "other_connector": "H1-1",
+      "source": "Core/Src/main.c; schematic H1"
+    },
+    "PC14": {
+      "device": "板载晶振",
+      "signal": "LSE_IN",
+      "status": "板载专用",
+      "mode": "LSE 32.768kHz",
+      "wiring": "连接晶振，不从普通排针引出，不作扩展GPIO",
+      "other_connector": "",
+      "source": "Core/Src/main.c; App/platform/board_peripherals.c; schematic"
+    },
+    "PC15": {
+      "device": "板载晶振",
+      "signal": "LSE_OUT",
+      "status": "板载专用",
+      "mode": "LSE 32.768kHz",
+      "wiring": "连接晶振，不从普通排针引出，不作扩展GPIO",
+      "other_connector": "",
+      "source": "Core/Src/main.c; App/platform/board_peripherals.c; schematic"
+    },
+    "PH0": {
+      "device": "板载晶振",
+      "signal": "HSE_IN",
+      "status": "板载专用",
+      "mode": "HSE 25MHz",
+      "wiring": "连接晶振，不从普通排针引出，不作扩展GPIO",
+      "other_connector": "",
+      "source": "Core/Src/main.c; App/platform/board_peripherals.c; schematic"
+    },
+    "PH1": {
+      "device": "板载晶振",
+      "signal": "HSE_OUT",
+      "status": "板载专用",
+      "mode": "HSE 25MHz",
+      "wiring": "连接晶振，不从普通排针引出，不作扩展GPIO",
+      "other_connector": "",
+      "source": "Core/Src/main.c; App/platform/board_peripherals.c; schematic"
+    },
+    "PC2": {
+      "device": "未普通引出",
+      "signal": "普通封装焊盘",
+      "status": "未从排针引出",
+      "mode": "未用于当前业务",
+      "wiring": "U9引出的是_C焊盘；不能拿排针PC2_C/PC3_C直接替代",
+      "other_connector": "",
+      "source": "schematic U1/U9"
+    },
+    "PC3": {
+      "device": "未普通引出",
+      "signal": "普通封装焊盘",
+      "status": "未从排针引出",
+      "mode": "未用于当前业务",
+      "wiring": "U9引出的是_C焊盘；不能拿排针PC2_C/PC3_C直接替代",
+      "other_connector": "",
+      "source": "schematic U1/U9"
+    },
+    "PD12": {
+      "device": "本地PWM舵机",
+      "signal": "PWM1",
+      "status": "已分配",
+      "mode": "TIM4_CH1/AF2，50Hz",
+      "wiring": "仅接舵机信号；动力独立供电并共地；500–2500us显式指令启动，上电不输出",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/platform/board_peripherals.c"
+    },
+    "PD13": {
+      "device": "本地PWM舵机",
+      "signal": "PWM2",
+      "status": "已分配",
+      "mode": "TIM4_CH2/AF2，50Hz",
+      "wiring": "仅接舵机信号；动力独立供电并共地；500–2500us显式指令启动，上电不输出",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h; App/platform/board_peripherals.c"
+    },
+    "PC0": {
+      "device": "实体按键",
+      "signal": "KEY5",
+      "status": "已分配",
+      "mode": "GPIO输入/上拉/按下低有效",
+      "wiring": "舵机A0；常开按键另一端GND",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h"
+    },
+    "PC1": {
+      "device": "实体按键",
+      "signal": "KEY6",
+      "status": "已分配",
+      "mode": "GPIO输入/上拉/按下低有效",
+      "wiring": "舵机B0；常开按键另一端GND",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_config.h"
+    },
+    "PA8": {
+      "device": "MG310霍尔编码器",
+      "signal": "霍尔A / TIM1_CH1",
+      "status": "已分配",
+      "mode": "TIM1_CH1/AF1",
+      "wiring": "霍尔A=PA8/U10-47、B=PE11/U9-38；拟做VCC=板上+5V对照；FT数字输入、无内部上下拉，使用编码器内置上拉；GND共地，10.3V仅接L298N VM；实测阶段另记",
+      "other_connector": "",
+      "source": "App/platform/boards/lxb743zi_p1/board_devices.h"
+    }
+  },
+  "source_hash": {
+    "App/platform/boards/lxb743zi_p1/board_config.h": "2b8cd2a1ae56c4880a8a9302c122b4fbb1a802ec0d332eab0e36347f5cfe2ed3",
+    "App/platform/boards/lxb743zi_p1/board_devices.h": "d0e68307574cd9ad543d48ef2b57c348b196cb5db3be9402217a8b32d5466ea0",
+    "App/platform/board_resources.c": "d7bde8f4398ef1f82fabd966d418401828a66f210f69839b21a8ba7851f8406a",
+    "App/platform/board_motor.c": "d835860c9e1a989e71f3e19675b9964efcc4ef85ac8569bea2f836af3c84dd40",
+    "App/platform/board_led.c": "8b372b11339d1cf4cae082e7c3b9661ded9d0066aeb64a44bf11691579e6dd99",
+    "App/platform/board_peripherals.c": "ad32e4589285de21ff2cfb4e7b4341065dfa844389f793fbb701848dbed0147d",
+    "App/config/motor_config.h": "2196d742c8a12d486a9f126cc7581a79301626cf1f14058d40c735048ea0c1d8",
+    "App/config/integration_config.h": "45f59eb8081bc23ece281638a86c65d236f18f26ce1c1d0a0c020df4d40d1730",
+    "App/bsp/bsp_key.c": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a",
+    "App/modules/ui/ui_input.c": "bd57820226bebe46b6090ed97f9ae515b726472feb504e80f1b7bd436958ed52",
+    "App/vendor/lcd/lcd_spi_154.c": "1b228c36deb2321a85a8da52965ff757bbcb7385518c76f4a188d64b961f356a",
+    "Core/Src/main.c": "5ac5d12d24213d30fe331d11874838dab14d534959ec519bb2f8cf84992c1e36",
+    "Core/Src/stm32h7xx_hal_msp.c": "7c19ddc806cb23846a1833b608e692a3ba38fcaed6075ef5c79001793e712b6c",
+    "USB_DEVICE/Target/usbd_conf.c": "80046e68568332fac22af88284b090096c81e4f21bd4165b36efb1bf6ac3a515"
+  },
+  "physical_test": "原理图与源码核验；20261023修订版已烧录，舵机UART与USB图像实测通过；新实体按键/逐脚通断未验收"
+}

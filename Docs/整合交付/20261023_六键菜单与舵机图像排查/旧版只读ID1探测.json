@@ -1,0 +1,10 @@
+{
+  "records": [
+    {
+      "command": "@servo probe 1 1000000; @status",
+      "reply": "read-only probe accepted=1 (nonconfigured ID never enables motion)\r\n\nSTS target=1 rate=1000000 rawRx=14 valid=0 parser=0 tx=5515 hal=0\r\nSYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1\r\nCAM diag format=6F01 pclk=2204 dcmi=00000000 dma=00000000 remaining=0\r\nCAM ready=1 enabled=1 frames=5431 errors=0 timeout=0 loopmax=15 cmdDrop=0 usbDrop=0\r\nMOTOR ready=1 driver=0 on=0 fault=0 dir=1 target=0 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n\n"
+    }
+  ],
+  "motion_commands_sent": false,
+  "hardware_ID_EEPROM_written": false
+}

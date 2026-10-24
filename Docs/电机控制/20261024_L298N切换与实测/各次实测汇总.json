@@ -1,0 +1,74 @@
+[
+  {
+    "file": "L298N实际运行.json",
+    "label": "L298N old guard, user observed continuous rotation",
+    "transport_errors": [],
+    "feedback_peak_rpm": 1.4134035110473633,
+    "reference_peak_rpm": 400.0,
+    "pwm_peak_permille": 950.0,
+    "fault_codes": [
+      0.0
+    ],
+    "closed_loop_passed": false
+  },
+  {
+    "file": "PA8版本实际运行.json",
+    "label": "PA8 Hall 3.3V, new protection",
+    "transport_errors": [
+      "motor fault 1.0"
+    ],
+    "feedback_peak_rpm": 0.0,
+    "reference_peak_rpm": 111.0,
+    "pwm_peak_permille": 407.0,
+    "fault_codes": [
+      0.0,
+      1.0
+    ],
+    "closed_loop_passed": false
+  },
+  {
+    "file": "编码器5V实际运行.json",
+    "label": "PA8 Hall 5V, default gains",
+    "transport_errors": [
+      "motor fault 1.0"
+    ],
+    "feedback_peak_rpm": 2.802596928649634e-45,
+    "reference_peak_rpm": 111.0,
+    "pwm_peak_permille": 407.0,
+    "fault_codes": [
+      0.0,
+      1.0
+    ],
+    "closed_loop_passed": false
+  },
+  {
+    "file": "有界起转诊断.json",
+    "label": "Bounded Kp12 Ki0 diagnostic",
+    "transport_errors": [
+      "motor fault 1.0"
+    ],
+    "feedback_peak_rpm": 1.413405418395996,
+    "reference_peak_rpm": 60.0,
+    "pwm_peak_permille": 719.0,
+    "fault_codes": [
+      0.0,
+      1.0
+    ],
+    "closed_loop_passed": false
+  },
+  {
+    "file": "快速有界起转诊断.json",
+    "label": "Bounded Kp40 Ki0 diagnostic",
+    "transport_errors": [
+      "motor fault 1.0"
+    ],
+    "feedback_peak_rpm": 2.802596928649634e-45,
+    "reference_peak_rpm": 48.0,
+    "pwm_peak_permille": 950.0,
+    "fault_codes": [
+      0.0,
+      1.0
+    ],
+    "closed_loop_passed": false
+  }
+]

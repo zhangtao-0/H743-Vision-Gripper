@@ -1,0 +1,5 @@
+/* Target strings extracted for host preview. */
+static const char *const params[]={"OPEN_deg","CLOSE_deg","GRIP_PROFILE","DEFAULT_SPEED","OPEN_SPEED","CLOSE_SPEED","SWEEP_SPEED","SWEEP_STEP","STEP_ms","TORQUE","HOLD_TORQUE","FEEDBACK_ms","IDLE_FB_ms","MIN_MOVE","SETTLE_ms","LOW_VOLT_mV","SLIP_deg","COMPENSATE","RELEASE_ALLOW","CLAW_PRINT","PRINT_ms","MOTOR_RPM","KP_milli","KI_milli","KD_milli"};
+static const char *const commands[]={"Report status","Camera capture ON","Camera capture OFF","Motor STOP","Motor clear fault","Motor ENABLE","Motor reverse","PWM outputs OFF","STS stop request","STS open/release","STS close/grip","Still capture (RAM)","Image rotate +90","Image mirror L/R","Image flip U/D","LCD rotate +90","Edge preview toggle","Auto grasp (unavailable)","Quiet all streams","Live image resume"};
+static const char *const defaults[]={"Restore STS RAM","Restore motor RAM","SAVE boot profile","LOAD boot profile","CLEAR boot profile"};
+static const char *const help_names[]={"SYSTEM / QUIET","CLAW / STS","MG310 MOTOR","CAMERA / IMAGE","PWM OUTPUT","STORAGE / RTC","BINARY PROTOCOL","KEYS / EC11","PARAMETERS / PROFILE"};

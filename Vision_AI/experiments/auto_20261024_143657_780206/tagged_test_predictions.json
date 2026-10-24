@@ -1,0 +1,241 @@
+[
+  {
+    "image": "taco_000008.jpg",
+    "detections": [],
+    "no_detection": true,
+    "ground_truth_instances": 1
+  },
+  {
+    "image": "taco_000013.jpg",
+    "detections": [],
+    "no_detection": true,
+    "ground_truth_instances": 1
+  },
+  {
+    "image": "taco_000015.jpg",
+    "detections": [
+      {
+        "tags": [
+          {
+            "id": "semantic:bottle",
+            "confidence": 0.78152,
+            "source": "model"
+          },
+          {
+            "id": "shape:elongated_2d",
+            "confidence": 0.75,
+            "source": "inferred"
+          }
+        ],
+        "geometry": {
+          "coordinate_system": "Pixel",
+          "three_dimensional_shape": "unknown",
+          "material": "unknown",
+          "mass": "unknown",
+          "center_px": [
+            435.4858093261719,
+            979.6779174804688
+          ],
+          "box_size_px": [
+            1293.430908203125,
+            563.5716552734375
+          ],
+          "angle_deg": -90.0,
+          "area_px2": 554164.6387809315,
+          "aspect_ratio": 2.2950602573785748,
+          "solidity": 0.9412141280471245
+        },
+        "decision": {
+          "schema": "h743.grasp_candidate.v1",
+          "accepted_tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 0.78152,
+              "source": "model"
+            },
+            {
+              "id": "shape:elongated_2d",
+              "confidence": 0.75,
+              "source": "inferred"
+            }
+          ],
+          "unknown_tags": [],
+          "excluded_tags": [],
+          "conflicts": [],
+          "hazards": [],
+          "constraints": [],
+          "ranked_candidates": [
+            {
+              "strategy": "side_wrap",
+              "score": 23.4456
+            }
+          ],
+          "forbidden_strategies": [],
+          "selected_strategy": "side_wrap",
+          "missing_requirements": [
+            "camera_calibrated",
+            "feedback_verified",
+            "gripper_geometry_verified",
+            "operator_hardware_authorization",
+            "workspace_verified"
+          ],
+          "decision_trace": [
+            {
+              "kind": "additive",
+              "tags": [
+                "semantic:bottle"
+              ],
+              "strategy": "side_wrap",
+              "score": 23.4456
+            }
+          ],
+          "reject_reasons": [
+            "missing_verified_execution_context"
+          ],
+          "planning_conditions_met": false,
+          "grasp_valid": false,
+          "mode": "DRY_RUN",
+          "hardware_commands_sent": false
+        },
+        "physics_not_observed": [
+          "mass",
+          "friction",
+          "wall_strength",
+          "contents",
+          "temperature"
+        ],
+        "model_confidence_is_not_grasp_success_probability": true
+      },
+      {
+        "tags": [
+          {
+            "id": "semantic:bottle",
+            "confidence": 0.73375,
+            "source": "model"
+          },
+          {
+            "id": "shape:elongated_2d",
+            "confidence": 0.73375,
+            "source": "inferred"
+          }
+        ],
+        "geometry": {
+          "coordinate_system": "Pixel",
+          "three_dimensional_shape": "unknown",
+          "material": "unknown",
+          "mass": "unknown",
+          "center_px": [
+            1058.20166015625,
+            1111.962890625
+          ],
+          "box_size_px": [
+            1401.4755859375,
+            506.4725646972656
+          ],
+          "angle_deg": -85.91047668457031,
+          "area_px2": 549490.5580023844,
+          "aspect_ratio": 2.7671303119354658,
+          "solidity": 0.9568697457478006
+        },
+        "decision": {
+          "schema": "h743.grasp_candidate.v1",
+          "accepted_tags": [
+            {
+              "id": "semantic:bottle",
+              "confidence": 0.73375,
+              "source": "model"
+            },
+            {
+              "id": "shape:elongated_2d",
+              "confidence": 0.73375,
+              "source": "inferred"
+            }
+          ],
+          "unknown_tags": [],
+          "excluded_tags": [],
+          "conflicts": [],
+          "hazards": [],
+          "constraints": [],
+          "ranked_candidates": [
+            {
+              "strategy": "side_wrap",
+              "score": 22.0125
+            }
+          ],
+          "forbidden_strategies": [],
+          "selected_strategy": "side_wrap",
+          "missing_requirements": [
+            "camera_calibrated",
+            "feedback_verified",
+            "gripper_geometry_verified",
+            "operator_hardware_authorization",
+            "workspace_verified"
+          ],
+          "decision_trace": [
+            {
+              "kind": "additive",
+              "tags": [
+                "semantic:bottle"
+              ],
+              "strategy": "side_wrap",
+              "score": 22.0125
+            }
+          ],
+          "reject_reasons": [
+            "missing_verified_execution_context"
+          ],
+          "planning_conditions_met": false,
+          "grasp_valid": false,
+          "mode": "DRY_RUN",
+          "hardware_commands_sent": false
+        },
+        "physics_not_observed": [
+          "mass",
+          "friction",
+          "wall_strength",
+          "contents",
+          "temperature"
+        ],
+        "model_confidence_is_not_grasp_success_probability": true
+      }
+    ],
+    "no_detection": false,
+    "ground_truth_instances": 2
+  },
+  {
+    "image": "taco_000049.jpg",
+    "detections": [],
+    "no_detection": true,
+    "ground_truth_instances": 1
+  },
+  {
+    "image": "taco_000063.jpg",
+    "detections": [],
+    "no_detection": true,
+    "ground_truth_instances": 1
+  },
+  {
+    "image": "taco_000070.jpg",
+    "detections": [],
+    "no_detection": true,
+    "ground_truth_instances": 1
+  },
+  {
+    "image": "taco_000079.jpg",
+    "detections": [],
+    "no_detection": true,
+    "ground_truth_instances": 1
+  },
+  {
+    "image": "taco_000089.jpg",
+    "detections": [],
+    "no_detection": true,
+    "ground_truth_instances": 2
+  },
+  {
+    "image": "taco_000090.jpg",
+    "detections": [],
+    "no_detection": true,
+    "ground_truth_instances": 1
+  }
+]

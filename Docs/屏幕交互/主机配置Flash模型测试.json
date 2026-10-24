@@ -1,0 +1,6 @@
+{
+  "scope": "actual H7 profile store with Windows virtual memory/HAL fault model; no hardware erase/program",
+  "exit_code": 0,
+  "stdout": "PASS H7 store model: actual sectors4/5 code, all five partial-write positions, CRC fallback, tombstone, bank-swap guard; limits6/7 untouched\n",
+  "stderr": ""
+}

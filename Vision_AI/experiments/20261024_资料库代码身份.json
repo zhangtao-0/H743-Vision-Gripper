@@ -1,0 +1,20 @@
+{
+  "src/baseline.py": "a61c43d42b5687ed99efbb50641d1e47771ec211fdb1eedf71fc9ddcc7308770",
+  "src/prediction_tags.py": "3c79972d19b0ced489c93e74b56adfa8e7b1a64184f2a3be200c04b2e88117aa",
+  "src/tag_reasoner.py": "4cecabc88979db7aeb6acaa8a85832e0fac67afd1d1e70649348abc57be48073",
+  "tests/test_baseline.py": "40c370f21261b7988d4a9f6137a6f9d1061e4425bcf73102aa07154e488b5526",
+  "tests/test_tag_reasoner.py": "480af4d295bf007a90303bd0ce78bb6f25b06f2a8c634fd4af031f12db1daa06",
+  "training/autopilot.py": "002199274ed79600ccbea55a3d025c628c16674edf3830f5c26d8277686b3a99",
+  "training/prepare_public.py": "c24801a7e53739371e05b5fbfc98fdf0d8cc94db0e5083b2645ee77d6e47cd6c",
+  "training/README.md": "07a9c3a6060620f26ba963b80e0c931a816038520ecb4be73d60eaa1c446b55b",
+  "training/train_worker.py": "ac8bb1c40a1c11903261c26f195ccd6cb5f85c5ff521905c0ad7d06b7e37a48f",
+  "tools/fetch_public.py": "876d401425c94104ba048a2f4fc49868a13d6e76cd276e4a7c3431f99bd63ad4",
+  "tools/run_baseline.py": "e83fa85f2efddc8d649b8afe55f89d0e8f4e994b51cf2fe0f5a678c66fc918a9",
+  "tools/study.py": "1e20302d3ae43f9c6236f64ec6f3a5e280ccae152c19b21932c06537444bb5d2",
+  "configs/autopilot.json": "684b37a381860f663fb5f9dd331a9e91ac19e8460ca8a3473938dca8fdd61a9d",
+  "configs/camera_240.json": "d9510f0616c775d63ce3a29a0338b96d8f41a4c830d131c080333578ae6cf1ca",
+  "configs/classes.json": "7bb35fd123b1415a552c990f03418d1cb49f6383472c45cf7467facf452b4fd2",
+  "configs/dark_100.json": "5bd2875cc0114ddba099d3220f7116011393acbdee7d46c1610e772fb19e3255",
+  "configs/gray_dark.json": "a113a2579703897c8bad449f067edf75a430c2c7317a3dbb79760db240c99a26",
+  "configs/hsv.json": "713b05663b7f5c9d202f1b69486e5af706acefb1d684f4c5eac906c2bba98396"
+}

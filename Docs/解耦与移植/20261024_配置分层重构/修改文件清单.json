@@ -1,0 +1,292 @@
+{
+  "changed_existing_files": [
+    "project/App/bsp/bsp_bluetooth.c",
+    "project/App/bsp/bsp_bluetooth.h",
+    "project/App/bsp/bsp_key.c",
+    "project/App/bsp/bsp_key.h",
+    "project/App/config/integration_config.h",
+    "project/App/platform/board_led.c",
+    "project/App/platform/board_motor.c",
+    "project/App/platform/board_peripherals.c",
+    "project/App/platform/board_peripherals.h",
+    "project/App/platform/board_resources.c",
+    "project/App/platform/board_resources.h",
+    "project/App/platform/board_uart.c",
+    "project/App/platform/board_uart.h",
+    "project/App/platform/claw_limit_storage_h7.c",
+    "project/App/platform/platform_hal.h",
+    "project/App/protocol/vofa_protocol.c",
+    "project/App/protocol/vofa_protocol.h",
+    "project/App/modules/motor/motor_service.c",
+    "project/App/modules/ui/ui_profile_store.c",
+    "project/App/platform/boards/lxb743zi_p1/board_config.h",
+    "project/App/platform/boards/lxb743zi_p1/board_devices.h",
+    "project/App/vendor/camera/dcmi_ov2640.c",
+    "project/App/vendor/camera/dcmi_ov2640.h",
+    "project/App/vendor/camera/dcmi_ov5640.c",
+    "project/App/vendor/camera/dcmi_ov5640.h",
+    "project/App/vendor/camera/sccb.h",
+    "project/App/vendor/lcd/lcd_spi_154.c",
+    "project/App/vendor/lcd/lcd_spi_154.h",
+    "project/App/vendor/qspi/qspi_w25q64.c",
+    "project/App/vendor/qspi/qspi_w25q64.h",
+    "project/App/vendor/sd/sdmmc_sd.c",
+    "project/Core/Src/main.c",
+    "project/Core/Src/stm32h7xx_hal_msp.c",
+    "project/Core/Src/stm32h7xx_it.c",
+    "Tools/run_integration_host_tests.py",
+    "Tools/run_motor_plot_tests.py",
+    "Tools/run_p2_host_tests.py",
+    "Tools/run_p3_host_tests.py",
+    "Tools/run_ui_tests.py",
+    "Tools/verify_input_mapping.py",
+    "Tools/verify_pin_reference.py",
+    "project/EWARM/H743_VisionGripper.ewp",
+    "project/USB_DEVICE/Target/usbd_conf.c"
+  ],
+  "original_hardware_macro_values_unchanged": 110,
+  "new_source_files": [
+    "App/config/input_config.h",
+    "App/config/target_config.h",
+    "App/platform/board_config.h",
+    "App/platform/board_devices.h",
+    "App/platform/board_gpio.c",
+    "App/platform/board_gpio.h",
+    "App/platform/board_nv_storage.c",
+    "App/platform/board_nv_storage.h",
+    "App/config/targets/stm32h743_lxb.h",
+    "App/platform/boards/lxb743zi_p1/board_io_cfg.h",
+    "App/platform/boards/lxb743zi_p1/board_motion_cfg.h",
+    "App/platform/boards/lxb743zi_p1/board_profile.h",
+    "App/platform/boards/lxb743zi_p1/board_serial_cfg.h",
+    "App/platform/boards/lxb743zi_p1/board_storage_cfg.h",
+    "App/platform/boards/lxb743zi_p1/board_system_cfg.h",
+    "App/platform/boards/lxb743zi_p1/board_vision_cfg.h",
+    "App/platform/mcu/stm32h743/nv_backend.inc",
+    "App/platform/mcu/stm32h743/uart_backend.inc"
+  ],
+  "record_format": "UiProfile160bytes version1; claw limit32bytes version1; addresses unchanged",
+  "firmware_flashed": false,
+  "changes_with_hashes": [
+    {
+      "path": "project/App/bsp/bsp_bluetooth.c",
+      "before_sha256": "2cc8323b1fe13be5f3849424f0bc344e0b31f5453d8e1d569c880d25d32cd0df",
+      "after_sha256": "dd1c418890d71d13c2724279315e91db2b5e6201ee9bdd6211e6e4e047c963e7"
+    },
+    {
+      "path": "project/App/bsp/bsp_bluetooth.h",
+      "before_sha256": "6af15e5f4da6da758b1e0f8495852dd6a232b3666e9a02460b16199ef79e2ac1",
+      "after_sha256": "ae057a9e0cce07a8f8ce4851c36a27e406cb69c37ec9103856b0e39ac101164d"
+    },
+    {
+      "path": "project/App/bsp/bsp_key.c",
+      "before_sha256": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a",
+      "after_sha256": "dffabc0865b2a799332b165bace40627239e8f5a57d2afd108c565da5f6020a0"
+    },
+    {
+      "path": "project/App/bsp/bsp_key.h",
+      "before_sha256": "66c55cef571bc3616cd26ef0c0c649bf6c78959ecbf67f92fc411b87e0389c53",
+      "after_sha256": "8437369c3f8c3bcf0215e17dbb2d6d620ef6ab1e4727e7c97fa35ab92b265021"
+    },
+    {
+      "path": "project/App/config/integration_config.h",
+      "before_sha256": "45f59eb8081bc23ece281638a86c65d236f18f26ce1c1d0a0c020df4d40d1730",
+      "after_sha256": "5597fd2c00abf849a9bb301b695aa712a43a9edecbcb6ca041bb13303b49664e"
+    },
+    {
+      "path": "project/App/platform/board_led.c",
+      "before_sha256": "8b372b11339d1cf4cae082e7c3b9661ded9d0066aeb64a44bf11691579e6dd99",
+      "after_sha256": "c099e3cc38aa441dfed5fc94c544565383072f33566d0ac99d17c6d32010cc22"
+    },
+    {
+      "path": "project/App/platform/board_motor.c",
+      "before_sha256": "d835860c9e1a989e71f3e19675b9964efcc4ef85ac8569bea2f836af3c84dd40",
+      "after_sha256": "a2b13048fa497dedcaf48b2c628f981dcfd9c90934c219d501bd97d695a3dfa4"
+    },
+    {
+      "path": "project/App/platform/board_peripherals.c",
+      "before_sha256": "ad32e4589285de21ff2cfb4e7b4341065dfa844389f793fbb701848dbed0147d",
+      "after_sha256": "983676e3cd063b26977bb572f7454f6fe85a29aa36f7286ea45e89e70140a90b"
+    },
+    {
+      "path": "project/App/platform/board_peripherals.h",
+      "before_sha256": "5dc1717034f74d38979efb2e8e89b67de5a02d2a0277bc0771d7a81eff52a354",
+      "after_sha256": "e6c8a40682eeb1e2beb6eaf75024ccd9689d35ae1b1bd1001172e34f43fa06bc"
+    },
+    {
+      "path": "project/App/platform/board_resources.c",
+      "before_sha256": "d7bde8f4398ef1f82fabd966d418401828a66f210f69839b21a8ba7851f8406a",
+      "after_sha256": "04541eb0aa2fb9f805807c7885b3b7d94b372aa82643ef3450e5f8afca6d52c3"
+    },
+    {
+      "path": "project/App/platform/board_resources.h",
+      "before_sha256": "37d3d82622620d8c7fa7f22032f9fc428cde1cd943a18c1c964d79e3ac05fcae",
+      "after_sha256": "28a8c10099b71749d971cb279302607939d1fb64a5ec53968a666ff86336d279"
+    },
+    {
+      "path": "project/App/platform/board_uart.c",
+      "before_sha256": "b6e8cc86f9281d96ee3445cac92010fcaea72e9ab7d53a8855045a07de0b21c4",
+      "after_sha256": "b140dce7453ffdef118a984944564ce13f49ce55a8494961fcefcf471bbcb319"
+    },
+    {
+      "path": "project/App/platform/board_uart.h",
+      "before_sha256": "c58e40c59bc9b54bdee35a7a2e4ad4b959d7fae69376c5428b02024fac113212",
+      "after_sha256": "89befe36d3d632c69a262d3318922048f95fedc6da0eb82aeb61c465902fa39c"
+    },
+    {
+      "path": "project/App/platform/claw_limit_storage_h7.c",
+      "before_sha256": "96595967ee1b9df1160d4f5b60ca53b2dd38379fbd33c98e82579fff766663a1",
+      "after_sha256": "9ba6ece3596a5e07de0554715c428b64d576c1e9612e54890815614d9da38f18"
+    },
+    {
+      "path": "project/App/platform/platform_hal.h",
+      "before_sha256": "d6c7775dadc8f71aadd90428d19419a0f4c3ac06399173736fc0ac1b68fac968",
+      "after_sha256": "1f98ca6e5a95ec4d0b01085daee460b0d3a9e584d26b4a48e6419e66b313c646"
+    },
+    {
+      "path": "project/App/protocol/vofa_protocol.c",
+      "before_sha256": "5312ad639cbbbb091a925319bdf315b86150e8e09d0342512199f0c43579d288",
+      "after_sha256": "65e9c4b6f4366071f34120ac1abd59b1df25d5b5e470f63ec49754a59c3efdcd"
+    },
+    {
+      "path": "project/App/protocol/vofa_protocol.h",
+      "before_sha256": "cc1f8bad8977bab6a5f2fb60545208eafb87e9ca060944ab99699ebd8e18df97",
+      "after_sha256": "c15acf13bb3c75809e0fb08c7c15a2d9520011841cf7ca62e74f90b5cc0756b6"
+    },
+    {
+      "path": "project/App/modules/motor/motor_service.c",
+      "before_sha256": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca",
+      "after_sha256": "96821f46dd12322b4f2bfebd7151324cd67d9db49a6e685cd411bc85cb1b264b"
+    },
+    {
+      "path": "project/App/modules/ui/ui_profile_store.c",
+      "before_sha256": "a8856423f6ff23f47a7088ebfeede42f9e99b98124c8ffe1706cf7b630a54922",
+      "after_sha256": "04abbffa1cf4cdde26c518ce1ae2170788406150f7ae3c70d995caf0a3034578"
+    },
+    {
+      "path": "project/App/platform/boards/lxb743zi_p1/board_config.h",
+      "before_sha256": "2b8cd2a1ae56c4880a8a9302c122b4fbb1a802ec0d332eab0e36347f5cfe2ed3",
+      "after_sha256": "d545d72ea0bd40733290ac5b40378c406f0ca9b13bb2c575796f37d7d94db735"
+    },
+    {
+      "path": "project/App/platform/boards/lxb743zi_p1/board_devices.h",
+      "before_sha256": "d0e68307574cd9ad543d48ef2b57c348b196cb5db3be9402217a8b32d5466ea0",
+      "after_sha256": "630cf76e57185d5e654bfdece04aed25888cbbdd4eadcdf0584989a50628cfaa"
+    },
+    {
+      "path": "project/App/vendor/camera/dcmi_ov2640.c",
+      "before_sha256": "5924bd16821b875498c69adafe1ab2e479afb828df972cb7c8849ebe35591364",
+      "after_sha256": "772801ab1428d227629d9e759be49d25d6e417677265871707bb349debc1968d"
+    },
+    {
+      "path": "project/App/vendor/camera/dcmi_ov2640.h",
+      "before_sha256": "2d51fa05b6f08b0f9d9bb34c218a7dc6015b32a45047e77085d4bac292541796",
+      "after_sha256": "3e514883a453b96050c82b5662d251f26eaca360c4bbcb3c9fe430c2c6ba0904"
+    },
+    {
+      "path": "project/App/vendor/camera/dcmi_ov5640.c",
+      "before_sha256": "c7165c2bd793f60881f2a8ef2e37b6bacb6b9d92c17eeac4f835864bf030eabc",
+      "after_sha256": "cd1fcdae4a29698799136ddd8158a942ead2a5551632e1ea0e99de865a90dffc"
+    },
+    {
+      "path": "project/App/vendor/camera/dcmi_ov5640.h",
+      "before_sha256": "0dbfee644fbc502beaa33ac145ba5ffedf07028319a01099045261aa9cd5717f",
+      "after_sha256": "4a368a5583b42d459aef4e713256a6f7d6bdd5b90fbc42d3f83c9b5444f7b6ed"
+    },
+    {
+      "path": "project/App/vendor/camera/sccb.h",
+      "before_sha256": "98604aaf80a1c9f8718573ca443116b3cf7c7f1a169410afb462b58c374fc56b",
+      "after_sha256": "4c1acaac39b0216a75ea9d7b3e14eda82b9f8113b1b33e6a38f625f7e3521819"
+    },
+    {
+      "path": "project/App/vendor/lcd/lcd_spi_154.c",
+      "before_sha256": "1b228c36deb2321a85a8da52965ff757bbcb7385518c76f4a188d64b961f356a",
+      "after_sha256": "309be665b3094254bc478ec8628ebf53f72aea6f272f8b04b69e767653973e7f"
+    },
+    {
+      "path": "project/App/vendor/lcd/lcd_spi_154.h",
+      "before_sha256": "bf35cef500c2983c040228fce5908779c150380df6a1f668ffafadc6a9ef35c7",
+      "after_sha256": "c7e880d0b13a8a9f9609353eda103d51d7e0064b5e30037de34f251a8ba9dd5f"
+    },
+    {
+      "path": "project/App/vendor/qspi/qspi_w25q64.c",
+      "before_sha256": "cd158779bd2ab0bd6c21241b91c154d44138226ff4c1212fe6975d7aab58f9da",
+      "after_sha256": "ca2c704f692093918f11086e9aeefca1ac81f081a6beb4afe5f0cb59b76edd2c"
+    },
+    {
+      "path": "project/App/vendor/qspi/qspi_w25q64.h",
+      "before_sha256": "3e7fd7e62591f597962e0df014f04c4b0f730674d72fe42ec0761d56c3dea94a",
+      "after_sha256": "34adbe8bfbd64cfae98c9b7bf6c6630c8153bedd6bdcdf33c1abfa3d2e72e808"
+    },
+    {
+      "path": "project/App/vendor/sd/sdmmc_sd.c",
+      "before_sha256": "32e2e6b46a85e2edcd0a950fc8f6577d6b31f0928dbc739c9967d93972e5cd6f",
+      "after_sha256": "828d4c8d219c2ba49d1dc12d9c42304f3b2834bc9e714b94ed704791a1444495"
+    },
+    {
+      "path": "project/Core/Src/main.c",
+      "before_sha256": "5ac5d12d24213d30fe331d11874838dab14d534959ec519bb2f8cf84992c1e36",
+      "after_sha256": "1fb4feb6c427b7cba76627f16b247d44d8acd6f3ea04c5f75b14ac1625347668"
+    },
+    {
+      "path": "project/Core/Src/stm32h7xx_hal_msp.c",
+      "before_sha256": "7c19ddc806cb23846a1833b608e692a3ba38fcaed6075ef5c79001793e712b6c",
+      "after_sha256": "7a3507256348a818a924aabf9faa92e59ad1b35c56a7129d0e590972388ff2a6"
+    },
+    {
+      "path": "project/Core/Src/stm32h7xx_it.c",
+      "before_sha256": "f09ef8f9f457e1ffb34054ff43aa4afb2deaf8b80fd8eb92a5f6536146258c11",
+      "after_sha256": "ae9981849d7aafd6fea7f03b1cc26e320c69d48a04f83cedab95359dd486b099"
+    },
+    {
+      "path": "Tools/run_integration_host_tests.py",
+      "before_sha256": "1addde8cdfd08a955b22a82bca8807baa1fd4dca2988f7ab40c1906df69847bc",
+      "after_sha256": "f6f05139ad9e0736898b1c863ab9c54cd21f424d0ba69a6562db4d67a2c4bdf2"
+    },
+    {
+      "path": "Tools/run_motor_plot_tests.py",
+      "before_sha256": "506201140a97b881185a476c9b76a7c0a57f981730da1702f961744e553d9cc5",
+      "after_sha256": "9f77abb982b7cb6b1016fd35f9ce752b3a0b0fcc14f19f2f4df16dcf6d67e78a"
+    },
+    {
+      "path": "Tools/run_p2_host_tests.py",
+      "before_sha256": "024c9820ff802a6efe77cf122ea9f811f348175683fce318cd7b1c5ac8fa8351",
+      "after_sha256": "222e384e9cb23052a48c2eb79c179d4ef3bca532a70673d50ead2f707a8b5b27"
+    },
+    {
+      "path": "Tools/run_p3_host_tests.py",
+      "before_sha256": "3e47b5bcc688b369ddc584133e51dfea17a183b78a43056c2156c7d6d801f1d0",
+      "after_sha256": "e59b9b6f90359d3afb8afdade1e399fc86654fa8b00f57d23bc2ae32380f8a71"
+    },
+    {
+      "path": "Tools/run_ui_tests.py",
+      "before_sha256": "29f942990b13a24f94232277c1278a9a16ed2d94892587a1deafdcdcb4e2f82c",
+      "after_sha256": "f64d03375092d0865d3349fc2ce23373a3cbe8044e42343e1d23282a683994e1"
+    },
+    {
+      "path": "Tools/verify_input_mapping.py",
+      "before_sha256": "3fb25ffd4c6ce7d3eaa1bba79ece3b2127bcef19a3a75e381b20b5a92ff4c4d0",
+      "after_sha256": "94a75011681e83335fd51636467c40f6d7308027eb0e44130d6b0c2f68ebc40e"
+    },
+    {
+      "path": "Tools/verify_pin_reference.py",
+      "before_sha256": "07fdede95af99dea2e36b47280e7bf43b186cf32fc449d9f931b6cf85b1f0ea3",
+      "after_sha256": "36a8f64615f2248497e04075942f958d924e659522b5c4fb453efd04f2ae4809"
+    },
+    {
+      "path": "project/EWARM/H743_VisionGripper.ewp",
+      "before_sha256": "f8096e8ac57a0f438e2d37403445bb7b111b249031814ffeca1dffc0ccb8c5a3",
+      "after_sha256": "c84813e25d7d0d80fc4897ae72b4a4be8a85dc8ba4cbb89d696da75925ed9284"
+    },
+    {
+      "path": "project/USB_DEVICE/Target/usbd_conf.c",
+      "before_sha256": "80046e68568332fac22af88284b090096c81e4f21bd4165b36efb1bf6ac3a515",
+      "after_sha256": "a1e2d9666a0cfc8d7e2006195a2cd5176d30aa3fb05603449bb87d28962f983b"
+    }
+  ],
+  "new_tool_files": [
+    "Tools/configuration_facts.py",
+    "Tools/run_config_guard_tests.py",
+    "Tools/run_portability_tests.py"
+  ]
+}

@@ -1,0 +1,857 @@
+{
+  "k:01_从零建立工程/01_芯片开发板与资料阅读.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/01_从零建立工程/01_芯片开发板与资料阅读.md",
+    "kind": "k",
+    "title": "从一颗芯片到一块可接线的开发板"
+  },
+  "k:01_从零建立工程/02_不使用CubeMX建立HAL工程.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/01_从零建立工程/02_不使用CubeMX建立HAL工程.md",
+    "kind": "k",
+    "title": "不使用 CubeMX，工程至少需要哪些东西"
+  },
+  "k:01_从零建立工程/03_时钟电源与时间基准.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/01_从零建立工程/03_时钟电源与时间基准.md",
+    "kind": "k",
+    "title": "时钟、电源与时间基准：先算清“谁在计时”"
+  },
+  "k:01_从零建立工程/04_寻找HAL函数与手动配置流程.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/01_从零建立工程/04_寻找HAL函数与手动配置流程.md",
+    "kind": "k",
+    "title": "怎样从“不知道函数名”找到一套可工作的 HAL 配置"
+  },
+  "k:02_基础外设/01_GPIO与LED手动配置.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/02_基础外设/01_GPIO与LED手动配置.md",
+    "kind": "k",
+    "title": "GPIO 与 LED：自己完成第一套引脚初始化"
+  },
+  "k:02_基础外设/02_按键去抖与事件.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/02_基础外设/02_按键去抖与事件.md",
+    "kind": "k",
+    "title": "按键：从电平到“用户做了一次操作”"
+  },
+  "k:02_基础外设/03_UART从发送到中断接收.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/02_基础外设/03_UART从发送到中断接收.md",
+    "kind": "k",
+    "title": "UART：手动配置、收发与回调完整链路"
+  },
+  "k:02_基础外设/04_NVIC中断回调与DMA.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/02_基础外设/04_NVIC中断回调与DMA.md",
+    "kind": "k",
+    "title": "中断、回调与 DMA 是三件不同的事"
+  },
+  "k:02_基础外设/05_定时器PWM与硬件编码器.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/02_基础外设/05_定时器PWM与硬件编码器.md",
+    "kind": "k",
+    "title": "定时器：时间、波形和计数三种用法"
+  },
+  "k:02_基础外设/06_SPI与I2C_SCCB的分工.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/02_基础外设/06_SPI与I2C_SCCB的分工.md",
+    "kind": "k",
+    "title": "SPI 与 I²C/SCCB：先识别总线，再写器件驱动"
+  },
+  "k:03_设备驱动/01_SPI屏幕从命令到图像.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/01_SPI屏幕从命令到图像.md",
+    "kind": "k",
+    "title": "SPI 屏幕：从一条命令到一幅图像"
+  },
+  "k:03_设备驱动/02_OV5640摄像头采集与预览.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/02_OV5640摄像头采集与预览.md",
+    "kind": "k",
+    "title": "OV5640：控制总线、像素总线与帧缓冲"
+  },
+  "k:03_设备驱动/03_STS串口舵机协议与控制.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/03_STS串口舵机协议与控制.md",
+    "kind": "k",
+    "title": "飞特 STS 舵机：从 UART 字节到设备动作"
+  },
+  "k:03_设备驱动/04_PWM舵机与定时脉宽.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/04_PWM舵机与定时脉宽.md",
+    "kind": "k",
+    "title": "PWM 舵机：脉宽命令与机械动作"
+  },
+  "k:03_设备驱动/05_RTC时钟与备份域.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/05_RTC时钟与备份域.md",
+    "kind": "k",
+    "title": "RTC：日历、晶振与断电后的状态"
+  },
+  "k:03_设备驱动/06_SDMMC与FatFs文件系统.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/06_SDMMC与FatFs文件系统.md",
+    "kind": "k",
+    "title": "SD 卡：块设备与文件系统分层"
+  },
+  "k:03_设备驱动/07_QSPI外部Flash与映射.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/07_QSPI外部Flash与映射.md",
+    "kind": "k",
+    "title": "QSPI 外部 Flash：命令模式与内存映射"
+  },
+  "k:03_设备驱动/08_USB_CDC从枚举到控制台.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/08_USB_CDC从枚举到控制台.md",
+    "kind": "k",
+    "title": "USB CDC：虚拟串口并不是另一条 USART"
+  },
+  "k:03_设备驱动/09_蓝牙VOFA与主机命令.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/09_蓝牙VOFA与主机命令.md",
+    "kind": "k",
+    "title": "蓝牙、VOFA 与命令入口：先定义字节的含义"
+  },
+  "k:03_设备驱动/10_内部Flash配置保存与掉电恢复.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/10_内部Flash配置保存与掉电恢复.md",
+    "kind": "k",
+    "title": "内部 Flash：保存夹爪配置与掉电恢复"
+  },
+  "k:04_闭环控制/01_MG310编码器测速与单位.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/04_闭环控制/01_MG310编码器测速与单位.md",
+    "kind": "k",
+    "title": "MG310 测速：从 A/B 边沿到输出轴 RPM"
+  },
+  "k:04_闭环控制/02_EC11旋钮与目标速度.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/04_闭环控制/02_EC11旋钮与目标速度.md",
+    "kind": "k",
+    "title": "EC11：把旋钮动作变成稳定的目标速度"
+  },
+  "k:04_闭环控制/03_速度PID从公式到代码.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/04_闭环控制/03_速度PID从公式到代码.md",
+    "kind": "k",
+    "title": "速度 PID：公式、单位与程序顺序"
+  },
+  "k:04_闭环控制/04_H桥功率驱动与换向流程.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/04_闭环控制/04_H桥功率驱动与换向流程.md",
+    "kind": "k",
+    "title": "H 桥：MCU 负责控制，功率级负责电流"
+  },
+  "k:05_系统工程/01_驱动适配层与应用解耦.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/05_系统工程/01_驱动适配层与应用解耦.md",
+    "kind": "k",
+    "title": "从能跑到可迁移：分层的依据是什么"
+  },
+  "k:05_系统工程/02_H7内存DMA与缓存一致性.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/05_系统工程/02_H7内存DMA与缓存一致性.md",
+    "kind": "k",
+    "title": "H7 内存、DMA 与缓存：CPU 看得见不代表 DMA 能搬"
+  },
+  "k:05_系统工程/03_状态机调度与测试证据.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/05_系统工程/03_状态机调度与测试证据.md",
+    "kind": "k",
+    "title": "状态机、调度与“验证到哪一层”"
+  },
+  "p:00_项目导读/01_项目名片与学习边界.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/00_项目导读/01_项目名片与学习边界.md",
+    "kind": "p",
+    "title": "H743 智能可视化机械臂夹爪：项目名片"
+  },
+  "p:00_项目导读/02_目录分层与职责.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/00_项目导读/02_目录分层与职责.md",
+    "kind": "p",
+    "title": "从目录找到职责，而不是逐个文件盲读"
+  },
+  "p:01_启动与配置/01_从复位到App_Task.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/01_启动与配置/01_从复位到App_Task.md",
+    "kind": "p",
+    "title": "从复位到 App_Task：按实际代码追一次"
+  },
+  "p:01_启动与配置/02_配置资源与编译目标.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/01_启动与配置/02_配置资源与编译目标.md",
+    "kind": "p",
+    "title": "引脚、功能和工程配置分别在哪一层"
+  },
+  "p:02_数据与控制链路/01_UART与STS的完整旅程.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/02_数据与控制链路/01_UART与STS的完整旅程.md",
+    "kind": "p",
+    "title": "一个 STS 应答字节在本项目里经过哪里"
+  },
+  "p:02_数据与控制链路/02_图像帧从摄像头到屏幕.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/02_数据与控制链路/02_图像帧从摄像头到屏幕.md",
+    "kind": "p",
+    "title": "一帧图像的生成、搬运、接受与显示"
+  },
+  "p:02_数据与控制链路/03_电机闭环与EC11调用链.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/02_数据与控制链路/03_电机闭环与EC11调用链.md",
+    "kind": "p",
+    "title": "EC11 动作如何变成电机控制量"
+  },
+  "p:02_数据与控制链路/04_存储时钟与USB的协作.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/02_数据与控制链路/04_存储时钟与USB的协作.md",
+    "kind": "p",
+    "title": "RTC、存储与 USB 怎样与主循环协作"
+  },
+  "p:03_源码阅读/01_按功能阅读的检查单.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/03_源码阅读/01_按功能阅读的检查单.md",
+    "kind": "p",
+    "title": "每次读一个模块，留下什么结果"
+  },
+  "p:04_实验与排查/01_从现象向下定位.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/04_实验与排查/01_从现象向下定位.md",
+    "kind": "p",
+    "title": "从现象定位：每一步排除哪一层"
+  },
+  "p:04_实验与排查/02_构建与证据阅读.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/04_实验与排查/02_构建与证据阅读.md",
+    "kind": "p",
+    "title": "构建、测试与固件版本：如何判断“验证完成”"
+  },
+  "p:05_维护与证据/01_怎样继续扩展项目.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/05_维护与证据/01_怎样继续扩展项目.md",
+    "kind": "p",
+    "title": "给项目增加一个设备，应该按什么顺序做"
+  },
+  "p:06_独立实验代码/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/06_独立实验代码/README.md",
+    "kind": "p",
+    "title": "GPIO / UART 独立实验片段"
+  },
+  "k:06_实验与自测/01_GPIO_UART循序实验.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/06_实验与自测/01_GPIO_UART循序实验.md",
+    "kind": "k",
+    "title": "从GPIO到串口：不用生成器的第一条实验路线"
+  },
+  "k:06_实验与自测/02_设备到系统的学习路线.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/06_实验与自测/02_设备到系统的学习路线.md",
+    "kind": "k",
+    "title": "建立可迁移能力的十二个学习单元"
+  },
+  "k:06_实验与自测/03_关键自测与参考答案.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/06_实验与自测/03_关键自测与参考答案.md",
+    "kind": "k",
+    "title": "自测：能不能解释，而不只是复述函数名"
+  },
+  "k:07_函数与资料索引/02_术语与单位速查.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/07_函数与资料索引/02_术语与单位速查.md",
+    "kind": "k",
+    "title": "术语与单位速查"
+  },
+  "k:07_函数与资料索引/01_按任务寻找HAL函数.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/07_函数与资料索引/01_按任务寻找HAL函数.md",
+    "kind": "k",
+    "title": "按任务寻找 HAL 函数"
+  },
+  "p:03_源码阅读/02_源码定位索引.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/03_源码阅读/02_源码定位索引.md",
+    "kind": "p",
+    "title": "当前工程源码定位索引"
+  },
+  "k:README.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/README.md",
+    "kind": "k",
+    "title": "嵌入式系统学习手册"
+  },
+  "p:README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/README.md",
+    "kind": "p",
+    "title": "H743 智能视觉夹爪：项目教学手册"
+  },
+  "j:README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/00_项目库导览/README.md",
+    "kind": "j",
+    "title": "项目库导览"
+  },
+  "j:01_H743项目卡片.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/00_项目库导览/01_H743项目卡片.md",
+    "kind": "j",
+    "title": "H743 智能视觉机械臂夹爪项目卡片"
+  },
+  "j:02_新项目卡片模板.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/00_项目库导览/02_新项目卡片模板.md",
+    "kind": "j",
+    "title": "新项目卡片模板"
+  },
+  "p:05_维护与证据/03_实验记录模板.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/05_维护与证据/03_实验记录模板.md",
+    "kind": "p",
+    "title": "实验记录模板"
+  },
+  "k:01_从零建立工程/README.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/01_从零建立工程/README.md",
+    "kind": "k",
+    "title": "从零建立工程"
+  },
+  "k:02_基础外设/README.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/02_基础外设/README.md",
+    "kind": "k",
+    "title": "基础外设"
+  },
+  "k:03_设备驱动/README.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/03_设备驱动/README.md",
+    "kind": "k",
+    "title": "设备驱动"
+  },
+  "k:04_闭环控制/README.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/04_闭环控制/README.md",
+    "kind": "k",
+    "title": "闭环控制"
+  },
+  "k:05_系统工程/README.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/05_系统工程/README.md",
+    "kind": "k",
+    "title": "系统工程"
+  },
+  "k:06_实验与自测/README.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/06_实验与自测/README.md",
+    "kind": "k",
+    "title": "实验与自测"
+  },
+  "k:07_函数与资料索引/README.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/07_函数与资料索引/README.md",
+    "kind": "k",
+    "title": "函数与资料索引"
+  },
+  "p:00_项目导读/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/00_项目导读/README.md",
+    "kind": "p",
+    "title": "项目导读"
+  },
+  "p:01_启动与配置/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/01_启动与配置/README.md",
+    "kind": "p",
+    "title": "启动与配置"
+  },
+  "p:02_数据与控制链路/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/02_数据与控制链路/README.md",
+    "kind": "p",
+    "title": "数据与控制链路"
+  },
+  "p:03_源码阅读/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/03_源码阅读/README.md",
+    "kind": "p",
+    "title": "源码阅读"
+  },
+  "p:04_实验与排查/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/04_实验与排查/README.md",
+    "kind": "p",
+    "title": "实验与排查"
+  },
+  "p:05_维护与证据/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/05_维护与证据/README.md",
+    "kind": "p",
+    "title": "维护与证据"
+  },
+  "p:05_维护与证据/02_资料维护与核验.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/05_维护与证据/02_资料维护与核验.md",
+    "kind": "p",
+    "title": "资料维护与核验"
+  },
+  "p:../硬件档案/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/README.md",
+    "kind": "p",
+    "title": "H743 硬件档案：设备、供电与替换"
+  },
+  "p:../硬件档案/00_总览/01_硬件总清单.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/00_总览/01_硬件总清单.md",
+    "kind": "p",
+    "title": "硬件总清单与用途"
+  },
+  "p:../硬件档案/01_供电设计/01_开发板与整机供电.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/01_供电设计/01_开发板与整机供电.md",
+    "kind": "p",
+    "title": "从 USB 供电到独立整机电源"
+  },
+  "p:../硬件档案/01_供电设计/02_电流预算与上电检查.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/01_供电设计/02_电流预算与上电检查.md",
+    "kind": "p",
+    "title": "电流预算、接线与分阶段上电"
+  },
+  "p:../硬件档案/02_设备档案/01_电机舵机与驱动.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/02_设备档案/01_电机舵机与驱动.md",
+    "kind": "p",
+    "title": "MG310、电机驱动、STS 与转接板"
+  },
+  "p:../硬件档案/02_设备档案/02_蓝牙JDY与HC08.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/02_设备档案/02_蓝牙JDY与HC08.md",
+    "kind": "p",
+    "title": "JDY-31 有什么特点，怎样判断能否换 HC-08"
+  },
+  "p:../硬件档案/02_设备档案/03_视觉输入与板载设施.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/02_设备档案/03_视觉输入与板载设施.md",
+    "kind": "p",
+    "title": "视觉、输入与板载设施档案"
+  },
+  "p:../硬件档案/03_替换与验收/01_硬件替换矩阵.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/03_替换与验收/01_硬件替换矩阵.md",
+    "kind": "p",
+    "title": "硬件替换时：保留什么，核对什么，改哪里"
+  },
+  "p:../硬件档案/03_替换与验收/02_实物验收记录模板.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/03_替换与验收/02_实物验收记录模板.md",
+    "kind": "p",
+    "title": "硬件安装与替换验收记录"
+  },
+  "p:../硬件档案/04_资料与证据/01_来源与待确认项.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../硬件档案/04_资料与证据/01_来源与待确认项.md",
+    "kind": "p",
+    "title": "参数依据、版本与待确认项"
+  },
+  "k:05_系统工程/04_供电与硬件替换的判断方法.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/05_系统工程/04_供电与硬件替换的判断方法.md",
+    "kind": "k",
+    "title": "供电与硬件替换：建立判断条件"
+  },
+  "p:07_硬件档案/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/07_硬件档案/README.md",
+    "kind": "p",
+    "title": "项目硬件、供电与替换"
+  },
+  "p:../指令手册/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/README.md",
+    "kind": "p",
+    "title": "H743 统一指令手册"
+  },
+  "p:../指令手册/00_总览/01_入口与分层.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/00_总览/01_入口与分层.md",
+    "kind": "p",
+    "title": "一套项目，四层指令与不同入口"
+  },
+  "p:../指令手册/01_文本控制台/01_完整AT指令表.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/01_文本控制台/01_完整AT指令表.md",
+    "kind": "p",
+    "title": "`@` 文本指令完整表"
+  },
+  "p:../指令手册/02_原有二进制协议/01_STS官方帧.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/02_原有二进制协议/01_STS官方帧.md",
+    "kind": "p",
+    "title": "舵机官方协议：HEX 字节，不是文本"
+  },
+  "p:../指令手册/02_原有二进制协议/02_F0到F4本地扩展.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/02_原有二进制协议/02_F0到F4本地扩展.md",
+    "kind": "p",
+    "title": "F0–F4：STM32 本地管理命令"
+  },
+  "p:../指令手册/02_原有二进制协议/03_F5与蓝牙滑块.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/02_原有二进制协议/03_F5与蓝牙滑块.md",
+    "kind": "p",
+    "title": "F5 业务动作、虚拟按钮与蓝牙整数滑块"
+  },
+  "p:../指令手册/02_原有二进制协议/04_参数ID与持久化.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/02_原有二进制协议/04_参数ID与持久化.md",
+    "kind": "p",
+    "title": "当前参数 ID、单位与保存边界"
+  },
+  "p:../指令手册/03_使用与排查/01_按任务速查与排查.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/03_使用与排查/01_按任务速查与排查.md",
+    "kind": "p",
+    "title": "按任务速查：从连接到控制"
+  },
+  "p:../指令手册/04_维护与证据/01_上游对照与修订记录.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/04_维护与证据/01_上游对照与修订记录.md",
+    "kind": "p",
+    "title": "上游对照、偏差与维护规则"
+  },
+  "p:08_指令手册/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/08_指令手册/README.md",
+    "kind": "p",
+    "title": "操作与指令入口"
+  },
+  "k:05_系统工程/05_指令分层与操作协议.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/05_系统工程/05_指令分层与操作协议.md",
+    "kind": "k",
+    "title": "指令分层：同一个动作，为什么有多种格式"
+  },
+  "p:../指令手册/00_总览/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/00_总览/README.md",
+    "kind": "p",
+    "title": "总览"
+  },
+  "p:../指令手册/01_文本控制台/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/01_文本控制台/README.md",
+    "kind": "p",
+    "title": "文本控制台"
+  },
+  "p:../指令手册/02_原有二进制协议/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/02_原有二进制协议/README.md",
+    "kind": "p",
+    "title": "原有二进制协议"
+  },
+  "p:../指令手册/03_使用与排查/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/03_使用与排查/README.md",
+    "kind": "p",
+    "title": "使用与排查"
+  },
+  "p:../指令手册/04_维护与证据/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../指令手册/04_维护与证据/README.md",
+    "kind": "p",
+    "title": "维护与证据"
+  },
+  "p:../屏幕交互/01_参考调查与初版方案.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../屏幕交互/01_参考调查与初版方案.md",
+    "kind": "p",
+    "title": "屏幕交互：参考调查与初版方案"
+  },
+  "p:../屏幕交互/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../屏幕交互/README.md",
+    "kind": "p",
+    "title": "H743 初版屏幕菜单与快捷观测"
+  },
+  "p:../屏幕交互/02_按键页面与快捷操作.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/屏幕交互/02_按键页面与快捷操作.md",
+    "kind": "p",
+    "title": "屏幕操作手册"
+  },
+  "p:../屏幕交互/03_实现分层与显示协作.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../屏幕交互/03_实现分层与显示协作.md",
+    "kind": "p",
+    "title": "实现分层与摄像头显示协作"
+  },
+  "p:../屏幕交互/04_自定义开机配置与Flash.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../屏幕交互/04_自定义开机配置与Flash.md",
+    "kind": "p",
+    "title": "自定义开机默认值：保存、加载和清除"
+  },
+  "p:../屏幕交互/05_测试构建与实物验收.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../屏幕交互/05_测试构建与实物验收.md",
+    "kind": "p",
+    "title": "构建、模型测试与实物验收边界"
+  },
+  "p:../屏幕交互/06_修改与兼容记录.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/../屏幕交互/06_修改与兼容记录.md",
+    "kind": "p",
+    "title": "本版修改与兼容记录"
+  },
+  "p:09_屏幕交互/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/教学手册/09_屏幕交互/README.md",
+    "kind": "p",
+    "title": "屏幕菜单与快捷导航"
+  },
+  "k:05_系统工程/06_页面栈与快捷上下文.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/05_系统工程/06_页面栈与快捷上下文.md",
+    "kind": "k",
+    "title": "页面栈与快捷上下文"
+  },
+  "p:../多控制器扩展规划/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/多控制器扩展规划/README.md",
+    "kind": "p",
+    "title": "H743 为核心的多控制器扩展规划"
+  },
+  "p:../多控制器扩展规划/01_架构分工与算力取舍.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/多控制器扩展规划/01_架构分工与算力取舍.md",
+    "kind": "p",
+    "title": "架构分工与算力取舍"
+  },
+  "p:../多控制器扩展规划/02_ESP8266现状与改造边界.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/多控制器扩展规划/02_ESP8266现状与改造边界.md",
+    "kind": "p",
+    "title": "ESP8266原程序现状与改造边界"
+  },
+  "p:../多控制器扩展规划/03_H743资源与连接方案.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/多控制器扩展规划/03_H743资源与连接方案.md",
+    "kind": "p",
+    "title": "H743资源与连接方案"
+  },
+  "p:../多控制器扩展规划/04_机构接口与通信契约草案.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/多控制器扩展规划/04_机构接口与通信契约草案.md",
+    "kind": "p",
+    "title": "机构接口与通信契约草案"
+  },
+  "p:../多控制器扩展规划/05_实施顺序与验收.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/多控制器扩展规划/05_实施顺序与验收.md",
+    "kind": "p",
+    "title": "实施顺序与验收"
+  },
+  "p:../多控制器扩展规划/06_证据/来源与核验.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/多控制器扩展规划/06_证据/来源与核验.md",
+    "kind": "p",
+    "title": "本次规划的来源与核验"
+  },
+  "p:../屏幕交互/20261022_交互与图像修订/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/屏幕交互/20261022_交互与图像修订/README.md",
+    "kind": "p",
+    "title": "交互、图像与执行保护修订"
+  },
+  "p:../指令手册/01_文本控制台/02_分类帮助与图像指令.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/指令手册/01_文本控制台/02_分类帮助与图像指令.md",
+    "kind": "p",
+    "title": "分类帮助、静默与图像操作指令"
+  },
+  "p:../屏幕交互/20261022_交互与图像修订/动力执行与供电边界.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/屏幕交互/20261022_交互与图像修订/动力执行与供电边界.md",
+    "kind": "p",
+    "title": "H743侧动力执行与供电边界"
+  },
+  "p:../屏幕交互/20261022_交互与图像修订/修改记录.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/屏幕交互/20261022_交互与图像修订/修改记录.md",
+    "kind": "p",
+    "title": "修订、兼容与回退记录"
+  },
+  "p:../屏幕交互/20261022_交互与图像修订/验收记录.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/屏幕交互/20261022_交互与图像修订/验收记录.md",
+    "kind": "p",
+    "title": "本轮软件验证与实物验收"
+  },
+  "p:../输入映射/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/README.md",
+    "kind": "p",
+    "title": "物理按键、上位机模拟与调参映射"
+  },
+  "p:../输入映射/01_上位机模拟与按键操作.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/01_上位机模拟与按键操作.md",
+    "kind": "p",
+    "title": "不接按键也能操作：上位机模拟快速开始"
+  },
+  "p:../输入映射/02_按键与来源映射.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/02_按键与来源映射.md",
+    "kind": "p",
+    "title": "按键、组合键与输入来源映射"
+  },
+  "p:../输入映射/03_参数与保存映射.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/03_参数与保存映射.md",
+    "kind": "p",
+    "title": "参数、屏幕、VOFA与保存的映射"
+  },
+  "p:../输入映射/04_指令帮助与快捷配置.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/04_指令帮助与快捷配置.md",
+    "kind": "p",
+    "title": "指令帮助打印与VOFA快捷配置"
+  },
+  "p:../输入映射/05_实现依据与验收.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/05_实现依据与验收.md",
+    "kind": "p",
+    "title": "实现依据、兼容与验收"
+  },
+  "p:../指令手册/01_文本控制台/03_按键模拟与共享调参.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/指令手册/01_文本控制台/03_按键模拟与共享调参.md",
+    "kind": "p",
+    "title": "按键模拟、共享参数与可执行帮助"
+  },
+  "p:../输入映射/06_扩展开发教程/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/06_扩展开发教程/README.md",
+    "kind": "p",
+    "title": "参数、屏幕与输入映射扩展教程"
+  },
+  "p:../输入映射/06_扩展开发教程/01_新增上位机参数全过程.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/06_扩展开发教程/01_新增上位机参数全过程.md",
+    "kind": "p",
+    "title": "配置一个可供上位机控制的参数，需要经过哪些设置"
+  },
+  "p:../输入映射/06_扩展开发教程/02_屏幕与按键映射教学.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/06_扩展开发教程/02_屏幕与按键映射教学.md",
+    "kind": "p",
+    "title": "屏幕页面、业务动作与按键映射怎样建立"
+  },
+  "p:../输入映射/06_扩展开发教程/03_开机保存与兼容.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/06_扩展开发教程/03_开机保存与兼容.md",
+    "kind": "p",
+    "title": "参数如何成为自定义开机默认值"
+  },
+  "p:../输入映射/06_扩展开发教程/04_映射表维护与验收.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/06_扩展开发教程/04_映射表维护与验收.md",
+    "kind": "p",
+    "title": "参数表、屏幕映射、帮助和VOFA配置怎样同步维护"
+  },
+  "p:../输入映射/06_扩展开发教程/05_新增项目填写模板.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/输入映射/06_扩展开发教程/05_新增项目填写模板.md",
+    "kind": "p",
+    "title": "新增参数、动作与映射的填写模板"
+  },
+  "p:../视觉识别与抓取/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/README.md",
+    "kind": "p",
+    "title": "H743 图像上位机与快递抓取学习项目"
+  },
+  "p:../视觉识别与抓取/01_总体方案与边界.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/01_总体方案与边界.md",
+    "kind": "p",
+    "title": "电脑识别、H743集成、手动验证的职责"
+  },
+  "p:../视觉识别与抓取/02_接线与预览操作.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/02_接线与预览操作.md",
+    "kind": "p",
+    "title": "接线、打开电脑预览、保存训练原图"
+  },
+  "p:../视觉识别与抓取/03_协议与固件实现.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/03_协议与固件实现.md",
+    "kind": "p",
+    "title": "图像协议、帧缓冲所有权与回传"
+  },
+  "p:../视觉识别与抓取/04_深度学习实操.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/04_深度学习实操.md",
+    "kind": "p",
+    "title": "你需要做的深度学习工作：采集到自定义分割模型"
+  },
+  "p:../视觉识别与抓取/05_手动抓取验证.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/05_手动抓取验证.md",
+    "kind": "p",
+    "title": "手持摄像头怎样验证抓取建议"
+  },
+  "p:../视觉识别与抓取/06_接口映射与扩展.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/06_接口映射与扩展.md",
+    "kind": "p",
+    "title": "新接口、屏幕与后续扩展映射"
+  },
+  "p:../视觉识别与抓取/07_测试与交付.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/07_测试与交付.md",
+    "kind": "p",
+    "title": "软件验证、实物验收与修订记录"
+  },
+  "p:../视觉识别与抓取/08_参考资料.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/08_参考资料.md",
+    "kind": "p",
+    "title": "官方资料与项目证据保存方式"
+  },
+  "p:../../../Host/vision_gripper/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Host/vision_gripper/README.md",
+    "kind": "p",
+    "title": "电脑端快递视觉工具"
+  },
+  "p:../指令手册/01_文本控制台/04_USB图像与视觉建议.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/指令手册/01_文本控制台/04_USB图像与视觉建议.md",
+    "kind": "p",
+    "title": "USB图像与二维视觉建议指令"
+  },
+  "k:05_系统工程/07_视觉抓取与学习数据闭环.md": {
+    "path": "02_Software_Development_Workspace/20_Knowledge-研发知识库/09_系统学习手册/05_系统工程/07_视觉抓取与学习数据闭环.md",
+    "kind": "k",
+    "title": "从图像到抓取：学到的是什么，控制的又是什么"
+  },
+  "p:../视觉识别与抓取/09_USB硬件与波特率说明.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/09_USB硬件与波特率说明.md",
+    "kind": "p",
+    "title": "从原理图确认USB虚拟串口及波特率含义"
+  },
+  "p:../引脚与接线/00_按外设接线.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/引脚与接线/00_按外设接线.md",
+    "kind": "p",
+    "title": "按外设查接线与引脚"
+  },
+  "p:../引脚与接线/01_按键接线与测试.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/引脚与接线/01_按键接线与测试.md",
+    "kind": "p",
+    "title": "按键到底接哪里：直接接线与验证"
+  },
+  "p:../引脚与接线/02_按板子排针顺序.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/引脚与接线/02_按板子排针顺序.md",
+    "kind": "p",
+    "title": "按开发板排针顺序的引脚总表"
+  },
+  "p:../引脚与接线/03_按GPIO名称索引.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/引脚与接线/03_按GPIO名称索引.md",
+    "kind": "p",
+    "title": "按GPIO端口名称查引脚"
+  },
+  "p:../引脚与接线/04_空闲与预留资源.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/引脚与接线/04_空闲与预留资源.md",
+    "kind": "p",
+    "title": "当前空闲候选与扩展预留"
+  },
+  "p:../引脚与接线/05_来源维护与修订记录.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/引脚与接线/05_来源维护与修订记录.md",
+    "kind": "p",
+    "title": "引脚表来源、维护规则与本次修订"
+  },
+  "p:../引脚与接线/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/引脚与接线/README.md",
+    "kind": "p",
+    "title": "引脚与接线总入口：接哪里、占用了什么、还剩什么"
+  },
+  "p:../../引脚接线速查.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/引脚接线速查.md",
+    "kind": "p",
+    "title": "引脚接线速查：先从这里找"
+  },
+  "p:../../README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/README.md",
+    "kind": "p",
+    "title": "H743 智能视觉夹爪工程"
+  },
+  "p:Docs/视觉识别与抓取/10_零基础从接线到第一张图.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/10_零基础从接线到第一张图.md",
+    "kind": "p",
+    "title": "零基础：从USB连接到电脑第一张实时图"
+  },
+  "p:Docs/视觉识别与抓取/11_从图片到训练的逐步教程.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/视觉识别与抓取/11_从图片到训练的逐步教程.md",
+    "kind": "p",
+    "title": "零基础：采集、标注、训练、验证与手持测试"
+  },
+  "p:Docs/指令手册/01_文本控制台/01_完整AT指令表.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/指令手册/01_文本控制台/01_完整AT指令表.md",
+    "kind": "p",
+    "title": "`@` 文本指令完整表"
+  },
+  "p:Docs/指令手册/01_文本控制台/05_舵机诊断与角度等效入口.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/指令手册/01_文本控制台/05_舵机诊断与角度等效入口.md",
+    "kind": "p",
+    "title": "舵机身份、只读诊断与等效角度命令"
+  },
+  "p:Docs/指令手册/01_文本控制台/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/指令手册/01_文本控制台/README.md",
+    "kind": "p",
+    "title": "文本控制台"
+  },
+  "p:Docs/整合交付/20261023_六键菜单与舵机图像排查/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/整合交付/20261023_六键菜单与舵机图像排查/README.md",
+    "kind": "p",
+    "title": "六键菜单、舵机链路与电脑图像排查交付"
+  },
+  "p:Docs/整合交付/20261023_六键菜单与舵机图像排查/烧录后实物验收.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/整合交付/20261023_六键菜单与舵机图像排查/烧录后实物验收.md",
+    "kind": "p",
+    "title": "修订版烧录后实物验收"
+  },
+  "p:Docs/电机控制/04_VOFA旋钮按键与PID曲线.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/04_VOFA旋钮按键与PID曲线.md",
+    "kind": "p",
+    "title": "MG310：在VOFA操作旋钮、按键并观察PID"
+  },
+  "p:Docs/电机控制/05_H桥原理制作与TB6612接线.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/05_H桥原理制作与TB6612接线.md",
+    "kind": "p",
+    "title": "H桥原理、自己画板的方法与TB6612实接"
+  },
+  "p:Docs/电机控制/20261023_VOFA调速与波形/01_方案与验证边界.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/20261023_VOFA调速与波形/01_方案与验证边界.md",
+    "kind": "p",
+    "title": "MG310的VOFA调速与PID波形方案"
+  },
+  "p:Docs/电机控制/20261023_VOFA调速与波形/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/20261023_VOFA调速与波形/README.md",
+    "kind": "p",
+    "title": "TB6612、SM旋钮与VOFA电机调速交付"
+  },
+  "p:Docs/电机控制/20261023_VOFA调速与波形/现场供电与方向接口澄清.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/20261023_VOFA调速与波形/现场供电与方向接口澄清.md",
+    "kind": "p",
+    "title": "现场供电、方向控制与首次试验结果"
+  },
+  "p:电机控制/20261023_复用授权与VOFA/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/20261023_复用授权与VOFA/README.md",
+    "kind": "p",
+    "title": "README"
+  },
+  "p:电机控制/20261023_复用授权与VOFA/操作手册.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/20261023_复用授权与VOFA/操作手册.md",
+    "kind": "p",
+    "title": "操作手册"
+  },
+  "p:电机控制/20261023_复用授权与VOFA/需求与方案.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/20261023_复用授权与VOFA/需求与方案.md",
+    "kind": "p",
+    "title": "需求与方案"
+  },
+  "p:电机控制/20261024_L298N切换与实测/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/20261024_L298N切换与实测/README.md",
+    "kind": "p",
+    "title": "README"
+  },
+  "p:电机控制/20261024_L298N切换与实测/方案与验证边界.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/20261024_L298N切换与实测/方案与验证边界.md",
+    "kind": "p",
+    "title": "方案与验证边界"
+  },
+  "p:电机控制/20261024_L298N切换与实测/编码器5V对照依据.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/20261024_L298N切换与实测/编码器5V对照依据.md",
+    "kind": "p",
+    "title": "编码器5V对照依据"
+  },
+  "p:解耦与移植/README.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/解耦与移植/README.md",
+    "kind": "p",
+    "title": "配置分层、解耦与移植总入口"
+  },
+  "p:解耦与移植/01_配置链路与目录.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/解耦与移植/01_配置链路与目录.md",
+    "kind": "p",
+    "title": "配置读取链路与工程目录"
+  },
+  "p:解耦与移植/02_换板换芯片操作.md": {
+    "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/解耦与移植/02_换板换芯片操作.md",
+    "kind": "p",
+    "title": "换引脚、换设备与换芯片操作"
+  }
+}

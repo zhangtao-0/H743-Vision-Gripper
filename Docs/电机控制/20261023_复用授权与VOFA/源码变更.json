@@ -1,0 +1,52 @@
+[
+  {
+    "path": "App/bsp/bsp_key.c",
+    "before": "a8161984e01cc9645940cdacd151af3931bafd5b7239a016772cf1f2333a042e",
+    "after": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a"
+  },
+  {
+    "path": "App/bsp/input_control.h",
+    "before": "d3534cf77ab3cbc7566b177046c38098e54ce264cb6cfcd8d6b0f1b88fe51223",
+    "after": "c50940d1a5183d147cbf802e2ecbb021f87ecac178cf53b455e32aabf9cdfa54"
+  },
+  {
+    "path": "App/app_main.c",
+    "before": "47e209c8b9492dc30a5277383363dbf3ef26b2b4658074867b8339f91a74cf28",
+    "after": "4a30e1b9ca11fa896e6bb5589e3488e89616c924b31be332cc2209575e0ea87e"
+  },
+  {
+    "path": "App/drivers/Servo/feetech_sts_command.c",
+    "before": "dff29e430f99c52c2a6c0ac56860017b86ed4184281722043844174d6381b673",
+    "after": "e0b81e15397f4b549b08bc8cfa32c1e1993c71bef031412dd58869b9efecb114"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "before": "a39f4cb80eb99ae09828409736782f0db45c9a5aa39c6a6337c38079a4821386",
+    "after": "7ff223cff1b076c38ca6b39a364f11064541270e214e5861c66ed165826836ca"
+  },
+  {
+    "path": "App/modules/ui/ui_core.c",
+    "before": "9f762b4beafdc24eb280c8204913b5b58c0f08a7acc35856afa69082a8c5755b",
+    "after": "1aad957dc608ab13546c4ecae05cb4f7e0864e65e6152fe0d41f27a7f91ed972"
+  },
+  {
+    "path": "App/modules/ui/ui_core.h",
+    "before": "71ac92bba96c59d014a216070ca8dec3492c514f5481d29081797f60c537c83e",
+    "after": "49b55917a3864a70f0ba3cdbee43b173c00370e6fc7939734ea382fced94bbcf"
+  },
+  {
+    "path": "App/modules/ui/ui_port.c",
+    "before": "9dc143f1b661918b6a35c2c8be32e34602c4210a4aa3f611587ebf62cc18dd41",
+    "after": "6500c7536d7f86209f7ee58ffc0efeb9c40669c5b19194d7d80b6e7d161bd5af"
+  },
+  {
+    "path": "App/modules/integration/integration_console.c",
+    "before": "624491640782679a3e94c1832ec4566912c100f50d5690bbd3812b00e9c8591f",
+    "after": "825ca41e2d7d8ca6769e332b7fad771a5856223b9aa04cafe1516ece5d63be1f"
+  },
+  {
+    "path": "App/modules/integration/console_help.h",
+    "before": "7fe27327a30d67807682a53da44f42cb53efac39483c116d26cf974efa2ec0a2",
+    "after": "3398c65ad2dc284703852e87ede9b0780d35c88d79502e6f7635e0145a0f3b3a"
+  }
+]

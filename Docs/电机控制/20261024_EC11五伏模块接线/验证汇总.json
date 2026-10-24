@@ -1,0 +1,33 @@
+{
+  "version": "20261024-ec11-5v-input-v1",
+  "firmware_flashed": true,
+  "programmer_verified": true,
+  "independent_readback_verified": true,
+  "hex_sha256": "bc81a024e85c5262b3eeb1415fc2e75d4dd2aec8dc235c8da24ac72c5b6731ac",
+  "payload_bytes_compared": 153605,
+  "mismatches": [],
+  "build_errors": 0,
+  "build_warnings": 0,
+  "driver_profiles_compile_passed": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "host_motor_tests_passed": true,
+  "pin_validation_passed": true,
+  "teaching_validation_passed": true,
+  "pin_map": {
+    "A": "PG2/U10-57",
+    "C": "PC13/U10-7",
+    "B": "PG3/U10-58"
+  },
+  "user_confirmed_supply": "5V",
+  "user_confirmed_C": "press output; polarity not measured",
+  "input_pull": "GPIO_NOPULL",
+  "physical_EC11_tested": false,
+  "motor_started_this_revision": false,
+  "final_motor_status": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n",
+  "final_debug_status": "DEBUG sts=0 motor=0 plot=0; runtime grants only\r\n",
+  "gpio_register_probe": "HOT-mode probe returnedFFFFFFFF; not accepted as runtime GPIO configuration verification. Rely on source/build/flashed HEX verification; raw failed probe retained."
+}

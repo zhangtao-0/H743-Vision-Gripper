@@ -1,0 +1,17 @@
+﻿name,mode,command,bytes_hex,note,automatic_execution
+启停按钮,ASCII+CRLF,@key 7 tap,40 6B 65 79 20 37 20 74 61 70 0D 0A,同实体短按，正常停止保留速度,False
+长按换向按钮,ASCII+CRLF,@key 7 press 1200,40 6B 65 79 20 37 20 70 72 65 73 73 20 31 32 30 30 0D 0A,同实体长按≥1s；松开不触发启停,False
+旋钮顺向一格,ASCII+CRLF,@knob 1,40 6B 6E 6F 62 20 31 0D 0A,+5RPM，上限400,False
+旋钮反向一格,ASCII+CRLF,@knob -1,40 6B 6E 6F 62 20 2D 31 0D 0A,−5RPM，下限0,False
+暂停输出保留速度,ASCII+CRLF,@motor disable,40 6D 6F 74 6F 72 20 64 69 73 61 62 6C 65 0D 0A,直接禁能；不清空目标,False
+明确停止并清零,ASCII+CRLF,@motor stop,40 6D 6F 74 6F 72 20 73 74 6F 70 0D 0A,输出关闭、目标清零；不是硬件断电,False
+目标400,ASCII+CRLF,@motor rpm 400,40 6D 6F 74 6F 72 20 72 70 6D 20 34 30 30 0D 0A,设值，不自动使能,False
+目标100,ASCII+CRLF,@motor rpm 100,40 6D 6F 74 6F 72 20 72 70 6D 20 31 30 30 0D 0A,设值，不自动使能,False
+开启波形,ASCII+CRLF,@motor plot on,40 6D 6F 74 6F 72 20 70 6C 6F 74 20 6F 6E 0D 0A,JustFloat仅HOST；先关闭其他流，TX忙时重试,False
+关闭波形,ASCII+CRLF,@motor plot off,40 6D 6F 74 6F 72 20 70 6C 6F 74 20 6F 66 66 0D 0A,恢复HOST文字,False
+全部静默,ASCII+CRLF,@quiet,40 71 75 69 65 74 0D 0A,关闭自动流，不停止运动,False
+Kp=1.8,ASCII+CRLF,@param set 22 1800,40 70 61 72 61 6D 20 73 65 74 20 32 32 20 31 38 30 30 0D 0A,先停止电机；1000倍整数,False
+Ki=5,ASCII+CRLF,@param set 23 5000,40 70 61 72 61 6D 20 73 65 74 20 32 33 20 35 30 30 30 0D 0A,先停止电机,False
+Kd=0,ASCII+CRLF,@param set 24 0,40 70 61 72 61 6D 20 73 65 74 20 32 34 20 30 0D 0A,先停止电机,False
+保存开机默认,ASCII+CRLF,@profile save,40 70 72 6F 66 69 6C 65 20 73 61 76 65 0D 0A,停止电机后保存；保存不使能,False
+查询电机,ASCII+CRLF,@motor status,40 6D 6F 74 6F 72 20 73 74 61 74 75 73 0D 0A,绘图时文字回复仅USB可见,False

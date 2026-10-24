@@ -1,0 +1,2040 @@
+[
+  {
+    "image_id": 79,
+    "annotation_id": 197,
+    "native_category": "Foam cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Foam_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 90,
+    "annotation_id": 239,
+    "native_category": "Paper cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Paper_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:paper",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 63,
+    "annotation_id": 149,
+    "native_category": "Disposable plastic cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Disposable_plastic_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 78,
+    "annotation_id": 196,
+    "native_category": "Foam cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Foam_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 197,
+    "annotation_id": 674,
+    "native_category": "Disposable plastic cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Disposable_plastic_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 104,
+    "annotation_id": 330,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 104,
+    "annotation_id": 331,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 104,
+    "annotation_id": 335,
+    "native_category": "Disposable plastic cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Disposable_plastic_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 190,
+    "annotation_id": 636,
+    "native_category": "Disposable plastic cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Disposable_plastic_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 190,
+    "annotation_id": 637,
+    "native_category": "Disposable plastic cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Disposable_plastic_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 80,
+    "annotation_id": 199,
+    "native_category": "Glass cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 17,
+    "annotation_id": 52,
+    "native_category": "Paper cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Paper_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:paper",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 43,
+    "annotation_id": 107,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 43,
+    "annotation_id": 108,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 43,
+    "annotation_id": 109,
+    "native_category": "Glass cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 195,
+    "annotation_id": 666,
+    "native_category": "Disposable plastic cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Disposable_plastic_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 693,
+    "annotation_id": 2216,
+    "native_category": "Paper cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Paper_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:paper",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 693,
+    "annotation_id": 2217,
+    "native_category": "Paper cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Paper_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:paper",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 62,
+    "annotation_id": 147,
+    "native_category": "Paper cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Paper_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:paper",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 112,
+    "annotation_id": 376,
+    "native_category": "Glass bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 112,
+    "annotation_id": 380,
+    "native_category": "Glass cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 112,
+    "annotation_id": 381,
+    "native_category": "Glass cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 112,
+    "annotation_id": 382,
+    "native_category": "Glass bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 112,
+    "annotation_id": 383,
+    "native_category": "Glass cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 112,
+    "annotation_id": 384,
+    "native_category": "Glass bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 112,
+    "annotation_id": 385,
+    "native_category": "Glass bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 9,
+    "annotation_id": 22,
+    "native_category": "Glass cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 56,
+    "annotation_id": 140,
+    "native_category": "Paper cup",
+    "tags": [
+      {
+        "id": "semantic:cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Paper_cup",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:paper",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 70,
+    "annotation_id": 166,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 89,
+    "annotation_id": 231,
+    "native_category": "Meal carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Meal_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 89,
+    "annotation_id": 232,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 49,
+    "annotation_id": 132,
+    "native_category": "Egg carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Egg_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 53,
+    "annotation_id": 136,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 128,
+    "annotation_id": 433,
+    "native_category": "Drink carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Drink_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 98,
+    "annotation_id": 258,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 98,
+    "annotation_id": 259,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 100,
+    "annotation_id": 276,
+    "native_category": "Corrugated carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Corrugated_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 100,
+    "annotation_id": 278,
+    "native_category": "Drink carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Drink_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 100,
+    "annotation_id": 279,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 100,
+    "annotation_id": 280,
+    "native_category": "Egg carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Egg_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 100,
+    "annotation_id": 281,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 100,
+    "annotation_id": 282,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 81,
+    "annotation_id": 200,
+    "native_category": "Corrugated carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Corrugated_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 81,
+    "annotation_id": 201,
+    "native_category": "Corrugated carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Corrugated_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 81,
+    "annotation_id": 202,
+    "native_category": "Corrugated carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Corrugated_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 11,
+    "annotation_id": 30,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 12,
+    "annotation_id": 32,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 12,
+    "annotation_id": 33,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 12,
+    "annotation_id": 34,
+    "native_category": "Glass bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 12,
+    "annotation_id": 35,
+    "native_category": "Drink carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Drink_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 12,
+    "annotation_id": 36,
+    "native_category": "Drink carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Drink_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 127,
+    "annotation_id": 430,
+    "native_category": "Egg carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Egg_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 127,
+    "annotation_id": 431,
+    "native_category": "Egg carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Egg_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 131,
+    "annotation_id": 442,
+    "native_category": "Corrugated carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Corrugated_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 48,
+    "annotation_id": 131,
+    "native_category": "Egg carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Egg_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 99,
+    "annotation_id": 263,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 99,
+    "annotation_id": 264,
+    "native_category": "Drink carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Drink_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 99,
+    "annotation_id": 265,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 99,
+    "annotation_id": 271,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 1,
+    "annotation_id": 2,
+    "native_category": "Meal carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Meal_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 1,
+    "annotation_id": 3,
+    "native_category": "Other carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 47,
+    "annotation_id": 129,
+    "native_category": "Egg carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Egg_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 47,
+    "annotation_id": 130,
+    "native_category": "Egg carton",
+    "tags": [
+      {
+        "id": "semantic:box",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Egg_carton",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:cardboard",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 13,
+    "annotation_id": 42,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 15,
+    "annotation_id": 47,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 15,
+    "annotation_id": 48,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 8,
+    "annotation_id": 20,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 10,
+    "annotation_id": 24,
+    "native_category": "Glass bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 28,
+    "annotation_id": 82,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 23,
+    "annotation_id": 65,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 23,
+    "annotation_id": 66,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 26,
+    "annotation_id": 71,
+    "native_category": "Glass bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 14,
+    "annotation_id": 46,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 2,
+    "annotation_id": 4,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 3,
+    "annotation_id": 6,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 3,
+    "annotation_id": 7,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 27,
+    "annotation_id": 73,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 36,
+    "annotation_id": 97,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 7,
+    "annotation_id": 18,
+    "native_category": "Clear plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Clear_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 25,
+    "annotation_id": 69,
+    "native_category": "Glass bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 0,
+    "annotation_id": 1,
+    "native_category": "Glass bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Glass_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:glass",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  },
+  {
+    "image_id": 5,
+    "annotation_id": 13,
+    "native_category": "Other plastic bottle",
+    "tags": [
+      {
+        "id": "semantic:bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "semantic:TACO/Other_plastic_bottle",
+        "confidence": 1,
+        "source": "source_annotation"
+      },
+      {
+        "id": "material:plastic",
+        "confidence": 0.65,
+        "source": "inferred",
+        "evidence": "native category wording; not a material measurement"
+      }
+    ],
+    "geometry_3d": "unknown",
+    "grasp_outcome_label": null
+  }
+]

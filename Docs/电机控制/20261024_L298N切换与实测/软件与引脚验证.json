@@ -1,0 +1,27 @@
+[
+  {
+    "test": "run_motor_tests.py",
+    "exit_code": 0,
+    "output": "PASS PID plant: target=200 RPM, 70 RPM equivalent load disturbance, final=199.99 RPM\nPASS overspeed: sustained implausible encoder speed disables output; clear never restarts\nPASS control: ramp, signed feedback, reverse coast/deadtime, timeout/sign faults, anti-windup, zero-stop\nPASS EC11: one detent, contact bounce cancellation, invalid transition rejection\nPASS service: missing-driver inhibit, IRQ timing fault, button debounce/long vs short, runtime-setting guards, preserve PRIMASK\nPASS virtual motor: shared detent limits, physical-only reject, simulated button uses debounce/direction gesture\nPASS persistence gates: maintenance inhibits starts, atomic settings restore, finite/range checks, RAM defaults stay disabled\n "
+  },
+  {
+    "test": "run_motor_plot_tests.py",
+    "exit_code": 0,
+    "output": "FRAME|0000c8c300c078c300007ac3000082c3000019c40000a0bf0000803f000000000000807f\nPASS plot: disabled startup, exact 8-channel signed JustFloat, 50Hz, wrap, inactive reference zero, backpressure, exclusive HOST and restored text\n\n"
+  },
+  {
+    "test": "check_motor_profiles.py",
+    "exit_code": 0,
+    "output": "Motor H-bridge profile 0 exit 0\nMotor H-bridge profile 1 exit 0\nMotor H-bridge profile 2 exit 0\nMotor H-bridge profile 3 exit 0\n"
+  },
+  {
+    "test": "run_ui_tests.py",
+    "exit_code": 0,
+    "output": "PASS UI v2: categorized actions/help, explicit image ownership, shortcut restores image page, filtered command mapping\nPASS navigation: exact shortcut restore, normal ancestry, scrolling, stale edit, cancel/confirm, read-only view\nPASS keys: release-only, chord suppression/latch, four dedicated keys; holds retain their assigned role, uint32 wrap\nPASS records: CRC corruption, partial Flashwords, tombstone, sequence wrap, schema version\nPASS settings: no boot writes, save/reboot, exact float CPR, pending STS apply, mechanical endpoints excluded\nPASS settings: motion gates, interrupted-save recovery, atomic clear tombstone, no motor auto-enable path\n PASS H7 store model: actual sectors4/5 code, all five partial-write positions, CRC fallback, tombstone, bank-swap guard; limits6/7 untouched\n "
+  },
+  {
+    "test": "verify_pin_reference.py",
+    "exit_code": 0,
+    "output": "{\"date\": \"2026-10-24\", \"board\": \"LXB743ZI-P1 / STM32H743ZIT6\", \"header_positions\": 120, \"h1_positions\": 8, \"exported_mcu_named_signals\": 108, \"ordinary_exported_gpio\": 106, \"special_analog_pads\": 2, \"port_index_records\": 116, \"free_candidates\": 37, \"status_counts\": {\"����ר��\": 34, \"�ѷ���\": 24, \"���к�ѡ\": 37, \"����Ŵ��˶�\": 2, \"��ȷԤ��\": 7, \"����Ԥ��\": 2, \"�ӿں�ѡԤ��\": 2}, \"device_signal_rows\": 79, \"generated_files\": 8, \"source_files_checked\": 14, \"production_changes\": false, \"physical_test\": false, \"passed\": true}\n{\"date\": \"2026-10-23\", \"scope\": \"schematic mapping + source assignments + generated docs; no hardware operations\", \"macro_pin_checks\": 52, \"previous_header_gpio_facts_checked\": 108, \"header_positions\": 120, \"h1_positions\": 8, \"free_candidates\": 37, \"schematic_sha256\": \"93014c71abede691d96fdaf241df1468e2500b443e5d3c483cb79e24bced32b5\", \"source_files_checked\": 14, \"source_modified\": false, \"physical_test\": false, \"passed\": true}\n"
+  }
+]

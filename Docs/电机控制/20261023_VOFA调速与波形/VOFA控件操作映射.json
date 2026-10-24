@@ -1,0 +1,130 @@
+[
+  {
+    "name": "启停按钮",
+    "mode": "ASCII+CRLF",
+    "command": "@key 7 tap",
+    "bytes_hex": "40 6B 65 79 20 37 20 74 61 70 0D 0A",
+    "note": "同实体短按，正常停止保留速度",
+    "automatic_execution": false
+  },
+  {
+    "name": "长按换向按钮",
+    "mode": "ASCII+CRLF",
+    "command": "@key 7 press 1200",
+    "bytes_hex": "40 6B 65 79 20 37 20 70 72 65 73 73 20 31 32 30 30 0D 0A",
+    "note": "同实体长按≥1s；松开不触发启停",
+    "automatic_execution": false
+  },
+  {
+    "name": "旋钮顺向一格",
+    "mode": "ASCII+CRLF",
+    "command": "@knob 1",
+    "bytes_hex": "40 6B 6E 6F 62 20 31 0D 0A",
+    "note": "+5RPM，上限400",
+    "automatic_execution": false
+  },
+  {
+    "name": "旋钮反向一格",
+    "mode": "ASCII+CRLF",
+    "command": "@knob -1",
+    "bytes_hex": "40 6B 6E 6F 62 20 2D 31 0D 0A",
+    "note": "−5RPM，下限0",
+    "automatic_execution": false
+  },
+  {
+    "name": "暂停输出保留速度",
+    "mode": "ASCII+CRLF",
+    "command": "@motor disable",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 64 69 73 61 62 6C 65 0D 0A",
+    "note": "直接禁能；不清空目标",
+    "automatic_execution": false
+  },
+  {
+    "name": "明确停止并清零",
+    "mode": "ASCII+CRLF",
+    "command": "@motor stop",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 73 74 6F 70 0D 0A",
+    "note": "输出关闭、目标清零；不是硬件断电",
+    "automatic_execution": false
+  },
+  {
+    "name": "目标400",
+    "mode": "ASCII+CRLF",
+    "command": "@motor rpm 400",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 72 70 6D 20 34 30 30 0D 0A",
+    "note": "设值，不自动使能",
+    "automatic_execution": false
+  },
+  {
+    "name": "目标100",
+    "mode": "ASCII+CRLF",
+    "command": "@motor rpm 100",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 72 70 6D 20 31 30 30 0D 0A",
+    "note": "设值，不自动使能",
+    "automatic_execution": false
+  },
+  {
+    "name": "开启波形",
+    "mode": "ASCII+CRLF",
+    "command": "@motor plot on",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 70 6C 6F 74 20 6F 6E 0D 0A",
+    "note": "JustFloat仅HOST；先关闭其他流，TX忙时重试",
+    "automatic_execution": false
+  },
+  {
+    "name": "关闭波形",
+    "mode": "ASCII+CRLF",
+    "command": "@motor plot off",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 70 6C 6F 74 20 6F 66 66 0D 0A",
+    "note": "恢复HOST文字",
+    "automatic_execution": false
+  },
+  {
+    "name": "全部静默",
+    "mode": "ASCII+CRLF",
+    "command": "@quiet",
+    "bytes_hex": "40 71 75 69 65 74 0D 0A",
+    "note": "关闭自动流，不停止运动",
+    "automatic_execution": false
+  },
+  {
+    "name": "Kp=1.8",
+    "mode": "ASCII+CRLF",
+    "command": "@param set 22 1800",
+    "bytes_hex": "40 70 61 72 61 6D 20 73 65 74 20 32 32 20 31 38 30 30 0D 0A",
+    "note": "先停止电机；1000倍整数",
+    "automatic_execution": false
+  },
+  {
+    "name": "Ki=5",
+    "mode": "ASCII+CRLF",
+    "command": "@param set 23 5000",
+    "bytes_hex": "40 70 61 72 61 6D 20 73 65 74 20 32 33 20 35 30 30 30 0D 0A",
+    "note": "先停止电机",
+    "automatic_execution": false
+  },
+  {
+    "name": "Kd=0",
+    "mode": "ASCII+CRLF",
+    "command": "@param set 24 0",
+    "bytes_hex": "40 70 61 72 61 6D 20 73 65 74 20 32 34 20 30 0D 0A",
+    "note": "先停止电机",
+    "automatic_execution": false
+  },
+  {
+    "name": "保存开机默认",
+    "mode": "ASCII+CRLF",
+    "command": "@profile save",
+    "bytes_hex": "40 70 72 6F 66 69 6C 65 20 73 61 76 65 0D 0A",
+    "note": "停止电机后保存；保存不使能",
+    "automatic_execution": false
+  },
+  {
+    "name": "查询电机",
+    "mode": "ASCII+CRLF",
+    "command": "@motor status",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 73 74 61 74 75 73 0D 0A",
+    "note": "绘图时文字回复仅USB可见",
+    "automatic_execution": false
+  }
+]

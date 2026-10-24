@@ -1,0 +1,850 @@
+[
+  {
+    "category": "SYSTEM / QUIET",
+    "name": "Read current system and motor status.",
+    "mode": "ASCII+CRLF",
+    "command": "@status",
+    "bytes_hex": "40 73 74 61 74 75 73 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "SYSTEM / QUIET",
+    "name": "Disable periodic text/CSV; this is not a motion stop.",
+    "mode": "ASCII+CRLF",
+    "command": "@quiet",
+    "bytes_hex": "40 71 75 69 65 74 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "SYSTEM / QUIET",
+    "name": "Opt in to P3 probe telemetry.",
+    "mode": "ASCII+CRLF",
+    "command": "@telemetry on",
+    "bytes_hex": "40 74 65 6C 65 6D 65 74 72 79 20 6F 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "SYSTEM / QUIET",
+    "name": "Stop P3 probe telemetry.",
+    "mode": "ASCII+CRLF",
+    "command": "@telemetry off",
+    "bytes_hex": "40 74 65 6C 65 6D 65 74 72 79 20 6F 66 66 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "SYSTEM / QUIET",
+    "name": "Opt in to CSV stream.",
+    "mode": "ASCII+CRLF",
+    "command": "@stream on",
+    "bytes_hex": "40 73 74 72 65 61 6D 20 6F 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "SYSTEM / QUIET",
+    "name": "Stop CSV stream.",
+    "mode": "ASCII+CRLF",
+    "command": "@stream off",
+    "bytes_hex": "40 73 74 72 65 61 6D 20 6F 66 66 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Release/open; requires online and valid limits.",
+    "mode": "ASCII+CRLF",
+    "command": "@claw open",
+    "bytes_hex": "40 63 6C 61 77 20 6F 70 65 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Grip/close; requires online and valid limits.",
+    "mode": "ASCII+CRLF",
+    "command": "@claw close",
+    "bytes_hex": "40 63 6C 61 77 20 63 6C 6F 73 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Request motion stop; not a hardware power cut.",
+    "mode": "ASCII+CRLF",
+    "command": "@claw stop",
+    "bytes_hex": "40 63 6C 61 77 20 73 74 6F 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Physical KEY5 / claw A0 gesture, independent from menu KEY1.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 5 tap",
+    "bytes_hex": "40 6B 65 79 20 35 20 74 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Physical KEY6 / claw B0 gesture, independent from menu KEY2.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 6 tap",
+    "bytes_hex": "40 6B 65 79 20 36 20 74 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Offline read-only probe; ID 0..253, baud 9600..1000000.",
+    "mode": "ASCII+CRLF",
+    "command": "@servo probe 0 1000000",
+    "bytes_hex": "40 73 65 72 76 6F 20 70 72 6F 62 65 20 30 20 31 30 30 30 30 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Read configured/probed ID, state, UART receive/reply counts; ID0 is not broadcast.",
+    "mode": "ASCII+CRLF",
+    "command": "@servo status",
+    "bytes_hex": "40 73 65 72 76 6F 20 73 74 61 74 75 73 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Read-only original servo ID1 / 1Mbps probe.",
+    "mode": "ASCII+CRLF",
+    "command": "@servo probe 1 1000000",
+    "bytes_hex": "40 73 65 72 76 6F 20 70 72 6F 62 65 20 31 20 31 30 30 30 30 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Read-only unicast ID0..253 scan; stops on first device or exhaustion.",
+    "mode": "ASCII+CRLF",
+    "command": "@servo scan 1000000",
+    "bytes_hex": "40 73 65 72 76 6F 20 73 63 61 6E 20 31 30 30 30 30 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CLAW / STS",
+    "name": "Equivalent angle control in degrees; online/stack/limits required.",
+    "mode": "ASCII+CRLF",
+    "command": "@servo angle 90",
+    "bytes_hex": "40 73 65 72 76 6F 20 61 6E 67 6C 65 20 39 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Read actual encoder/control state.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor status",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 73 74 61 74 75 73 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Target RPM: 0..400 in current configuration.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor rpm 100",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 72 70 6D 20 31 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Kp Ki Kd in milli-units; each 0..100000, stopped only.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor pid 1800 5000 0",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 70 69 64 20 31 38 30 30 20 35 30 30 30 20 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Explicit start; missing H-bridge/profile0 rejects.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor enable",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 65 6E 61 62 6C 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Stop and set target to zero.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor stop",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 73 74 6F 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Request coast/wait/reverse sequence.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor reverse",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 72 65 76 65 72 73 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Clear fault without restarting.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor clear",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 63 6C 65 61 72 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Zero count while stopped.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor zero",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 7A 65 72 6F 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "One EC11 detent: +5 RPM, saturates at maximum.",
+    "mode": "ASCII+CRLF",
+    "command": "@knob 1",
+    "bytes_hex": "40 6B 6E 6F 62 20 31 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "One reverse EC11 detent: -5 RPM, saturates at zero.",
+    "mode": "ASCII+CRLF",
+    "command": "@knob -1",
+    "bytes_hex": "40 6B 6E 6F 62 20 2D 31 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "50Hz JustFloat on HOST; no motor start. USB keeps text replies.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor plot on",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 70 6C 6F 74 20 6F 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Stop motor wave stream; return HOST to text.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor plot off",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 70 6C 6F 74 20 6F 66 66 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Plot state/counters. While plotting, read response on USB.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor plot status",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 70 6C 6F 74 20 73 74 61 74 75 73 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Disable power output and retain selected RPM for restart.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor disable",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 64 69 73 61 62 6C 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "KEY7 motor knob button: short release toggles enable; driver0 refuses start.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 7 tap",
+    "bytes_hex": "40 6B 65 79 20 37 20 74 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Motor button: hold >=1000ms reverses once; no enable toggle.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 7 press 1200",
+    "bytes_hex": "40 6B 65 79 20 37 20 70 72 65 73 73 20 31 32 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Same knob path: +5 RPM, bounded 0..400.",
+    "mode": "ASCII+CRLF",
+    "command": "@knob 1",
+    "bytes_hex": "40 6B 6E 6F 62 20 31 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Same knob path: -5 RPM, bounded 0..400.",
+    "mode": "ASCII+CRLF",
+    "command": "@knob -1",
+    "bytes_hex": "40 6B 6E 6F 62 20 2D 31 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "MG310 MOTOR",
+    "name": "Set 400 RPM only; does not start motor.",
+    "mode": "ASCII+CRLF",
+    "command": "@motor rpm 400",
+    "bytes_hex": "40 6D 6F 74 6F 72 20 72 70 6D 20 34 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Enable capture; enter Image viewer to display.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera on",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 6F 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Stop capture.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera off",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 6F 66 66 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Next complete frame frozen in RAM; no SD/JPEG file.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera shot",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 73 68 6F 74 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Resume continuous capture.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera live",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 6C 69 76 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Rotate displayed image +90 degrees.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera rotate",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 72 6F 74 61 74 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Toggle horizontal mirror.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera mirror",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 6D 69 72 72 6F 72 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Toggle vertical flip.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera flip",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 66 6C 69 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Gradient edge preview only.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera edge on",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 65 64 67 65 20 6F 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "RGB preview.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera edge off",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 65 64 67 65 20 6F 66 66 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "LCD text orientation +90 independently.",
+    "mode": "ASCII+CRLF",
+    "command": "@lcd rotate",
+    "bytes_hex": "40 6C 63 64 20 72 6F 74 61 74 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Reinitialize sensor while motion stopped.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera retry",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 72 65 74 72 79 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "OV5640 divider: 0,1,2,4,8,16; stopped only.",
+    "mode": "ASCII+CRLF",
+    "command": "@camera clock 4",
+    "bytes_hex": "40 63 61 6D 65 72 61 20 63 6C 6F 63 6B 20 34 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "LCD test pattern; next menu gesture restores menu.",
+    "mode": "ASCII+CRLF",
+    "command": "@lcd test",
+    "bytes_hex": "40 6C 63 64 20 74 65 73 74 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Enable versioned RGB565 frames on USB only; UART1 remains control.",
+    "mode": "ASCII+CRLF",
+    "command": "@video on",
+    "bytes_hex": "40 76 69 64 65 6F 20 6F 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Stop image transfer and clear advisory; not a motor stop.",
+    "mode": "ASCII+CRLF",
+    "command": "@video off",
+    "bytes_hex": "40 76 69 64 65 6F 20 6F 66 66 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Upper frame-rate limit 1..5; default 2, actual rate depends on USB and capture.",
+    "mode": "ASCII+CRLF",
+    "command": "@video fps 2",
+    "bytes_hex": "40 76 69 64 65 6F 20 66 70 73 20 32 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Read video counters and latest advisory validity.",
+    "mode": "ASCII+CRLF",
+    "command": "@video status",
+    "bytes_hex": "40 76 69 64 65 6F 20 73 74 61 74 75 73 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Read pixel-only grasp advisory; no actuator execution.",
+    "mode": "ASCII+CRLF",
+    "command": "@vision status",
+    "bytes_hex": "40 76 69 73 69 6F 6E 20 73 74 61 74 75 73 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "CAMERA / IMAGE",
+    "name": "Invalidate pixel grasp advisory; does not stop an already commanded actuator.",
+    "mode": "ASCII+CRLF",
+    "command": "@vision clear",
+    "bytes_hex": "40 76 69 73 69 6F 6E 20 63 6C 65 61 72 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PWM OUTPUT",
+    "name": "Channel1 pulse: 500..2500 us; verify actual servo limits.",
+    "mode": "ASCII+CRLF",
+    "command": "@pwm 1500",
+    "bytes_hex": "40 70 77 6D 20 31 35 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PWM OUTPUT",
+    "name": "Channel2 pulse: 500..2500 us.",
+    "mode": "ASCII+CRLF",
+    "command": "@pwm2 1500",
+    "bytes_hex": "40 70 77 6D 32 20 31 35 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PWM OUTPUT",
+    "name": "Channel 0/1, angle 0..180; check mechanical range.",
+    "mode": "ASCII+CRLF",
+    "command": "@pwm angle 0 90",
+    "bytes_hex": "40 70 77 6D 20 61 6E 67 6C 65 20 30 20 39 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PWM OUTPUT",
+    "name": "Stop both local PWM outputs.",
+    "mode": "ASCII+CRLF",
+    "command": "@pwm off",
+    "bytes_hex": "40 70 77 6D 20 6F 66 66 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "STORAGE / RTC",
+    "name": "Read RTC.",
+    "mode": "ASCII+CRLF",
+    "command": "@rtc",
+    "bytes_hex": "40 72 74 63 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "STORAGE / RTC",
+    "name": "Example date/time: edit before sending.",
+    "mode": "ASCII+CRLF",
+    "command": "@rtc set 2026 10 22 12 0 0",
+    "bytes_hex": "40 72 74 63 20 73 65 74 20 32 30 32 36 20 31 30 20 32 32 20 31 32 20 30 20 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "STORAGE / RTC",
+    "name": "Remount card while motion stopped.",
+    "mode": "ASCII+CRLF",
+    "command": "@sd retry",
+    "bytes_hex": "40 73 64 20 72 65 74 72 79 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "STORAGE / RTC",
+    "name": "Read sector0 test.",
+    "mode": "ASCII+CRLF",
+    "command": "@sd read",
+    "bytes_hex": "40 73 64 20 72 65 61 64 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "STORAGE / RTC",
+    "name": "Creates test file if absent; stopped only.",
+    "mode": "ASCII+CRLF",
+    "command": "@sd filetest",
+    "bytes_hex": "40 73 64 20 66 69 6C 65 74 65 73 74 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "STORAGE / RTC",
+    "name": "Enable read-only memory mapping.",
+    "mode": "ASCII+CRLF",
+    "command": "@qspi map",
+    "bytes_hex": "40 71 73 70 69 20 6D 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "STORAGE / RTC",
+    "name": "Disable mapping.",
+    "mode": "ASCII+CRLF",
+    "command": "@qspi unmap",
+    "bytes_hex": "40 71 73 70 69 20 75 6E 6D 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "STORAGE / RTC",
+    "name": "DESTRUCTIVE to configured last test sector; stopped only.",
+    "mode": "ASCII+CRLF",
+    "command": "@qspi test",
+    "bytes_hex": "40 71 73 70 69 20 74 65 73 74 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Read six menu/claw keys, source masks and mode.",
+    "mode": "ASCII+CRLF",
+    "command": "@input status",
+    "bytes_hex": "40 69 6E 70 75 74 20 73 74 61 74 75 73 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Physical and remote OR; release keys/stop motion before changing.",
+    "mode": "ASCII+CRLF",
+    "command": "@input mode mixed",
+    "bytes_hex": "40 69 6E 70 75 74 20 6D 6F 64 65 20 6D 69 78 65 64 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Use physical keys only.",
+    "mode": "ASCII+CRLF",
+    "command": "@input mode physical",
+    "bytes_hex": "40 69 6E 70 75 74 20 6D 6F 64 65 20 70 68 79 73 69 63 61 6C 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Ignore physical keys; real Hall feedback remains real.",
+    "mode": "ASCII+CRLF",
+    "command": "@input mode remote",
+    "bytes_hex": "40 69 6E 70 75 74 20 6D 6F 64 65 20 72 65 6D 6F 74 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Screen UP / decrement.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 1 tap",
+    "bytes_hex": "40 6B 65 79 20 31 20 74 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Screen DOWN / increment.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 2 tap",
+    "bytes_hex": "40 6B 65 79 20 32 20 74 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Screen CONFIRM.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 3 tap",
+    "bytes_hex": "40 6B 65 79 20 33 20 74 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Screen CANCEL / back.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 4 tap",
+    "bytes_hex": "40 6B 65 79 20 34 20 74 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "K3+K4: monitor shortcut / exact return.",
+    "mode": "ASCII+CRLF",
+    "command": "@keys 12 100",
+    "bytes_hex": "40 6B 65 79 73 20 31 32 20 31 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Claw A0 gesture; offline requests reprobe.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 5 tap",
+    "bytes_hex": "40 6B 65 79 20 35 20 74 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Claw A0 hold; requires calibrated/safe state.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 5 press 3500",
+    "bytes_hex": "40 6B 65 79 20 35 20 70 72 65 73 73 20 33 35 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Claw B0 hold and release; may scan if online.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 6 hold",
+    "bytes_hex": "40 6B 65 79 20 36 20 68 6F 6C 64 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "K5+K6: claw mechanical calibration gesture.",
+    "mode": "ASCII+CRLF",
+    "command": "@keys 48 3500",
+    "bytes_hex": "40 6B 65 79 73 20 34 38 20 33 35 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "KEY7 motor knob button: short release toggles enable; driver0 refuses start.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 7 tap",
+    "bytes_hex": "40 6B 65 79 20 37 20 74 61 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "KEY7 hold >=1000ms reverses once; release does not toggle enable.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 7 press 1200",
+    "bytes_hex": "40 6B 65 79 20 37 20 70 72 65 73 73 20 31 32 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Keep simulated confirm down; release generates action.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 3 down",
+    "bytes_hex": "40 6B 65 79 20 33 20 64 6F 77 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Release this source confirm; not an emergency stop.",
+    "mode": "ASCII+CRLF",
+    "command": "@key 3 up",
+    "bytes_hex": "40 6B 65 79 20 33 20 75 70 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Release this source only; release may complete a click.",
+    "mode": "ASCII+CRLF",
+    "command": "@keys release",
+    "bytes_hex": "40 6B 65 79 73 20 72 65 6C 65 61 73 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Simulate one forward EC11 detent.",
+    "mode": "ASCII+CRLF",
+    "command": "@knob 1",
+    "bytes_hex": "40 6B 6E 6F 62 20 31 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / EC11",
+    "name": "Simulate one reverse EC11 detent.",
+    "mode": "ASCII+CRLF",
+    "command": "@knob -1",
+    "bytes_hex": "40 6B 6E 6F 62 20 2D 31 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PARAMETERS / PROFILE",
+    "name": "Print actual current values, IDs, limits, and editable set commands.",
+    "mode": "ASCII+CRLF",
+    "command": "@param list",
+    "bytes_hex": "40 70 61 72 61 6D 20 6C 69 73 74 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PARAMETERS / PROFILE",
+    "name": "ID0..24: shared screen parameter table; 21=RPM.",
+    "mode": "ASCII+CRLF",
+    "command": "@param get 21",
+    "bytes_hex": "40 70 61 72 61 6D 20 67 65 74 20 32 31 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PARAMETERS / PROFILE",
+    "name": "Set RPM target100 with shared range/state checks.",
+    "mode": "ASCII+CRLF",
+    "command": "@param set 21 100",
+    "bytes_hex": "40 70 61 72 61 6D 20 73 65 74 20 32 31 20 31 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PARAMETERS / PROFILE",
+    "name": "Kp=1.8 in milli-units; stopped only.",
+    "mode": "ASCII+CRLF",
+    "command": "@param set 22 1800",
+    "bytes_hex": "40 70 61 72 61 6D 20 73 65 74 20 32 32 20 31 38 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PARAMETERS / PROFILE",
+    "name": "Ki=5.0 in milli-units; stopped only.",
+    "mode": "ASCII+CRLF",
+    "command": "@param set 23 5000",
+    "bytes_hex": "40 70 61 72 61 6D 20 73 65 74 20 32 33 20 35 30 30 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PARAMETERS / PROFILE",
+    "name": "Kd=0; stopped only.",
+    "mode": "ASCII+CRLF",
+    "command": "@param set 24 0",
+    "bytes_hex": "40 70 61 72 61 6D 20 73 65 74 20 32 34 20 30 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PARAMETERS / PROFILE",
+    "name": "Save custom boot defaults; stopped only.",
+    "mode": "ASCII+CRLF",
+    "command": "@profile save",
+    "bytes_hex": "40 70 72 6F 66 69 6C 65 20 73 61 76 65 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PARAMETERS / PROFILE",
+    "name": "Load saved defaults; never auto-enable.",
+    "mode": "ASCII+CRLF",
+    "command": "@profile load",
+    "bytes_hex": "40 70 72 6F 66 69 6C 65 20 6C 6F 61 64 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "PARAMETERS / PROFILE",
+    "name": "Write tombstone; mechanical limits stay independent.",
+    "mode": "ASCII+CRLF",
+    "command": "@profile clear",
+    "bytes_hex": "40 70 72 6F 66 69 6C 65 20 63 6C 65 61 72 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "BINARY PROTOCOL",
+    "name": "HEX mode: STS ID0 PING.",
+    "mode": "HEX",
+    "command": "FF FF 00 02 01 FC",
+    "bytes_hex": "FF FF 00 02 01 FC",
+    "automatic_execution": false
+  },
+  {
+    "category": "BINARY PROTOCOL",
+    "name": "HEX mode: ID0 read position.",
+    "mode": "HEX",
+    "command": "FF FF 00 04 02 38 02 BF",
+    "bytes_hex": "FF FF 00 04 02 38 02 BF",
+    "automatic_execution": false
+  },
+  {
+    "category": "BINARY PROTOCOL",
+    "name": "HEX mode: legacy A0 down; pair with release.",
+    "mode": "HEX",
+    "command": "FF FF FE 07 F5 01 00 00 80 3F 00",
+    "bytes_hex": "FF FF FE 07 F5 01 00 00 80 3F 00",
+    "automatic_execution": false
+  },
+  {
+    "category": "BINARY PROTOCOL",
+    "name": "HEX mode: legacy A0 release.",
+    "mode": "HEX",
+    "command": "FF FF FE 07 F5 01 00 00 00 00 00",
+    "bytes_hex": "FF FF FE 07 F5 01 00 00 00 00 00",
+    "automatic_execution": false
+  },
+  {
+    "category": "BINARY PROTOCOL",
+    "name": "HEX mode: legacy B0 down.",
+    "mode": "HEX",
+    "command": "FF FF FE 07 F5 02 00 00 80 3F 00",
+    "bytes_hex": "FF FF FE 07 F5 02 00 00 80 3F 00",
+    "automatic_execution": false
+  },
+  {
+    "category": "BINARY PROTOCOL",
+    "name": "HEX mode: legacy B0 release.",
+    "mode": "HEX",
+    "command": "FF FF FE 07 F5 02 00 00 00 00 00",
+    "bytes_hex": "FF FF FE 07 F5 02 00 00 00 00 00",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / DEBUG",
+    "name": "@debug status",
+    "mode": "ASCII+CRLF",
+    "command": "@debug status",
+    "bytes_hex": "40 64 65 62 75 67 20 73 74 61 74 75 73 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / DEBUG",
+    "name": "@debug sts on",
+    "mode": "ASCII+CRLF",
+    "command": "@debug sts on",
+    "bytes_hex": "40 64 65 62 75 67 20 73 74 73 20 6F 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / DEBUG",
+    "name": "@debug sts off",
+    "mode": "ASCII+CRLF",
+    "command": "@debug sts off",
+    "bytes_hex": "40 64 65 62 75 67 20 73 74 73 20 6F 66 66 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / DEBUG",
+    "name": "@debug motor on",
+    "mode": "ASCII+CRLF",
+    "command": "@debug motor on",
+    "bytes_hex": "40 64 65 62 75 67 20 6D 6F 74 6F 72 20 6F 6E 0D 0A",
+    "automatic_execution": false
+  },
+  {
+    "category": "KEYS / DEBUG",
+    "name": "@debug motor off",
+    "mode": "ASCII+CRLF",
+    "command": "@debug motor off",
+    "bytes_hex": "40 64 65 62 75 67 20 6D 6F 74 6F 72 20 6F 66 66 0D 0A",
+    "automatic_execution": false
+  }
+]

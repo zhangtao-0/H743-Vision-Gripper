@@ -1,0 +1,79 @@
+{
+  "schema": "h743.vision.baseline.v1",
+  "coordinate_system": "Pixel",
+  "origin": "top_left",
+  "x_axis": "right",
+  "y_axis": "down",
+  "source_kind": "synthetic",
+  "image_sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97",
+  "input": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Vision_AI\\experiments\\20261024_baseline_v1\\inputs\\dark_background_light_mode.png",
+  "image_size": [
+    640,
+    480
+  ],
+  "config": {
+    "mode": "gray_light",
+    "threshold": 100,
+    "min_area": 800,
+    "hsv_low": [
+      0,
+      0,
+      0
+    ],
+    "hsv_high": [
+      179,
+      255,
+      180
+    ]
+  },
+  "objects": [
+    {
+      "shape_hint": "block_top_view",
+      "center_px": [
+        315.0,
+        215.0
+      ],
+      "center_inside": true,
+      "interior_point_px": [
+        295,
+        215
+      ],
+      "box_center_px": [
+        315.0,
+        214.99996948242188
+      ],
+      "box_size_px": [
+        109.99998474121094,
+        149.99996948242188
+      ],
+      "box_corners_px": [
+        [
+          390.0,
+          269.9999694824219
+        ],
+        [
+          240.00001525878906,
+          269.9999694824219
+        ],
+        [
+          240.00001525878906,
+          159.99996948242188
+        ],
+        [
+          390.0,
+          159.99996948242188
+        ]
+      ],
+      "long_axis_angle_deg": 0.0,
+      "orientation_ambiguous": false,
+      "area_px2": 16500.0,
+      "circularity": 0.7668088577549051,
+      "solidity": 1.0,
+      "grasp_valid": false,
+      "invalid_reason": "uncalibrated_no_gripper_geometry"
+    }
+  ],
+  "rejected": [],
+  "grasp_valid": false,
+  "motion_commands_sent": false
+}

@@ -1,0 +1,106 @@
+{
+  "version": "20261023-sixkey-servo-v2",
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Docs/整合交付/20261023_六键菜单与舵机图像排查/构建_default.log",
+      "hex": "Docs/整合交付/20261023_六键菜单与舵机图像排查/固件/H743_FD5640.hex",
+      "hex_sha256": "aca79cbb8cb45036e4215c815f6b16dedda83b073dba7967a27a168aba7aba5f"
+    },
+    {
+      "configuration": "H743_VisionGripper_OV2640",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Docs/整合交付/20261023_六键菜单与舵机图像排查/构建_OV2640.log",
+      "hex": "Docs/整合交付/20261023_六键菜单与舵机图像排查/固件/H743_OV2640.hex",
+      "hex_sha256": "312ec8345669f769f9d7de7e4596bc82455c27047049d1115dc16a5f920c3031"
+    },
+    {
+      "configuration": "H743_VisionGripper_NoCamera",
+      "errors": 0,
+      "warnings": 0,
+      "log": "Docs/整合交付/20261023_六键菜单与舵机图像排查/构建_NoCamera.log",
+      "hex": "Docs/整合交付/20261023_六键菜单与舵机图像排查/固件/H743_NoCamera.hex",
+      "hex_sha256": "6daf0f14389221f3d22a9388b2c46387a42895303398ea8a0b8f61c1a64f219a"
+    }
+  ],
+  "tests": [
+    {
+      "name": "run_ui_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_p2_host_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_p3_host_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_integration_host_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_motor_tests.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_camera_regression.py",
+      "exit_code": 0
+    },
+    {
+      "name": "run_vision_tests.py",
+      "exit_code": 0
+    }
+  ],
+  "current_evidence": "Docs/整合交付/20261023_六键菜单与舵机图像排查",
+  "previous_release_evidence": "Docs/整合交付/20261023_六键菜单与舵机图像排查/修订前整合验证汇总.json",
+  "flashed": true,
+  "hardware_validation": {
+    "current_release": "FD5640 flashed, programmer verify and independent HEX readback passed; STS online/error0, USB image CRC and dual-port silence verified; no actuator movement sent",
+    "prior_firmware_usb": "7 CRC-valid frames / 6.19s, no CRC errors",
+    "prior_firmware_servo": "same-label wiring adds 18 bytes over 3 PINGs, no validated reply",
+    "vendor_software": "User confirms ID1/1Mbps movement, 10.3V and voltage status text",
+    "servo": {
+      "id": 1,
+      "baud": 1000000,
+      "online": 1,
+      "stack": 1,
+      "error": 0,
+      "position": 425,
+      "voltage_mv_observed": [
+        10200,
+        10300
+      ],
+      "motion_commands_sent": false
+    },
+    "usb": {
+      "port": "COM11",
+      "frames": 7,
+      "seconds": 6,
+      "crc_errors": 0
+    },
+    "host": {
+      "port": "COM12",
+      "baud": 115200,
+      "quiet_observation_seconds": 3,
+      "unsolicited_bytes": 0
+    },
+    "usb_unsolicited_bytes": 0,
+    "physical_keys_tested": false,
+    "screen_visually_verified": false,
+    "motion_tested": false,
+    "evidence": "Docs/整合交付/20261023_六键菜单与舵机图像排查/烧录后实物验收.md"
+  },
+  "training": {
+    "torch": "2.14.1+cpu",
+    "cuda": false,
+    "official_cuda_install": "two hash mismatch failures; no bypass"
+  },
+  "autonomous_visual_grasping": "No custom weights trained; pixel-only advice, no automatic motion",
+  "flashed_at": "2026-10-23T19:12:33+08:00",
+  "readback_verified": true
+}

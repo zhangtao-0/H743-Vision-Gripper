@@ -1,0 +1,47 @@
+{
+  "firmware": "20261023-sixkey-servo-v2",
+  "port": "COM11",
+  "motion_commands_sent": false,
+  "commands": [
+    {
+      "command": "@quiet",
+      "reply": "\n"
+    },
+    {
+      "command": "@servo status",
+      "reply": "SERVO configured=1 probed=1 state=6 online=1 stack=1 baud=1000000 scan=0 error=0 broadcast=254\r\nSERVO rxBytes=45482 replies=5 timeout=0 parser=0 txErrors=0; ID0 is unicast\r\n\n"
+    },
+    {
+      "command": "@status",
+      "reply": "\nSTS target=1 rate=1000000 rawRx=46532 valid=5 parser=0 tx=2214 hal=0\r\nSYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1\r\nCAM diag format=6F01 pclk=2204 dcmi=00000000 dma=00000000 remaining=0\r\nCAM ready=1 enabled=1 frames=256 errors=0 timeout=0 loopmax=11 cmdDrop=0 usbDrop=0\r\nMOTOR ready=1 driver=0 on=0 fault=0 dir=1 target=0 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n"
+    },
+    {
+      "command": "@motor status",
+      "reply": "MOTOR ready=1 driver=0 on=0 fault=0 dir=1 target=0 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n\n"
+    },
+    {
+      "command": "@input status",
+      "reply": "INPUT mode=0 UARTmask=0 USBmask=0 K1..6=000000\r\n\n"
+    },
+    {
+      "command": "@video status",
+      "reply": "VIDEO on=0 fpsMax=2 sent=0 abort=0 busy=0 USB=1\r\nVISION advisory=0 seq=0 u=0 v=0 angle10=0 widthPx=0 score=0; NO MOTION\r\n\n"
+    },
+    {
+      "command": "@stream on",
+      "reply": "\n24989,425,373,10300,0,0,1,0,279\r\n25089,425,373,10200,0,0,1,0,280\r\n25191,425,373,10200,0,0,1,0,282\r\n25291,425,373,10300,0,0,1,0,283\r\n25391,425,373,10300,0,0,1,0,284\r\n25491,425,373,10300,0,0,1,0,285\r\n25591,425,373,10300,0,0,1,0,286\r\n25691,425,373,10300,0,0,1,0,287\r\n25791,425,373,10200,0,0,1,0,288\r\n25891,425,373,10300,0,0,1,0,289\r\n25991,425,373,10200,0,0,1,0,290\r\n26091,425,373,10200,0,0,1,0,291\r\n26191,425,373,10200,0,0,1,0,292\r\n26291,425,373,10200,0,0,1,0,294\r\n26391,425,373,10200,0,0,1,0,295\r\n26491,425,373,10300,0,0,1,0,296\r\n26591,425,373,10300,0,0,1,0,297\r\n26691,425,373,10200,0,0,1,0,298\r\n26791,425,373,10300,0,0,1,0,299\r\n26891,425,373,10300,0,0,1,0,300\r\n26991,425,373,10300,0,0,1,0,302\r\n27091,425,373,10300,0,0,1,0,303\r\n27191,425,373,10300,0,0,1,0,304\r\n27291,425,373,10200,0,0,1,0,305\r\n27391,425,373,10200,0,0,1,0,307\r\n27491,425,373,10300,0,0,1,0,308\r\n27591,425,373,10200,0,0,1,0,309\r\n27691,425,373,10200,0,0,1,0,310\r\n27791,425,373,10200,0,0,1,0,311\r\n27891,425,373,10200,0,0,1,0,312\r\n"
+    },
+    {
+      "command": "@stream off",
+      "reply": "\n"
+    },
+    {
+      "command": "@servo status",
+      "reply": "SERVO configured=1 probed=1 state=6 online=1 stack=1 baud=1000000 scan=0 error=0 broadcast=254\r\nSERVO rxBytes=58082 replies=5 timeout=0 parser=0 txErrors=0; ID0 is unicast\r\n\n"
+    },
+    {
+      "command": "@status",
+      "reply": "STS target=1 rate=1000000 rawRx=59132 valid=5 parser=0 tx=2814 hal=0\r\nSYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1\r\nCAM diag format=6F01 pclk=2204 dcmi=00000000 dma=00000000 remaining=0\r\nCAM ready=1 enabled=1 frames=325 errors=0 timeout=0 loopmax=11 cmdDrop=0 usbDrop=0\r\nMOTOR ready=1 driver=0 on=0 fault=0 dir=1 target=0 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n\n"
+    }
+  ]
+}

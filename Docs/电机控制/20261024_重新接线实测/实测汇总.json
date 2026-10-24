@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-10-24T15:31:07.061344+08:00",
+  "firmware_verified_by_interface": "motor-vofa-v1; @debug status unsupported; not a fresh flash hash readback",
+  "native_usb": "COM11 VID0483/PID5740",
+  "host": "COM9 CH340 115200",
+  "host_plot_verified": true,
+  "stlink": "DEV_CONNECT_ERR before firmware/device access; no flashing performed",
+  "tests": [
+    {
+      "file": "实际运行.json",
+      "label": "200 target, before A/B reconnect",
+      "vm_reported": 10.3,
+      "vm_measured": false,
+      "errors": [
+        "motor fault 1.0"
+      ],
+      "motion_samples": 39,
+      "measured_peak_rpm": 0.0,
+      "reference_peak_rpm": 111.0,
+      "pwm_peak_permille": 407.0,
+      "initial_state": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n\n",
+      "final_state": "MOTOR ready=1 driver=1 on=0 fault=1 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n\n",
+      "user_observation": "No movement",
+      "passed": false
+    },
+    {
+      "file": "400重接AB后运行.json",
+      "label": "400 target, after A/B reconnect",
+      "vm_reported": 10.3,
+      "vm_measured": false,
+      "errors": [
+        "motor fault 1.0"
+      ],
+      "motion_samples": 39,
+      "measured_peak_rpm": 2.802596928649634e-45,
+      "reference_peak_rpm": 111.0,
+      "pwm_peak_permille": 407.0,
+      "initial_state": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=0 rpm10=0 pwm=0 cpr1000=1061268 count=1 blocked=0 invalid=0\r\n\n",
+      "final_state": "MOTOR ready=1 driver=1 on=0 fault=1 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=1 blocked=0 invalid=0\r\n\n",
+      "user_observation": "Not yet confirmed for this400RPM run; previous200RPM run user reported no movement",
+      "passed": false
+    }
+  ],
+  "final_output_disabled": true,
+  "final_fault_latched": 1,
+  "target_retained": 400,
+  "protection_modified": false,
+  "firmware_modified": false,
+  "pid_gains_modified": false,
+  "hardware_success": false,
+  "next_required": "Clear TB6612/motor wiring photos; no voltmeter available"
+}

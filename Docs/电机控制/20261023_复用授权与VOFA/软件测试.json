@@ -1,0 +1,50 @@
+[
+  {
+    "test": "run_motor_tests.py",
+    "exit": 0,
+    "output": "PASS PID plant: target=200 RPM, 70 RPM equivalent load disturbance, final=199.99 RPM\nPASS overspeed: sustained implausible encoder speed disables output; clear never restarts\nPASS control: ramp, signed feedback, reverse coast/deadtime, timeout/sign faults, anti-windup, zero-stop\nPASS EC11: one detent, contact bounce cancellation, invalid transition rejection\nPASS service: missing-driver inhibit, IRQ timing fault, button debounce/long vs short, runtime-setting guards, preserve PRIMASK\nPASS virtual motor: shared detent limits, physical-only reject, simulated button uses debounce/direction gesture\nPASS persistence gates: maintenance inhibits starts, atomic settings restore, finite/range checks, RAM defaults stay disabled\n "
+  },
+  {
+    "test": "run_integration_host_tests.py",
+    "exit": 0,
+    "output": "PASS FLASH: alternating slots, erase failure, partial program/power loss, CRC corruption fallback, clear record, invalid range\nPASS mapped console: strict keys/masks, source release, detents, numeric overflow/trailing-token rejection, shared param bounds/read-only, executable help index/list\nPASS quiet/help: explicit paced category output, idle silence, all streams disabled, independent camera/LCD controls\nPASS CONSOLE: binary isolation, dual-channel lines, full mailbox, overflow, timeout recovery, moving-state maintenance gate, PWM range\nPASS catalog: all printable text examples recognized by actual parser with mocked hardware\nPASS PWM: no startup output, independent channels, angle clamping, invalid ID, virtual key edges/open-close toggles\nPASS startup log gate: all shared init output suppressed, explicit replies restored\n"
+  },
+  {
+    "test": "run_motor_plot_tests.py",
+    "exit": 0,
+    "output": "FRAME|0000c8c300c078c300007ac3000082c3000019c40000a0bf0000803f000000000000807f\nPASS plot: disabled startup, exact 8-channel signed JustFloat, 50Hz, wrap, inactive reference zero, backpressure, exclusive HOST and restored text\n\n"
+  },
+  {
+    "test": "run_p2_host_tests.py",
+    "exit": 0,
+    "output": "PASS UART: role/baud validation, duplicate resources, invalid role, timeout/busy propagation, wire budget\nPASS LED: active-low/high defaults, 100ms duty boundary, uint32 tick rollover, invalid role\nPASS KEY: bounce rejected, stable press accepted at debounce boundary, event consumed once\nPASS HOST: bounded overflow, byte order/ring wrap, busy retry, timeout drop, receive recovery\nPASS MAPPING: actual BSP+UI, tap/hold/chord, physical OR remote, source isolation, modes, expiry/wrap, PRIMASK\n"
+  },
+  {
+    "test": "run_p3_host_tests.py",
+    "exit": 0,
+    "output": "PASS PROTO: frame build/checksum, angle/position, limit\nPASS SCAN: unicast 0..253, stops after exhaustion, identity mismatch rejected; no writes\nPASS alarm/echo: voltage-error reply preserved, identity verified, echo-only cannot establish online\nPASS P3: ping/id/model/baud/limits/feedback, offline retry, safe baud rearm, explicit ID probe, no writes\n"
+  },
+  {
+    "test": "run_ui_tests.py",
+    "exit": 0,
+    "output": "PASS UI v2: categorized actions/help, explicit image ownership, shortcut restores image page, filtered command mapping\nPASS navigation: exact shortcut restore, normal ancestry, scrolling, stale edit, cancel/confirm, read-only view\nPASS keys: release-only, chord suppression/latch, four dedicated keys; holds retain their assigned role, uint32 wrap\nPASS records: CRC corruption, partial Flashwords, tombstone, sequence wrap, schema version\nPASS settings: no boot writes, save/reboot, exact float CPR, pending STS apply, mechanical endpoints excluded\nPASS settings: motion gates, interrupted-save recovery, atomic clear tombstone, no motor auto-enable path\n PASS H7 store model: actual sectors4/5 code, all five partial-write positions, CRC fallback, tombstone, bank-swap guard; limits6/7 untouched\n "
+  },
+  {
+    "test": "verify_command_manual.py",
+    "exit": 0,
+    "report": "Docs/指令手册/04_维护与证据/指令核验报告.json",
+    "passed": true
+  },
+  {
+    "test": "validate_learning_library.py",
+    "exit": 0,
+    "report": "Docs/教学手册/05_维护与证据/资料核验报告.json",
+    "passed": true
+  },
+  {
+    "test": "verify_input_mapping.py",
+    "exit": 0,
+    "report": "Docs/输入映射/映射表核验.json",
+    "passed": true
+  }
+]

@@ -1,0 +1,8 @@
+﻿command,input,image_output,motion,notes
+@video on,USART1 text or USB CDC text,USB CDC binary frames only,False,independent of UART1 image load
+@video off,USART1 text or USB CDC text,,False,independent of UART1 image load
+@video status,USART1 text or USB CDC text,,False,independent of UART1 image load
+@video fps N,USART1 text or USB CDC text,,False,independent of UART1 image load
+@vision status,USART1 text or USB CDC text,,False,pixel advisory only
+@vision clear,USART1 text or USB CDC text,,False,pixel advisory only
+@vision target SEQ U V ANGLE10 WIDTH SCORE,USART1 text or USB CDC text,,False,pixel advisory only

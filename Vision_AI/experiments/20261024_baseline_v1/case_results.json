@@ -1,0 +1,100 @@
+[
+  {
+    "case": "normal",
+    "source_kind": "synthetic",
+    "expected_objects": 3,
+    "detected_objects": 3,
+    "observed_shapes": [
+      "cylinder_top_view",
+      "block_top_view",
+      "l_bracket_top_view"
+    ],
+    "issue": "reference_synthetic",
+    "output": "experiments\\20261024_baseline_v1\\normal",
+    "image_sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "case": "dim_background_fixed_threshold",
+    "source_kind": "synthetic",
+    "expected_objects": 3,
+    "detected_objects": 0,
+    "observed_shapes": [],
+    "issue": "miss_background_merges_with_foreground",
+    "output": "experiments\\20261024_baseline_v1\\dim_background_fixed_threshold",
+    "image_sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "case": "dim_background_threshold_retuned",
+    "source_kind": "synthetic",
+    "expected_objects": 3,
+    "detected_objects": 3,
+    "observed_shapes": [
+      "cylinder_top_view",
+      "block_top_view",
+      "l_bracket_top_view"
+    ],
+    "issue": "retuned_on_same_input_not_general_accuracy",
+    "output": "experiments\\20261024_baseline_v1\\dim_background_threshold_retuned",
+    "image_sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "case": "overexposed",
+    "source_kind": "synthetic",
+    "expected_objects": 3,
+    "detected_objects": 0,
+    "observed_shapes": [],
+    "issue": "miss_exposure_information_lost",
+    "output": "experiments\\20261024_baseline_v1\\overexposed",
+    "image_sha256": "706d05bfa4b37e17c166e08213384bcc75d9f85749e73c65b263b17da6b1525f"
+  },
+  {
+    "case": "occluded_circle",
+    "source_kind": "synthetic",
+    "expected_objects": 3,
+    "detected_objects": 3,
+    "observed_shapes": [
+      "block_top_view",
+      "block_top_view",
+      "l_bracket_top_view"
+    ],
+    "issue": "wrong_shape_due_to_occlusion",
+    "output": "experiments\\20261024_baseline_v1\\occluded_circle",
+    "image_sha256": "f2cb3f55f6f2d86aed5f15f22318be84ec59c06e2ca7ec2ddcc696fd7fc9b476"
+  },
+  {
+    "case": "dark_background_wrong_polarity",
+    "source_kind": "synthetic",
+    "expected_objects": 1,
+    "detected_objects": 0,
+    "observed_shapes": [],
+    "issue": "miss_threshold_polarity",
+    "output": "experiments\\20261024_baseline_v1\\dark_background_wrong_polarity",
+    "image_sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "case": "dark_background_light_mode",
+    "source_kind": "synthetic",
+    "expected_objects": 1,
+    "detected_objects": 1,
+    "observed_shapes": [
+      "block_top_view"
+    ],
+    "issue": "corrected_polarity",
+    "output": "experiments\\20261024_baseline_v1\\dark_background_light_mode",
+    "image_sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "case": "hsv_dark_foreground",
+    "source_kind": "synthetic",
+    "expected_objects": 3,
+    "detected_objects": 3,
+    "observed_shapes": [
+      "cylinder_top_view",
+      "block_top_view",
+      "l_bracket_top_view"
+    ],
+    "issue": "hsv_alternative_same_scene",
+    "output": "experiments\\20261024_baseline_v1\\hsv_dark_foreground",
+    "image_sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-10-24T23:49:17",
+  "scope": "New registered learning documents and source snapshot; excludes unrelated historical navigation links",
+  "registered_documents": 171,
+  "checked_markdown_files": 172,
+  "characters": 269977,
+  "internal_links": 912,
+  "source_links": 294,
+  "production_files_checked": 1651,
+  "production_changes": [],
+  "hal_references": 36,
+  "function_locations": 93,
+  "example_compile_only": 2,
+  "firmware_flashed": false,
+  "issues": [],
+  "passed": true
+}

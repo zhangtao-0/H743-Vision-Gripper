@@ -1,0 +1,64 @@
+{
+  "version": "20261022-input-map-v1",
+  "reference_branch": "codex/test-6101c97",
+  "reference_commit": "0cf70fb0120a53d5c7caf75cd276cb3a366e8522",
+  "builds": [
+    {
+      "configuration": "H743_VisionGripper",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "project/EWARM/H743_VisionGripper/Exe/H743_VisionGripper.hex",
+      "hex_sha256": "b51521b82a7d02dc74b8c60e325763ac2d795722d479417e97c92b13de9cd214",
+      "data_address_range": [
+        "0x8000000",
+        "0x8023901"
+      ],
+      "log": "Docs/屏幕交互/构建_default.log"
+    },
+    {
+      "configuration": "H743_VisionGripper_OV2640",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "project/EWARM/H743_VisionGripper_OV2640/Exe/H743_VisionGripper.hex",
+      "hex_sha256": "eda5848faedf038bb38e4d46fe2ca0837c7622593828b9539d28803c52986f34",
+      "data_address_range": [
+        "0x8000000",
+        "0x80223a6"
+      ],
+      "log": "Docs/屏幕交互/构建_OV2640.log"
+    },
+    {
+      "configuration": "H743_VisionGripper_NoCamera",
+      "errors": 0,
+      "warnings": 0,
+      "hex": "project/EWARM/H743_VisionGripper_NoCamera/Exe/H743_VisionGripper.hex",
+      "hex_sha256": "ffc9a9962830bd9a7c78cb3dbe44186e7500630c2490148eb45947437880d895",
+      "data_address_range": [
+        "0x8000000",
+        "0x8021ab2"
+      ],
+      "log": "Docs/屏幕交互/构建_NoCamera.log"
+    }
+  ],
+  "registered_ui_sources": 7,
+  "host_reports": [
+    "主机状态机测试.json",
+    "主机开机配置测试.json",
+    "主机配置Flash模型测试.json"
+  ],
+  "reviewed_production_changes": 42,
+  "motor_driver_profile": 0,
+  "boot_profile_slots": [
+    "0x08180000",
+    "0x081A0000"
+  ],
+  "limit_slots": [
+    "0x081C0000",
+    "0x081E0000"
+  ],
+  "boot_load_erases_flash": false,
+  "boot_auto_enable": false,
+  "firmware_flashed": false,
+  "physical_key_lcd_test": false,
+  "physical_flash_power_loss_test": false
+}

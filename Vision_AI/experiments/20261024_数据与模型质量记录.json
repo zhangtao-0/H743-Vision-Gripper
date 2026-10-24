@@ -1,0 +1,30 @@
+{
+  "images": 48,
+  "source_polygons": 82,
+  "source_annotation_categories_preserved": true,
+  "instance_counts": {
+    "train": {
+      "cup": 14,
+      "bottle": 21,
+      "box": 23
+    },
+    "val": {
+      "cup": 3,
+      "bottle": 6,
+      "box": 4
+    },
+    "test": {
+      "cup": 3,
+      "box": 3,
+      "bottle": 5
+    }
+  },
+  "source_images_unchanged": true,
+  "duplicates_cross_splits": false,
+  "tag_decisions_from_real_predictions": 2,
+  "test_images_no_detection": 8,
+  "test_images": 9,
+  "h743_images": 0,
+  "L_bracket_images": 0,
+  "model_is_deployable": false
+}

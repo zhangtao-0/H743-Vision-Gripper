@@ -1,0 +1,35 @@
+[
+  {
+    "name": "TACO",
+    "url": "http://tacodataset.org/",
+    "snapshot": "00_索引与许可/官方资料/20261024-taco-site.md",
+    "sha256": "4d073e3d83b5e278a8f2c45158a60e7fd36964b064234423b9dfc194c163ab50",
+    "checked": "2026-10-24"
+  },
+  {
+    "name": "TACO code",
+    "url": "https://github.com/pedropro/TACO",
+    "snapshot": "00_索引与许可/官方资料/20261024-taco-official.md",
+    "sha256": "b6387bffbb28ce7d29b741ee48dce0ca9a6aa4176c65ab44dec0f0e0a69b04bc",
+    "checked": "2026-10-24"
+  },
+  {
+    "name": "YOLO auto-tuning",
+    "url": "https://docs.ultralytics.com/guides/hyperparameter-tuning/",
+    "snapshot": "00_索引与许可/官方资料/20261024-auto-tuning-official.md",
+    "sha256": "9de26d1dfc1cdcad6daf2e71009079844ced69f4317aff6f2c801ae78ea64001",
+    "checked": "2026-10-24"
+  },
+  {
+    "name": "MVTec LOCO AD",
+    "url": "https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad",
+    "status": "candidate_not_downloaded",
+    "limitations": "form download; CC BY-NC-SA4.0; anomaly task is not direct gripper ground truth"
+  },
+  {
+    "name": "GraspNet",
+    "url": "https://github.com/graspnet/graspnet-baseline",
+    "status": "reference_not_downloaded",
+    "limitations": "RGB-D, different gripper assumptions, noncommercial research license; see Resources"
+  }
+]

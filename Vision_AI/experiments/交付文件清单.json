@@ -1,0 +1,2007 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 393,
+    "sha256": "cfb3ed1502cff9457ede5efa091d6af9c79a3644864913f9e69d71f433ecb131"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2493,
+    "sha256": "84ba36733fce802e10032b11d642a4adc591bac77e2e7d6bad912a27df66f7d2"
+  },
+  {
+    "path": "requirements-baseline.lock.txt",
+    "bytes": 56,
+    "sha256": "106ca0b7b48c49963d04d6ca38e46adf0ffae689b17844ce3b36cdbb3ae340ac"
+  },
+  {
+    "path": "requirements-baseline.txt",
+    "bytes": 134,
+    "sha256": "778089cbd0114329c34b6d8761c3ae07d63ee0e3c0536c0fe32925808ba599af"
+  },
+  {
+    "path": "requirements-training.txt",
+    "bytes": 134,
+    "sha256": "6b632de577adaedc27cd68f29cb3455a940d7e14902a1680dde9982c5aeb569e"
+  },
+  {
+    "path": "启动教学演示.cmd",
+    "bytes": 222,
+    "sha256": "8d943e9110a088a3380469f9788a33f9068e63192944f480f478114ccd6b2d85"
+  },
+  {
+    "path": "自动检查与训练.cmd",
+    "bytes": 80,
+    "sha256": "b8707aea781cf773f117250e65367394691e905cc1b9c916ae16027f86fbc990"
+  },
+  {
+    "path": "configs/autopilot.json",
+    "bytes": 1448,
+    "sha256": "684b37a381860f663fb5f9dd331a9e91ac19e8460ca8a3473938dca8fdd61a9d"
+  },
+  {
+    "path": "configs/camera_240.json",
+    "bytes": 68,
+    "sha256": "d9510f0616c775d63ce3a29a0338b96d8f41a4c830d131c080333578ae6cf1ca"
+  },
+  {
+    "path": "configs/classes.json",
+    "bytes": 422,
+    "sha256": "7bb35fd123b1415a552c990f03418d1cb49f6383472c45cf7467facf452b4fd2"
+  },
+  {
+    "path": "configs/dark_100.json",
+    "bytes": 68,
+    "sha256": "5bd2875cc0114ddba099d3220f7116011393acbdee7d46c1610e772fb19e3255"
+  },
+  {
+    "path": "configs/gray_dark.json",
+    "bytes": 68,
+    "sha256": "a113a2579703897c8bad449f067edf75a430c2c7317a3dbb79760db240c99a26"
+  },
+  {
+    "path": "configs/hsv.json",
+    "bytes": 159,
+    "sha256": "713b05663b7f5c9d202f1b69486e5af706acefb1d684f4c5eac906c2bba98396"
+  },
+  {
+    "path": "datasets/README.md",
+    "bytes": 932,
+    "sha256": "6a2a9949f5f9fbc161a58e7b5c7b5c2abe4b34b43f085fea2362cd3f16c16f2d"
+  },
+  {
+    "path": "datasets/采集会话模板.csv",
+    "bytes": 265,
+    "sha256": "d49124dfe121170faa1db68286dcaa7f0752000619029f4b5341ce138c1345f3"
+  },
+  {
+    "path": "Docs/00_本轮方案与范围.md",
+    "bytes": 1508,
+    "sha256": "8f631bf274fc9f8383c25a14c9cb339179ba755ec9216acfaad491e92ccfdbb3"
+  },
+  {
+    "path": "Docs/01_环境审计.md",
+    "bytes": 2143,
+    "sha256": "e0a077cd86e24bf7c122d6bacda66e8b498ee191ebd5c98ccd6a65e58aa59bc8"
+  },
+  {
+    "path": "Docs/02_复现准备清单.md",
+    "bytes": 2598,
+    "sha256": "524043bee561d32d7a85ab6d676d4f4572e468507f11875071e195f2fc245987"
+  },
+  {
+    "path": "Docs/03_第一次运行与结果解读.md",
+    "bytes": 3248,
+    "sha256": "4fb8c58ffed456d5875bf63b36434fa2b39b728d0ffc49496e67781e90d1cfde"
+  },
+  {
+    "path": "Docs/04_真实采集与H743衔接.md",
+    "bytes": 3224,
+    "sha256": "34506b57b86f9371d738a350652cc5e82085d015a23c96e43416cfea2b9f22aa"
+  },
+  {
+    "path": "Docs/05_安装审批清单.md",
+    "bytes": 3639,
+    "sha256": "bf02a8c031fdd7966881244bc9947a84ec52b3fab2418182e4c6c0963d2abe3a"
+  },
+  {
+    "path": "Docs/06_开源资源选型与修订.md",
+    "bytes": 3168,
+    "sha256": "e88d1eeb7b2902b65567d3f2aca0e0f38f384b30c63e09c098a685783c612d69"
+  },
+  {
+    "path": "Docs/07_视觉资料库与自主训练方案.md",
+    "bytes": 1262,
+    "sha256": "2ea4c8dc5481b86a6da274e770cc8178620c49f35c592e6ace5c3eafcff426d0"
+  },
+  {
+    "path": "Docs/08_多层标签与自主训练手册.md",
+    "bytes": 7992,
+    "sha256": "4b846baacda085cde9a55fe71ed3f7195280f6da7523198d8213eaaf2f497e03"
+  },
+  {
+    "path": "Docs/09_资料库与自主训练验收.md",
+    "bytes": 3277,
+    "sha256": "511ee77dcfdfd11631a787025fac0ad8b8a2f505c412c17e9d0d2a66515d0c7d"
+  },
+  {
+    "path": "Docs/阶段验收报告.md",
+    "bytes": 5632,
+    "sha256": "7d9b2f57e340cdc436b4c2f8097417a8b0456ee989a9fa7d5b2b392ab3a5c95f"
+  },
+  {
+    "path": "evaluation/README.md",
+    "bytes": 603,
+    "sha256": "22a20c9084a975eab50bce93dbfddf8506deae1d646d67f7ad4590d7128b013f"
+  },
+  {
+    "path": "experiments/20261024_autopilot_console.log",
+    "bytes": 217,
+    "sha256": "d36aa9405aaa041c65d43bda41125d392e3954547b5cb65e980d1f17aa2af289"
+  },
+  {
+    "path": "experiments/20261024_public_download.log",
+    "bytes": 674,
+    "sha256": "085d2d453596ee1cd30aa1419baf4c03474bae5d1b39d6923bb01d540f616061"
+  },
+  {
+    "path": "experiments/20261024_分层标签测试.json",
+    "bytes": 3178,
+    "sha256": "dcf7b32c3ef7fc7ed18b170eaf93187cc240fecaa66cccfa6a9ac5e02533a1c1"
+  },
+  {
+    "path": "experiments/20261024_数据与模型质量记录.json",
+    "bytes": 610,
+    "sha256": "47a7f449ea07da02107a159cb7170f3bd22043826db0ae0a9d5a569041b1867a"
+  },
+  {
+    "path": "experiments/20261024_资料库交付核验.json",
+    "bytes": 700,
+    "sha256": "7f2ae0f772b69882efb1268c3f231d593624926c65abb38f3771264359ede419"
+  },
+  {
+    "path": "experiments/20261024_资料库代码身份.json",
+    "bytes": 1726,
+    "sha256": "4d0bc2310b6d0705572b764da579d15e0e1f9576c0128f117ac791220dee7e5c"
+  },
+  {
+    "path": "experiments/autopilot.lock",
+    "bytes": 1,
+    "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+  },
+  {
+    "path": "experiments/production_before.json",
+    "bytes": 224429,
+    "sha256": "383dd50f6fcc26ea7156fca1b455fd9bfb2e3db7d0bfc74cf246f4371b0f1a87"
+  },
+  {
+    "path": "experiments/创建隔离环境.json",
+    "bytes": 404,
+    "sha256": "013f49a36d2ca26c3a474664e59959f7ba1d7182e266a88ad67ee86ec6fba1fc"
+  },
+  {
+    "path": "experiments/原包测试.json",
+    "bytes": 839,
+    "sha256": "c4cdd10117a5e0d22713693d1f820c40b1159f83a5b3b108a8d67c834245dbc4"
+  },
+  {
+    "path": "experiments/教学入口测试.json",
+    "bytes": 1880,
+    "sha256": "adb902ae029fadbeaf627e6643238e7e6816fa1ae5a4f866dc917b1e45d69307"
+  },
+  {
+    "path": "experiments/本轮只读复用环境.lock.txt",
+    "bytes": 775,
+    "sha256": "08fc85bd8209204c1e48c667601fb8be58e53b7997c6470b467d8c8c12f28e83"
+  },
+  {
+    "path": "experiments/环境原始输出.json",
+    "bytes": 2351,
+    "sha256": "704243b8b1817fad11c849a770860aa69443985d0bce32b88d6a0e9f0e80392d"
+  },
+  {
+    "path": "experiments/边界与交付核验.json",
+    "bytes": 898,
+    "sha256": "d782810d1e7a443c72c0035cc1069ad49fd95df57484309b0cbe8a553f469f6b"
+  },
+  {
+    "path": "experiments/适配测试与运行.json",
+    "bytes": 6059,
+    "sha256": "19ecbe58b53573da90ff8854ffd211ed14ca510dd633d1dc904debc6f3fb3a45"
+  },
+  {
+    "path": "integration/import_saved_stream.py",
+    "bytes": 3073,
+    "sha256": "9bae9401e0804634b6ac696baca30edcf54c83ef70abaea282ac005ea09dc773"
+  },
+  {
+    "path": "Library/README.md",
+    "bytes": 2707,
+    "sha256": "e4e2f8a711d1a2ea8df7538982d4dda0b0edfba7eb2b2b6d67b429fe35858dc1"
+  },
+  {
+    "path": "Resources/graspnet-graspnet-baseline-LICENSE.txt",
+    "bytes": 11946,
+    "sha256": "acdeaedbed2d5b38b1fdacba406db53743d06a05f4220126bee91a548241f09b"
+  },
+  {
+    "path": "Resources/pytorch-pytorch-LICENSE.txt",
+    "bytes": 3464,
+    "sha256": "bd018feef8825e88181c84eb7e3aa4eafb8f08a20d9fd6ef948569610c4a3e43"
+  },
+  {
+    "path": "Resources/官方仓库核验.json",
+    "bytes": 5818,
+    "sha256": "a12aa9e95702e8a5ab5a752321a03f04f4648adfbb94786d16d88e09401632d5"
+  },
+  {
+    "path": "Resources/官方文档来源.json",
+    "bytes": 1526,
+    "sha256": "e31be029b81a2d300dd138a062ecdf69fd1e5bec5832df49b1ab44bf2073380b"
+  },
+  {
+    "path": "Resources/教学包来源与哈希.json",
+    "bytes": 3090,
+    "sha256": "f88b8ea3bea8ef7ea71117f879ade9a570ac9b0a397c84048745aa6159752377"
+  },
+  {
+    "path": "Resources/版本核验局限.json",
+    "bytes": 594,
+    "sha256": "3f7cfea6edd954a300fec8f72bd4da0ff8015215c3847a0f2f66bd687a6fb6e0"
+  },
+  {
+    "path": "src/baseline.py",
+    "bytes": 7424,
+    "sha256": "a61c43d42b5687ed99efbb50641d1e47771ec211fdb1eedf71fc9ddcc7308770"
+  },
+  {
+    "path": "src/prediction_tags.py",
+    "bytes": 2168,
+    "sha256": "3c79972d19b0ced489c93e74b56adfa8e7b1a64184f2a3be200c04b2e88117aa"
+  },
+  {
+    "path": "src/tag_reasoner.py",
+    "bytes": 5888,
+    "sha256": "4cecabc88979db7aeb6acaa8a85832e0fac67afd1d1e70649348abc57be48073"
+  },
+  {
+    "path": "tests/test_baseline.py",
+    "bytes": 6039,
+    "sha256": "40c370f21261b7988d4a9f6137a6f9d1061e4425bcf73102aa07154e488b5526"
+  },
+  {
+    "path": "tests/test_tag_reasoner.py",
+    "bytes": 5159,
+    "sha256": "480af4d295bf007a90303bd0ce78bb6f25b06f2a8c634fd4af031f12db1daa06"
+  },
+  {
+    "path": "tools/fetch_public.py",
+    "bytes": 4470,
+    "sha256": "876d401425c94104ba048a2f4fc49868a13d6e76cd276e4a7c3431f99bd63ad4"
+  },
+  {
+    "path": "tools/run_baseline.py",
+    "bytes": 4237,
+    "sha256": "e83fa85f2efddc8d649b8afe55f89d0e8f4e994b51cf2fe0f5a678c66fc918a9"
+  },
+  {
+    "path": "tools/study.py",
+    "bytes": 1778,
+    "sha256": "1e20302d3ae43f9c6236f64ec6f3a5e280ccae152c19b21932c06537444bb5d2"
+  },
+  {
+    "path": "training/autopilot.py",
+    "bytes": 6884,
+    "sha256": "002199274ed79600ccbea55a3d025c628c16674edf3830f5c26d8277686b3a99"
+  },
+  {
+    "path": "training/prepare_public.py",
+    "bytes": 6130,
+    "sha256": "c24801a7e53739371e05b5fbfc98fdf0d8cc94db0e5083b2645ee77d6e47cd6c"
+  },
+  {
+    "path": "training/README.md",
+    "bytes": 1063,
+    "sha256": "07a9c3a6060620f26ba963b80e0c931a816038520ecb4be73d60eaa1c446b55b"
+  },
+  {
+    "path": "training/train_worker.py",
+    "bytes": 3078,
+    "sha256": "ac8bb1c40a1c11903261c26f195ccd6cb5f85c5ff521905c0ad7d06b7e37a48f"
+  },
+  {
+    "path": "datasets/annotations/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "datasets/raw/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/artifacts_sha256.json",
+    "bytes": 6416,
+    "sha256": "878586f7014196a69eb6846b65ffbeb737b94336655ae9211f98e5c2581233c3"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/case_results.json",
+    "bytes": 3380,
+    "sha256": "8566ead7e296fb627b0b9a5c8dac62d18f655919ba65e21d14cf23e42675f8dc"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/code_identity.json",
+    "bytes": 1302,
+    "sha256": "66d6c7dca12ef71f95063b390e107d27bbbd3c2b4cb3a6a50e213c5d645d7cd5"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_commands.json",
+    "bytes": 3268,
+    "sha256": "4967947bb0998f7d78940714f297b28237c3d5c41e9c62d1cefe48cbffb35259"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/artifacts_sha256.json",
+    "bytes": 6416,
+    "sha256": "129ad99782e50128f422d3604f3deb69966b6b7a6dac62afeff46e20da06a22c"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/case_results.json",
+    "bytes": 3452,
+    "sha256": "076b6b79ddd7577ef25fc9616bebbb0ed69baaf0477f08efd5d2acd02ce50af2"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_commands.json",
+    "bytes": 3271,
+    "sha256": "bbeb6dc12b4260901ea89e026bde4e9b8250fa4bf43fc36b6d3192fa1f5c5920"
+  },
+  {
+    "path": "experiments/20261024_isolated_environment/Host环境安装前.lock.txt",
+    "bytes": 775,
+    "sha256": "08fc85bd8209204c1e48c667601fb8be58e53b7997c6470b467d8c8c12f28e83"
+  },
+  {
+    "path": "experiments/20261024_isolated_environment/Host环境安装后.lock.txt",
+    "bytes": 775,
+    "sha256": "08fc85bd8209204c1e48c667601fb8be58e53b7997c6470b467d8c8c12f28e83"
+  },
+  {
+    "path": "experiments/20261024_isolated_environment/pip-install.log",
+    "bytes": 1194,
+    "sha256": "cc0685ffd914f8f24968006cfa43f6323d88120575b80628c3655b079dbc357b"
+  },
+  {
+    "path": "experiments/20261024_isolated_environment/复验结果.json",
+    "bytes": 10628,
+    "sha256": "639f5aa7c4ea0738e319f556ec4c6a4068bcfb3a1aeaf1795ac89b759c271724"
+  },
+  {
+    "path": "experiments/20261024_isolated_environment/安装命令.json",
+    "bytes": 735,
+    "sha256": "5f0ff136358b1f72d11fe9ab2a96560cd73808f9bfc4aa83348c8b7103b0eb37"
+  },
+  {
+    "path": "experiments/20261024_isolated_environment/安装结果.json",
+    "bytes": 22,
+    "sha256": "615b528c5c005c3fa1f565a5f58bb0f9fb327229716a5ea9a8143c5524daf9b8"
+  },
+  {
+    "path": "experiments/20261024_isolated_environment/新旧环境结果对比.json",
+    "bytes": 1276,
+    "sha256": "cbd2963fb13f10f525780ec24db8b1bca4ad3064020a06ef604b7bfde8827771"
+  },
+  {
+    "path": "experiments/20261024_isolated_environment/验收结果.json",
+    "bytes": 602,
+    "sha256": "34382f342815810f373677202e57acaa9e53a5ddba07030467625cd949118dd3"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/environment.json",
+    "bytes": 415,
+    "sha256": "3834f83b51803dd08aafef8cc7d25abc4f84bab308d566fcd839faa44d36f084"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/job.json",
+    "bytes": 1508,
+    "sha256": "bb36917d9b7b9b3c3513c116a239c14e7f1b11b0881ab8d92421257c824c2b79"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/metrics.json",
+    "bytes": 1320,
+    "sha256": "f7ec522d7be45cb86b2f1842305131eabf857640a7e1cb04cf1519da77eec22b"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/run_status.json",
+    "bytes": 2520,
+    "sha256": "92d5eca14136120cdecd6c86325c47ff21e2efa217466edc94d2869404cee975"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/tagged_test_predictions.json",
+    "bytes": 6465,
+    "sha256": "9f756f1b1569530a517b9ee7b8bcf1c21d0bf2685bc07012991458fca446d410"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/test_predictions.json",
+    "bytes": 7379,
+    "sha256": "ae3801e1a1c2ed54586ae414f8be84605c10712debdedb3ab1b1c2992c376116"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/training.log",
+    "bytes": 18978,
+    "sha256": "83e217cd1fd20b93c84fb0ca9981c6500e293df79364e80a6ab8bdc3c8cd0f1b"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_light_mode/annotated.png",
+    "bytes": 7918,
+    "sha256": "54a6658a905822a71f8744c27479db7d7357e29d9e2cab9ff45d83edc4c72b37"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_light_mode/comparison.png",
+    "bytes": 16643,
+    "sha256": "5466d969034def9d992d3ad846a1abd52253975aabd329377beb6eb8019b8587"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_light_mode/detections.json",
+    "bytes": 1836,
+    "sha256": "62d905bed949f30bb616649658c593a2262f4ca841ac36248d5707642884e5ff"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_light_mode/mask.png",
+    "bytes": 1564,
+    "sha256": "7b71bb583a681abde1f4adc9beba7bf71258e73d7520f649a9189b9abb387bdf"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_light_mode/original.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_wrong_polarity/annotated.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_wrong_polarity/comparison.png",
+    "bytes": 11193,
+    "sha256": "fcbb460d390e1354ded315bb576cac379100930655802c24fe93702f8554eec7"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_wrong_polarity/detections.json",
+    "bytes": 948,
+    "sha256": "94c713b60f03f77005a5e3c0d8ce9f98aba46cbc393fb06f9895c308a139a141"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_wrong_polarity/mask.png",
+    "bytes": 1399,
+    "sha256": "2887ea42649b015576f467cc25b34507be4450fc6ef39421e254c745a6fe5723"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dark_background_wrong_polarity/original.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_fixed_threshold/annotated.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_fixed_threshold/comparison.png",
+    "bytes": 14920,
+    "sha256": "1b67e6824edbed335f45657d900ce8d8281536106e2e2f5750101fcd2a87abf7"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_fixed_threshold/detections.json",
+    "bytes": 948,
+    "sha256": "85aab6676bfb54781982ab2f076ab2d20567284a66cca293bad87797dce4ee81"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_fixed_threshold/mask.png",
+    "bytes": 1399,
+    "sha256": "2887ea42649b015576f467cc25b34507be4450fc6ef39421e254c745a6fe5723"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_fixed_threshold/original.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_threshold_retuned/annotated.png",
+    "bytes": 18562,
+    "sha256": "9104207f9d715404f907f3b12ce8ff467173f52185e6cc053edc6f0094107f66"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_threshold_retuned/comparison.png",
+    "bytes": 31263,
+    "sha256": "eab39700aa70cf03e358656ea0b6bcc16935b19e97e00fadfb6d11a5546c135f"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_threshold_retuned/detections.json",
+    "bytes": 3671,
+    "sha256": "a6e848581f72c126e07f2c250050952641be3c5290dae32bf2342ba757108d76"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_threshold_retuned/mask.png",
+    "bytes": 2349,
+    "sha256": "b65c33f3e6b98b1f2711af651dd6c995f4ba4ea0d623aa299b22c7657eee8d6c"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/dim_background_threshold_retuned/original.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/hsv_dark_foreground/annotated.png",
+    "bytes": 19240,
+    "sha256": "e628c78931fd78f9e98d0c5c4f38ce38921828b406927663a6f359a84e63cd6b"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/hsv_dark_foreground/comparison.png",
+    "bytes": 31980,
+    "sha256": "d913740ed4711b4df32e5182077069ee0344233ea9fc601c8557d243253f0a7b"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/hsv_dark_foreground/detections.json",
+    "bytes": 3652,
+    "sha256": "787d6ae0c058e14cb19b1c6c245846781e52fd884fdcacca8f9d52da9710855e"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/hsv_dark_foreground/mask.png",
+    "bytes": 2349,
+    "sha256": "b65c33f3e6b98b1f2711af651dd6c995f4ba4ea0d623aa299b22c7657eee8d6c"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/hsv_dark_foreground/original.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/inputs/dark_background_light_mode.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/inputs/dark_background_wrong_polarity.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/inputs/dim_background_fixed_threshold.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/inputs/dim_background_threshold_retuned.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/inputs/hsv_dark_foreground.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/inputs/normal.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/inputs/occluded_circle.png",
+    "bytes": 5482,
+    "sha256": "f2cb3f55f6f2d86aed5f15f22318be84ec59c06e2ca7ec2ddcc696fd7fc9b476"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/inputs/overexposed.png",
+    "bytes": 2300,
+    "sha256": "706d05bfa4b37e17c166e08213384bcc75d9f85749e73c65b263b17da6b1525f"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/normal/annotated.png",
+    "bytes": 19240,
+    "sha256": "e628c78931fd78f9e98d0c5c4f38ce38921828b406927663a6f359a84e63cd6b"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/normal/comparison.png",
+    "bytes": 31980,
+    "sha256": "d913740ed4711b4df32e5182077069ee0344233ea9fc601c8557d243253f0a7b"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/normal/detections.json",
+    "bytes": 3645,
+    "sha256": "45b3047b6009ef3a8385e04410684babf05fe64ef535971d159a70ff53226651"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/normal/mask.png",
+    "bytes": 2349,
+    "sha256": "b65c33f3e6b98b1f2711af651dd6c995f4ba4ea0d623aa299b22c7657eee8d6c"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/normal/original.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/occluded_circle/annotated.png",
+    "bytes": 18915,
+    "sha256": "89b7248f1c294bd00ec172ea4fffd679cde62ab492410e61baaec74e78eccfa5"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/occluded_circle/comparison.png",
+    "bytes": 31837,
+    "sha256": "ad4ab72d70bcf63a059cfdc39be56326f47edc24cc9ab494921b7b7dc3795bcf"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/occluded_circle/detections.json",
+    "bytes": 3664,
+    "sha256": "f60fa57efea0533bf731924441ddbabb4c18080beb31a1d5788302d2f7736949"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/occluded_circle/mask.png",
+    "bytes": 2408,
+    "sha256": "f683ab9bfadc0dd131f6b16719a1103459d5b2f25161a7e028757c1de29aadf7"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/occluded_circle/original.png",
+    "bytes": 5482,
+    "sha256": "f2cb3f55f6f2d86aed5f15f22318be84ec59c06e2ca7ec2ddcc696fd7fc9b476"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_run/README.md",
+    "bytes": 1647,
+    "sha256": "11ffc1db8fea16234e87aa54712a135086e2b9cad8b3341fab655e3da6b9880a"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_run/requirements-minimal.txt",
+    "bytes": 94,
+    "sha256": "c37eabc5f0111783cc1e29e80217572e9dcd597dbc4de48daff8855b83abe323"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/overexposed/annotated.png",
+    "bytes": 2300,
+    "sha256": "706d05bfa4b37e17c166e08213384bcc75d9f85749e73c65b263b17da6b1525f"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/overexposed/comparison.png",
+    "bytes": 8972,
+    "sha256": "1c12a2159892d6bf27642b91a8d3cdeda12e7aa5a6edc28798accd307e556d67"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/overexposed/detections.json",
+    "bytes": 831,
+    "sha256": "11e01f23c498cf3a95737d3d8c69685c8a13f8003dc492923389b1163c31b010"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/overexposed/mask.png",
+    "bytes": 1159,
+    "sha256": "45e945d98ded38001430be13601895981708846604f9db9184b3b6af1dd62402"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/overexposed/original.png",
+    "bytes": 2300,
+    "sha256": "706d05bfa4b37e17c166e08213384bcc75d9f85749e73c65b263b17da6b1525f"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_run/outputs/annotated.png",
+    "bytes": 16892,
+    "sha256": "8bb1e9d722177db85dd06b6824c60b9d81ed32a051b39f554c304eafe139d374"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_run/outputs/detections.json",
+    "bytes": 1139,
+    "sha256": "93f4706b6a4a0d62f041a8296d058b1b175dfa629bc1afeff6c16111c901d8a0"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_run/outputs/synthetic_scene.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_run/src/shape_baseline.py",
+    "bytes": 3315,
+    "sha256": "663f0c5c7037094b2c3695298bcdd2060c93d1add09f5582ff2a3837c2b995a7"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_run/src/synthetic_demo.py",
+    "bytes": 829,
+    "sha256": "124e678fd9b79f87cdc7d31ad2c90f2cb84a08cad25ba8cfa2abcf9f0a36cb84"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_run/tests/test_baseline.py",
+    "bytes": 927,
+    "sha256": "1a9476e2444a81e4810d02430f33bcf6400f367430b9f9949a36b4863ef84b0e"
+  },
+  {
+    "path": "experiments/20261024_baseline_v1/original_run/training/train_yolo_seg.py",
+    "bytes": 1073,
+    "sha256": "a4eb7c1e7ad757b22664e8b91288b85512d12b84e4b84e7579babb533bd085b5"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_light_mode/annotated.png",
+    "bytes": 7918,
+    "sha256": "54a6658a905822a71f8744c27479db7d7357e29d9e2cab9ff45d83edc4c72b37"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_light_mode/comparison.png",
+    "bytes": 16643,
+    "sha256": "5466d969034def9d992d3ad846a1abd52253975aabd329377beb6eb8019b8587"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_light_mode/detections.json",
+    "bytes": 1845,
+    "sha256": "4069fc02b3e3dd27abcf5822441ea2c18a70ec63bff9e3c3aef5413802f7d39c"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_light_mode/mask.png",
+    "bytes": 1564,
+    "sha256": "7b71bb583a681abde1f4adc9beba7bf71258e73d7520f649a9189b9abb387bdf"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_light_mode/original.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_wrong_polarity/annotated.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_wrong_polarity/comparison.png",
+    "bytes": 11193,
+    "sha256": "fcbb460d390e1354ded315bb576cac379100930655802c24fe93702f8554eec7"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_wrong_polarity/detections.json",
+    "bytes": 957,
+    "sha256": "b6c6206c4a2d8a027637d08f41b31b5a2444ca3f495f9087878db7c00aff9155"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_wrong_polarity/mask.png",
+    "bytes": 1399,
+    "sha256": "2887ea42649b015576f467cc25b34507be4450fc6ef39421e254c745a6fe5723"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dark_background_wrong_polarity/original.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_fixed_threshold/annotated.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_fixed_threshold/comparison.png",
+    "bytes": 14920,
+    "sha256": "1b67e6824edbed335f45657d900ce8d8281536106e2e2f5750101fcd2a87abf7"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_fixed_threshold/detections.json",
+    "bytes": 957,
+    "sha256": "8ddd062e89e55bf0aecf62c3e52fec0bb8072e574065ec553277f87a8ebbdfb6"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_fixed_threshold/mask.png",
+    "bytes": 1399,
+    "sha256": "2887ea42649b015576f467cc25b34507be4450fc6ef39421e254c745a6fe5723"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_fixed_threshold/original.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_threshold_retuned/annotated.png",
+    "bytes": 18562,
+    "sha256": "9104207f9d715404f907f3b12ce8ff467173f52185e6cc053edc6f0094107f66"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_threshold_retuned/comparison.png",
+    "bytes": 31263,
+    "sha256": "eab39700aa70cf03e358656ea0b6bcc16935b19e97e00fadfb6d11a5546c135f"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_threshold_retuned/detections.json",
+    "bytes": 3680,
+    "sha256": "88096de61afe768b4db856c7a527797aa75c5e9dc5130c635578b947bb417efa"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_threshold_retuned/mask.png",
+    "bytes": 2349,
+    "sha256": "b65c33f3e6b98b1f2711af651dd6c995f4ba4ea0d623aa299b22c7657eee8d6c"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/dim_background_threshold_retuned/original.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/hsv_dark_foreground/annotated.png",
+    "bytes": 19240,
+    "sha256": "e628c78931fd78f9e98d0c5c4f38ce38921828b406927663a6f359a84e63cd6b"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/hsv_dark_foreground/comparison.png",
+    "bytes": 31980,
+    "sha256": "d913740ed4711b4df32e5182077069ee0344233ea9fc601c8557d243253f0a7b"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/hsv_dark_foreground/detections.json",
+    "bytes": 3661,
+    "sha256": "81bc3ea96bcf2d814b58aad7479ac2d292a1fd3f4025afc840bf8342c2385662"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/hsv_dark_foreground/mask.png",
+    "bytes": 2349,
+    "sha256": "b65c33f3e6b98b1f2711af651dd6c995f4ba4ea0d623aa299b22c7657eee8d6c"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/hsv_dark_foreground/original.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/inputs/dark_background_light_mode.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/inputs/dark_background_wrong_polarity.png",
+    "bytes": 3238,
+    "sha256": "6919e80be52a1b30f698426e7ba5acfb0af8778129ab7aed9a662130f5e94e97"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/inputs/dim_background_fixed_threshold.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/inputs/dim_background_threshold_retuned.png",
+    "bytes": 5286,
+    "sha256": "dd3931dd517982cfb72fcbb91016e75f80b2429276ff35032144b40553fadc7d"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/inputs/hsv_dark_foreground.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/inputs/normal.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/inputs/occluded_circle.png",
+    "bytes": 5482,
+    "sha256": "f2cb3f55f6f2d86aed5f15f22318be84ec59c06e2ca7ec2ddcc696fd7fc9b476"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/inputs/overexposed.png",
+    "bytes": 2300,
+    "sha256": "706d05bfa4b37e17c166e08213384bcc75d9f85749e73c65b263b17da6b1525f"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/normal/annotated.png",
+    "bytes": 19240,
+    "sha256": "e628c78931fd78f9e98d0c5c4f38ce38921828b406927663a6f359a84e63cd6b"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/normal/comparison.png",
+    "bytes": 31980,
+    "sha256": "d913740ed4711b4df32e5182077069ee0344233ea9fc601c8557d243253f0a7b"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/normal/detections.json",
+    "bytes": 3654,
+    "sha256": "36e9b89c43e9fd7124cbcce7710c1b7fefa535ca32d5dec0b9851129facdab7f"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/normal/mask.png",
+    "bytes": 2349,
+    "sha256": "b65c33f3e6b98b1f2711af651dd6c995f4ba4ea0d623aa299b22c7657eee8d6c"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/normal/original.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/occluded_circle/annotated.png",
+    "bytes": 18915,
+    "sha256": "89b7248f1c294bd00ec172ea4fffd679cde62ab492410e61baaec74e78eccfa5"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/occluded_circle/comparison.png",
+    "bytes": 31837,
+    "sha256": "ad4ab72d70bcf63a059cfdc39be56326f47edc24cc9ab494921b7b7dc3795bcf"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/occluded_circle/detections.json",
+    "bytes": 3673,
+    "sha256": "907d2dd8b0f08aa2d3636c6f0fb43373b1ada03ed0f04771ef2a49f4b4a2f4f0"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/occluded_circle/mask.png",
+    "bytes": 2408,
+    "sha256": "f683ab9bfadc0dd131f6b16719a1103459d5b2f25161a7e028757c1de29aadf7"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/occluded_circle/original.png",
+    "bytes": 5482,
+    "sha256": "f2cb3f55f6f2d86aed5f15f22318be84ec59c06e2ca7ec2ddcc696fd7fc9b476"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_run/README.md",
+    "bytes": 1647,
+    "sha256": "11ffc1db8fea16234e87aa54712a135086e2b9cad8b3341fab655e3da6b9880a"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_run/requirements-minimal.txt",
+    "bytes": 94,
+    "sha256": "c37eabc5f0111783cc1e29e80217572e9dcd597dbc4de48daff8855b83abe323"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/overexposed/annotated.png",
+    "bytes": 2300,
+    "sha256": "706d05bfa4b37e17c166e08213384bcc75d9f85749e73c65b263b17da6b1525f"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/overexposed/comparison.png",
+    "bytes": 8972,
+    "sha256": "1c12a2159892d6bf27642b91a8d3cdeda12e7aa5a6edc28798accd307e556d67"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/overexposed/detections.json",
+    "bytes": 840,
+    "sha256": "061147774e8307c9c546d0c30dedc3f18b27c67713d4379b6a9e2fa543118464"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/overexposed/mask.png",
+    "bytes": 1159,
+    "sha256": "45e945d98ded38001430be13601895981708846604f9db9184b3b6af1dd62402"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/overexposed/original.png",
+    "bytes": 2300,
+    "sha256": "706d05bfa4b37e17c166e08213384bcc75d9f85749e73c65b263b17da6b1525f"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_run/outputs/annotated.png",
+    "bytes": 16892,
+    "sha256": "8bb1e9d722177db85dd06b6824c60b9d81ed32a051b39f554c304eafe139d374"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_run/outputs/detections.json",
+    "bytes": 1139,
+    "sha256": "93f4706b6a4a0d62f041a8296d058b1b175dfa629bc1afeff6c16111c901d8a0"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_run/outputs/synthetic_scene.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_run/src/shape_baseline.py",
+    "bytes": 3315,
+    "sha256": "663f0c5c7037094b2c3695298bcdd2060c93d1add09f5582ff2a3837c2b995a7"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_run/src/synthetic_demo.py",
+    "bytes": 829,
+    "sha256": "124e678fd9b79f87cdc7d31ad2c90f2cb84a08cad25ba8cfa2abcf9f0a36cb84"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_run/tests/test_baseline.py",
+    "bytes": 927,
+    "sha256": "1a9476e2444a81e4810d02430f33bcf6400f367430b9f9949a36b4863ef84b0e"
+  },
+  {
+    "path": "experiments/20261024_isolated_baseline_v1/original_run/training/train_yolo_seg.py",
+    "bytes": 1073,
+    "sha256": "a4eb7c1e7ad757b22664e8b91288b85512d12b84e4b84e7579babb533bd085b5"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/heldout_test/predictions.json",
+    "bytes": 3450909,
+    "sha256": "17e8daaee3cffd839e12ce988279da7710e16db3d23d59efae5e05e700cbe0a4"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/train/args.yaml",
+    "bytes": 2428,
+    "sha256": "6e074db0f236742c6c833a4d699acf24835017027d122745154b0eb4d22e261b"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/train/results.csv",
+    "bytes": 674,
+    "sha256": "cac99c51379a4dc49eddb51b92aaa202ef943160f680ada0773414a763dca96b"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/train/weights/best.pt",
+    "bytes": 6552989,
+    "sha256": "629a3de458d29640a0db6a4dacf609c75749c2340d971e643f6e6e378797ae32"
+  },
+  {
+    "path": "experiments/auto_20261024_143657_780206/train/weights/last.pt",
+    "bytes": 6552989,
+    "sha256": "a9d60b7b6d35af6b0dcfa39737a3c1ea8666bece69526e4a76b0123a818c879d"
+  },
+  {
+    "path": "experiments/ultralytics_local_config/Ultralytics/Arial.ttf",
+    "bytes": 773236,
+    "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+  },
+  {
+    "path": "experiments/ultralytics_local_config/Ultralytics/settings.json",
+    "bytes": 589,
+    "sha256": "3e5a312274c834596820ba3c6519ac42e6ad4ba253d152f9f611f7e2b93d9605"
+  },
+  {
+    "path": "Library/00_索引与许可/taco_downloads.json",
+    "bytes": 581728,
+    "sha256": "ebb9c8adb203273e4ecb34f0e98a8ebc0595042c3289196b781f4d942618c878"
+  },
+  {
+    "path": "Library/00_索引与许可/taco_selection.json",
+    "bytes": 503661,
+    "sha256": "e0386b4bc1731d62e95a14738ac7cb2f36be549cab2a70176dc12365b4932288"
+  },
+  {
+    "path": "Library/00_索引与许可/下载元数据.json",
+    "bytes": 942,
+    "sha256": "2661e7a29844aa21af5d6d89f70201b95a0ba9957a684740d50e29250d2ba503"
+  },
+  {
+    "path": "Library/00_索引与许可/原标注轮廓预览.jpg",
+    "bytes": 133956,
+    "sha256": "3c0655a97309587e56c5593232d5ad5edb797d43fd748de514b053e82c3e4599"
+  },
+  {
+    "path": "Library/00_索引与许可/素材浏览.html",
+    "bytes": 7928,
+    "sha256": "856e3858b9c01f2ba4c2d29c5a68c039a8170d1a27957b4b4fa1a1178210ae24"
+  },
+  {
+    "path": "Library/00_索引与许可/资源目录.json",
+    "bytes": 1359,
+    "sha256": "eb65faf24e386c71532be90fd350b432e01cbed9d9bfc9cb98c4dd9684237632"
+  },
+  {
+    "path": "Library/00_索引与许可/首批真实素材预览.jpg",
+    "bytes": 128737,
+    "sha256": "0a2fb3a72f1b9b2f1a3340607808f11a94a16cb8304cc31455e4458ff65c8bb1"
+  },
+  {
+    "path": "Library/02_分层标签/ontology.json",
+    "bytes": 1263,
+    "sha256": "bf408044cc7448e19af4caceaa4a2cace58f4ad80cfc0d8a964701ff8072813a"
+  },
+  {
+    "path": "Library/03_标注与派生/taco_instance_tags_v1.json",
+    "bytes": 50816,
+    "sha256": "0f7a12dae2364e92261b44ce7a58e5b13e6d840afcea1835c9a7f2d8d5ab02ea"
+  },
+  {
+    "path": "Library/05_模型注册/registry.json",
+    "bytes": 2781,
+    "sha256": "946aca69f0a4bc0f5cbb32dac3f2599573aea4b984a15c3b6110a085688fd285"
+  },
+  {
+    "path": "Library/06_评测基准/README.md",
+    "bytes": 1172,
+    "sha256": "640b9d7886324ea8ef9603647ddec31144821ebacaa46ba25e5690d75847e1a8"
+  },
+  {
+    "path": "Library/07_抓取规则/rules.json",
+    "bytes": 2350,
+    "sha256": "dcb4b6d67fabceab22971ca020d2729e0d5e94bb592c7354ee979e9dbba18006"
+  },
+  {
+    "path": "Library/00_索引与许可/官方资料/20261024-auto-tuning-official.md",
+    "bytes": 28073,
+    "sha256": "9de26d1dfc1cdcad6daf2e71009079844ced69f4317aff6f2c801ae78ea64001"
+  },
+  {
+    "path": "Library/00_索引与许可/官方资料/20261024-taco-official.md",
+    "bytes": 10434,
+    "sha256": "b6387bffbb28ce7d29b741ee48dce0ca9a6aa4176c65ab44dec0f0e0a69b04bc"
+  },
+  {
+    "path": "Library/00_索引与许可/官方资料/20261024-taco-site.md",
+    "bytes": 6357,
+    "sha256": "4d073e3d83b5e278a8f2c45158a60e7fd36964b064234423b9dfc194c163ab50"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/annotations.json",
+    "bytes": 2988946,
+    "sha256": "812c2e3f0d336b437f276597715de2abb08bb8a641599c45f593d233ec66457b"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/LICENSE",
+    "bytes": 1074,
+    "sha256": "2280878a21e4c4a9ff18e232c78182ac1300b3fd3641a1db1b503d1e2b7d4443"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/README.md",
+    "bytes": 4210,
+    "sha256": "67f00bd7e5c031100fa4b697591a302436032367500d3a2651df567e87c90e0f"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000000.jpg",
+    "bytes": 1328635,
+    "sha256": "b0ba2f6a7fb7779264d04f8177c997e25847e63ea2f566020b0752d8223640f0"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000001.jpg",
+    "bytes": 1393468,
+    "sha256": "e1b53cd0782659b6caa11951b1baf2bdc8f0bf9a3ba3e9b605abe6dcac329d0b"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000003.jpg",
+    "bytes": 766760,
+    "sha256": "a8072a8f415a4c2e1fdb84e89c50723c7af765640c018e92ab8531c0246d8283"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000005.jpg",
+    "bytes": 1402013,
+    "sha256": "3009c2de41d89f59050d81fa70517d892a312d75c8f3f823a1f6ed7e0d0af252"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000006.jpg",
+    "bytes": 709635,
+    "sha256": "bb162f3b9428a0f4232a887b977d72bc7106b720ffaf7ab27b895d2a46092caa"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000007.jpg",
+    "bytes": 372118,
+    "sha256": "00d5dbb9f432595892036c6d706bb6209bf65cc80e5591c2634dfe8297a31e4a"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000008.jpg",
+    "bytes": 509987,
+    "sha256": "5706c32973ef602fa0f8d1ed7cec9c637dfafb3e5055e3bab4e4e969f55084e3"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000010.jpg",
+    "bytes": 901648,
+    "sha256": "3183f77d3e19cb465148d0db6c8a234806b6a361a51875258f3114261d724c74"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000012.jpg",
+    "bytes": 1423405,
+    "sha256": "ce48fafa85f8ac38ff8cdc15b48cf2eef64ecbd096f45adfae75e9a52d4dca2e"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000014.jpg",
+    "bytes": 1548769,
+    "sha256": "8827ce5d558b6613ce0ecb3ae36f789d6b1cafb689f62d0a5ffb0915d799bdd1"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000019.jpg",
+    "bytes": 1022041,
+    "sha256": "e3378a764032963028c24ecc623a9b9ea190ff48928781555401c348abb791c9"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000021.jpg",
+    "bytes": 847897,
+    "sha256": "5f5afd5fb32b2cc598c32a5a54c0989b4c7899e64916d4abece4d6dbf4e76463"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000022.jpg",
+    "bytes": 844089,
+    "sha256": "5a7ce4a19f366639a9499e1356e3e6831f31aef324f29dc9dc4c5a8bde693498"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000023.jpg",
+    "bytes": 1322425,
+    "sha256": "c827e659b929e870b007d4bbfa7400e40bd076fb2dae04067c578157a567c43e"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000024.jpg",
+    "bytes": 1159920,
+    "sha256": "b58a4a1e74a2b5ba2f342a7bf124e15d4abdfee41d2def375579b63ae2556685"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000035.jpg",
+    "bytes": 490372,
+    "sha256": "4d1caf804d80b17ca2f34a47f2622e478913756337d5522e830c9eb1f17ad684"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000047.jpg",
+    "bytes": 568182,
+    "sha256": "d82bca08ecf0eeb962187359f6d92db85150e7463596919e66578359373aa8df"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000048.jpg",
+    "bytes": 518344,
+    "sha256": "4bc418e25c3067af0447c3a0f1dbb6b0545902134ed9389f07b74e6739ff5f72"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000053.jpg",
+    "bytes": 552548,
+    "sha256": "ac0d182108f251350d9262dfa386b633db78170d20263bf6881bb073c37c3859"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000054.jpg",
+    "bytes": 542276,
+    "sha256": "6cf2161f02f1dd10ad6322ae3759835682ae706fd010efc648ad697c005ee9a6"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000056.jpg",
+    "bytes": 479522,
+    "sha256": "2c396cddb02cb094b01ed0861f1bf780e5430fbfee5c0054a84002301ab0e73e"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000058.jpg",
+    "bytes": 406825,
+    "sha256": "abfb7fc6659ca93d6a768cdced290a9672db99c37da2d1ad3eb525b4c4508d79"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000064.JPG",
+    "bytes": 1419391,
+    "sha256": "d10d15b1e761772b7b3555874cf06f6ccfb9e934d5707b52b825a7edc62b25ab"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000065.JPG",
+    "bytes": 1473271,
+    "sha256": "f5cd65d1639ffbc395d76322f274516d5fca49afe5e73fa62520dc7274f3ad29"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000066.JPG",
+    "bytes": 1508710,
+    "sha256": "8b9c697feda26397e8efe6d46c978a46068a51f0786c1d6f4798184f4736f787"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000067.JPG",
+    "bytes": 1229346,
+    "sha256": "b55f05059b0944b54233003a0c491577d6cf99daa11ff12ff77ef2ddd0e149f0"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000071.JPG",
+    "bytes": 2088487,
+    "sha256": "6640469cca5dcb2c641dda2998d08ac37fb822b10a845d93e5c8dae2ef1dddab"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000074.JPG",
+    "bytes": 2840799,
+    "sha256": "b4b13e4e1176c5940f198f15856a4942aa234318114875a5bea07ee258748df2"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000083.JPG",
+    "bytes": 3258749,
+    "sha256": "2286512186dcef8f59017ba4597a5f5f1f1079cfc2d82310b4bfd9666f468cbb"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000084.JPG",
+    "bytes": 2883770,
+    "sha256": "0def73913954efb0fa0af67a7b972011b03c83c6de8f9b5b7185daa3be0b4ebd"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000092.JPG",
+    "bytes": 1017014,
+    "sha256": "abd3ca3dc5a83f35805d88680a3a39e859ff653119cdb2dc62b70bf283c78ef7"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000100.JPG",
+    "bytes": 1315039,
+    "sha256": "55fc9bfee7ea36a26074316bd88c1006f59ef2e89bf8a25c03fd827412a5f07f"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000101.JPG",
+    "bytes": 1480511,
+    "sha256": "9c0365bc8d0beb1bd526357ff66786a7aa4fffe556a9c1e148a2ac786d43c579"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000102.JPG",
+    "bytes": 2673995,
+    "sha256": "65e734c2724e0edecca64cc535cedfd099b408d16f9d4187ce61a09577136b58"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000115.JPG",
+    "bytes": 3185792,
+    "sha256": "df8981784ba2e5b30969fe0bff1df7ce5d25c9649aa90e83c1a45624db4e627b"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000117.JPG",
+    "bytes": 2584075,
+    "sha256": "77deedd8749593e7ea7148d3fa00bc5a6cf9852d295f919c1c800a2a97f9d2d4"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000127.JPG",
+    "bytes": 1775010,
+    "sha256": "aa0c4fe0466c605a47b68498761ea28c7116e29b8de0ea7a5de375c2d00d9a6b"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000128.JPG",
+    "bytes": 1934245,
+    "sha256": "edd142253a2a99dce7d3e9fb3d0cd58c746e887f44511479631c8840f1b79760"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_1/000129.JPG",
+    "bytes": 1370158,
+    "sha256": "874e9231e5615481724c124f7474e63b5d9cb8a50120ceca3b5f05f48cb758de"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_10/000003.jpg",
+    "bytes": 3784877,
+    "sha256": "a1c3cc24050a93213c67fb4bd87038ea40dc83427afc855408c58cab00def0e8"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_10/000011.jpg",
+    "bytes": 1659766,
+    "sha256": "468d60ac5f1d1a204a014a5dd4e72d5efd16926ff172238c54d6a4d99b9eaa42"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_10/000026.jpg",
+    "bytes": 1241418,
+    "sha256": "0d23ce5b84bf9db818de345284011b85562871d0c7d450a3c961768e08fd4e01"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_10/000027.jpg",
+    "bytes": 2475825,
+    "sha256": "22854271d6055141e6b8103b8b4d8d160a90e0ac14dddd7afc00d9db8064cac3"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_10/000030.jpg",
+    "bytes": 2106963,
+    "sha256": "aee75c64f8945dd6c3500fbd51b8c4f5b313c510e81193631618c9f9111d7d54"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_10/000089.jpg",
+    "bytes": 1288231,
+    "sha256": "7041ef29c5d250ea64897fcec749755c12c52413105a981b63b99c4dc851afa7"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_10/000094.jpg",
+    "bytes": 2821901,
+    "sha256": "15d32b1f7599eaf288c8cb910ef1e2b95855684badd79daa16aa0405ea962f06"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_10/000096.jpg",
+    "bytes": 4770744,
+    "sha256": "3482637b366b222bfcc76efc88a57d721ce1c9f08e6cede0cfbc4534b0a16770"
+  },
+  {
+    "path": "Library/01_来源原件/TACO/images/batch_2/000009.JPG",
+    "bytes": 1362303,
+    "sha256": "b5b9df8824410f3550ae2b2591c379c1218f5e55cb0d5cc5d9e4f8fce87bc320"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/ATTRIBUTION.md",
+    "bytes": 429,
+    "sha256": "d607d13568a309f83c3f15f30ddb4b1d6f354f8c02c4c185eeec779485d9bb2b"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/data.yaml",
+    "bytes": 305,
+    "sha256": "f410bf79b388ea8e278662275a211d644db1d364419bd4fba1eb8df8b8f37103"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/manifest.json",
+    "bytes": 63270,
+    "sha256": "a4fbf8858f97121e1e553a1ee93b8d3a5518bb802740a5b8e32c82bb0906d54a"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test.cache",
+    "bytes": 9802,
+    "sha256": "b0ed133eb10d5c34da52fb1f0db079538370fbea9b2029602c88622be38e006b"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train.cache",
+    "bytes": 39484,
+    "sha256": "62abf2f883f23ed88fad4152d6037d0e664d0fbcd942654eb0ac5d47d92e180d"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val.cache",
+    "bytes": 8454,
+    "sha256": "39dd09e228ee185cb474148158cf9eb45157b505f21fec7d983f248623017d33"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/test/taco_000008.jpg",
+    "bytes": 1402013,
+    "sha256": "3009c2de41d89f59050d81fa70517d892a312d75c8f3f823a1f6ed7e0d0af252"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/test/taco_000013.jpg",
+    "bytes": 552548,
+    "sha256": "ac0d182108f251350d9262dfa386b633db78170d20263bf6881bb073c37c3859"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/test/taco_000015.jpg",
+    "bytes": 406825,
+    "sha256": "abfb7fc6659ca93d6a768cdced290a9672db99c37da2d1ad3eb525b4c4508d79"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/test/taco_000049.jpg",
+    "bytes": 1229346,
+    "sha256": "b55f05059b0944b54233003a0c491577d6cf99daa11ff12ff77ef2ddd0e149f0"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/test/taco_000063.jpg",
+    "bytes": 2883770,
+    "sha256": "0def73913954efb0fa0af67a7b972011b03c83c6de8f9b5b7185daa3be0b4ebd"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/test/taco_000070.jpg",
+    "bytes": 1017014,
+    "sha256": "abd3ca3dc5a83f35805d88680a3a39e859ff653119cdb2dc62b70bf283c78ef7"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/test/taco_000079.jpg",
+    "bytes": 1315039,
+    "sha256": "55fc9bfee7ea36a26074316bd88c1006f59ef2e89bf8a25c03fd827412a5f07f"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/test/taco_000089.jpg",
+    "bytes": 3185792,
+    "sha256": "df8981784ba2e5b30969fe0bff1df7ce5d25c9649aa90e83c1a45624db4e627b"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/test/taco_000090.jpg",
+    "bytes": 2584075,
+    "sha256": "77deedd8749593e7ea7148d3fa00bc5a6cf9852d295f919c1c800a2a97f9d2d4"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000000.jpg",
+    "bytes": 709635,
+    "sha256": "bb162f3b9428a0f4232a887b977d72bc7106b720ffaf7ab27b895d2a46092caa"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000001.jpg",
+    "bytes": 509987,
+    "sha256": "5706c32973ef602fa0f8d1ed7cec9c637dfafb3e5055e3bab4e4e969f55084e3"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000002.jpg",
+    "bytes": 901648,
+    "sha256": "3183f77d3e19cb465148d0db6c8a234806b6a361a51875258f3114261d724c74"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000003.jpg",
+    "bytes": 1022041,
+    "sha256": "e3378a764032963028c24ecc623a9b9ea190ff48928781555401c348abb791c9"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000005.jpg",
+    "bytes": 568182,
+    "sha256": "d82bca08ecf0eeb962187359f6d92db85150e7463596919e66578359373aa8df"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000007.jpg",
+    "bytes": 1393468,
+    "sha256": "e1b53cd0782659b6caa11951b1baf2bdc8f0bf9a3ba3e9b605abe6dcac329d0b"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000009.jpg",
+    "bytes": 372118,
+    "sha256": "00d5dbb9f432595892036c6d706bb6209bf65cc80e5591c2634dfe8297a31e4a"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000011.jpg",
+    "bytes": 1548769,
+    "sha256": "8827ce5d558b6613ce0ecb3ae36f789d6b1cafb689f62d0a5ffb0915d799bdd1"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000012.jpg",
+    "bytes": 518344,
+    "sha256": "4bc418e25c3067af0447c3a0f1dbb6b0545902134ed9389f07b74e6739ff5f72"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000014.jpg",
+    "bytes": 479522,
+    "sha256": "2c396cddb02cb094b01ed0861f1bf780e5430fbfee5c0054a84002301ab0e73e"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000017.jpg",
+    "bytes": 766760,
+    "sha256": "a8072a8f415a4c2e1fdb84e89c50723c7af765640c018e92ab8531c0246d8283"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000025.jpg",
+    "bytes": 847897,
+    "sha256": "5f5afd5fb32b2cc598c32a5a54c0989b4c7899e64916d4abece4d6dbf4e76463"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000026.jpg",
+    "bytes": 844089,
+    "sha256": "5a7ce4a19f366639a9499e1356e3e6831f31aef324f29dc9dc4c5a8bde693498"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000027.jpg",
+    "bytes": 1322425,
+    "sha256": "c827e659b929e870b007d4bbfa7400e40bd076fb2dae04067c578157a567c43e"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000036.jpg",
+    "bytes": 1328635,
+    "sha256": "b0ba2f6a7fb7779264d04f8177c997e25847e63ea2f566020b0752d8223640f0"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000043.jpg",
+    "bytes": 490372,
+    "sha256": "4d1caf804d80b17ca2f34a47f2622e478913756337d5522e830c9eb1f17ad684"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000047.jpg",
+    "bytes": 1473271,
+    "sha256": "f5cd65d1639ffbc395d76322f274516d5fca49afe5e73fa62520dc7274f3ad29"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000048.jpg",
+    "bytes": 1508710,
+    "sha256": "8b9c697feda26397e8efe6d46c978a46068a51f0786c1d6f4798184f4736f787"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000056.jpg",
+    "bytes": 2840799,
+    "sha256": "b4b13e4e1176c5940f198f15856a4942aa234318114875a5bea07ee258748df2"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000062.jpg",
+    "bytes": 3258749,
+    "sha256": "2286512186dcef8f59017ba4597a5f5f1f1079cfc2d82310b4bfd9666f468cbb"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000080.jpg",
+    "bytes": 1480511,
+    "sha256": "9c0365bc8d0beb1bd526357ff66786a7aa4fffe556a9c1e148a2ac786d43c579"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000081.jpg",
+    "bytes": 2673995,
+    "sha256": "65e734c2724e0edecca64cc535cedfd099b408d16f9d4187ce61a09577136b58"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000099.jpg",
+    "bytes": 1934245,
+    "sha256": "edd142253a2a99dce7d3e9fb3d0cd58c746e887f44511479631c8840f1b79760"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000100.jpg",
+    "bytes": 1370158,
+    "sha256": "874e9231e5615481724c124f7474e63b5d9cb8a50120ceca3b5f05f48cb758de"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000112.jpg",
+    "bytes": 1659766,
+    "sha256": "468d60ac5f1d1a204a014a5dd4e72d5efd16926ff172238c54d6a4d99b9eaa42"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000127.jpg",
+    "bytes": 1241418,
+    "sha256": "0d23ce5b84bf9db818de345284011b85562871d0c7d450a3c961768e08fd4e01"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000131.jpg",
+    "bytes": 2106963,
+    "sha256": "aee75c64f8945dd6c3500fbd51b8c4f5b313c510e81193631618c9f9111d7d54"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000190.jpg",
+    "bytes": 1288231,
+    "sha256": "7041ef29c5d250ea64897fcec749755c12c52413105a981b63b99c4dc851afa7"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000195.jpg",
+    "bytes": 2821901,
+    "sha256": "15d32b1f7599eaf288c8cb910ef1e2b95855684badd79daa16aa0405ea962f06"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/train/taco_000693.jpg",
+    "bytes": 1362303,
+    "sha256": "b5b9df8824410f3550ae2b2591c379c1218f5e55cb0d5cc5d9e4f8fce87bc320"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/val/taco_000010.jpg",
+    "bytes": 1423405,
+    "sha256": "ce48fafa85f8ac38ff8cdc15b48cf2eef64ecbd096f45adfae75e9a52d4dca2e"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/val/taco_000023.jpg",
+    "bytes": 542276,
+    "sha256": "6cf2161f02f1dd10ad6322ae3759835682ae706fd010efc648ad697c005ee9a6"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/val/taco_000028.jpg",
+    "bytes": 1159920,
+    "sha256": "b58a4a1e74a2b5ba2f342a7bf124e15d4abdfee41d2def375579b63ae2556685"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/val/taco_000053.jpg",
+    "bytes": 2088487,
+    "sha256": "6640469cca5dcb2c641dda2998d08ac37fb822b10a845d93e5c8dae2ef1dddab"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/val/taco_000078.jpg",
+    "bytes": 1419391,
+    "sha256": "d10d15b1e761772b7b3555874cf06f6ccfb9e934d5707b52b825a7edc62b25ab"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/val/taco_000098.jpg",
+    "bytes": 1775010,
+    "sha256": "aa0c4fe0466c605a47b68498761ea28c7116e29b8de0ea7a5de375c2d00d9a6b"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/val/taco_000104.jpg",
+    "bytes": 3784877,
+    "sha256": "a1c3cc24050a93213c67fb4bd87038ea40dc83427afc855408c58cab00def0e8"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/val/taco_000128.jpg",
+    "bytes": 2475825,
+    "sha256": "22854271d6055141e6b8103b8b4d8d160a90e0ac14dddd7afc00d9db8064cac3"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/images/val/taco_000197.jpg",
+    "bytes": 4770744,
+    "sha256": "3482637b366b222bfcc76efc88a57d721ce1c9f08e6cede0cfbc4534b0a16770"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test/taco_000008.txt",
+    "bytes": 1147,
+    "sha256": "1b4de3e522d56722ffc668f4730634c196c541ed951cc0ce2f99ee1c3c8bddbe"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test/taco_000013.txt",
+    "bytes": 1917,
+    "sha256": "3db47fb23372d3646fa03e7c0f8b5f9c21eb9574e63e1a2ceba34926b0721da8"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test/taco_000015.txt",
+    "bytes": 3130,
+    "sha256": "1a667ac93fa94eea972a42e2292df9ee1b4a64b3ecf1e4e430c7e3f26930ee45"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test/taco_000049.txt",
+    "bytes": 2445,
+    "sha256": "37e901c99542ae3e589c700cde8b0391e610df59bde2a53069409f5f4866f371"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test/taco_000063.txt",
+    "bytes": 1059,
+    "sha256": "64bb511f6c78415b94ccaa7be484265b2fceaffdb4bed047420a2b33fb58c17f"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test/taco_000070.txt",
+    "bytes": 2445,
+    "sha256": "de6394df980af1639fb073e601c2453daf5f25343205939d3c0aedad43522330"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test/taco_000079.txt",
+    "bytes": 1015,
+    "sha256": "2790a9eca36e03eaf6a81a4b68af64c5ffa62932a0efdb1f627c69bb7809600d"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test/taco_000089.txt",
+    "bytes": 2074,
+    "sha256": "cd61410e87fa3846f8d520c6bddc423907c885fbb896c4ac53a7ac56578c211d"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/test/taco_000090.txt",
+    "bytes": 927,
+    "sha256": "bb44618ddeea9ce79f07a02986a3004129357e8f4b2eb4965421025cbc70cd53"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000000.txt",
+    "bytes": 1741,
+    "sha256": "8e543b18632ccef6351c4ea918790ee51bf727974bf8a0fccb8d8707db9b8a66"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000001.txt",
+    "bytes": 3064,
+    "sha256": "2c27d229d50e1ee50e7c0b10885ef88fbab1b37894c0a4039bdf51d0887733d4"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000002.txt",
+    "bytes": 1631,
+    "sha256": "2245eaf5262cd70e63bae3d5faf9b275c9c084d73ad99481420a3035da36d18e"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000003.txt",
+    "bytes": 3482,
+    "sha256": "5abbb65527a6903fbfdc416f3054064ce2274ee90f91bc334aff6515a8c6191c"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000005.txt",
+    "bytes": 3391,
+    "sha256": "0f1e4cc22642cfcb6b89365f693dd68ec9b402041d22e1e98935c39c9397a321"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000007.txt",
+    "bytes": 1873,
+    "sha256": "7f2d30ca6f810b5068d35acc9984583f46b0472e6c64a0a11b6df4b62b166ec6"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000009.txt",
+    "bytes": 619,
+    "sha256": "da897069432901b88813be30b825f914dd182647447424f2038c32dc0d72bce1"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000011.txt",
+    "bytes": 3369,
+    "sha256": "2cccb664b07ada0ae9db13d04cb6f17e762e1d01d96c93d47c3b11d04e1dbc2a"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000012.txt",
+    "bytes": 6791,
+    "sha256": "9b639d88dd28fb393d6def9a802969900ba3280bbb70840079cbf7a8ee37181e"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000014.txt",
+    "bytes": 2841,
+    "sha256": "db8104d0ca040e6cc9d383e27265ca3a7d4645fb4471faff4c58de64bbf02164"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000017.txt",
+    "bytes": 663,
+    "sha256": "6d98cf3862d46292a72cab52cc8cd22932f5a7231b1c92333fac4b0bacdd1c0b"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000025.txt",
+    "bytes": 1301,
+    "sha256": "b27ea30428e797a719bfd8bec4b81c5dc349d0f536316d4571b207383ae49931"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000026.txt",
+    "bytes": 1389,
+    "sha256": "44735ea7833d6f8e362804a469b79c119a469f430042416a184d04b717d7a4b3"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000027.txt",
+    "bytes": 3985,
+    "sha256": "e13b070be8385defb3c10d119ba03cb34b2f5070fe7bf4174675597bdcee6f22"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000036.txt",
+    "bytes": 1081,
+    "sha256": "78183077769b1023df3f2eeac9f5086e4d003ff2a2d19ae0a0abd555989c2a05"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000043.txt",
+    "bytes": 3573,
+    "sha256": "bb42529bd2a79178e67720f95dbb304a990fbf8223f0f56a036d9e1fce8be729"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000047.txt",
+    "bytes": 3438,
+    "sha256": "c00c3747c16fb0f4f9b69304dd809eb484851722c0ec2680554aeda9450fe250"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000048.txt",
+    "bytes": 2665,
+    "sha256": "d6a09b1243e5859d3ff8e92bb3e278a3f494b18c4236161bb1de87c5f7008e8b"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000056.txt",
+    "bytes": 2137,
+    "sha256": "307bd36184a45c203bc2ee0d2017f64b2d475f31fc21b43b1a27cc213b56d805"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000062.txt",
+    "bytes": 663,
+    "sha256": "03d180fe19dbd42e459a21c1a610fc5c6a2ae1957cdc3d79ef32e8e536149f52"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000080.txt",
+    "bytes": 1213,
+    "sha256": "2ea54dd759a5a7d300aa4182eb8e270453307e91a8b2971304d73bbde17a688d"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000081.txt",
+    "bytes": 4783,
+    "sha256": "6597ec0b2131b663db76cfe25daa6276afa4661f0fff6ef5a93cbe0b92880ff8"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000099.txt",
+    "bytes": 5270,
+    "sha256": "639953f265169b400aead0cb73d7defaed7ac77324036047b6d2ba4d3a00f8a7"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000100.txt",
+    "bytes": 5958,
+    "sha256": "31dfd90a53d690eb11f48c7cc3aec0d9183efe223fb1cc51d4db1bbdc89a0faf"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000112.txt",
+    "bytes": 2463,
+    "sha256": "6ead3bfff1f4cd45fb34b968c7dc2c7070d5706116f08240f41ec1b84d5e624a"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000127.txt",
+    "bytes": 996,
+    "sha256": "57e37cadc07a53b6c4d886d3e3dbdf5b6e3f52fefcffe643acf6ef58c232bb1e"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000131.txt",
+    "bytes": 157,
+    "sha256": "56aea8cce079f7fec1e5ececa944e310bd82c57d55badd072350e336f44847d8"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000190.txt",
+    "bytes": 556,
+    "sha256": "189c534e9c8bacb96989f965b58596fbbd5251a717437b828a04bc4017952e21"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000195.txt",
+    "bytes": 311,
+    "sha256": "f3d895e2dda3d117a8ce605d2e59bc46fce1598ea8907fb6f7605ae7341c3177"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/train/taco_000693.txt",
+    "bytes": 1458,
+    "sha256": "4edf25e7d51a4dce60d2c25c4bb02f71434124d9f453dc294eb59974312c6c64"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val/taco_000010.txt",
+    "bytes": 1917,
+    "sha256": "f9c9e196522203497fe020c7fe9f31672b3264203259fd87aff763a0af2819aa"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val/taco_000023.txt",
+    "bytes": 2118,
+    "sha256": "78131424215294484a90c13bdd728b742d719e06409b8e0ba51e9007aed237d9"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val/taco_000028.txt",
+    "bytes": 971,
+    "sha256": "6f828de37dcd0f1eec2484dbed6e2a99cf85db668110c6c3c9f693f5003a9529"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val/taco_000053.txt",
+    "bytes": 2775,
+    "sha256": "a1ba9404787980cea8cc7093424c71683e3791d4f440986da9561cf3a4be7a84"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val/taco_000078.txt",
+    "bytes": 817,
+    "sha256": "0760ce9e5269f6249a727a401a850a6e63b31b6619b5ec9e6fe932440f7ba951"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val/taco_000098.txt",
+    "bytes": 2030,
+    "sha256": "5893c150fa0979e42740f202265ba0a7af424e248a9d4ab7c4cbd995b68c77f2"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val/taco_000104.txt",
+    "bytes": 1109,
+    "sha256": "34cad05bf4b9d1c2841f7762883f015b8ae5e60e6d85e4de92331ebd2feb6fb5"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val/taco_000128.txt",
+    "bytes": 157,
+    "sha256": "af384f849008e25a3a9fe4094b47aedbd05a6c7684f79655227e95db2641f2e1"
+  },
+  {
+    "path": "Library/04_数据集版本/taco_containers_v1/labels/val/taco_000197.txt",
+    "bytes": 333,
+    "sha256": "c2ac0e7a2255d47e75c084ea9c268f04ed8554995122c6d0d4eb88bcce35f21b"
+  },
+  {
+    "path": "Library/05_模型注册/pretrained/source.json",
+    "bytes": 429,
+    "sha256": "e1a7b520e07bc868cf544c1c061e3ef1dca1ceb0733802ad17dcc341f42c46e0"
+  },
+  {
+    "path": "Library/05_模型注册/pretrained/yolo26n-seg.pt",
+    "bytes": 6719965,
+    "sha256": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+  },
+  {
+    "path": "Library/07_抓取规则/cup_only/input.json",
+    "bytes": 116,
+    "sha256": "d30c3809495d5b4247693966d477ed08baf6d78dde8b0a2920ec0b23d08891cf"
+  },
+  {
+    "path": "Library/07_抓取规则/cup_only/output.json",
+    "bytes": 991,
+    "sha256": "84068ed73c23efeecd0a8a865117d4c7742dd2a1315e3020384f0000052fcfb0"
+  },
+  {
+    "path": "Library/07_抓取规则/fragile_cup_handle/input.json",
+    "bytes": 560,
+    "sha256": "d7bc7e1b5f9f56bc71b87bf44cd744a91a1bb4bfe85c01d2efdca07cc9628b47"
+  },
+  {
+    "path": "Library/07_抓取规则/fragile_cup_handle/output.json",
+    "bytes": 2153,
+    "sha256": "d637b68d7a87f37484e7dd1a4bee04d8d9e287a5b279d461ede25b6cb1fa1687"
+  },
+  {
+    "path": "Resources/官方文档快照/vision20261024-cvat-yolo.md",
+    "bytes": 5686,
+    "sha256": "444a40c6fc4962a3849d3d69033c1a6e1d90a5e3a412e1fc7106d6e7417a33ec"
+  },
+  {
+    "path": "Resources/官方文档快照/vision20261024-graspnet.md",
+    "bytes": 18610,
+    "sha256": "9b23b8c7d3bc1c0fbd44f68dade29d5c8dcdb971c81887a21fc682ae68bf43ba"
+  },
+  {
+    "path": "Resources/官方文档快照/vision20261024-opencv-calibration.md",
+    "bytes": 23404,
+    "sha256": "3d3488b09b99e5e0273db5e805d7c34dbbdf09c4488c597d6494c8e6b7f954a5"
+  },
+  {
+    "path": "Resources/官方文档快照/vision20261024-pytorch-install.md",
+    "bytes": 23950,
+    "sha256": "74df0ae52420c4ec4ec4643ff9f4baa8e19197005ad4fc5c13b8cdf965572e69"
+  },
+  {
+    "path": "Resources/官方文档快照/vision20261024-ultralytics-segment.md",
+    "bytes": 20560,
+    "sha256": "f8f36d73b253e4f22c40848f1bf198c86c43da9773642dca0b92298e16839ac6"
+  },
+  {
+    "path": "Resources/教学包原件/00_README_从这里开始.md",
+    "bytes": 2228,
+    "sha256": "30f6b5ff9dd7a89a2b397415a3f18a745fe87daab739d4cb6b0c31ed4e47748b"
+  },
+  {
+    "path": "Resources/教学包原件/01_三指视觉抓取_零基础到复现实战教学书.docx",
+    "bytes": 44004,
+    "sha256": "0e65aced5a0581cf61ff76298edaf97b2fa4a5a526445a39f7c37fb6b5c7a3bd"
+  },
+  {
+    "path": "Resources/教学包原件/01_三指视觉抓取_零基础到复现实战教学书.md",
+    "bytes": 31779,
+    "sha256": "875a134cf08e193bfed324badf4e3ae5447bded5e287dad40d3aaf94c17e0c7c"
+  },
+  {
+    "path": "Resources/教学包原件/02_开源复现路线与资源清单.md",
+    "bytes": 6789,
+    "sha256": "2254539f12a780e9440acaed602817182980b620b515339f1f9ef87b5f580640"
+  },
+  {
+    "path": "Resources/教学包原件/04_Codex_分阶段执行与验收指令.md",
+    "bytes": 7135,
+    "sha256": "12d0cd1b0b7bf8662f6b5ebb97a608394e2478c3a01c357907733e5b938f45f5"
+  },
+  {
+    "path": "Resources/教学包原件/文件校验清单_SHA256.txt",
+    "bytes": 1584,
+    "sha256": "6c28a6818eeddef4d1fdda8d50003b2cc96128f7f1465f171052d6f563e78495"
+  },
+  {
+    "path": "Resources/教学包原件/03_最小可运行演示/README.md",
+    "bytes": 1647,
+    "sha256": "11ffc1db8fea16234e87aa54712a135086e2b9cad8b3341fab655e3da6b9880a"
+  },
+  {
+    "path": "Resources/教学包原件/03_最小可运行演示/requirements-minimal.txt",
+    "bytes": 94,
+    "sha256": "c37eabc5f0111783cc1e29e80217572e9dcd597dbc4de48daff8855b83abe323"
+  },
+  {
+    "path": "Resources/教学包原件/03_最小可运行演示/outputs/annotated.png",
+    "bytes": 16892,
+    "sha256": "8bb1e9d722177db85dd06b6824c60b9d81ed32a051b39f554c304eafe139d374"
+  },
+  {
+    "path": "Resources/教学包原件/03_最小可运行演示/outputs/detections.json",
+    "bytes": 1078,
+    "sha256": "fdcd82cef2dc0ba845e9b44f5af20b777474368a3f6393d96d4b43ea6425174f"
+  },
+  {
+    "path": "Resources/教学包原件/03_最小可运行演示/outputs/synthetic_scene.png",
+    "bytes": 5282,
+    "sha256": "49fbd950ec7e721fb56661807ce62f5995d0004d3a5eac73b457d128ad46df80"
+  },
+  {
+    "path": "Resources/教学包原件/03_最小可运行演示/src/shape_baseline.py",
+    "bytes": 3315,
+    "sha256": "663f0c5c7037094b2c3695298bcdd2060c93d1add09f5582ff2a3837c2b995a7"
+  },
+  {
+    "path": "Resources/教学包原件/03_最小可运行演示/src/synthetic_demo.py",
+    "bytes": 829,
+    "sha256": "124e678fd9b79f87cdc7d31ad2c90f2cb84a08cad25ba8cfa2abcf9f0a36cb84"
+  },
+  {
+    "path": "Resources/教学包原件/03_最小可运行演示/tests/test_baseline.py",
+    "bytes": 927,
+    "sha256": "1a9476e2444a81e4810d02430f33bcf6400f367430b9f9949a36b4863ef84b0e"
+  },
+  {
+    "path": "Resources/教学包原件/03_最小可运行演示/training/train_yolo_seg.py",
+    "bytes": 1073,
+    "sha256": "a4eb7c1e7ad757b22664e8b91288b85512d12b84e4b84e7579babb533bd085b5"
+  }
+]

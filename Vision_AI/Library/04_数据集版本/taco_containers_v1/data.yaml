@@ -1,0 +1,8 @@
+path: "C:/Users/tk457/Desktop/Embedded Software and Hardware Database/02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Vision_AI/Library/04_\u6570\u636e\u96c6\u7248\u672c/taco_containers_v1"
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: cup
+  1: box
+  2: bottle

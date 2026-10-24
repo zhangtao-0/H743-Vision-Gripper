@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-24T23:49:17+08:00",
+  "scope": "documentation, parser branch coverage, arithmetic and offline formatter; no hardware execution",
+  "upstream_commit": "aebb357dd4096350ec17f49fdaf23d1b27decb3d",
+  "text_command_variants": 75,
+  "binary_examples": 42,
+  "valid_binary_examples": 41,
+  "historical_invalid_examples": 1,
+  "f5_subcommands": 6,
+  "parameter_count": 21,
+  "offline_formatter_cases": 4,
+  "source_files_checked": 40,
+  "source_changed_since_observed_release": false,
+  "serial_commands_sent": false,
+  "issues": [],
+  "passed": true
+}

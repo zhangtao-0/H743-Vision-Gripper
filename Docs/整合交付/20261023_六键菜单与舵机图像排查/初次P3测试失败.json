@@ -1,0 +1,7 @@
+{
+  "scope": "host HAL stub; not hardware validation",
+  "exit_code": 3,
+  "stdout": "PASS PROTO: frame build/checksum, angle/position, limit\n",
+  "stderr": "Assertion failed!\n\nProgram: C:\\Users\\tk457\\AppData\\Local\\Temp\\h743-p3-tests-y3zxsdj6\\test.exe\nFile: C:\\Users\\tk457\\AppData\\Local\\Temp\\h743-p3-tests-y3zxsdj6\\test.c, Line 42\n\nExpression: telemetry_len+len<sizeof(telemetry)\n",
+  "compiler": "C:\\Dev-Cpp\\MinGW64\\bin\\gcc.exe"
+}

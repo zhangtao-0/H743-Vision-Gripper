@@ -1,0 +1,122 @@
+[
+  {
+    "path": "project/App/app_main.c",
+    "action": "modified",
+    "before": "f55074ea4cafef3fa27c10b9e0b4eba7cf834c26c864184bfbc366b5b488e315",
+    "after": "ee45891178b416d1f4bd90d034a6373ba974930c9846de7418da88938a265dfe"
+  },
+  {
+    "path": "project/App/config/motor_config.h",
+    "action": "added",
+    "before": null,
+    "after": "263ed2837a97853a69443f3a02f02412a2b298f23ba6bd9280fbac6893f9e75c"
+  },
+  {
+    "path": "project/App/platform/board_motor.c",
+    "action": "added",
+    "before": null,
+    "after": "e04f563e3da3d9172291897890a8df394764f2abe9f88d100cf0b3316f84cb5f"
+  },
+  {
+    "path": "project/App/platform/board_motor.h",
+    "action": "added",
+    "before": null,
+    "after": "955007a32739847b3ba25765cfd586b71e94e9523189f34da4997ef8f42119bc"
+  },
+  {
+    "path": "project/App/platform/boards/lxb743zi_p1/board_devices.h",
+    "action": "modified",
+    "before": "610f81382077a6926a7be19b2a2fd5dcfaf385d02d76f1f5ff1380e14384be10",
+    "after": "3e52039415075ddf8759a96df8cd4e51fac574dab04fb487caec0fa257fdd987"
+  },
+  {
+    "path": "project/App/modules/integration/integration_console.c",
+    "action": "modified",
+    "before": "77ee127a9e8517d668221a494ae9ada09a36ef2ef536f3d473274a728760e761",
+    "after": "0e60628fb82918c4c276591247f23bc259c15040160b2ead6035798a21783b25"
+  },
+  {
+    "path": "project/App/modules/integration/integration_service.c",
+    "action": "modified",
+    "before": "777dfab751843f9895cf4763c252e01dea9a4ac9b0a8bc9356d2e776d2baa46b",
+    "after": "9fb86cf5c6f0ba45b5ef20a4e7364483c0d438ba1471e09ec3ea45997c121347"
+  },
+  {
+    "path": "project/App/modules/motor/motor_control.c",
+    "action": "added",
+    "before": null,
+    "after": "56d897b496db46102a3d765d79cffb66dbd40bd523b57df4e5045edf322a6f2e"
+  },
+  {
+    "path": "project/App/modules/motor/motor_control.h",
+    "action": "added",
+    "before": null,
+    "after": "9446aad9c98793174f46f111e601bf9f5b747fb062ed5b701705471935a4bdc0"
+  },
+  {
+    "path": "project/App/modules/motor/motor_service.c",
+    "action": "added",
+    "before": null,
+    "after": "d3ed7079af78abd48c654997b2b7b442436c536d0674e7fec8789de0bb28777e"
+  },
+  {
+    "path": "project/App/modules/motor/motor_service.h",
+    "action": "added",
+    "before": null,
+    "after": "b91f13a60423a0dd2a08422e61224175bd4e2dc560fef672878ec4155ce1f637"
+  },
+  {
+    "path": "project/Core/Src/stm32h7xx_it.c",
+    "action": "modified",
+    "before": "0530affe3c6ad8a620a943e9e9e7c313f67d0eece052c24b719567799dd33d19",
+    "after": "f09ef8f9f457e1ffb34054ff43aa4afb2deaf8b80fd8eb92a5f6536146258c11"
+  },
+  {
+    "path": "project/EWARM/H743_VisionGripper.ewp",
+    "action": "modified",
+    "before": "41c38b3e405c0a12d7032e1560c6e154cc6e60ea41c0652e77963265ab3ea014",
+    "after": "28be0d745b1184d5af69e62e758757b5f1fcc654a839d419e717babf12ff21ac"
+  },
+  {
+    "path": "Tools/audit_integrated.py",
+    "action": "modified",
+    "before": "fafbb3471c0b55d3a9ae51f70e860122814e4795221cbfc5c423cea29ebf8205",
+    "after": "955301073a54d6917e36f3cf53f4cc275d91921e3a7d604142fac6eb2dfa0bd2"
+  },
+  {
+    "path": "Tools/check_motor_profiles.py",
+    "action": "added",
+    "before": null,
+    "after": "2913885f4e6c49a49d221ec2914a648f030993b7ad33495f68a26ec6b1ebe72c"
+  },
+  {
+    "path": "Tools/run_integration_host_tests.py",
+    "action": "modified",
+    "before": "b00937c43858c7f0ccf0a2cb237473bb6e0715ef701e14477571e775c4ea70ed",
+    "after": "f42bd4af93f67f099ff0f648b9c2e1949feabce43bda59ac93d74ccf201b1ec1"
+  },
+  {
+    "path": "Tools/run_motor_tests.py",
+    "action": "added",
+    "before": null,
+    "after": "1bfb53c8018485b36a43cab95fc8d5263f129b888937494fb2eab54d14774e7d"
+  },
+  {
+    "path": "Docs/整合交付/02_设备引脚与功能矩阵.md",
+    "action": "modified",
+    "before": "ecd95ed591ac35095dd58a85f2c143098f4db720deb284e7f35a6ff254fd0af4",
+    "after": "5ea6a3d8823fbb948a6f70ec04cea05249243fe8f0b93d971b04fdd55add4fd6"
+  },
+  {
+    "path": "Docs/整合交付/04_修改记录.md",
+    "action": "modified",
+    "before": "e9a752a5ddce4a16d3ca5f3ba6a4e34c4e09c387f26cadb3ad2b158500d59481",
+    "after": "b124ff793861b6013d21552f532c164bcbb4c277631f96cb8a463a4ce9f8b239"
+  },
+  {
+    "path": "Docs/整合交付/README.md",
+    "action": "modified",
+    "before": "bb1da1e07e55b4ba6492a1a300702a318d46b649df37caffdec535127b36a516",
+    "after": "7825a7b54381392ba7bf055d8d66ec33b194b44954ef83abcb70f7adf8f61def"
+  }
+]

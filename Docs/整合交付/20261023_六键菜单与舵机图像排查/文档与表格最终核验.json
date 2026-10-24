@@ -1,0 +1,26 @@
+[
+  {
+    "name": "generate_pin_reference.py",
+    "exit_code": 0
+  },
+  {
+    "name": "generate_console_help.py",
+    "exit_code": 0
+  },
+  {
+    "name": "verify_pin_reference.py",
+    "exit_code": 0
+  },
+  {
+    "name": "verify_input_mapping.py",
+    "exit_code": 0
+  },
+  {
+    "name": "verify_command_manual.py",
+    "exit_code": 0
+  },
+  {
+    "name": "validate_learning_library.py",
+    "exit_code": 0
+  }
+]

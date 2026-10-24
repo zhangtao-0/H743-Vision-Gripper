@@ -1,0 +1,14 @@
+{
+  "source": "user report and screenshot; not agent-executed motion",
+  "software": "FT SCServo Debug V1.9.8.6",
+  "port": "COM10",
+  "baud": 1000000,
+  "id": 1,
+  "model": "STS3215",
+  "reported_voltage_v": 10.3,
+  "status_text": "过压欠压",
+  "user_confirmed_motion": true,
+  "adapter_input_v": 11.5,
+  "adapter_input": "V1",
+  "adapter_voltage_regulation_verified": false
+}

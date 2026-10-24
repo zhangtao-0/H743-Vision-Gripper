@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "interpreter": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743\\Host\\vision_gripper\\.venv\\Scripts\\python.exe",
+  "torch": "2.14.1+cpu",
+  "ultralytics": "8.4.184",
+  "cuda_available": false,
+  "device": "cpu",
+  "num_threads": 4
+}

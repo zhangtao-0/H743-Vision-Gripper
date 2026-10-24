@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-20",
+  "config": "H743_VisionGripper",
+  "errors": 0,
+  "warnings": 1,
+  "build_succeeded": true,
+  "hardware_tests": "not executed",
+  "servo_bus_started": false,
+  "host_mode": "P2 diagnostic echo",
+  "servo_baud_source": "GitHub aebb357 Project/code/usart.c:43 and STS huart2 send/receive",
+  "servo_baud": 1000000,
+  "bluetooth_baud": 9600,
+  "host_baud": 115200,
+  "hex": "project/EWARM/H743_VisionGripper/Exe/H743_VisionGripper.hex",
+  "hex_sha256": "d5e13952f2405114c63c8a4ca09164f4a78c9924ec277a14c83299c823bd075e",
+  "changed_source_files": 17
+}

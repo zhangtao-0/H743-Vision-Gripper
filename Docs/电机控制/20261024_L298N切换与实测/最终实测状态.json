@@ -1,0 +1,50 @@
+{
+  "version": "20261024-l298n-closed-loop-v2",
+  "firmware_flashed": true,
+  "firmware_hex_sha256": "bd53fca8c61cc373614d50f3b8874bc12855d5842efa0a81c8ca24d3e6e2aa24",
+  "readback_passed": true,
+  "programmer_verified": true,
+  "closed_loop_passed": true,
+  "motor_rotation_feedback_observed": true,
+  "encoder_sign": -1,
+  "ramp_rpm_s": 1000,
+  "pid": [
+    1.8,
+    5,
+    0
+  ],
+  "hall_A": "PA8/U10-47",
+  "hall_B": "PE11/U9-38",
+  "pwm": "PB14/U9-45; user corrected prior PE13 miswire",
+  "hall_supply": "board+5V, user confirmed, not meter verified",
+  "vm": "user reported10.3V, unmeasured",
+  "mean_400_rpm": 399.7813323974609,
+  "phase_results": {
+    "KEY5_start_200": {
+      "late_mean_rpm": 198.02123947143554,
+      "expected": 200,
+      "late_enabled": 1.0
+    },
+    "knob_plus_205": {
+      "late_mean_rpm": 208.78223037719727,
+      "expected": 205,
+      "late_enabled": 1.0
+    },
+    "reverse_minus205": {
+      "late_mean_rpm": -202.26728134155275,
+      "expected": -205,
+      "late_enabled": 1.0
+    },
+    "KEY5_stop": {
+      "late_mean_rpm": -0.01773361030069509,
+      "expected": 0,
+      "late_enabled": 0.0
+    }
+  },
+  "physical_buttons_tested": false,
+  "host_simulated_buttons_tested": true,
+  "final_output_disabled": true,
+  "fault_latched": 0,
+  "evidence": "独立驱动诊断/README.md",
+  "previous_summary_archived": "独立驱动诊断/历史_最终实测状态.json"
+}

@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "compared_hex_bytes": 151679,
+  "mismatches": [],
+  "outside_program_sectors_start": "0x08040000",
+  "outside_program_sectors_unchanged": true,
+  "backup_sha256": "8fc3144f82617a0f3a9774f939751f105177eb4ae0100a4d63babbee51eef853",
+  "readback_sha256": "36bed30cb29ad2cb70cae82cced8ed9c91c45be81255ba8210cbeb7ff63db73d"
+}

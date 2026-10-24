@@ -1,0 +1,20 @@
+{
+  "software_implemented": true,
+  "hardware_driver_present": false,
+  "driver_profile": 0,
+  "flashed": false,
+  "motor_hardware_test": false,
+  "pid_hardware_tuned": false,
+  "feedback": "Hall 13PPR, actual gearbox 20.409, x4 CPR 1061.268",
+  "pin_reserve": [
+    "PG4",
+    "PG5",
+    "PA13",
+    "PA14",
+    "PB3",
+    "PB4",
+    "PA15",
+    "PC4",
+    "PA5"
+  ]
+}

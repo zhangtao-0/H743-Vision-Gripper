@@ -1,0 +1,8 @@
+[
+  {
+    "path": "App/bsp/bsp_key.c",
+    "old": "a8161984e01cc9645940cdacd151af3931bafd5b7239a016772cf1f2333a042e",
+    "new": "a885f33c5d76d01dc68d1628fc423e4cd4f304a5f1baf49cb1e4e13ce39ade1a",
+    "basis": "matches independently reviewed teaching production baseline"
+  }
+]

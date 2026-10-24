@@ -1,0 +1,27 @@
+{
+  "observed_at": "2026-10-24T14:46:07.277089+08:00",
+  "production_checked": 1633,
+  "production_changed": [],
+  "host_dependencies_unchanged": true,
+  "public_images": 48,
+  "public_instances": 82,
+  "downloaded_image_bytes": 74661269,
+  "pretrained_weight_bytes": 6719965,
+  "tests_passed": 23,
+  "training_completed": true,
+  "epochs": 2,
+  "train_val_test": [
+    30,
+    9,
+    9
+  ],
+  "model_status": "challenger_only",
+  "test_mask_map50": 0.3732965597255851,
+  "test_mask_map50_95": 0.29666692031430414,
+  "auto_repeat_skips_same_fingerprint": true,
+  "hardware_commands": false,
+  "uploads": false,
+  "links_checked": 26,
+  "broken_links": [],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "source": "https://raw.githubusercontent.com/STMicroelectronics/STM32_open_pin_data/master/mcu/STM32H743ZITx.xml",
+  "verified": [
+    {
+      "pin": "PE9",
+      "signal": "TIM1_CH1",
+      "package_position": "60"
+    },
+    {
+      "pin": "PE11",
+      "signal": "TIM1_CH2",
+      "package_position": "64"
+    },
+    {
+      "pin": "PB14",
+      "signal": "TIM12_CH1",
+      "package_position": "75"
+    },
+    {
+      "pin": "PB15",
+      "signal": "TIM12_CH2",
+      "package_position": "76"
+    }
+  ]
+}

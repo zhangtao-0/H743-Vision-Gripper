@@ -1,0 +1,10 @@
+{
+  "attempt_0": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n",
+  "status": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n",
+  "@motor disable": "motor disable=1; setpoint retained\r\n",
+  "@debug motor off": "debug accepted=1; release shared keys first; grants do not start/stop motion\r\n",
+  "@debug sts off": "debug accepted=1; release shared keys first; grants do not start/stop motion\r\n",
+  "@quiet": "",
+  "@motor status": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n",
+  "@debug status": "DEBUG sts=0 motor=0 plot=0; runtime grants only\r\n"
+}

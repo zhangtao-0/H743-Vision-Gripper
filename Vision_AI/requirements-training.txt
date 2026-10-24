@@ -1,0 +1,3 @@
+# Install compatible CUDA PyTorch from official index separately after approval.
+-r requirements-baseline.txt
+ultralytics==8.4.184

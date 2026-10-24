@@ -1,0 +1,9 @@
+read-only probe accepted=1 (nonconfigured ID never enables motion)
+
+
+STS target=1 rate=1000000 rawRx=0 valid=0 parser=0 tx=114 hal=0
+SYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1
+CAM diag format=6F01 pclk=2204 dcmi=00000000 dma=00000000 remaining=28800
+CAM ready=1 enabled=0 frames=215 errors=0 timeout=13 loopmax=1751 cmdDrop=0 usbDrop=0
+
+

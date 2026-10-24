@@ -1,0 +1,81 @@
+{
+  "time": "2026-10-24T15:23:08.092412+08:00",
+  "ports": [
+    {
+      "device": "COM8",
+      "vid": null,
+      "pid": null,
+      "description": "蓝牙链接上的标准串行 (COM8)"
+    },
+    {
+      "device": "COM3",
+      "vid": null,
+      "pid": null,
+      "description": "蓝牙链接上的标准串行 (COM3)"
+    },
+    {
+      "device": "COM5",
+      "vid": null,
+      "pid": null,
+      "description": "蓝牙链接上的标准串行 (COM5)"
+    },
+    {
+      "device": "COM9",
+      "vid": 6790,
+      "pid": 29987,
+      "description": "USB-SERIAL CH340 (COM9)"
+    },
+    {
+      "device": "COM11",
+      "vid": 1155,
+      "pid": 22336,
+      "description": "USB 串行设备 (COM11)"
+    },
+    {
+      "device": "COM7",
+      "vid": null,
+      "pid": null,
+      "description": "蓝牙链接上的标准串行 (COM7)"
+    },
+    {
+      "device": "COM4",
+      "vid": null,
+      "pid": null,
+      "description": "蓝牙链接上的标准串行 (COM4)"
+    },
+    {
+      "device": "COM6",
+      "vid": null,
+      "pid": null,
+      "description": "蓝牙链接上的标准串行 (COM6)"
+    }
+  ],
+  "commands": [
+    {
+      "command": "@motor disable",
+      "raw_hex": "6d6f746f722064697361626c653d313b20736574706f696e742072657461696e65640d0a0a",
+      "reply": "motor disable=1; setpoint retained\r\n\n"
+    },
+    {
+      "command": "@quiet",
+      "raw_hex": "0a",
+      "reply": "\n"
+    },
+    {
+      "command": "@motor status",
+      "raw_hex": "4d4f544f522072656164793d31206472697665723d31206f6e3d30206661756c743d30206469723d31207461726765743d3430302072706d31303d302070776d3d3020637072313030303d3130363132363820636f756e743d3020626c6f636b65643d3020696e76616c69643d300d0a0a",
+      "reply": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n\n"
+    },
+    {
+      "command": "@debug status",
+      "raw_hex": "756e6b6e6f776e20636f6d6d616e643b204068656c700d0a0a",
+      "reply": "unknown command; @help\r\n\n"
+    },
+    {
+      "command": "@status",
+      "raw_hex": "535453207461726765743d3120726174653d313030303030302072617752783d33333037312076616c69643d35207061727365723d302074783d313537332068616c3d300d0a53595320636c6b3d31204c43446275733d31205254433d312053443d302046533d3020515350493d312069643d454634303137205553423d310d0a43414d206469616720666f726d61743d364630312070636c6b3d323230342064636d693d303030303030303020646d613d30303030303030302072656d61696e696e673d300d0a43414d2072656164793d3120656e61626c65643d31206672616d65733d313833206572726f72733d302074696d656f75743d30206c6f6f706d61783d313320636d6444726f703d302075736244726f703d300d0a4d4f544f522072656164793d31206472697665723d31206f6e3d30206661756c743d30206469723d31207461726765743d3430302072706d31303d302070776d3d3020637072313030303d3130363132363820636f756e743d3020626c6f636b65643d3020696e76616c69643d300d0a0a",
+      "reply": "STS target=1 rate=1000000 rawRx=33071 valid=5 parser=0 tx=1573 hal=0\r\nSYS clk=1 LCDbus=1 RTC=1 SD=0 FS=0 QSPI=1 id=EF4017 USB=1\r\nCAM diag format=6F01 pclk=2204 dcmi=00000000 dma=00000000 remaining=0\r\nCAM ready=1 enabled=1 frames=183 errors=0 timeout=0 loopmax=13 cmdDrop=0 usbDrop=0\r\nMOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n\n"
+    }
+  ],
+  "motion_commands_sent": false
+}

@@ -1,0 +1,27 @@
+{
+  "repository_scope": "C:\\Users\\tk457\\Desktop\\Embedded Software and Hardware Database\\02_Software_Development_Workspace\\01_Projects\\01_Workspace\\H743",
+  "staged_files": 2594,
+  "staged_bytes": 105570563,
+  "root_groups_bytes": {
+    ".gitattributes": 249,
+    ".gitignore": 1354,
+    "Docs": 8910828,
+    "Host": 49994,
+    "README.md": 1707,
+    "Tests": 16619,
+    "Tools": 146471,
+    "Vision_AI": 10458201,
+    "project": 85983374,
+    "引脚接线速查.md": 1766
+  },
+  "files_over4MiB": [
+    [
+      "project/Drivers/CMSIS/DSP/Source/CommonTables/arm_common_tables.c",
+      4843505
+    ]
+  ],
+  "sensitive_pattern_file_hits": [],
+  "generated_output_files_staged": [],
+  "ewp_source_files_not_staged": [],
+  "passed": true
+}

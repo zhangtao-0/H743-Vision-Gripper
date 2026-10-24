@@ -1,0 +1,57 @@
+{
+  "driver": "L298N",
+  "firmware": "L298N profile1, PA8/PE11 Hall powered5V, GPIO_NOPULL, feedback-progress guard; flashed and programmer verified",
+  "wiring": "User confirmed ENA jumper removed/PB14, 5V-EN retained; VM reported10.3V",
+  "commands": [
+    {
+      "command": "@motor disable",
+      "reply": ""
+    },
+    {
+      "command": "@quiet",
+      "reply": ""
+    },
+    {
+      "command": "@motor status",
+      "reply": ""
+    },
+    {
+      "command": "@motor clear",
+      "reply": ""
+    },
+    {
+      "command": "@motor status",
+      "reply": ""
+    },
+    {
+      "command": "@motor disable",
+      "reply": null
+    },
+    {
+      "command": "@quiet",
+      "reply": null
+    },
+    {
+      "command": "@motor plot off",
+      "reply": "motor disable=1; setpoint retained\r\nmotor plot stopped\r\n"
+    },
+    {
+      "command": "@motor rpm 400",
+      "reply": "motor target=1\r\n"
+    },
+    {
+      "command": "@motor status",
+      "reply": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n"
+    }
+  ],
+  "samples": [],
+  "errors": [
+    "not ready/disabled/fault-free"
+  ],
+  "motion_commands_sent": false,
+  "phase": "initial",
+  "before_clear": "",
+  "initial_state": "",
+  "cleanup_buffer_hex": "",
+  "final_state": "MOTOR ready=1 driver=1 on=0 fault=0 dir=1 target=400 rpm10=0 pwm=0 cpr1000=1061268 count=0 blocked=0 invalid=0\r\n"
+}

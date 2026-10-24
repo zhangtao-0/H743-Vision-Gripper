@@ -1,0 +1,57 @@
+[
+  {
+    "path": "App/config/motor_config.h",
+    "before": "263ed2837a97853a69443f3a02f02412a2b298f23ba6bd9280fbac6893f9e75c",
+    "after": "9a806a48296852e6da126cce9c0b90b4235e09b905861f5487c69a5c2b8c8c5a"
+  },
+  {
+    "path": "App/modules/integration/console_help.h",
+    "before": "c504b4627d70b5d4fc288d5b6eeb91bf24f84bad1224f854487dbdf507c968bd",
+    "after": "7fe27327a30d67807682a53da44f42cb53efac39483c116d26cf974efa2ec0a2"
+  },
+  {
+    "path": "App/modules/integration/integration_console.c",
+    "before": "5187e05d1e04546ca397d35c312451c9f143f1d71121c881f54efadee679d5cc",
+    "after": "624491640782679a3e94c1832ec4566912c100f50d5690bbd3812b00e9c8591f"
+  },
+  {
+    "path": "App/modules/integration/integration_service.c",
+    "before": "64ef66d268dbef56413b75514afd5a879178a74dd4d14798a7c77b3dc0d3df46",
+    "after": "cad9f6c410f3740e44f1e15a7b96f8415b31e81aae1a47f905c95c375787287d"
+  },
+  {
+    "path": "App/modules/motor/motor_plot.c",
+    "before": null,
+    "after": "d08d76b9bc97f7067a090a258ffc82655b7f47467cbbc8ad99dc028d263ed12b"
+  },
+  {
+    "path": "App/modules/motor/motor_plot.h",
+    "before": null,
+    "after": "9fe3606bc5350444a1adb79011ecd3676e2e63ca4d354d6aba5ea0db0a9e77f9"
+  },
+  {
+    "path": "App/modules/motor/motor_service.c",
+    "before": "fd74eea51fb37c95814f66ba4266397fe7ddb064963f7fd11a460b3c5eb5afa0",
+    "after": "a39f4cb80eb99ae09828409736782f0db45c9a5aa39c6a6337c38079a4821386"
+  },
+  {
+    "path": "App/modules/ui/ui_port.c",
+    "before": "dbe7bd3dd34d56683d707002f06fe73c1b5738e9f697e601d7acd8df3c2a94bb",
+    "after": "9dc143f1b661918b6a35c2c8be32e34602c4210a4aa3f611587ebf62cc18dd41"
+  },
+  {
+    "path": "App/protocol/vofa_protocol.c",
+    "before": "55bb5ec46457ceb9e7f02199e81cf9d81cbcaa3dd0387c9f7e18d67bbec8233e",
+    "after": "5312ad639cbbbb091a925319bdf315b86150e8e09d0342512199f0c43579d288"
+  },
+  {
+    "path": "App/protocol/vofa_protocol.h",
+    "before": "44209261c5d03d76371a3bd4cc9eb987dc1d26b1203b54790ad5f543c6a11105",
+    "after": "cc1f8bad8977bab6a5f2fb60545208eafb87e9ca060944ab99699ebd8e18df97"
+  },
+  {
+    "path": "EWARM/H743_VisionGripper.ewp",
+    "before": "271b3016087d84ae9f0bbb11edba1f3a9b0243cbb47947c53c59b05c15f2e5f3",
+    "after": "f8096e8ac57a0f438e2d37403445bb7b111b249031814ffeca1dffc0ccb8c5a3"
+  }
+]

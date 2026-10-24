@@ -1,0 +1,19 @@
+{
+  "dataset_id": "workpieces_three_shapes_v1",
+  "status": "AWAITING_REAL_IMAGES",
+  "names": {
+    "0": "cylinder",
+    "1": "block",
+    "2": "l_bracket"
+  },
+  "legacy_dataset": {
+    "names": [
+      "carton",
+      "black_parcel"
+    ],
+    "location": "../Host/vision_gripper/data",
+    "changed": false
+  },
+  "labels_type": "instance_segmentation_polygon",
+  "no_automatic_label_mapping": true
+}

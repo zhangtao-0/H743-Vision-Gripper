@@ -1,0 +1,26 @@
+{
+  "scope": "actual C NV backend + fake HAL; negative maps, no Flash/board operations",
+  "passed": true,
+  "cases": [
+    {
+      "case": "valid",
+      "passed": true
+    },
+    {
+      "case": "alias",
+      "passed": true
+    },
+    {
+      "case": "code_area",
+      "passed": true
+    },
+    {
+      "case": "wrong_bank",
+      "passed": true
+    },
+    {
+      "case": "missing DCMI requires explicit disable",
+      "passed": true
+    }
+  ]
+}

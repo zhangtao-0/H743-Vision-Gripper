@@ -1,0 +1,2 @@
+﻿session_id,image_path,object_id,class_name,camera,resolution,lighting,background,camera_motion,occlusion,exposure_issue,physical_dimensions_mm,notes
+example_only,,block_01,block,FD5640,240x240,diffuse,plain,handheld,none,none,,example row is NOT a real sample

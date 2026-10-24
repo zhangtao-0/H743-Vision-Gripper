@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-10-23T11:14:53",
+  "tests": [
+    {
+      "name": "电脑逻辑测试",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/电脑逻辑测试.log"
+    },
+    {
+      "name": "GUI模拟测试",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/GUI模拟测试.log"
+    },
+    {
+      "name": "固件传输测试",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/固件传输测试.log"
+    },
+    {
+      "name": "摄像头回归",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/摄像头回归.log"
+    },
+    {
+      "name": "控制台回归",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/控制台回归.log"
+    },
+    {
+      "name": "屏幕设置回归",
+      "exit_code": 0,
+      "log": "Docs/视觉识别与抓取/20261023_电脑视觉首版/屏幕设置回归.log"
+    }
+  ],
+  "real_serial_access": false,
+  "real_model_weights": false,
+  "real_training": false,
+  "passed": true
+}

@@ -1,0 +1,83 @@
+{
+  "sources": [
+    {
+      "id": "S04",
+      "url": "https://www.feetechrc.com/74v-19-kgcm-plastic-case-metal-tooth-magnetic-code-double-axis-ttl-series-steering-gear",
+      "checked": "2026-10-22",
+      "retrieved_text_sha256": "31d57debd5c1765cf841d2a446b8f4c5dd6d9e8183b2469ada7bf954341e4220",
+      "cache": ".firecrawl/feetech-st3215-c001.md",
+      "authority": "manufacturer document; S05 supplier-hosted manufacturer manual; S07 manufacturer certification filing"
+    },
+    {
+      "id": "S05",
+      "url": "https://www.es.co.th/Schemetic/PDF/JDY-31-K1234.PDF",
+      "checked": "2026-10-22",
+      "retrieved_text_sha256": "4d647a7c2bca09f8d41b905f6be7098a8997c35eefd8d1856117b8389213a52b",
+      "cache": ".firecrawl/jdy31-v13.md",
+      "authority": "manufacturer document; S05 supplier-hosted manufacturer manual; S07 manufacturer certification filing"
+    },
+    {
+      "id": "S06",
+      "url": "https://www.hc01.com/downloads/HC-08A%20version%20english%20datasheet.pdf",
+      "checked": "2026-10-22",
+      "retrieved_text_sha256": "0734d14acfb9799d382ced9088d23b55bc04cd6316982cc2758dbe105c163eaf",
+      "cache": ".firecrawl/hc08-v31.md",
+      "authority": "manufacturer document; S05 supplier-hosted manufacturer manual; S07 manufacturer certification filing"
+    },
+    {
+      "id": "S07",
+      "url": "https://fccid.io/2AXM8-JDY-33/User-Manual/15-JDY-33-UserMan-US-r2-4936885",
+      "checked": "2026-10-22",
+      "retrieved_text_sha256": "cc903c3d698b0f4d32698a9a221e253f56f6f224e5fea29ebfbf0fc95078ed55",
+      "cache": ".firecrawl/jdy33-manufacturer-fcc.md",
+      "authority": "manufacturer document; S05 supplier-hosted manufacturer manual; S07 manufacturer certification filing"
+    },
+    {
+      "id": "S08",
+      "url": "https://www.ti.com/product/BQ24133",
+      "checked": "2026-10-22",
+      "retrieved_text_sha256": "deb9605eb962be149850070599a4e10049d23bf31fde2f919c6aa29d5ef4daac",
+      "cache": ".firecrawl/ti-bq24133.md",
+      "authority": "manufacturer document; S05 supplier-hosted manufacturer manual; S07 manufacturer certification filing"
+    },
+    {
+      "id": "S09",
+      "url": "https://www.ti.com/product/DRV8871",
+      "checked": "2026-10-22",
+      "retrieved_text_sha256": "cc67878cb67254ac685a7c6cdbd4b6da8e2c5937daa652ec0f6d275d96bccc5a",
+      "cache": ".firecrawl/ti-drv8871.md",
+      "authority": "manufacturer document; S05 supplier-hosted manufacturer manual; S07 manufacturer certification filing"
+    },
+    {
+      "id": "S01",
+      "path": "01_嵌入式技术资料库/01_芯片与内核资料/09_硬件信息/芯路城_鹿小班_STM32H743ZIT6/04_供电说明/供电说明.png",
+      "sha256": "73a585c4a0ef3127a8c19ef9a43e08792f6d02f7c9303ba6c1425e9306ee6f02",
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "S02",
+      "path": "01_嵌入式技术资料库/01_芯片与内核资料/09_硬件信息/芯路城_鹿小班_STM32H743ZIT6/01_原理图/LXB743ZI-P1原理图.pdf",
+      "sha256": "93014c71abede691d96fdaf241df1468e2500b443e5d3c483cb79e24bced32b5",
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "S03",
+      "path": "02_Software_Development_Workspace/01_Projects/01_Workspace/H743/Docs/电机控制/用户提供_MG310参数.jpg",
+      "sha256": "a2c437389eeb6dbf65f230def9862b089b8d19d2d75dee5d35fbc8f2ec1161e5",
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "S11",
+      "url": "https://ftservo.github.io/ftservo-wiki/getting-started/wiring/",
+      "checked": "2026-10-22",
+      "path": "01_嵌入式技术资料库/04_外部设备与模块资源库/04_执行器与驱动模块/01_舵机/飞特/00_通用资料/02_模块连接与原理图/FTServo_Wiki_供电与接线/README.md",
+      "manifest": "01_嵌入式技术资料库/04_外部设备与模块资源库/04_执行器与驱动模块/01_舵机/飞特/00_通用资料/02_模块连接与原理图/FTServo_Wiki_供电与接线/来源登记.json",
+      "authority": "FEETECH Wiki general wiring guide; model-specific limits remain S04",
+      "source_commit": "a4f9de2388ade2b9d811635bc748c0c2ff9a7189"
+    }
+  ],
+  "user_confirmations": [
+    "Current Bluetooth module JDY-31; baseboard and firmware version unknown"
+  ],
+  "hardware_test_performed": false
+}

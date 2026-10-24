@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-20",
+  "command": [
+    "C:\\IAR Systems\\Embedded Workbench 9.2\\common\\bin\\iarbuild.exe",
+    "C:\\Users\\tk457\\AppData\\Local\\Temp\\h743-baseline-0b2dzfor\\project\\EWARM\\H743_VisionGripper.ewp",
+    "-build",
+    "H743_VisionGripper",
+    "-log",
+    "all"
+  ],
+  "builder": "9.2.2.10770",
+  "compiler": "9.40.1.364",
+  "exit_code": 1,
+  "errors": 51,
+  "warnings": 15,
+  "result": "failed",
+  "temporary_source_vs_original_mismatches": [],
+  "app_original_hashes_unchanged": true,
+  "hardware_tests": "not performed"
+}
